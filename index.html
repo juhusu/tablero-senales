@@ -39,6 +39,7 @@ table.grilla tr.total td.nom { font-weight:700; }
 .cuad { width:62px; height:46px; border-radius:8px; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#fff; }
 .cuad b { font-size:17px; line-height:1.1; } .cuad span { font-size:10.5px; opacity:.92; white-space:nowrap; } .cuad span { font-size:11px; opacity:.85; }
 .cuad.nada { background:#161B22; color:#4B5563; font-size:16px; }
+.hora { color:#93C5FD; font-weight:600; margin-left:4px; }
 .cuad.clic { cursor:pointer; } .cuad.clic:hover { outline:2px solid #fff; }
 #detalle_caja { position:fixed; inset:0; background:rgba(0,0,0,.6); display:flex; align-items:center; justify-content:center; z-index:50; padding:16px; }
 #detalle_caja[hidden] { display:none; }
@@ -130,6 +131,10 @@ function colorPct(p) { const h = Math.round(120 * p); return `hsl(${h} 62% 32%)`
    opcion y si das clic en una casilla se detalle cada una de las veces"): arriba cuantas se dieron (3/4); abajo, en una
    señal tipica de esa casilla (la del medio), cuanto llego a ganar la opcion (▲) y a perder (▼). Clic: el detalle. */
 let CELDAS = [];
+/* LA HORA AL LADO DEL DIA (20/10, pedido con captura): sale del principio del detalle ("10:00 · ...") y se saca de ahi. */
+const RE_HORA = /^(\d{1,2}:\d{2})( · )?/;
+function horaDe(x) { const m = (x.detalle || '').match(RE_HORA); return m ? m[1] : ''; }
+function sinHora(x) { return (x.detalle || '').replace(RE_HORA, ''); }
 function medio(xs) { if (!xs.length) return null; const o = [...xs].sort((a, b) => a - b), k = Math.floor(o.length / 2);
   return o.length % 2 ? o[k] : (o[k - 1] + o[k]) / 2; }
 function cuadrito(xs) {
@@ -151,10 +156,10 @@ function abrirDetalle(k) {
     : `<span class="${v >= 0 ? 'g' : 'p'}">${signo}${v > 0 ? '+' : ''}${v.toFixed(1)}%</span>`;
   document.getElementById('det_titulo').textContent = [...new Set(xs.map(x => x.senal.replace(' GANADOR', '')))].join(' · ');
   document.getElementById('det_tabla').innerHTML = '<tr><th>Día</th><th>Señal</th><th>Lado</th><th></th><th>▲ máximo</th><th>▼ mínimo</th><th style="text-align:left">Detalle</th></tr>'
-    + xs.map(x => `<tr><td>${(DIAS[x.dia_semana] || '').slice(0, 3)} ${x.fecha.slice(8)}/${x.fecha.slice(5, 7)}</td><td style="text-align:left">${x.senal}${x.historico ? ' <span class="n">· historial</span>' : ''}</td>`
+    + xs.map(x => `<tr><td>${(DIAS[x.dia_semana] || '').slice(0, 3)} ${x.fecha.slice(8)}/${x.fecha.slice(5, 7)} <b class="hora">${horaDe(x)}</b></td><td style="text-align:left">${x.senal}${x.historico ? ' <span class="n">· historial</span>' : ''}</td>`
       + `<td>${x.lado}</td><td>${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : '…'}</td>`
       + `<td>${pc(x.maximo, '▲')}${x.unidad && x.unidad !== 'opción' && x.maximo !== null ? ' <span class="n">' + x.unidad + '</span>' : ''}</td><td>${pc(x.minimo, '▼')}</td>`
-      + `<td style="text-align:left" class="tenue">${x.detalle || ''}</td></tr>`).join('');
+      + `<td style="text-align:left" class="tenue">${sinHora(x)}</td></tr>`).join('');
   document.getElementById('detalle_caja').hidden = false;
 }
 document.addEventListener('click', (e) => {
@@ -237,9 +242,9 @@ function pintar(D) {
   h = '<tr><th>Fecha</th><th>Activo</th><th>Señal</th><th>Lado</th><th>Resultado</th><th>Máximo</th><th style="text-align:left">Detalle</th></tr>';
   for (const s of [...todas].reverse()) {
     const d = new Date(s.fecha + 'T12:00:00');
-    h += `<tr><td>${DIAS[s.dia_semana] || ''} ${s.fecha.slice(8)}/${s.fecha.slice(5, 7)}</td><td>${(s.activos || [s.activo]).length > 1 ? s.activo + ' → se opera en SPX' : s.activo}</td><td style="text-align:left">${s.senal}${s.historico ? ' <span class="n" title="' + (s.fuente || '') + '">· historial</span>' : ''}</td><td>${s.lado}</td>`
+    h += `<tr><td>${DIAS[s.dia_semana] || ''} ${s.fecha.slice(8)}/${s.fecha.slice(5, 7)} <b class="hora">${horaDe(s)}</b></td><td>${(s.activos || [s.activo]).length > 1 ? s.activo + ' → se opera en SPX' : s.activo}</td><td style="text-align:left">${s.senal}${s.historico ? ' <span class="n" title="' + (s.fuente || '') + '">· historial</span>' : ''}</td><td>${s.lado}</td>`
       + `<td class="${s.resultado === 'G' ? 'g' : s.resultado === 'P' ? 'p' : 'n'}">${s.resultado === 'G' ? '✅ ganada' : s.resultado === 'P' ? '❌ perdida' : 'pendiente'}</td>`
-      + `<td>${fmtMax(s)}</td><td style="text-align:left" class="tenue">${s.detalle || ''}</td></tr>`;
+      + `<td>${fmtMax(s)}</td><td style="text-align:left" class="tenue">${sinHora(s)}</td></tr>`;
   }
   document.getElementById('detalle').innerHTML = h;
 }
