@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-20 09:45",
+ "actualizado": "2026-10-20 10:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -4184,13 +4184,29 @@
   },
   {
    "fecha": "2026-10-20",
+   "senal": "Opening Eyes (motor) SPX",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "09:52 · CALL 769 al ask 1.35",
+   "maximo": 194.1,
+   "unidad": "opción",
+   "minimo": 3.7,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-10-20",
    "senal": "Opening Eyes (motor) TSLA",
    "lado": "PUT",
    "resultado": "G",
    "detalle": "09:31 · PUT 367.5 al ask 12.00",
    "maximo": 12.9,
    "unidad": "opción",
-   "minimo": -2.1,
+   "minimo": -12.5,
    "activo": "TSLA",
    "activos": [
     "TSLA"
