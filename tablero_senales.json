@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-20 06:14",
+ "actualizado": "2026-10-20 09:35",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -4153,10 +4153,10 @@
    "fecha": "2026-10-19",
    "senal": "Rebote al cierre",
    "lado": "CALL",
-   "resultado": null,
-   "detalle": "16:00 · falta la apertura siguiente",
-   "maximo": null,
-   "unidad": "opción",
+   "resultado": "P",
+   "detalle": "16:00 · GAP siguiente -0.17%",
+   "maximo": -0.2,
+   "unidad": "GAP",
    "minimo": null,
    "activo": "SPY",
    "activos": [
@@ -4181,6 +4181,22 @@
    ],
    "semana": "2026-10-19",
    "dia_semana": 0
+  },
+  {
+   "fecha": "2026-10-20",
+   "senal": "Opening Eyes (motor) TSLA",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "09:31 · PUT 367.5 al ask 12.00",
+   "maximo": 12.9,
+   "unidad": "opción",
+   "minimo": -2.1,
+   "activo": "TSLA",
+   "activos": [
+    "TSLA"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 1
   }
  ]
 }
