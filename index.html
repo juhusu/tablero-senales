@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tablero de señales</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root { --fondo:#0B0E13; --panel:#12161D; --borde:#232A35; --texto:#E5E7EB; --tenue:#8B95A5; --verde:#22C55E; --rojo:#EF4444; --gris:#4B5563; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--fondo); color:var(--texto); font:14px -apple-system,system-ui,sans-serif; }
+header { display:flex; flex-wrap:wrap; gap:12px; align-items:baseline; padding:14px 16px; border-bottom:1px solid var(--borde); }
+h1 { font-size:18px; margin:0; } h2 { font-size:15px; margin:22px 16px 8px; color:var(--tenue); font-weight:600; }
+.tenue { color:var(--tenue); font-size:13px; }
+.circulos { display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:12px; padding:0 16px; }
+.circ { background:var(--panel); border:1px solid var(--borde); border-radius:10px; padding:10px; text-align:center; }
+.circ h3 { font-size:13px; margin:0 0 6px; font-weight:600; min-height:32px; }
+.circ .caja { position:relative; height:120px; }
+.circ .pct { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; flex-direction:column; pointer-events:none; }
+.circ .pct b { font-size:22px; } .circ .pct span { font-size:11px; color:var(--tenue); }
+.panel { background:var(--panel); border:1px solid var(--borde); border-radius:10px; margin:0 16px; padding:10px; }
+#curva { height:360px; }
+.cabeza { display:flex; align-items:center; justify-content:space-between; margin:22px 16px 8px; }
+.cabeza h2 { margin:0; }
+.pestanas button { background:var(--panel); color:var(--tenue); border:1px solid var(--borde); padding:5px 14px; cursor:pointer; font:inherit; }
+.pestanas button:first-child { border-radius:7px 0 0 7px; } .pestanas button:last-child { border-radius:0 7px 7px 0; }
+.pestanas button + button { border-left:none; }
+.pestanas button.on { color:var(--texto); background:#1B2333; border-color:#60A5FA; }
+.wrap { overflow-x:auto; margin:0 16px; }
+table { border-collapse:collapse; font:13px 'SF Mono',ui-monospace,monospace; min-width:100%; }
+th, td { padding:5px 9px; border-bottom:1px solid var(--borde); text-align:center; white-space:nowrap; }
+th { color:var(--tenue); font-weight:600; position:sticky; top:0; background:var(--fondo); }
+td:first-child, th:first-child { text-align:left; }
+.g { color:var(--verde); } .p { color:var(--rojo); } .n { color:var(--gris); }
+.celda-g { background:rgba(34,197,94,.14); } .celda-p { background:rgba(239,68,68,.14); } .celda-m { background:rgba(234,179,8,.10); }
+label { color:var(--tenue); font-size:13px; }
+#activos button { background:var(--panel); color:var(--tenue); border:1px solid var(--borde); border-radius:6px; padding:4px 10px; margin-right:4px; cursor:pointer; font:inherit; }
+#activos button.on { color:var(--texto); border-color:#60A5FA; background:#1B2333; }
+#dias_f button { background:var(--panel); color:var(--tenue); border:1px solid var(--borde); border-radius:6px; padding:4px 9px; margin-right:3px; cursor:pointer; font:inherit; }
+#dias_f button.on { color:var(--texto); border-color:#F59E0B; background:#2A2112; }
+.circ .max { font-size:11px; color:var(--tenue); margin-top:4px; }
+</style></head><body>
+<header>
+  <h1>Tablero de señales</h1>
+  <span class="tenue" id="actualizado"></span>
+  <label><input type="checkbox" id="amigo" checked> incluir las del amigo</label>
+  <label title="Suma los días medidos hacia atrás (opciones de Tastytrade, SPY de Schwab): GAP continuación desde el 06/07, Heikin Ashi desde el 27/07, Toque Magnífico desde el 15/07"><input type="checkbox" id="historial"> historial (días medidos hacia atrás)</label>
+  <span id="activos"></span>
+  <span id="dias_f"></span>
+</header>
+<div class="cabeza">
+  <h2 id="titulo_panel">% de ganadas por señal</h2>
+  <span class="pestanas"><button data-p="circulos" class="on">Círculos</button><button data-p="curva">Curva</button><button data-p="detalle">Día por día</button></span>
+</div>
+<div id="p_circulos"><div class="circulos" id="circulos"></div></div>
+<div id="p_curva" hidden><div class="panel"><div id="curva"><canvas id="cv"></canvas></div></div></div>
+<div id="p_detalle" hidden><div class="wrap"><table id="detalle"></table></div></div>
+<h2>Por semana (ganadas – perdidas)</h2>
+<div class="wrap"><table id="semanas"></table></div>
+<h2>Por día de la semana (ganadas – perdidas)</h2>
+<div class="wrap"><table id="dias"></table></div>
+
+<p class="tenue" style="margin:16px">Qué es "ganada" en cada señal y de dónde sale cada número: tools/tablero_senales.py. "Máximo" = lo más que llegó a favor: en la opción (las que se miden en la opción), en el SPY (Toque Magnífico) o el tamaño del GAP siguiente (rebote y las del amigo). OJO: estos % no se comparan con el azar; en TSLA una opción del día toca +10% en 30 minutos muy seguido, entre en cualquier momento. Se actualiza solo de lunes a viernes; esta página se recarga cada 5 minutos.</p>
+<script>
+const COLORES = ['#60A5FA','#F59E0B','#A78BFA','#22D3EE','#F472B6','#34D399','#FB923C','#E879F9','#FACC15','#93C5FD'];
+const DIAS = ['lunes','martes','miércoles','jueves','viernes'];
+let graficos = [];
+let activo = 'Todos';
+let diaSel = 'Todos';      // filtro por dia de la semana (20/10, pedido: "has un filtro por dias de la semana")
+function mediana(xs) { if (!xs.length) return null; const o = [...xs].sort((a, b) => a - b), m = Math.floor(o.length / 2);
+  return o.length % 2 ? o[m] : (o[m - 1] + o[m]) / 2; }
+function fmtMax(s) { if (s.maximo === null || s.maximo === undefined) return '<span class="n">—</span>';
+  const u = s.unidad === 'opción' ? '' : s.unidad === 'SPY' ? ' SPY' : ' GAP';
+  return `<span class="${s.maximo >= 10 || (s.unidad !== 'opción' && s.maximo > 0) ? 'g' : s.maximo > 0 ? '' : 'p'}">${s.maximo > 0 ? '+' : ''}${s.maximo.toFixed(1)}%${u}</span>`; }
+function base(s) { return s.replace(' GANADOR', ''); }
+function cuenta(xs) { const g = xs.filter(x => x.resultado === 'G').length, p = xs.filter(x => x.resultado === 'P').length;
+  return { g, p, n: xs.length - g - p }; }
+function celda(xs) { if (!xs.length) return '<td class="n">·</td>';
+  const c = cuenta(xs); const cls = c.g > c.p ? 'celda-g' : c.p > c.g ? 'celda-p' : (c.g ? 'celda-m' : '');
+  return `<td class="${cls}"><span class="g">${c.g}</span>–<span class="p">${c.p}</span>${c.n ? ` <span class="n">+${c.n}</span>` : ''}</td>`; }
+function pintar(D) {
+  graficos.forEach(g => g.destroy()); graficos = [];
+  const ba = document.getElementById('activos');
+  ba.innerHTML = ['Todos', 'SPX', 'SPY', 'TSLA'].map(a => `<button class="${a === activo ? 'on' : ''}" data-a="${a}">${a}</button>`).join('');
+  ba.querySelectorAll('button').forEach(b => b.onclick = () => { activo = b.dataset.a; pintar(D); });
+  const bd = document.getElementById('dias_f');
+  bd.innerHTML = ['Todos', ...DIAS].map((d, i) => `<button class="${(i === 0 ? 'Todos' : i - 1) === diaSel ? 'on' : ''}" data-d="${i === 0 ? 'Todos' : i - 1}">${i === 0 ? 'Todos los días' : d.slice(0, 3)}</button>`).join('');
+  bd.querySelectorAll('button').forEach(b => b.onclick = () => { diaSel = b.dataset.d === 'Todos' ? 'Todos' : Number(b.dataset.d); pintar(D); });
+  const todas = D.senales.filter(s => (document.getElementById('amigo').checked || !s.senal.includes('amigo'))
+    && (activo === 'Todos' || (s.activos || [s.activo]).includes(activo))
+    && (diaSel === 'Todos' || s.dia_semana === diaSel)
+    && (document.getElementById('historial').checked || !s.historico));
+  // "GAP continuación GANADOR" va dentro de GAP continuación y además aparte
+  const filas = [];
+  for (const s of todas) { filas.push({ ...s, grupo: base(s.senal) });
+    if (s.senal.includes('GANADOR')) filas.push({ ...s, grupo: 'GAP continuación (solo GANADOR)' }); }
+  const grupos = [...new Set(filas.map(f => f.grupo))].sort();
+  document.getElementById('actualizado').textContent = 'actualizado ' + D.actualizado;
+  // CIRCULOS
+  const cc = document.getElementById('circulos'); cc.innerHTML = '';
+  grupos.forEach((gr) => {
+    const fg = filas.filter(f => f.grupo === gr); const c = cuenta(fg); const tot = c.g + c.p;
+    const mx = mediana(fg.map(f => f.maximo).filter(x => x !== null && x !== undefined)); const u = fg[0] && fg[0].unidad;
+    const pct = tot ? Math.round(100 * c.g / tot) : null;
+    const div = document.createElement('div'); div.className = 'circ';
+    div.innerHTML = `<h3>${gr}</h3><div class="caja"><canvas></canvas><div class="pct"><b class="${pct === null ? 'n' : pct >= 50 ? 'g' : 'p'}">${pct === null ? '—' : pct + '%'}</b><span>${c.g} de ${tot}${c.n ? ' · ' + c.n + ' pend.' : ''}</span></div></div>`
+      + `<div class="max">${mx === null ? '' : 'máximo típico ' + (mx > 0 ? '+' : '') + mx.toFixed(1) + '%' + (u === 'opción' ? ' (opción)' : u === 'SPY' ? ' (SPY)' : ' (GAP)')}</div>`;
+    cc.appendChild(div);
+    graficos.push(new Chart(div.querySelector('canvas'), { type: 'doughnut',
+      data: { labels: ['ganadas', 'perdidas', 'pendientes'], datasets: [{ data: [c.g, c.p, c.n], backgroundColor: ['#22C55E', '#EF4444', '#374151'], borderWidth: 0 }] },
+      options: { cutout: '72%', maintainAspectRatio: false, plugins: { legend: { display: false } } } }));
+  });
+  // CURVA
+  const fechas = [...new Set(todas.map(s => s.fecha))].sort();
+  const curvas = grupos.filter(g => !g.includes('solo GANADOR')).map((gr, i) => {
+    let acc = 0; return { label: gr, borderColor: COLORES[i % COLORES.length], backgroundColor: COLORES[i % COLORES.length],
+      tension: .25, pointRadius: 2, borderWidth: 2,
+      data: fechas.map(fe => { filas.filter(f => f.grupo === gr && f.fecha === fe).forEach(f => { acc += f.resultado === 'G' ? 1 : f.resultado === 'P' ? -1 : 0; }); return acc; }) };
+  });
+  let accT = 0;
+  curvas.push({ label: 'TODAS', borderColor: '#E5E7EB', backgroundColor: '#E5E7EB', borderDash: [6, 4], tension: .25, pointRadius: 0, borderWidth: 2,
+    data: fechas.map(fe => { todas.filter(s => s.fecha === fe).forEach(s => { accT += s.resultado === 'G' ? 1 : s.resultado === 'P' ? -1 : 0; }); return accT; }) });
+  graficos.push(new Chart(document.getElementById('cv'), { type: 'line', data: { labels: fechas.map(f => f.slice(8) + '/' + f.slice(5, 7)), datasets: curvas },
+    options: { maintainAspectRatio: false, interaction: { mode: 'index', intersect: false },
+      scales: { x: { ticks: { color: '#8B95A5' }, grid: { color: '#1A2029' } }, y: { ticks: { color: '#8B95A5', precision: 0 }, grid: { color: '#1A2029' } } },
+      plugins: { legend: { labels: { color: '#C9D1D9', boxWidth: 12 } } } } }));
+  // POR SEMANA
+  const semanas = [...new Set(filas.map(f => f.semana))].sort().reverse();
+  let h = '<tr><th>Semana del</th>' + grupos.map(g => `<th>${g}</th>`).join('') + '<th>TODAS</th></tr>';
+  for (const se of semanas) h += `<tr><td>${se.slice(8)}/${se.slice(5, 7)}</td>` + grupos.map(g => celda(filas.filter(f => f.semana === se && f.grupo === g))).join('')
+    + celda(todas.filter(s => s.semana === se)) + '</tr>';
+  document.getElementById('semanas').innerHTML = h;
+  // POR DIA DE LA SEMANA
+  h = '<tr><th>Día</th>' + grupos.map(g => `<th>${g}</th>`).join('') + '<th>TODAS</th></tr>';
+  DIAS.forEach((d, i) => { h += `<tr><td>${d}</td>` + grupos.map(g => celda(filas.filter(f => f.dia_semana === i && f.grupo === g))).join('')
+    + celda(todas.filter(s => s.dia_semana === i)) + '</tr>'; });
+  document.getElementById('dias').innerHTML = h;
+  // DIA POR DIA
+  h = '<tr><th>Fecha</th><th>Activo</th><th>Señal</th><th>Lado</th><th>Resultado</th><th>Máximo</th><th style="text-align:left">Detalle</th></tr>';
+  for (const s of [...todas].reverse()) {
+    const d = new Date(s.fecha + 'T12:00:00');
+    h += `<tr><td>${DIAS[s.dia_semana] || ''} ${s.fecha.slice(8)}/${s.fecha.slice(5, 7)}</td><td>${(s.activos || [s.activo]).length > 1 ? s.activo + ' → se opera en SPX' : s.activo}</td><td style="text-align:left">${s.senal}${s.historico ? ' <span class="n" title="' + (s.fuente || '') + '">· historial</span>' : ''}</td><td>${s.lado}</td>`
+      + `<td class="${s.resultado === 'G' ? 'g' : s.resultado === 'P' ? 'p' : 'n'}">${s.resultado === 'G' ? '✅ ganada' : s.resultado === 'P' ? '❌ perdida' : 'pendiente'}</td>`
+      + `<td>${fmtMax(s)}</td><td style="text-align:left" class="tenue">${s.detalle || ''}</td></tr>`;
+  }
+  document.getElementById('detalle').innerHTML = h;
+}
+/* LA CURVA EN UNA PESTAÑA (20/10, pedido: "mete la curva en una pestaña a la derecha del panel"): Círculos | Curva. */
+let panel = 'circulos';
+document.querySelectorAll('.pestanas button').forEach(b => b.onclick = () => {
+  panel = b.dataset.p;
+  document.querySelectorAll('.pestanas button').forEach(x => x.classList.toggle('on', x === b));
+  document.getElementById('p_circulos').hidden = panel !== 'circulos';
+  document.getElementById('p_curva').hidden = panel !== 'curva';
+  document.getElementById('p_detalle').hidden = panel !== 'detalle';   // 20/10: "dia por dia en otra pestaña a la derecha"
+  document.getElementById('titulo_panel').textContent = panel === 'curva'
+    ? 'Curva: ganadas menos perdidas, acumulado día a día' : panel === 'detalle' ? 'Día por día' : '% de ganadas por señal';
+  graficos.forEach(g => g.resize());
+});
+let ultimo = null;
+async function cargar() {
+  try { ultimo = await (await fetch('tablero_senales.json?t=' + Date.now())).json(); pintar(ultimo); }
+  catch (e) { document.getElementById('actualizado').textContent = 'no se pudo leer tablero_senales.json'; }
+}
+document.getElementById('amigo').onchange = () => ultimo && pintar(ultimo);
+/* EL HISTORIAL (20/10): prendido suma los dias medidos hacia atras; se recuerda en este navegador. */
+try { document.getElementById('historial').checked = localStorage.getItem('tablero_historial') === '1'; } catch (e) { /* sin almacenamiento */ }
+document.getElementById('historial').onchange = (e) => {
+  try { localStorage.setItem('tablero_historial', e.target.checked ? '1' : '0'); } catch (x) { /* idem */ }
+  if (ultimo) pintar(ultimo);
+};
+cargar(); setInterval(cargar, 5 * 60 * 1000);
+</script></body></html>
