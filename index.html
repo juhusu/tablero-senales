@@ -36,10 +36,14 @@ table.grilla th { border:none; color:#C9D1D9; font-size:13px; font-weight:600; p
 table.grilla td { border:none; padding:0; }
 table.grilla td.nom { text-align:right; padding-right:8px; color:#E5E7EB; font-size:13px; white-space:nowrap; }
 table.grilla tr.total td.nom { font-weight:700; }
-.cuad { width:62px; height:46px; border-radius:8px; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#fff; }
+.cuad { width:72px; height:62px; border-radius:8px; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#fff; }
 .cuad b { font-size:17px; line-height:1.1; } .cuad span { font-size:10.5px; opacity:.92; white-space:nowrap; } .cuad span { font-size:11px; opacity:.85; }
 .cuad.nada { background:#161B22; color:#4B5563; font-size:16px; }
 .hora { color:#93C5FD; font-weight:600; margin-left:4px; }
+.cuad .ex { display:flex; flex-direction:column; align-items:center; margin-top:2px; background:rgba(0,0,0,.42); border-radius:5px;
+  padding:1px 5px; font-style:normal; line-height:1.15; }
+.cuad .ex em { font-style:normal; font-size:10.5px; font-weight:700; }
+.cuad .ex .sube { color:#4ADE80; } .cuad .ex .baja { color:#F87171; }
 .cuad.clic { cursor:pointer; } .cuad.clic:hover { outline:2px solid #fff; }
 #detalle_caja { position:fixed; inset:0; background:rgba(0,0,0,.6); display:flex; align-items:center; justify-content:center; z-index:50; padding:16px; }
 #detalle_caja[hidden] { display:none; }
@@ -93,7 +97,7 @@ label { color:var(--tenue); font-size:13px; }
 <div id="p_dias" hidden><div class="wrap"><table id="dias" class="grilla"></table></div></div>
 <div id="detalle_caja" hidden><div class="det"><div class="det_cab"><b id="det_titulo"></b><button id="det_cerrar">✕</button></div>
 <div class="wrap" style="margin:0"><table id="det_tabla"></table></div></div></div>
-<div class="escala"><span>no se dio ninguna</span><i></i><span>se dieron todas</span><span style="margin-left:14px">▲ cuánto llegó a ganar la opción · ▼ cuánto llegó a perder (una señal típica) · clic en un cuadrito para ver cada una</span></div>
+<div class="escala"><span>no se dio ninguna</span><i></i><span>se dieron todas</span><span style="margin-left:14px"><b style="color:#4ADE80">verde</b> cuánto llegó a ganar la opción · <b style="color:#F87171">rojo</b> cuánto llegó a perder (una señal típica) · clic en un cuadrito para ver cada una</span></div>
 <div id="p_curva" hidden><div class="panel"><div id="curva"><canvas id="cv"></canvas></div></div></div>
 <div id="p_detalle" hidden><div class="wrap"><table id="detalle"></table></div></div>
 
@@ -146,7 +150,10 @@ function cuadrito(xs) {
   const enOpc = xs.filter(x => x.unidad === 'opción');          // solo las que se miden en la opcion
   const mx = medio(enOpc.map(x => x.maximo).filter(v => v !== null && v !== undefined));
   const mn = medio(enOpc.map(x => x.minimo).filter(v => v !== null && v !== undefined));
-  const extremos = (mx === null && mn === null) ? '' : `<span>${mx === null ? '' : '▲' + Math.round(mx)}${mn === null ? '' : ' ▼' + Math.round(Math.abs(mn))}</span>`;
+  // Como en el detalle: +12.9% en verde y -60.5% en rojo, sin flechitas (20/10, pedido con captura).
+  const num1 = (v) => (v > 0 ? '+' : '') + v.toFixed(1) + '%';
+  const extremos = (mx === null && mn === null) ? ''
+    : `<i class="ex">${mx === null ? '' : `<em class="sube">${num1(mx)}</em>`}${mn === null ? '' : `<em class="baja">${num1(mn)}</em>`}</i>`;
   return `<td><div class="cuad clic" data-k="${k}" style="background:${colorPct(p)}" title="se dieron ${c.g} de ${tot} señales · clic para ver cada una">`
     + `<b>${c.g}/${tot}</b>${extremos}</div></td>`;
 }
@@ -155,10 +162,10 @@ function abrirDetalle(k) {
   const pc = (v, signo) => v === null || v === undefined ? '<span class="n">—</span>'
     : `<span class="${v >= 0 ? 'g' : 'p'}">${signo}${v > 0 ? '+' : ''}${v.toFixed(1)}%</span>`;
   document.getElementById('det_titulo').textContent = [...new Set(xs.map(x => x.senal.replace(' GANADOR', '')))].join(' · ');
-  document.getElementById('det_tabla').innerHTML = '<tr><th>Día</th><th>Señal</th><th>Lado</th><th></th><th>▲ máximo</th><th>▼ mínimo</th><th style="text-align:left">Detalle</th></tr>'
+  document.getElementById('det_tabla').innerHTML = '<tr><th>Día</th><th>Señal</th><th>Lado</th><th></th><th>Máximo</th><th>Mínimo</th><th style="text-align:left">Detalle</th></tr>'
     + xs.map(x => `<tr><td>${(DIAS[x.dia_semana] || '').slice(0, 3)} ${x.fecha.slice(8)}/${x.fecha.slice(5, 7)} <b class="hora">${horaDe(x)}</b></td><td style="text-align:left">${x.senal}${x.historico ? ' <span class="n">· historial</span>' : ''}</td>`
       + `<td>${x.lado}</td><td>${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : '…'}</td>`
-      + `<td>${pc(x.maximo, '▲')}${x.unidad && x.unidad !== 'opción' && x.maximo !== null ? ' <span class="n">' + x.unidad + '</span>' : ''}</td><td>${pc(x.minimo, '▼')}</td>`
+      + `<td>${pc(x.maximo, '')}${x.unidad && x.unidad !== 'opción' && x.maximo !== null ? ' <span class="n">' + x.unidad + '</span>' : ''}</td><td>${pc(x.minimo, '')}</td>`
       + `<td style="text-align:left" class="tenue">${sinHora(x)}</td></tr>`).join('');
   document.getElementById('detalle_caja').hidden = false;
 }
