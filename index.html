@@ -3,7 +3,7 @@
 <title>Tablero de señales</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
-:root { --fondo:#0B0E13; --panel:#12161D; --borde:#232A35; --texto:#E5E7EB; --tenue:#8B95A5; --verde:#22C55E; --rojo:#EF4444; --gris:#4B5563; }
+:root { color-scheme:dark; --fondo:#0B0E13; --panel:#12161D; --borde:#232A35; --texto:#E5E7EB; --tenue:#8B95A5; --verde:#22C55E; --rojo:#EF4444; --gris:#4B5563; }
 * { box-sizing:border-box; }
 body { margin:0; background:var(--fondo); color:var(--texto); font:14px -apple-system,system-ui,sans-serif; }
 header { display:flex; flex-wrap:wrap; gap:12px; align-items:baseline; padding:14px 16px; border-bottom:1px solid var(--borde); }
@@ -40,6 +40,14 @@ table.grilla tr.total td.nom { font-weight:700; }
 .cuad b { font-size:17px; line-height:1.1; } .cuad span { font-size:10.5px; opacity:.92; white-space:nowrap; } .cuad span { font-size:11px; opacity:.85; }
 .cuad.nada { background:#161B22; color:#4B5563; font-size:16px; }
 .hora { color:#93C5FD; font-weight:600; margin-left:4px; }
+.circ[data-grupo] { cursor:pointer; } .circ[data-grupo]:hover { border-color:#60A5FA; }
+.det { max-width:1250px !important; }
+.det_cab { align-items:flex-start !important; }
+.resumen { display:flex; flex-wrap:wrap; gap:6px 18px; font-size:13.5px; font-weight:400; color:#C9D1D9; margin-top:6px; }
+#det_tabla { font:13px -apple-system,system-ui,sans-serif; }
+#det_tabla th { white-space:normal; font-size:12px; color:#C9D1D9; }
+#det_tabla td { padding:6px 9px; }
+#det_tabla tr.fila-g td:first-child { box-shadow:inset 3px 0 #22C55E; } #det_tabla tr.fila-p td:first-child { box-shadow:inset 3px 0 #EF4444; }
 /* Sin franja oscura detras (20/10, pedido: "no me gusta la sombra detras de los numeros"): verde y rojo claros. */
 .cuad .ex { display:flex; flex-direction:column; align-items:center; margin-top:2px; font-style:normal; line-height:1.2; }
 .cuad .ex em { font-style:normal; font-size:11px; font-weight:800; }
@@ -157,20 +165,57 @@ function cuadrito(xs) {
   return `<td><div class="cuad clic" data-k="${k}" style="background:${colorPct(p)}" title="se dieron ${c.g} de ${tot} señales · clic para ver cada una">`
     + `<b>${c.g}/${tot}</b>${extremos}</div></td>`;
 }
-function abrirDetalle(k) {
-  const xs = [...CELDAS[k]].sort((a, b) => a.fecha < b.fecha ? 1 : -1);
-  const pc = (v, signo) => v === null || v === undefined ? '<span class="n">—</span>'
-    : `<span class="${v >= 0 ? 'g' : 'p'}">${signo}${v > 0 ? '+' : ''}${v.toFixed(1)}%</span>`;
-  document.getElementById('det_titulo').textContent = [...new Set(xs.map(x => x.senal.replace(' GANADOR', '')))].join(' · ');
-  document.getElementById('det_tabla').innerHTML = '<tr><th>Día</th><th>Señal</th><th>Lado</th><th></th><th>Máximo</th><th>Mínimo</th><th style="text-align:left">Detalle</th></tr>'
-    + xs.map(x => `<tr><td>${(DIAS[x.dia_semana] || '').slice(0, 3)} ${x.fecha.slice(8)}/${x.fecha.slice(5, 7)} <b class="hora">${horaDe(x)}</b></td><td style="text-align:left">${x.senal}${x.historico ? ' <span class="n">· historial</span>' : ''}</td>`
-      + `<td>${x.lado}</td><td>${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : '…'}</td>`
-      + `<td>${pc(x.maximo, '')}${x.unidad && x.unidad !== 'opción' && x.maximo !== null ? ' <span class="n">' + x.unidad + '</span>' : ''}</td><td>${pc(x.minimo, '')}</td>`
-      + `<td style="text-align:left" class="tenue">${sinHora(x)}</td></tr>`).join('');
+/* LA LISTA DESTACADA (20/10, pedido: "al hacer click en el centro, desplegar una lista destacada de todas las señales,
+   hora, porcentaje maximo de la opcion, cuanto se fue en contra al llegar a su maximo, y todo lo que puedas poner").
+   La usan el clic en un circulo (todas las de esa señal) y el clic en un cuadrito (las de esa casilla). */
+let FILAS_ACTUALES = [];
+/* Los dolares del maximo, por 1 contrato de XSP (lo que opera el usuario). Las viejas del Heikin se midieron en la
+   opcion del SPX (strike > 2000), 10 veces mas grande: se divide por 10. */
+function dolares(x) {
+  if (!x.entrada || x.maximo === null || x.maximo === undefined || x.unidad !== 'opción') return '—';
+  const usd = x.entrada * x.maximo / (x.strike > 2000 ? 10 : 1);
+  return `<span class="${usd >= 0 ? 'g' : 'p'}" title="por 1 contrato de XSP${x.strike > 2000 ? ' (medido en el SPX, dividido 10)' : ''}">${usd >= 0 ? '+' : '−'}$${Math.abs(usd).toFixed(0)}</span>`;
+}
+function fuenteCorta(x) {
+  const f = x.fuente || '';
+  if (f.includes('Schwab congelado')) return 'Tastytrade';
+  if (f.includes('5 min')) return 'Tastytrade 5 min';
+  if (f.includes('15 s')) return 'Schwab 15 s';
+  if (f.includes('Tastytrade en vivo')) return 'Tastytrade + Schwab';
+  return x.unidad === 'opción' ? f : 'GAP del día siguiente';
+}
+function abrirDetalle(k) { mostrarLista(CELDAS[k]); }
+function abrirLista(gr) { mostrarLista(FILAS_ACTUALES.filter(f => f.grupo === gr)); }
+function mostrarLista(lista) {
+  const xs = [...lista].sort((a, b) => a.fecha < b.fecha ? 1 : a.fecha > b.fecha ? -1 : 0);
+  const pc = (v) => v === null || v === undefined ? '<span class="n">—</span>'
+    : `<span class="${v >= 0 ? 'g' : 'p'}">${v > 0 ? '+' : ''}${v.toFixed(1)}%</span>`;
+  const c = cuenta(xs), tot = c.g + c.p;
+  const opc = xs.filter(x => x.unidad === 'opción');
+  const med = (k) => medio(opc.map(x => x[k]).filter(v => v !== null && v !== undefined));
+  const mMax = med('maximo'), mCon = med('contra'), mMin = med('minutos');
+  document.getElementById('det_titulo').innerHTML = [...new Set(xs.map(x => x.senal.replace(' GANADOR', '')))].join(' · ')
+    + `<div class="resumen"><span><b>${tot ? Math.round(100 * c.g / tot) + '%' : '—'}</b> aciertos (${c.g} de ${tot}${c.n ? ', ' + c.n + ' por ver' : ''})</span>`
+    + (mMax === null ? '' : `<span>máximo típico <b class="g">${mMax > 0 ? '+' : ''}${mMax.toFixed(1)}%</b></span>`)
+    + (mCon === null ? '' : `<span>en contra antes del máximo, típico <b class="p">${mCon.toFixed(1)}%</b></span>`)
+    + (mMin === null ? '' : `<span>llega al máximo en <b>${Math.round(mMin)} min</b> (típico)</span>`) + '</div>';
+  document.getElementById('det_tabla').innerHTML = '<tr><th>Día</th><th>Hora</th><th>Lado</th><th>Strike</th><th>Entrada</th><th></th>'
+    + '<th>Máximo</th><th>$ por contrato XSP</th><th>Tardó</th><th>En contra antes del máximo</th><th>Mínimo (30 min)</th><th style="text-align:left">Datos</th></tr>'
+    + xs.map(x => `<tr class="${x.resultado === 'G' ? 'fila-g' : x.resultado === 'P' ? 'fila-p' : ''}">`
+      + `<td>${(DIAS[x.dia_semana] || '').slice(0, 3)} ${x.fecha.slice(8)}/${x.fecha.slice(5, 7)}${x.historico ? ' <span class="n">· hist.</span>' : ''}</td>`
+      + `<td><b class="hora">${horaDe(x)}</b></td><td>${x.lado}</td><td>${x.strike === undefined || x.strike === null ? '—' : x.strike > 2000 ? x.strike + ' <span class="n">SPX</span>' : x.strike}</td>`
+      + `<td>${x.entrada !== undefined && x.entrada !== null ? '$' + Number(x.entrada).toFixed(2) : '—'}</td>`
+      + `<td>${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : '…'}</td>`
+      + `<td>${pc(x.maximo)}${x.unidad && x.unidad !== 'opción' && x.maximo !== null ? ' <span class="n">' + x.unidad + '</span>' : ''}</td>`
+      + `<td>${dolares(x)}</td>`
+      + `<td>${x.minutos !== undefined && x.minutos !== null ? Math.round(x.minutos) + ' min' : '—'}</td>`
+      + `<td>${pc(x.contra)}</td><td>${pc(x.minimo)}</td>`
+      + `<td style="text-align:left" class="tenue" title="${x.fuente || ''}">${fuenteCorta(x)}</td></tr>`).join('');
   document.getElementById('detalle_caja').hidden = false;
 }
 document.addEventListener('click', (e) => {
   const c = e.target.closest('.cuad.clic'); if (c) { abrirDetalle(Number(c.dataset.k)); return; }
+  const ci = e.target.closest('.circ[data-grupo]'); if (ci) { abrirLista(ci.dataset.grupo); return; }
   if (e.target.id === 'detalle_caja' || e.target.id === 'det_cerrar') document.getElementById('detalle_caja').hidden = true;
 });
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') document.getElementById('detalle_caja').hidden = true; });
@@ -198,6 +243,7 @@ function pintar(D) {
   for (const s of todas) { filas.push({ ...s, grupo: base(s.senal) });
     if (s.senal.includes('GANADOR')) filas.push({ ...s, grupo: 'GAP continuación (solo GANADOR)' }); }
   const grupos = [...new Set(filas.map(f => f.grupo))].sort();
+  FILAS_ACTUALES = filas;
   document.getElementById('actualizado').textContent = 'actualizado ' + D.actualizado;
   // CIRCULOS
   const cc = document.getElementById('circulos'); cc.innerHTML = '';
@@ -209,8 +255,9 @@ function pintar(D) {
     const mx = mediana(fg.map(f => f.maximo).filter(x => x !== null && x !== undefined)); const u = fg[0] && fg[0].unidad;
     const pct = tot ? Math.round(100 * c.g / tot) : null;
     const div = document.createElement('div'); div.className = 'circ';
-    div.title = pct === null ? '' : `se dieron ${c.g} de ${tot} señales`;
-    div.innerHTML = `<h3>${gr}</h3><div class="caja"><canvas></canvas><div class="pct"><b class="${pct === null ? 'n' : pct >= 50 ? 'g' : 'p'}">${pct === null ? '—' : c.g + '/' + tot}</b><span>${pct === null ? '' : 'se dieron'}${c.n ? (pct === null ? '' : ' · ') + c.n + ' por ver' : ''}</span></div></div>`
+    div.title = 'clic para ver todas las señales';
+    div.dataset.grupo = gr;
+    div.innerHTML = `<h3>${gr}</h3><div class="caja"><canvas></canvas><div class="pct"><b class="${pct === null ? 'n' : pct >= 50 ? 'g' : 'p'}">${pct === null ? '—' : pct + '%'}</b><span>${pct === null ? '' : c.g + ' de ' + tot}${c.n ? (pct === null ? '' : ' · ') + c.n + ' por ver' : ''}</span></div></div>`
       + `<div class="max">${mx === null ? '' : 'máx. típico ' + (mx > 0 ? '+' : '') + mx.toFixed(1) + '%' + (u === 'opción' ? '' : u === 'SPY' ? ' SPY' : ' GAP')}</div>`;
     cc.appendChild(div);
     graficos.push(new Chart(div.querySelector('canvas'), { type: 'doughnut',

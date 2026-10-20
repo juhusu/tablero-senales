@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-20 17:27",
+ "actualizado": "2026-10-20 17:28",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -5135,6 +5135,23 @@
   },
   {
    "fecha": "2026-10-19",
+   "senal": "QQQ / VWAP",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "10:10",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": null,
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-10-19",
    "senal": "Rebote al cierre",
    "lado": "CALL",
    "resultado": "P",
@@ -5263,6 +5280,23 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-10-20",
+   "senal": "QQQ / VWAP",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "09:46",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": null,
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
    ],
    "semana": "2026-10-19",
    "dia_semana": 1
