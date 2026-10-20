@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-20 10:45",
+ "actualizado": "2026-10-20 12:05",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -4184,6 +4184,23 @@
   },
   {
    "fecha": "2026-10-20",
+   "senal": "Heikin Ashi PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "11:20 · PUT 772 al ask 1.06",
+   "maximo": 51.9,
+   "unidad": "opción",
+   "minimo": -13.2,
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-10-20",
    "senal": "Opening Eyes (motor) SPX",
    "lado": "CALL",
    "resultado": "G",
@@ -4210,6 +4227,23 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-10-20",
+   "senal": "Toque Magnífico",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "09:46 · 6 grandes · PUT 768 al ask 1.57",
+   "maximo": 0.0,
+   "unidad": "opción",
+   "minimo": -79.0,
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
    ],
    "semana": "2026-10-19",
    "dia_semana": 1
