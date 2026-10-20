@@ -43,7 +43,25 @@ table.grilla tr.total td.nom { font-weight:700; }
 .cuad b { font-size:17px; line-height:1.1; } .cuad span { font-size:10.5px; opacity:.92; white-space:nowrap; } .cuad span { font-size:11px; opacity:.85; }
 .cuad.nada { background:#161B22; color:#4B5563; font-size:16px; }
 .hora { color:#93C5FD; font-weight:600; margin-left:4px; }
-.circ[data-grupo] { cursor:pointer; } .circ[data-grupo]:hover { border-color:#60A5FA; }
+.circ[data-grupo] { cursor:pointer; }
+#det_ctrl { display:flex; flex-wrap:wrap; align-items:center; gap:8px 14px; margin:2px 0 10px; font-size:13px; color:#C9D1D9; }
+#det_ctrl select { background:#0B0E13; color:#E5E7EB; border:1px solid var(--borde); border-radius:6px; padding:4px 6px; font:inherit; }
+#det_ctrl .chip { background:#1B2333; color:#E5E7EB; border:1px solid #60A5FA; border-radius:12px; padding:3px 10px; cursor:pointer; font:inherit; }
+.det_tabs button { background:var(--fondo); color:var(--tenue); border:1px solid var(--borde); padding:5px 12px; cursor:pointer; font:inherit; font-size:13.5px; }
+.det_tabs button:first-child { border-radius:7px 0 0 7px; } .det_tabs button:last-child { border-radius:0 7px 7px 0; border-left:none; }
+.det_tabs button.on { color:var(--texto); background:#1B2333; border-color:#60A5FA; }
+.cal_meses { display:flex; gap:18px; overflow-x:auto; padding-bottom:6px; }
+.cal_mes { flex:none; }
+.cal_tit { font-weight:700; margin-bottom:6px; text-transform:capitalize; color:#E5E7EB; }
+.cal_grid { display:grid; grid-template-columns:repeat(5, 52px); gap:4px; }
+.cal_h { text-align:center; font-size:11px; color:var(--tenue); }
+.cal_d { height:46px; border-radius:7px; position:relative; display:flex; align-items:flex-end; justify-content:center; padding-bottom:4px; }
+.cal_d.vacio { background:none; }
+.cal_d.con { cursor:pointer; } .cal_d.con:hover { outline:2px solid #fff; }
+.cal_n { position:absolute; top:3px; left:5px; font-size:10px; color:rgba(255,255,255,.65); }
+.cal_gp { display:flex; gap:6px; font-size:13px; }
+.cg { color:#BBF7D0; } .cp { color:#FECDD3; }
+.cal_ley { margin-top:10px; font-size:12.5px; color:var(--tenue); } .circ[data-grupo]:hover { border-color:#60A5FA; }
 .det { max-width:1250px !important; }
 .det_cab { align-items:flex-start !important; }
 .resumen { display:flex; flex-wrap:wrap; gap:6px 18px; font-size:13.5px; font-weight:400; color:#C9D1D9; margin-top:6px; }
@@ -108,7 +126,9 @@ label { color:var(--tenue); font-size:13px; }
 <div id="p_semanas"><div class="wrap"><table id="semanas" class="grilla"></table></div></div>
 <div id="p_dias" hidden><div class="wrap"><table id="dias" class="grilla"></table></div></div>
 <div id="detalle_caja" hidden><div class="det"><div class="det_cab"><b id="det_titulo"></b><button id="det_cerrar">✕</button></div>
-<div class="wrap" style="margin:0"><table id="det_tabla"></table></div></div></div>
+<div id="det_ctrl"></div>
+<div id="det_lista"><div class="wrap" style="margin:0"><table id="det_tabla"></table></div></div>
+<div id="det_cal" hidden></div></div></div>
 <div class="escala"><span>no se dio ninguna</span><i></i><span>se dieron todas</span><span style="margin-left:14px"><b style="color:#4ADE80">verde</b> cuánto llegó a ganar la opción · <b style="color:#F87171">rojo</b> cuánto llegó a perder (una señal típica) · clic en un cuadrito para ver cada una</span></div>
 <div id="p_curva" hidden><div class="panel"><div id="curva"><canvas id="cv"></canvas></div></div></div>
 <div id="p_detalle" hidden><div class="wrap"><table id="detalle"></table></div></div>
@@ -153,9 +173,9 @@ function horaDe(x) { const m = (x.detalle || '').match(RE_HORA); return m ? m[1]
 function sinHora(x) { return (x.detalle || '').replace(RE_HORA, ''); }
 function medio(xs) { if (!xs.length) return null; const o = [...xs].sort((a, b) => a - b), k = Math.floor(o.length / 2);
   return o.length % 2 ? o[k] : (o[k - 1] + o[k]) / 2; }
-function cuadrito(xs) {
+function cuadrito(xs, estado) {
   if (!xs.length) return '<td><div class="cuad nada">·</div></td>';
-  const k = CELDAS.push(xs) - 1;
+  const k = CELDAS.push(estado || {}) - 1;
   const c = cuenta(xs), tot = c.g + c.p;
   if (!tot) return `<td><div class="cuad nada clic" data-k="${k}" title="${c.n} sin resultado todavía">…</div></td>`;
   const p = c.g / tot;
@@ -172,7 +192,7 @@ function cuadrito(xs) {
 /* LA LISTA DESTACADA (20/10, pedido: "al hacer click en el centro, desplegar una lista destacada de todas las señales,
    hora, porcentaje maximo de la opcion, cuanto se fue en contra al llegar a su maximo, y todo lo que puedas poner").
    La usan el clic en un circulo (todas las de esa señal) y el clic en un cuadrito (las de esa casilla). */
-let FILAS_ACTUALES = [];
+let FILAS_ACTUALES = [], TODAS_ACTUALES = [];
 /* Los dolares del maximo, por 1 contrato de XSP (lo que opera el usuario). Las viejas del Heikin se midieron en la
    opcion del SPX (strike > 2000), 10 veces mas grande: se divide por 10. */
 function dolares(x) {
@@ -188,26 +208,73 @@ function fuenteCorta(x) {
   if (f.includes('Tastytrade en vivo')) return 'Tastytrade + Schwab';
   return x.unidad === 'opción' ? f : 'GAP del día siguiente';
 }
-function abrirDetalle(k) { mostrarLista(CELDAS[k]); }
-function abrirLista(gr) { mostrarLista(FILAS_ACTUALES.filter(f => f.grupo === gr)); }
-function mostrarLista(lista) {
-  const xs = [...lista].sort((a, b) => a.fecha < b.fecha ? 1 : a.fecha > b.fecha ? -1 : 0);
-  const pc = (v) => v === null || v === undefined ? '<span class="n">—</span>'
-    : `<span class="${v >= 0 ? 'g' : 'p'}">${v > 0 ? '+' : ''}${v.toFixed(1)}%</span>`;
+/* LA VENTANA DE LAS SEÑALES (20/10, pedido con captura: "a esta ventana le puedes añadir un filtro por semana, por dias
+   de semana, por estrategia ... y una pestaña mas con un calendario ... un mapa de calor, cuantas se ganaron y cuantas se
+   perdieron ese mismo dia"). Filtros: señal, semana, dia de la semana (y un dia puntual al tocar el calendario).
+   Pestañas: Lista y 📅 Calendario. */
+let MODAL = { grupo: 'Todas', semana: 'Todas', dia: 'Todos', fecha: null, vista: 'lista' };
+function abrirDetalle(k) { abrirModal(CELDAS[k]); }
+function abrirLista(gr) { abrirModal({ grupo: gr }); }
+function abrirModal(est) {
+  MODAL = { grupo: 'Todas', semana: 'Todas', dia: 'Todos', fecha: null, vista: MODAL.vista || 'lista', ...est };
+  document.getElementById('detalle_caja').hidden = false;
+  pintarModal();
+}
+function baseModal() {
+  // "Todas": cada señal una vez (sin repetir el GAP GANADOR); una señal puntual: las de ese grupo.
+  let xs = MODAL.grupo === 'Todas' ? TODAS_ACTUALES.map(x => ({ ...x, grupo: base(x.senal) }))
+    : FILAS_ACTUALES.filter(f => f.grupo === MODAL.grupo);
+  if (MODAL.semana !== 'Todas') xs = xs.filter(x => x.semana === MODAL.semana);
+  if (MODAL.dia !== 'Todos') xs = xs.filter(x => x.dia_semana === Number(MODAL.dia));
+  return xs;
+}
+function pintarModal() {
+  const grupos = [...new Set(FILAS_ACTUALES.map(f => f.grupo))].sort();
+  const semanas = [...new Set(FILAS_ACTUALES.map(f => f.semana))].sort().reverse();
+  const opt = (v, t, sel) => `<option value="${v}"${String(v) === String(sel) ? ' selected' : ''}>${t}</option>`;
+  document.getElementById('det_ctrl').innerHTML =
+    `<span class="det_tabs"><button data-v="lista" class="${MODAL.vista === 'lista' ? 'on' : ''}">☰ Lista</button>`
+    + `<button data-v="calendario" class="${MODAL.vista === 'calendario' ? 'on' : ''}">📅 Calendario</button></span>`
+    + `<label>Señal <select id="f_grupo">${opt('Todas', 'Todas', MODAL.grupo)}${grupos.map(g => opt(g, g, MODAL.grupo)).join('')}</select></label>`
+    + `<label>Semana <select id="f_semana">${opt('Todas', 'Todas', MODAL.semana)}${semanas.map(se => opt(se, 'del lunes ' + se.slice(8) + '/' + se.slice(5, 7), MODAL.semana)).join('')}</select></label>`
+    + `<label>Día <select id="f_dia">${opt('Todos', 'Todos', MODAL.dia)}${DIAS.map((d, i) => opt(i, d, MODAL.dia)).join('')}</select></label>`
+    + (MODAL.fecha ? `<button id="f_fecha" class="chip">${MODAL.fecha.slice(8)}/${MODAL.fecha.slice(5, 7)} ✕</button>` : '');
+  document.querySelectorAll('.det_tabs button').forEach(b => b.onclick = () => { MODAL.vista = b.dataset.v; pintarModal(); });
+  document.getElementById('f_grupo').onchange = (e) => { MODAL.grupo = e.target.value; pintarModal(); };
+  document.getElementById('f_semana').onchange = (e) => { MODAL.semana = e.target.value; pintarModal(); };
+  document.getElementById('f_dia').onchange = (e) => { MODAL.dia = e.target.value; pintarModal(); };
+  if (MODAL.fecha) document.getElementById('f_fecha').onclick = () => { MODAL.fecha = null; pintarModal(); };
+  const xs = baseModal();
+  const enLista = MODAL.fecha ? xs.filter(x => x.fecha === MODAL.fecha) : xs;
+  pintarResumen(MODAL.vista === 'lista' ? enLista : xs);
+  document.getElementById('det_lista').hidden = MODAL.vista !== 'lista';
+  document.getElementById('det_cal').hidden = MODAL.vista !== 'calendario';
+  if (MODAL.vista === 'lista') mostrarLista(enLista); else pintarCalendario(xs);
+}
+function pintarResumen(xs) {
   const c = cuenta(xs), tot = c.g + c.p;
   const opc = xs.filter(x => x.unidad === 'opción');
   const med = (k) => medio(opc.map(x => x[k]).filter(v => v !== null && v !== undefined));
   const mMax = med('maximo'), mCon = med('contra'), mMin = med('minutos');
-  document.getElementById('det_titulo').innerHTML = [...new Set(xs.map(x => x.senal.replace(' GANADOR', '')))].join(' · ')
+  document.getElementById('det_titulo').innerHTML = (MODAL.grupo === 'Todas' ? 'Todas las señales' : MODAL.grupo)
     + `<div class="resumen"><span><b>${tot ? Math.round(100 * c.g / tot) + '%' : '—'}</b> aciertos (${c.g} de ${tot}${c.n ? ', ' + c.n + ' por ver' : ''})</span>`
     + (mMax === null ? '' : `<span>máximo típico <b class="g">${mMax > 0 ? '+' : ''}${mMax.toFixed(1)}%</b></span>`)
     + (mCon === null ? '' : `<span>en contra antes del máximo, típico <b class="p">${mCon.toFixed(1)}%</b></span>`)
     + (mMin === null ? '' : `<span>llega al máximo en <b>${Math.round(mMin)} min</b> (típico)</span>`) + '</div>';
-  document.getElementById('det_tabla').innerHTML = '<tr><th>Día</th><th>Hora</th><th>Lado</th><th>Strike</th><th>Entrada</th><th></th>'
+}
+function mostrarLista(lista) {
+  const xs = [...lista].sort((a, b) => a.fecha < b.fecha ? 1 : a.fecha > b.fecha ? -1 : 0);
+  const pc = (v) => v === null || v === undefined ? '<span class="n">—</span>'
+    : `<span class="${v >= 0 ? 'g' : 'p'}">${v > 0 ? '+' : ''}${v.toFixed(1)}%</span>`;
+  const varias = new Set(xs.map(x => x.grupo)).size > 1;
+  document.getElementById('det_tabla').innerHTML = '<tr><th>Día</th><th>Hora</th>' + (varias ? '<th style="text-align:left">Señal</th>' : '')
+    + '<th>Lado</th><th>Strike</th><th>Entrada</th><th></th>'
     + '<th>Máximo</th><th>$ por contrato XSP</th><th>Tardó</th><th>En contra antes del máximo</th><th>Mínimo (30 min)</th><th style="text-align:left">Datos</th></tr>'
+    + (xs.length ? '' : '<tr><td colspan="13" class="n" style="text-align:center;padding:18px">sin señales con estos filtros</td></tr>')
     + xs.map(x => `<tr class="${x.resultado === 'G' ? 'fila-g' : x.resultado === 'P' ? 'fila-p' : ''}">`
       + `<td>${(DIAS[x.dia_semana] || '').slice(0, 3)} ${x.fecha.slice(8)}/${x.fecha.slice(5, 7)}${x.historico ? ' <span class="n">· hist.</span>' : ''}</td>`
-      + `<td><b class="hora">${horaDe(x)}</b></td><td>${x.lado}</td><td>${x.strike === undefined || x.strike === null ? '—' : x.strike > 2000 ? x.strike + ' <span class="n">SPX</span>' : x.strike}</td>`
+      + `<td><b class="hora">${horaDe(x)}</b></td>` + (varias ? `<td style="text-align:left">${x.senal}</td>` : '')
+      + `<td>${x.lado}</td><td>${x.strike === undefined || x.strike === null ? '—' : x.strike > 2000 ? x.strike + ' <span class="n">SPX</span>' : x.strike}</td>`
       + `<td>${x.entrada !== undefined && x.entrada !== null ? '$' + Number(x.entrada).toFixed(2) : '—'}</td>`
       + `<td>${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : '…'}</td>`
       + `<td>${pc(x.maximo)}${x.unidad && x.unidad !== 'opción' && x.maximo !== null ? ' <span class="n">' + x.unidad + '</span>' : ''}</td>`
@@ -215,7 +282,41 @@ function mostrarLista(lista) {
       + `<td>${x.minutos !== undefined && x.minutos !== null ? Math.round(x.minutos) + ' min' : '—'}</td>`
       + `<td>${pc(x.contra)}</td><td>${pc(x.minimo)}</td>`
       + `<td style="text-align:left" class="tenue" title="${x.fuente || ''}">${fuenteCorta(x)}</td></tr>`).join('');
-  document.getElementById('detalle_caja').hidden = false;
+}
+/* EL CALENDARIO DE CALOR: un mes por bloque, de lunes a viernes; cada dia, cuantas se ganaron (verde) y cuantas se
+   perdieron (rojo), con el color segun cuantas se dieron. Tocar un dia: la lista de ese dia. */
+function pintarCalendario(xs) {
+  const porDia = {};
+  for (const x of xs) (porDia[x.fecha] = porDia[x.fecha] || []).push(x);
+  const fechas = Object.keys(porDia).sort();
+  if (!fechas.length) { document.getElementById('det_cal').innerHTML = '<p class="n" style="padding:18px">sin señales con estos filtros</p>'; return; }
+  const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+  const meses = [...new Set(fechas.map(f => f.slice(0, 7)))];
+  let h = '<div class="cal_meses">';
+  for (const ym of meses) {
+    const [y, m] = ym.split('-').map(Number);
+    const dias = new Date(y, m, 0).getDate();
+    let celdas = '';
+    const primero = new Date(y, m - 1, 1).getDay();             // 0 dom .. 6 sab
+    const huecos = primero === 0 || primero === 6 ? 0 : primero - 1;
+    for (let i = 0; i < huecos; i++) celdas += '<div class="cal_d vacio"></div>';
+    for (let d = 1; d <= dias; d++) {
+      const wd = new Date(y, m - 1, d).getDay();
+      if (wd === 0 || wd === 6) continue;
+      const f = `${ym}-${String(d).padStart(2, '0')}`;
+      const ys = porDia[f] || [];
+      const c = cuenta(ys), tot = c.g + c.p;
+      const fondo = tot ? colorPct(c.g / tot) : (ys.length ? '#1F2937' : '#11151B');
+      celdas += `<div class="cal_d${ys.length ? ' con' : ''}" ${ys.length ? `data-f="${f}"` : ''} style="background:${fondo}" title="${ys.length ? `${c.g} ganadas, ${c.p} perdidas${c.n ? ', ' + c.n + ' por ver' : ''}` : 'sin señales'}">`
+        + `<span class="cal_n">${d}</span>${ys.length ? `<span class="cal_gp"><b class="cg">✓${c.g}</b><b class="cp">✗${c.p}</b></span>` : ''}</div>`;
+    }
+    h += `<div class="cal_mes"><div class="cal_tit">${MESES[m - 1]} ${y}</div><div class="cal_grid">`
+      + ['L', 'M', 'X', 'J', 'V'].map(d => `<div class="cal_h">${d}</div>`).join('') + celdas + '</div></div>';
+  }
+  h += '</div><div class="cal_ley"><b class="cg">✓</b> ganadas · <b class="cp">✗</b> perdidas · el color del cuadrito: de rojo (perdió todas) a verde (ganó todas) · toca un día para ver sus señales</div>';
+  document.getElementById('det_cal').innerHTML = h;
+  document.querySelectorAll('.cal_d.con').forEach(d => d.onclick = () => { MODAL.fecha = d.dataset.f; MODAL.vista = 'lista'; pintarModal(); });
+  const cm = document.querySelector('.cal_meses'); cm.scrollLeft = cm.scrollWidth;
 }
 document.addEventListener('click', (e) => {
   const c = e.target.closest('.cuad.clic'); if (c) { abrirDetalle(Number(c.dataset.k)); return; }
@@ -225,8 +326,8 @@ document.addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') document.getElementById('detalle_caja').hidden = true; });
 function cuadricula(orden, cols) {
   let h = '<tr><th></th>' + cols.map(c => `<th>${c.titulo}</th>`).join('') + '</tr>';
-  for (const g of orden) h += `<tr><td class="nom">${g}</td>` + cols.map(c => cuadrito(c.de(g))).join('') + '</tr>';
-  h += '<tr class="total"><td class="nom">Todas juntas</td>' + cols.map(c => cuadrito(c.todas)).join('') + '</tr>';
+  for (const g of orden) h += `<tr><td class="nom">${g}</td>` + cols.map(c => cuadrito(c.de(g), { grupo: g, ...c.filtro })).join('') + '</tr>';
+  h += '<tr class="total"><td class="nom">Todas juntas</td>' + cols.map(c => cuadrito(c.todas, { grupo: 'Todas', ...c.filtro })).join('') + '</tr>';
   return h;
 }
 function pintar(D) {
@@ -247,7 +348,7 @@ function pintar(D) {
   for (const s of todas) { filas.push({ ...s, grupo: base(s.senal) });
     if (s.senal.includes('GANADOR')) filas.push({ ...s, grupo: 'GAP continuación (solo GANADOR)' }); }
   const grupos = [...new Set(filas.map(f => f.grupo))].sort();
-  FILAS_ACTUALES = filas;
+  FILAS_ACTUALES = filas; TODAS_ACTUALES = todas;
   document.getElementById('actualizado').textContent = 'actualizado ' + D.actualizado;
   // CIRCULOS
   const cc = document.getElementById('circulos'); cc.innerHTML = '';
@@ -289,12 +390,12 @@ function pintar(D) {
   // De la mas vieja (izquierda) a la mas nueva (derecha) (20/10, pedido: "los dias aparecen de derecha a izquierda").
   const semanas = [...new Set(filas.map(f => f.semana))].sort();
   document.getElementById('semanas').innerHTML = cuadricula(orden, semanas.map(se => ({
-    titulo: se.slice(8) + '/' + se.slice(5, 7), de: (g) => filas.filter(f => f.semana === se && f.grupo === g),
+    titulo: se.slice(8) + '/' + se.slice(5, 7), filtro: { semana: se }, de: (g) => filas.filter(f => f.semana === se && f.grupo === g),
     todas: todas.filter(x => x.semana === se) })));
   const caja = document.getElementById('semanas').parentElement;       // se abre mostrando la semana mas nueva
   requestAnimationFrame(() => { caja.scrollLeft = caja.scrollWidth; });
   document.getElementById('dias').innerHTML = cuadricula(orden, DIAS.map((d, i) => ({
-    titulo: d.slice(0, 3)[0].toUpperCase() + d.slice(1, 3), de: (g) => filas.filter(f => f.dia_semana === i && f.grupo === g),
+    titulo: d.slice(0, 3)[0].toUpperCase() + d.slice(1, 3), filtro: { dia: i }, de: (g) => filas.filter(f => f.dia_semana === i && f.grupo === g),
     todas: todas.filter(x => x.dia_semana === i) })));
   // DIA POR DIA
   h = '<tr><th>Fecha</th><th>Activo</th><th>Señal</th><th>Lado</th><th>Resultado</th><th>Máximo</th><th style="text-align:left">Detalle</th></tr>';
