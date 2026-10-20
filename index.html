@@ -18,7 +18,7 @@ h1 { font-size:18px; margin:0; } h2 { font-size:15px; margin:22px 16px 8px; colo
 .circ .pct b { font-size:18px; } .circ .pct span { font-size:9.5px; color:var(--tenue); max-width:64px; line-height:1.2; }
 .panel { background:var(--panel); border:1px solid var(--borde); border-radius:10px; margin:0 16px; padding:10px; }
 #curva { height:360px; }
-.cabeza { display:flex; align-items:center; justify-content:space-between; margin:22px 16px 8px; }
+.cabeza { display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin:22px 16px 8px; }
 .cabeza h2 { margin:0; }
 .pestanas button { background:var(--panel); color:var(--tenue); border:1px solid var(--borde); padding:5px 14px; cursor:pointer; font:inherit; }
 .pestanas button:first-child { border-radius:7px 0 0 7px; } .pestanas button:last-child { border-radius:0 7px 7px 0; }
@@ -46,17 +46,18 @@ label { color:var(--tenue); font-size:13px; }
   <span id="activos"></span>
   <span id="dias_f"></span>
 </header>
+<h2>% de ganadas por señal</h2>
+<div class="circulos" id="circulos"></div>
+<!-- LAS PESTAÑAS DEBAJO DE LOS CIRCULOS (20/10, pedido con captura: "pasa esas pestañas para el rectangulo verde"):
+     los circulos quedan siempre a la vista; las pestañas cambian lo de abajo. -->
 <div class="cabeza">
-  <h2 id="titulo_panel">% de ganadas por señal</h2>
-  <span class="pestanas"><button data-p="circulos" class="on">Círculos</button><button data-p="curva">Curva</button><button data-p="detalle">Día por día</button></span>
+  <span class="pestanas"><button data-p="semanas" class="on">Por semana</button><button data-p="dias">Por día de la semana</button><button data-p="curva">Curva</button><button data-p="detalle">Día por día</button></span>
+  <span class="tenue" id="titulo_panel">ganadas – perdidas de cada señal, por semana</span>
 </div>
-<div id="p_circulos"><div class="circulos" id="circulos"></div></div>
+<div id="p_semanas"><div class="wrap"><table id="semanas"></table></div></div>
+<div id="p_dias" hidden><div class="wrap"><table id="dias"></table></div></div>
 <div id="p_curva" hidden><div class="panel"><div id="curva"><canvas id="cv"></canvas></div></div></div>
 <div id="p_detalle" hidden><div class="wrap"><table id="detalle"></table></div></div>
-<h2>Por semana (ganadas – perdidas)</h2>
-<div class="wrap"><table id="semanas"></table></div>
-<h2>Por día de la semana (ganadas – perdidas)</h2>
-<div class="wrap"><table id="dias"></table></div>
 
 <p class="tenue" style="margin:16px">Qué es "ganada" en cada señal y de dónde sale cada número: tools/tablero_senales.py. "Máximo" = lo más que llegó a favor: en la opción (las que se miden en la opción), en el SPY (Toque Magnífico) o el tamaño del GAP siguiente (rebote y las del amigo). OJO: estos % no se comparan con el azar; en TSLA una opción del día toca +10% en 30 minutos muy seguido, entre en cualquier momento. Se actualiza solo de lunes a viernes; esta página se recarga cada 5 minutos.</p>
 <script>
@@ -147,15 +148,14 @@ function pintar(D) {
   document.getElementById('detalle').innerHTML = h;
 }
 /* LA CURVA EN UNA PESTAÑA (20/10, pedido: "mete la curva en una pestaña a la derecha del panel"): Círculos | Curva. */
-let panel = 'circulos';
+let panel = 'semanas';
+const TITULOS = { semanas: 'ganadas – perdidas de cada señal, por semana', dias: 'ganadas – perdidas de cada señal, por día de la semana',
+  curva: 'ganadas menos perdidas, acumulado día a día', detalle: 'cada señal, del día más nuevo al más viejo' };
 document.querySelectorAll('.pestanas button').forEach(b => b.onclick = () => {
   panel = b.dataset.p;
   document.querySelectorAll('.pestanas button').forEach(x => x.classList.toggle('on', x === b));
-  document.getElementById('p_circulos').hidden = panel !== 'circulos';
-  document.getElementById('p_curva').hidden = panel !== 'curva';
-  document.getElementById('p_detalle').hidden = panel !== 'detalle';   // 20/10: "dia por dia en otra pestaña a la derecha"
-  document.getElementById('titulo_panel').textContent = panel === 'curva'
-    ? 'Curva: ganadas menos perdidas, acumulado día a día' : panel === 'detalle' ? 'Día por día' : '% de ganadas por señal';
+  for (const k of Object.keys(TITULOS)) document.getElementById('p_' + k).hidden = panel !== k;
+  document.getElementById('titulo_panel').textContent = TITULOS[panel];
   graficos.forEach(g => g.resize());
 });
 let ultimo = null;
