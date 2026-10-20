@@ -40,10 +40,10 @@ table.grilla tr.total td.nom { font-weight:700; }
 .cuad b { font-size:17px; line-height:1.1; } .cuad span { font-size:10.5px; opacity:.92; white-space:nowrap; } .cuad span { font-size:11px; opacity:.85; }
 .cuad.nada { background:#161B22; color:#4B5563; font-size:16px; }
 .hora { color:#93C5FD; font-weight:600; margin-left:4px; }
-.cuad .ex { display:flex; flex-direction:column; align-items:center; margin-top:2px; background:rgba(0,0,0,.42); border-radius:5px;
-  padding:1px 5px; font-style:normal; line-height:1.15; }
-.cuad .ex em { font-style:normal; font-size:10.5px; font-weight:700; }
-.cuad .ex .sube { color:#4ADE80; } .cuad .ex .baja { color:#F87171; }
+/* Sin franja oscura detras (20/10, pedido: "no me gusta la sombra detras de los numeros"): verde y rojo claros. */
+.cuad .ex { display:flex; flex-direction:column; align-items:center; margin-top:2px; font-style:normal; line-height:1.2; }
+.cuad .ex em { font-style:normal; font-size:11px; font-weight:800; }
+.cuad .ex .sube { color:#BBF7D0; } .cuad .ex .baja { color:#FECDD3; }
 .cuad.clic { cursor:pointer; } .cuad.clic:hover { outline:2px solid #fff; }
 #detalle_caja { position:fixed; inset:0; background:rgba(0,0,0,.6); display:flex; align-items:center; justify-content:center; z-index:50; padding:16px; }
 #detalle_caja[hidden] { display:none; }
