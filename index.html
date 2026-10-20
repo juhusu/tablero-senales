@@ -184,7 +184,7 @@ function pintar(D) {
   CELDAS = [];
   graficos.forEach(g => g.destroy()); graficos = [];
   const ba = document.getElementById('activos');
-  ba.innerHTML = ['Todos', 'SPX', 'SPY', 'TSLA'].map(a => `<button class="${a === activo ? 'on' : ''}" data-a="${a}">${a}</button>`).join('');
+  ba.innerHTML = ['Todos', 'SPX', 'SPY', 'QQQ', 'TSLA'].map(a => `<button class="${a === activo ? 'on' : ''}" data-a="${a}">${a}</button>`).join('');
   ba.querySelectorAll('button').forEach(b => b.onclick = () => { activo = b.dataset.a; pintar(D); });
   const bd = document.getElementById('dias_f');
   bd.innerHTML = ['Todos', ...DIAS].map((d, i) => `<button class="${(i === 0 ? 'Todos' : i - 1) === diaSel ? 'on' : ''}" data-d="${i === 0 ? 'Todos' : i - 1}">${i === 0 ? 'Todos los días' : d.slice(0, 3)}</button>`).join('');

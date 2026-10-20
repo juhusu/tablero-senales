@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-20 12:05",
+ "actualizado": "2026-10-20 12:28",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -3289,8 +3289,9 @@
    "maximo": null,
    "unidad": "opción",
    "minimo": null,
-   "activo": "SPX",
+   "activo": "QQQ",
    "activos": [
+    "QQQ",
     "SPX"
    ],
    "semana": "2026-10-05",
@@ -3372,8 +3373,9 @@
    "maximo": null,
    "unidad": "opción",
    "minimo": null,
-   "activo": "SPX",
+   "activo": "QQQ",
    "activos": [
+    "QQQ",
     "SPX"
    ],
    "semana": "2026-10-05",
@@ -3658,8 +3660,9 @@
    "maximo": null,
    "unidad": "opción",
    "minimo": null,
-   "activo": "SPX",
+   "activo": "QQQ",
    "activos": [
+    "QQQ",
     "SPX"
    ],
    "semana": "2026-10-12",
@@ -3742,8 +3745,9 @@
    "maximo": null,
    "unidad": "opción",
    "minimo": null,
-   "activo": "SPX",
+   "activo": "QQQ",
    "activos": [
+    "QQQ",
     "SPX"
    ],
    "semana": "2026-10-12",
@@ -3909,8 +3913,9 @@
    "maximo": null,
    "unidad": "opción",
    "minimo": null,
-   "activo": "SPX",
+   "activo": "QQQ",
    "activos": [
+    "QQQ",
     "SPX"
    ],
    "semana": "2026-10-12",
@@ -4181,6 +4186,22 @@
    ],
    "semana": "2026-10-19",
    "dia_semana": 0
+  },
+  {
+   "fecha": "2026-10-20",
+   "senal": "Combo StochRSI (motor) SPX",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "12:06 · CALL 772 al ask 1.06",
+   "maximo": 12.3,
+   "unidad": "opción",
+   "minimo": -43.4,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 1
   },
   {
    "fecha": "2026-10-20",
