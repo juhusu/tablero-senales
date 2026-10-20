@@ -96,7 +96,10 @@ function pintar(D) {
   document.getElementById('actualizado').textContent = 'actualizado ' + D.actualizado;
   // CIRCULOS
   const cc = document.getElementById('circulos'); cc.innerHTML = '';
-  grupos.forEach((gr) => {
+  /* Ordenados de la que mas gana a la que menos, de izquierda a derecha (20/10, pedido: "en orden ganadoras primeras
+     a la izquierda"); con el mismo %, primero la que tiene mas casos; las que todavia no tienen resultado, al final. */
+  const pctDe = (gr) => { const c = cuenta(filas.filter(f => f.grupo === gr)); return c.g + c.p ? [c.g / (c.g + c.p), c.g + c.p] : [-1, 0]; };
+  [...grupos].sort((a, b) => { const x = pctDe(a), y = pctDe(b); return y[0] - x[0] || y[1] - x[1]; }).forEach((gr) => {
     const fg = filas.filter(f => f.grupo === gr); const c = cuenta(fg); const tot = c.g + c.p;
     const mx = mediana(fg.map(f => f.maximo).filter(x => x !== null && x !== undefined)); const u = fg[0] && fg[0].unidad;
     const pct = tot ? Math.round(100 * c.g / tot) : null;
