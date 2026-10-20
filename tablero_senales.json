@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-20 12:28",
+ "actualizado": "2026-10-20 16:20",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -4092,9 +4092,9 @@
    "fecha": "2026-10-19",
    "senal": "GAP bajista (amigo)",
    "lado": "PUT",
-   "resultado": null,
-   "detalle": "16:00 · falta la apertura siguiente",
-   "maximo": null,
+   "resultado": "G",
+   "detalle": "16:00 · GAP siguiente -0.09%",
+   "maximo": 0.1,
    "unidad": "GAP",
    "minimo": null,
    "activo": "SPX",
@@ -4175,9 +4175,9 @@
    "fecha": "2026-10-19",
    "senal": "Rectángulo (amigo)",
    "lado": "PUT",
-   "resultado": null,
-   "detalle": "16:00 · falta la apertura siguiente",
-   "maximo": null,
+   "resultado": "G",
+   "detalle": "16:00 · GAP siguiente -0.09%",
+   "maximo": 0.1,
    "unidad": "GAP",
    "minimo": null,
    "activo": "SPX",
@@ -4196,6 +4196,22 @@
    "maximo": 12.3,
    "unidad": "opción",
    "minimo": -43.4,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-10-20",
+   "senal": "GAP bajista (amigo)",
+   "lado": "PUT",
+   "resultado": null,
+   "detalle": "16:00 · falta la apertura siguiente",
+   "maximo": null,
+   "unidad": "GAP",
+   "minimo": null,
    "activo": "SPX",
    "activos": [
     "SPX"
