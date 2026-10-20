@@ -37,7 +37,7 @@ table.grilla td { border:none; padding:0; }
 table.grilla td.nom { text-align:right; padding-right:8px; color:#E5E7EB; font-size:13px; white-space:nowrap; }
 table.grilla tr.total td.nom { font-weight:700; }
 .cuad { width:62px; height:46px; border-radius:8px; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#fff; }
-.cuad b { font-size:17px; line-height:1.1; } .cuad span { font-size:11px; opacity:.85; }
+.cuad b { font-size:17px; line-height:1.1; } .cuad span { font-size:9.5px; opacity:.8; } .cuad span { font-size:11px; opacity:.85; }
 .cuad.nada { background:#161B22; color:#4B5563; font-size:16px; }
 table.grilla tr.total .cuad { outline:2px solid rgba(255,255,255,.35); }
 .escala { display:flex; align-items:center; gap:8px; margin:8px 16px; font-size:12px; color:var(--tenue); }
@@ -74,7 +74,7 @@ label { color:var(--tenue); font-size:13px; }
   <span id="activos"></span>
   <span id="dias_f"></span>
 </header>
-<h2>Aciertos de cada señal</h2>
+<h2>Cuántas señales se dieron</h2>
 <div class="circulos" id="circulos"></div>
 <!-- LAS PESTAÑAS DEBAJO DE LOS CIRCULOS (20/10, pedido con captura: "pasa esas pestañas para el rectangulo verde"):
      los circulos quedan siempre a la vista; las pestañas cambian lo de abajo. -->
@@ -84,11 +84,11 @@ label { color:var(--tenue); font-size:13px; }
 </div>
 <div id="p_semanas"><div class="wrap"><table id="semanas" class="grilla"></table></div></div>
 <div id="p_dias" hidden><div class="wrap"><table id="dias" class="grilla"></table></div></div>
-<div class="escala"><span>nunca acierta</span><i></i><span>siempre acierta</span></div>
+<div class="escala"><span>no se dio ninguna</span><i></i><span>se dieron todas</span></div>
 <div id="p_curva" hidden><div class="panel"><div id="curva"><canvas id="cv"></canvas></div></div></div>
 <div id="p_detalle" hidden><div class="wrap"><table id="detalle"></table></div></div>
 
-<p class="leyenda" style="margin-top:18px"><b>Ganada</b> = la opción llegó a ganar 10% o más. <b>Máx. típico</b> = cuánto llegó a ganar la opción en un día normal de esa señal. Ojo: no se compara con entrar en cualquier otro momento, y en TSLA las opciones del día suben 10% muy seguido igual. La página se actualiza sola de lunes a viernes.</p>
+<p class="leyenda" style="margin-top:18px"><b>Se dio</b> = después de la señal, la opción llegó a ganar 10% o más. <b>Máx. típico</b> = cuánto llegó a ganar la opción en un día normal de esa señal. Ojo: no se compara con entrar en cualquier otro momento, y en TSLA las opciones del día suben 10% muy seguido igual. La página se actualiza sola de lunes a viernes.</p>
 <script>
 const COLORES = ['#60A5FA','#F59E0B','#A78BFA','#22D3EE','#F472B6','#34D399','#FB923C','#E879F9','#FACC15','#93C5FD'];
 const DIAS = ['lunes','martes','miércoles','jueves','viernes'];
@@ -123,8 +123,8 @@ function cuadrito(xs) {
   const c = cuenta(xs), tot = c.g + c.p;
   if (!tot) return `<td><div class="cuad nada" title="${c.n} sin resultado todavía">…</div></td>`;
   const p = c.g / tot;
-  return `<td><div class="cuad" style="background:${colorPct(p)}" title="acertó ${c.g} de ${tot} veces (${Math.round(100 * p)}%)${c.n ? ' · ' + c.n + ' sin resultado' : ''}">`
-    + `<b>${c.g}/${tot}</b></div></td>`;
+  return `<td><div class="cuad" style="background:${colorPct(p)}" title="se dieron ${c.g} de ${tot} señales (${Math.round(100 * p)}%)${c.n ? ' · ' + c.n + ' sin resultado' : ''}">`
+    + `<b>${c.g}/${tot}</b><span>se dieron</span></div></td>`;
 }
 function cuadricula(orden, cols) {
   let h = '<tr><th></th>' + cols.map(c => `<th>${c.titulo}</th>`).join('') + '</tr>';
@@ -160,7 +160,8 @@ function pintar(D) {
     const mx = mediana(fg.map(f => f.maximo).filter(x => x !== null && x !== undefined)); const u = fg[0] && fg[0].unidad;
     const pct = tot ? Math.round(100 * c.g / tot) : null;
     const div = document.createElement('div'); div.className = 'circ';
-    div.innerHTML = `<h3>${gr}</h3><div class="caja"><canvas></canvas><div class="pct"><b class="${pct === null ? 'n' : pct >= 50 ? 'g' : 'p'}">${pct === null ? '—' : c.g + '/' + tot}</b><span>${pct === null ? '' : 'acertó ' + pct + '%'}${c.n ? (pct === null ? '' : ' · ') + c.n + ' por ver' : ''}</span></div></div>`
+    div.title = pct === null ? '' : `se dieron ${c.g} de ${tot} señales`;
+    div.innerHTML = `<h3>${gr}</h3><div class="caja"><canvas></canvas><div class="pct"><b class="${pct === null ? 'n' : pct >= 50 ? 'g' : 'p'}">${pct === null ? '—' : c.g + '/' + tot}</b><span>${pct === null ? '' : 'se dieron'}${c.n ? (pct === null ? '' : ' · ') + c.n + ' por ver' : ''}</span></div></div>`
       + `<div class="max">${mx === null ? '' : 'máx. típico ' + (mx > 0 ? '+' : '') + mx.toFixed(1) + '%' + (u === 'opción' ? '' : u === 'SPY' ? ' SPY' : ' GAP')}</div>`;
     cc.appendChild(div);
     graficos.push(new Chart(div.querySelector('canvas'), { type: 'doughnut',
