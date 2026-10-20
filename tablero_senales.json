@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-20 05:45",
+ "actualizado": "2026-10-20 05:50",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -9,6 +9,7 @@
    "detalle": "XSP CALL 750 a 2.34 · GAP +0.32%",
    "maximo": 19.7,
    "unidad": "opción",
+   "minimo": -28.2,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -26,6 +27,7 @@
    "detalle": "XSP PUT 748 a 3.00 · GAP -0.36%",
    "maximo": 20.7,
    "unidad": "opción",
+   "minimo": -10.0,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -43,6 +45,7 @@
    "detalle": "XSP CALL 755 a 1.37 · GAP +0.05%",
    "maximo": 28.5,
    "unidad": "opción",
+   "minimo": -5.1,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -60,6 +63,7 @@
    "detalle": "XSP CALL 757 a 1.38 · GAP +0.37%",
    "maximo": 37.7,
    "unidad": "opción",
+   "minimo": -10.1,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -77,6 +81,7 @@
    "detalle": "09:35 · XSP CALL 757 a 1.40",
    "maximo": 10.7,
    "unidad": "opción",
+   "minimo": -45.7,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción XSP, 5 min)",
    "activo": "SPY",
@@ -95,6 +100,7 @@
    "detalle": "09:50 · XSP PUT 754 a 1.46",
    "maximo": 11.6,
    "unidad": "opción",
+   "minimo": -69.2,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción XSP, 5 min)",
    "activo": "SPY",
@@ -113,6 +119,7 @@
    "detalle": "XSP PUT 745 a 2.45 · GAP -1.14%",
    "maximo": 22.4,
    "unidad": "opción",
+   "minimo": -13.5,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -130,6 +137,7 @@
    "detalle": "XSP PUT 742 a 2.32 · GAP -1.08%",
    "maximo": 12.5,
    "unidad": "opción",
+   "minimo": -51.7,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -147,6 +155,7 @@
    "detalle": "XSP PUT 740 a 1.39 · GAP -0.03%",
    "maximo": 10.8,
    "unidad": "opción",
+   "minimo": -33.8,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -164,6 +173,7 @@
    "detalle": "XSP CALL 746 a 1.93 · GAP +0.70%",
    "maximo": 34.7,
    "unidad": "opción",
+   "minimo": -14.5,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -181,6 +191,7 @@
    "detalle": "10:00 · SPX CALL 7440 a 15.84",
    "maximo": 12.7,
    "unidad": "opción",
+   "minimo": -67.8,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -199,6 +210,7 @@
    "detalle": "11:20 · SPX PUT 7410 a 14.30",
    "maximo": 103.3,
    "unidad": "opción",
+   "minimo": -17.5,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -217,6 +229,7 @@
    "detalle": "9:40 · SPX CALL 7400 a 19.98",
    "maximo": 13.1,
    "unidad": "opción",
+   "minimo": -38.2,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -235,6 +248,7 @@
    "detalle": "10:00 · SPX CALL 7395 a 30.70",
    "maximo": 10.4,
    "unidad": "opción",
+   "minimo": -41.4,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -253,6 +267,7 @@
    "detalle": "11:30 · SPX PUT 7365 a 26.20",
    "maximo": 22.9,
    "unidad": "opción",
+   "minimo": -13.4,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -271,6 +286,7 @@
    "detalle": "09:31 · XSP PUT 741 a 2.14",
    "maximo": 83.6,
    "unidad": "opción",
+   "minimo": 0.0,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción XSP, 5 min)",
    "activo": "SPY",
@@ -289,6 +305,7 @@
    "detalle": "10:50 · SPX PUT 7395 a 16.40",
    "maximo": 96.0,
    "unidad": "opción",
+   "minimo": -2.4,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -307,6 +324,7 @@
    "detalle": "XSP CALL 746 a 2.45 · GAP +0.33%",
    "maximo": 35.5,
    "unidad": "opción",
+   "minimo": -9.4,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -324,6 +342,7 @@
    "detalle": "9:50 · SPX CALL 7450 a 18.70",
    "maximo": 10.2,
    "unidad": "opción",
+   "minimo": -74.3,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -342,6 +361,7 @@
    "detalle": "11:30 · SPX PUT 7425 a 15.50",
    "maximo": 13.5,
    "unidad": "opción",
+   "minimo": -75.5,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -360,6 +380,7 @@
    "detalle": "XSP CALL 750 a 3.09 · GAP +0.20%",
    "maximo": 46.9,
    "unidad": "opción",
+   "minimo": -8.1,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -377,6 +398,7 @@
    "detalle": "XSP CALL 763 a 1.21 · GAP +0.40%",
    "maximo": 90.1,
    "unidad": "opción",
+   "minimo": -0.8,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -394,6 +416,7 @@
    "detalle": "09:39 · sin precios de la opción",
    "maximo": null,
    "unidad": "opción",
+   "minimo": null,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -409,6 +432,7 @@
    "detalle": "XSP CALL 777 a 2.98 · GAP +0.45%",
    "maximo": 18.8,
    "unidad": "opción",
+   "minimo": -9.4,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -426,6 +450,7 @@
    "detalle": "10:30 · SPX PUT 7770 a 16.70",
    "maximo": 73.7,
    "unidad": "opción",
+   "minimo": -8.4,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -444,6 +469,7 @@
    "detalle": "09:35 · sin precios de la opción",
    "maximo": null,
    "unidad": "opción",
+   "minimo": null,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -459,6 +485,7 @@
    "detalle": "XSP PUT 772 a 1.46 · GAP -0.13%",
    "maximo": 41.1,
    "unidad": "opción",
+   "minimo": -14.4,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -476,6 +503,7 @@
    "detalle": "10:30 · SPX PUT 7725 a 12.00",
    "maximo": 29.2,
    "unidad": "opción",
+   "minimo": -35.0,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -494,6 +522,7 @@
    "detalle": "12:00 · SPX PUT 7755 a 9.60",
    "maximo": 119.8,
    "unidad": "opción",
+   "minimo": -19.7,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -512,6 +541,7 @@
    "detalle": "09:33 · sin precios de la opción",
    "maximo": null,
    "unidad": "opción",
+   "minimo": null,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -527,6 +557,7 @@
    "detalle": "11:00 · SPX PUT 7760 a 10.20",
    "maximo": 12.7,
    "unidad": "opción",
+   "minimo": -41.7,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -545,6 +576,7 @@
    "detalle": "09:45 · sin precios de la opción",
    "maximo": null,
    "unidad": "opción",
+   "minimo": null,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -560,6 +592,7 @@
    "detalle": "9:50 · SPX CALL 7750 a 12.60",
    "maximo": 50.8,
    "unidad": "opción",
+   "minimo": -9.5,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -578,6 +611,7 @@
    "detalle": "10:40 · SPX PUT 7755 a 7.60",
    "maximo": 36.8,
    "unidad": "opción",
+   "minimo": -39.5,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -596,6 +630,7 @@
    "detalle": "09:36 · sin precios de la opción",
    "maximo": null,
    "unidad": "opción",
+   "minimo": null,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -611,6 +646,7 @@
    "detalle": "09:37 · XSP PUT 776 a 1.49",
    "maximo": 18.8,
    "unidad": "opción",
+   "minimo": -42.3,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción XSP, 5 min)",
    "activo": "SPY",
@@ -629,6 +665,7 @@
    "detalle": "10:00 · SPX CALL 7750 a 12.80",
    "maximo": 14.1,
    "unidad": "opción",
+   "minimo": -25.8,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -647,6 +684,7 @@
    "detalle": "10:40 · SPX PUT 7750 a 10.80",
    "maximo": 41.7,
    "unidad": "opción",
+   "minimo": -23.1,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -665,6 +703,7 @@
    "detalle": "09:31 · sin precios de la opción",
    "maximo": null,
    "unidad": "opción",
+   "minimo": null,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -680,6 +719,7 @@
    "detalle": "09:36 · XSP PUT 776 a 1.95",
    "maximo": 23.1,
    "unidad": "opción",
+   "minimo": -26.7,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción XSP, 5 min)",
    "activo": "SPY",
@@ -698,6 +738,7 @@
    "detalle": "XSP CALL 776 a 1.69 · GAP +0.19%",
    "maximo": 79.3,
    "unidad": "opción",
+   "minimo": -15.4,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -715,6 +756,7 @@
    "detalle": "10:50 · SPX PUT 7800 a 10.00",
    "maximo": 46.0,
    "unidad": "opción",
+   "minimo": -34.0,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -733,6 +775,7 @@
    "detalle": "XSP CALL 780 a 1.43 · GAP +0.10%",
    "maximo": 8.4,
    "unidad": "opción",
+   "minimo": -23.8,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -750,6 +793,7 @@
    "detalle": "9:40 · SPX CALL 7805 a 9.60",
    "maximo": 27.1,
    "unidad": "opción",
+   "minimo": -12.5,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -768,6 +812,7 @@
    "detalle": "09:34 · sin precios de la opción",
    "maximo": null,
    "unidad": "opción",
+   "minimo": null,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -783,6 +828,7 @@
    "detalle": "11:40 · SPX PUT 7770 a 5.20",
    "maximo": 36.5,
    "unidad": "opción",
+   "minimo": -42.3,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -801,6 +847,7 @@
    "detalle": "09:44 · CALL 340 al ask 2.55",
    "maximo": 49.0,
    "unidad": "opción",
+   "minimo": -46.7,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -816,6 +863,7 @@
    "detalle": "10:10 · XSP PUT 778 a 0.88",
    "maximo": 39.8,
    "unidad": "opción",
+   "minimo": -3.4,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción XSP, 5 min)",
    "activo": "SPY",
@@ -834,6 +882,7 @@
    "detalle": "XSP PUT 770 a 1.03 · GAP -0.58%",
    "maximo": 36.9,
    "unidad": "opción",
+   "minimo": -21.4,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -851,6 +900,7 @@
    "detalle": "11:00 · SPX PUT 7700 a 10.30",
    "maximo": 28.6,
    "unidad": "opción",
+   "minimo": -21.4,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -869,6 +919,7 @@
    "detalle": "09:36 · sin precios de la opción",
    "maximo": null,
    "unidad": "opción",
+   "minimo": null,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -884,6 +935,7 @@
    "detalle": "11:30 · SPX PUT 7730 a 8.10",
    "maximo": 75.3,
    "unidad": "opción",
+   "minimo": -3.7,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -902,6 +954,7 @@
    "detalle": "09:48 · PUT 337.5 al ask 2.11",
    "maximo": 36.5,
    "unidad": "opción",
+   "minimo": -51.2,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -917,6 +970,7 @@
    "detalle": "11:20 · SPX PUT 7685 a 9.63",
    "maximo": 84.5,
    "unidad": "opción",
+   "minimo": -10.7,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -935,6 +989,7 @@
    "detalle": "09:35 · PUT 345 al ask 4.80",
    "maximo": 13.5,
    "unidad": "opción",
+   "minimo": -22.9,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -950,6 +1005,7 @@
    "detalle": "09:35 · XSP CALL 770 a 0.92",
    "maximo": 21.7,
    "unidad": "opción",
+   "minimo": -53.3,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción XSP, 5 min)",
    "activo": "SPY",
@@ -968,6 +1024,7 @@
    "detalle": "9:50 · SPX CALL 7670 a 11.00",
    "maximo": 17.3,
    "unidad": "opción",
+   "minimo": -30.9,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -986,6 +1043,7 @@
    "detalle": "09:33 · PUT 347.5 al ask 2.68",
    "maximo": 9.3,
    "unidad": "opción",
+   "minimo": -85.4,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1001,6 +1059,7 @@
    "detalle": "9:50 · SPX CALL 7650 a 11.04",
    "maximo": 34.1,
    "unidad": "opción",
+   "minimo": -38.4,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1019,6 +1078,7 @@
    "detalle": "11:10 · SPX PUT 7650 a 9.05",
    "maximo": 38.1,
    "unidad": "opción",
+   "minimo": -52.8,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1037,6 +1097,7 @@
    "detalle": "10:11 · CALL 355 al ask 1.78",
    "maximo": 113.5,
    "unidad": "opción",
+   "minimo": -23.0,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1052,6 +1113,7 @@
    "detalle": "10:10 · SPX CALL 7670 a 9.90",
    "maximo": 11.1,
    "unidad": "opción",
+   "minimo": -79.8,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1070,6 +1132,7 @@
    "detalle": "11:50 · SPX PUT 7665 a 6.80",
    "maximo": 7.8,
    "unidad": "opción",
+   "minimo": -59.6,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1088,6 +1151,7 @@
    "detalle": "09:41 · CALL 352.5 al ask 4.05",
    "maximo": 14.8,
    "unidad": "opción",
+   "minimo": -17.3,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1103,6 +1167,7 @@
    "detalle": "13:50 · CALL 347.5 al ask 0.69",
    "maximo": 10.1,
    "unidad": "opción",
+   "minimo": -72.5,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1118,6 +1183,7 @@
    "detalle": "10:30 · SPX CALL 7670 a 8.50",
    "maximo": 36.5,
    "unidad": "opción",
+   "minimo": -11.1,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1136,6 +1202,7 @@
    "detalle": "11:30 · SPX PUT 7675 a 6.00",
    "maximo": 67.8,
    "unidad": "opción",
+   "minimo": -31.7,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1154,6 +1221,7 @@
    "detalle": "09:41 · CALL 347.5 al ask 2.54",
    "maximo": 100.8,
    "unidad": "opción",
+   "minimo": -16.5,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1169,6 +1237,7 @@
    "detalle": "14:57 · CALL 355 al ask 3.50",
    "maximo": 8.6,
    "unidad": "opción",
+   "minimo": -16.3,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1184,6 +1253,7 @@
    "detalle": "11:40 · SPX PUT 7720 a 10.40",
    "maximo": 32.7,
    "unidad": "opción",
+   "minimo": -51.9,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1202,6 +1272,7 @@
    "detalle": "09:33 · XSP PUT 770 a 2.00",
    "maximo": 1.0,
    "unidad": "opción",
+   "minimo": -58.0,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción XSP, 5 min)",
    "activo": "SPY",
@@ -1220,6 +1291,7 @@
    "detalle": "09:48 · CALL 357.5 al ask 2.27",
    "maximo": 7.0,
    "unidad": "opción",
+   "minimo": -79.7,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1235,6 +1307,7 @@
    "detalle": "XSP CALL 774 a 1.65 · GAP +0.05%",
    "maximo": 9.7,
    "unidad": "opción",
+   "minimo": -15.2,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -1252,6 +1325,7 @@
    "detalle": "11:40 · SPX PUT 7755 a 9.14",
    "maximo": 270.4,
    "unidad": "opción",
+   "minimo": -0.2,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1270,6 +1344,7 @@
    "detalle": "09:46 · PUT 355 al ask 2.33",
    "maximo": 88.8,
    "unidad": "opción",
+   "minimo": -27.0,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1285,6 +1360,7 @@
    "detalle": "13:08 · CALL 365 al ask 1.96",
    "maximo": 46.9,
    "unidad": "opción",
+   "minimo": -17.3,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1300,6 +1376,7 @@
    "detalle": "XSP PUT 770 a 1.97 · GAP -0.18%",
    "maximo": 45.7,
    "unidad": "opción",
+   "minimo": -16.2,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -1317,6 +1394,7 @@
    "detalle": "9:50 · SPX CALL 7680 a 11.40",
    "maximo": 24.3,
    "unidad": "opción",
+   "minimo": -37.3,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1335,6 +1413,7 @@
    "detalle": "11:20 · SPX PUT 7675 a 9.00",
    "maximo": 15.6,
    "unidad": "opción",
+   "minimo": -23.3,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1353,6 +1432,7 @@
    "detalle": "09:40 · XSP PUT 768 a 1.34",
    "maximo": 21.6,
    "unidad": "opción",
+   "minimo": -26.9,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción XSP, 5 min)",
    "activo": "SPY",
@@ -1371,6 +1451,7 @@
    "detalle": "12:43 · PUT 357.5 al ask 3.70",
    "maximo": 9.5,
    "unidad": "opción",
+   "minimo": -4.1,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1386,6 +1467,7 @@
    "detalle": "XSP PUT 764 a 1.60 · GAP -0.66%",
    "maximo": 22.5,
    "unidad": "opción",
+   "minimo": -17.5,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -1403,6 +1485,7 @@
    "detalle": "11:00 · SPX PUT 7650 a 7.71",
    "maximo": 64.7,
    "unidad": "opción",
+   "minimo": -15.7,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1421,6 +1504,7 @@
    "detalle": "09:50 · CALL 357.5 al ask 4.70",
    "maximo": 10.6,
    "unidad": "opción",
+   "minimo": -8.5,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1436,6 +1520,7 @@
    "detalle": "14:55 · CALL 352.5 al ask 0.84",
    "maximo": 28.6,
    "unidad": "opción",
+   "minimo": -33.3,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1451,6 +1536,7 @@
    "detalle": "11:10 · SPX PUT 7670 a 8.60",
    "maximo": 12.1,
    "unidad": "opción",
+   "minimo": -47.7,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1469,6 +1555,7 @@
    "detalle": "09:32 · PUT 355 al ask 2.42",
    "maximo": 141.7,
    "unidad": "opción",
+   "minimo": -15.7,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1484,6 +1571,7 @@
    "detalle": "XSP CALL 768 a 2.29 · GAP +0.26%",
    "maximo": 59.4,
    "unidad": "opción",
+   "minimo": -2.2,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -1501,6 +1589,7 @@
    "detalle": "10:40 · SPX PUT 7700 a 10.70",
    "maximo": 40.2,
    "unidad": "opción",
+   "minimo": -79.4,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1519,6 +1608,7 @@
    "detalle": "10:00 · PUT 370 al ask 5.75",
    "maximo": 0.9,
    "unidad": "opción",
+   "minimo": -57.6,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1534,6 +1624,7 @@
    "detalle": "09:35 · XSP CALL 771 a 1.39",
    "maximo": 7.9,
    "unidad": "opción",
+   "minimo": -71.9,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción XSP, 5 min)",
    "activo": "SPY",
@@ -1552,6 +1643,7 @@
    "detalle": "XSP CALL 775 a 0.74 · GAP +0.03%",
    "maximo": 32.4,
    "unidad": "opción",
+   "minimo": -6.8,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -1569,6 +1661,7 @@
    "detalle": "10:20 · SPX CALL 7725 a 10.70",
    "maximo": 11.2,
    "unidad": "opción",
+   "minimo": -52.6,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1587,6 +1680,7 @@
    "detalle": "09:58 · CALL 360 al ask 2.67",
    "maximo": 7.1,
    "unidad": "opción",
+   "minimo": -75.7,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1602,6 +1696,7 @@
    "detalle": "XSP PUT 772 a 1.86 · GAP -0.01%",
    "maximo": 39.8,
    "unidad": "opción",
+   "minimo": -11.3,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -1619,6 +1714,7 @@
    "detalle": "9:50 · SPX CALL 7690 a 12.05",
    "maximo": 12.9,
    "unidad": "opción",
+   "minimo": -60.5,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1637,6 +1733,7 @@
    "detalle": "11:40 · SPX PUT 7690 a 7.50",
    "maximo": 14.7,
    "unidad": "opción",
+   "minimo": -32.0,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1655,6 +1752,7 @@
    "detalle": "09:44 · PUT 357.5 al ask 4.05",
    "maximo": 14.8,
    "unidad": "opción",
+   "minimo": -38.8,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1670,6 +1768,7 @@
    "detalle": "12:11 · CALL 370 al ask 1.68",
    "maximo": 10.1,
    "unidad": "opción",
+   "minimo": -48.2,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1685,6 +1784,7 @@
    "detalle": "XSP PUT 766 a 1.68 · GAP -0.17%",
    "maximo": 25.6,
    "unidad": "opción",
+   "minimo": -19.0,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -1702,6 +1802,7 @@
    "detalle": "11:10 · SPX PUT 7635 a 9.20",
    "maximo": 83.8,
    "unidad": "opción",
+   "minimo": -38.0,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1720,6 +1821,7 @@
    "detalle": "09:59 · PUT 372.5 al ask 3.30",
    "maximo": 22.7,
    "unidad": "opción",
+   "minimo": -27.3,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1735,6 +1837,7 @@
    "detalle": "10:27 · XSP PUT 765 a 0.87",
    "maximo": 29.9,
    "unidad": "opción",
+   "minimo": -10.3,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción XSP, 5 min)",
    "activo": "SPY",
@@ -1753,6 +1856,7 @@
    "detalle": "XSP PUT 760 a 1.87 · GAP -0.55%",
    "maximo": 7.0,
    "unidad": "opción",
+   "minimo": -20.9,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -1770,6 +1874,7 @@
    "detalle": "11:50 · SPX PUT 7605 a 9.90",
    "maximo": 77.3,
    "unidad": "opción",
+   "minimo": -13.1,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1788,6 +1893,7 @@
    "detalle": "09:36 · CALL 362.5 al ask 4.35",
    "maximo": 100.0,
    "unidad": "opción",
+   "minimo": -6.9,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1803,6 +1909,7 @@
    "detalle": "10:40 · SPX PUT 7655 a 11.30",
    "maximo": 32.7,
    "unidad": "opción",
+   "minimo": -44.2,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1821,6 +1928,7 @@
    "detalle": "09:33 · CALL 365 al ask 3.40",
    "maximo": 42.6,
    "unidad": "opción",
+   "minimo": -35.9,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1836,6 +1944,7 @@
    "detalle": "09:40 · XSP CALL 767 a 1.34",
    "maximo": 28.4,
    "unidad": "opción",
+   "minimo": -37.3,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción XSP, 5 min)",
    "activo": "SPY",
@@ -1854,6 +1963,7 @@
    "detalle": "10:30 · SPX CALL 7600 a 11.80",
    "maximo": 10.2,
    "unidad": "opción",
+   "minimo": -42.4,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1872,6 +1982,7 @@
    "detalle": "10:30 · SPX PUT 7600 a 10.40",
    "maximo": 37.5,
    "unidad": "opción",
+   "minimo": -18.3,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1890,6 +2001,7 @@
    "detalle": "09:46 · PUT 360 al ask 2.25",
    "maximo": 10.2,
    "unidad": "opción",
+   "minimo": -43.1,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1905,6 +2017,7 @@
    "detalle": "15:01 · PUT 357.5 al ask 4.40",
    "maximo": 4.5,
    "unidad": "opción",
+   "minimo": -9.1,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1920,6 +2033,7 @@
    "detalle": "XSP PUT 761 a 1.14 · GAP -0.10%",
    "maximo": 62.3,
    "unidad": "opción",
+   "minimo": -11.4,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -1937,6 +2051,7 @@
    "detalle": "9:40 · SPX CALL 7610 a 11.60",
    "maximo": 17.0,
    "unidad": "opción",
+   "minimo": -55.2,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1955,6 +2070,7 @@
    "detalle": "12:00 · SPX PUT 7585 a 9.80",
    "maximo": 28.8,
    "unidad": "opción",
+   "minimo": -41.3,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -1973,6 +2089,7 @@
    "detalle": "09:31 · PUT 357.5 al ask 4.15",
    "maximo": 41.0,
    "unidad": "opción",
+   "minimo": -40.7,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -1988,6 +2105,7 @@
    "detalle": "10:20 · SPX CALL 7605 a 22.22",
    "maximo": 20.6,
    "unidad": "opción",
+   "minimo": -10.4,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2006,6 +2124,7 @@
    "detalle": "11:40 · SPX PUT 7615 a 23.00",
    "maximo": 3.9,
    "unidad": "opción",
+   "minimo": -21.7,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2024,6 +2143,7 @@
    "detalle": "09:31 · PUT 357.5 al ask 4.05",
    "maximo": -8.6,
    "unidad": "opción",
+   "minimo": -66.2,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2039,6 +2159,7 @@
    "detalle": "13:47 · CALL 367.5 al ask 3.85",
    "maximo": 3.9,
    "unidad": "opción",
+   "minimo": -10.4,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2054,6 +2175,7 @@
    "detalle": "10:00 · SPX CALL 7625 a 11.60",
    "maximo": 40.5,
    "unidad": "opción",
+   "minimo": -39.6,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2072,6 +2194,7 @@
    "detalle": "11:00 · SPX PUT 7620 a 10.60",
    "maximo": 21.7,
    "unidad": "opción",
+   "minimo": -49.1,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2090,6 +2213,7 @@
    "detalle": "09:39 · PUT 362.5 al ask 4.10",
    "maximo": -7.3,
    "unidad": "opción",
+   "minimo": -70.0,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2105,6 +2229,7 @@
    "detalle": "13:18 · PUT 362.5 al ask 1.09",
    "maximo": -0.9,
    "unidad": "opción",
+   "minimo": -39.4,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2120,6 +2245,7 @@
    "detalle": "XSP CALL 766 a 0.88 · GAP +0.25%",
    "maximo": 0.0,
    "unidad": "opción",
+   "minimo": -56.8,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -2137,6 +2263,7 @@
    "detalle": "10:00 · SPX CALL 7630 a 9.70",
    "maximo": 15.5,
    "unidad": "opción",
+   "minimo": -28.9,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2155,6 +2282,7 @@
    "detalle": "11:40 · SPX PUT 7625 a 9.89",
    "maximo": 30.4,
    "unidad": "opción",
+   "minimo": -10.0,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2173,6 +2301,7 @@
    "detalle": "09:35 · PUT 367.5 al ask 3.10",
    "maximo": 30.6,
    "unidad": "opción",
+   "minimo": -58.4,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2188,6 +2317,7 @@
    "detalle": "XSP CALL 770 a 0.78 · GAP +0.55%",
    "maximo": 0.0,
    "unidad": "opción",
+   "minimo": -39.7,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -2205,6 +2335,7 @@
    "detalle": "10:08 · PUT 375 al ask 2.22",
    "maximo": 4.1,
    "unidad": "opción",
+   "minimo": -56.3,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2220,6 +2351,7 @@
    "detalle": "XSP CALL 777 a 1.20 · GAP +0.08%",
    "maximo": 49.2,
    "unidad": "opción",
+   "minimo": -16.7,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -2237,6 +2369,7 @@
    "detalle": "10:00 · SPX CALL 7770 a 9.20",
    "maximo": 56.5,
    "unidad": "opción",
+   "minimo": -29.3,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2255,6 +2388,7 @@
    "detalle": "09:31 · PUT 375 al ask 4.30",
    "maximo": 26.7,
    "unidad": "opción",
+   "minimo": -27.9,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2270,6 +2404,7 @@
    "detalle": "09:36 · XSP CALL 778 a 1.05",
    "maximo": 0.0,
    "unidad": "opción",
+   "minimo": -57.1,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción XSP, 5 min)",
    "activo": "SPY",
@@ -2288,6 +2423,7 @@
    "detalle": "XSP PUT 776 a 1.07 · GAP -0.03%",
    "maximo": 35.5,
    "unidad": "opción",
+   "minimo": -10.3,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -2305,6 +2441,7 @@
    "detalle": "9:50 · SPX CALL 7740 a 11.00",
    "maximo": 7.3,
    "unidad": "opción",
+   "minimo": -62.7,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2323,6 +2460,7 @@
    "detalle": "11:20 · SPX PUT 7725 a 8.00",
    "maximo": 81.2,
    "unidad": "opción",
+   "minimo": -22.5,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2341,6 +2479,7 @@
    "detalle": "10:09 · PUT 382.5 al ask 2.23",
    "maximo": 97.3,
    "unidad": "opción",
+   "minimo": 13.0,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2356,6 +2495,7 @@
    "detalle": "XSP PUT 766 a 0.96 · GAP -0.51%",
    "maximo": 18.8,
    "unidad": "opción",
+   "minimo": -30.2,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -2373,6 +2513,7 @@
    "detalle": "10:50 · SPX PUT 7685 a 12.50",
    "maximo": 113.6,
    "unidad": "opción",
+   "minimo": -16.2,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2391,6 +2532,7 @@
    "detalle": "09:31 · CALL 377.5 al ask 4.45",
    "maximo": 15.7,
    "unidad": "opción",
+   "minimo": -14.6,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2406,6 +2548,7 @@
    "detalle": "09:41 · XSP CALL 767 a 1.63",
    "maximo": 71.8,
    "unidad": "opción",
+   "minimo": 0.0,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción XSP, 5 min)",
    "activo": "SPY",
@@ -2424,6 +2567,7 @@
    "detalle": "09:57 · PUT 375 al ask 2.14",
    "maximo": 173.4,
    "unidad": "opción",
+   "minimo": 18.2,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2439,6 +2583,7 @@
    "detalle": "10:20 · SPX CALL 7700 a 14.80",
    "maximo": 47.3,
    "unidad": "opción",
+   "minimo": -4.2,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2457,6 +2602,7 @@
    "detalle": "11:40 · SPX PUT 7715 a 12.90",
    "maximo": 36.4,
    "unidad": "opción",
+   "minimo": -79.1,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2475,6 +2621,7 @@
    "detalle": "09:32 · PUT 380 al ask 3.90",
    "maximo": 152.6,
    "unidad": "opción",
+   "minimo": 15.4,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2490,6 +2637,7 @@
    "detalle": "10:37 · PUT 360 al ask 1.19",
    "maximo": 68.1,
    "unidad": "opción",
+   "minimo": 1.7,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2505,6 +2653,7 @@
    "detalle": "10:20 · SPX CALL 7705 a 11.10",
    "maximo": 20.1,
    "unidad": "opción",
+   "minimo": -81.1,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2523,6 +2672,7 @@
    "detalle": "11:30 · SPX PUT 7680 a 10.70",
    "maximo": 21.5,
    "unidad": "opción",
+   "minimo": -29.0,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2541,6 +2691,7 @@
    "detalle": "9:50 · SPX CALL 7680 a 14.70",
    "maximo": 19.0,
    "unidad": "opción",
+   "minimo": -17.7,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2559,6 +2710,7 @@
    "detalle": "10:50 · SPX PUT 7675 a 13.20",
    "maximo": 48.6,
    "unidad": "opción",
+   "minimo": -39.4,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2577,6 +2729,7 @@
    "detalle": "09:43 · PUT 768 al ask 1.33",
    "maximo": 20.3,
    "unidad": "opción",
+   "minimo": -21.1,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -2592,6 +2745,7 @@
    "detalle": "10:05 · CALL 352.5 al ask 4.20",
    "maximo": 25.0,
    "unidad": "opción",
+   "minimo": -2.4,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2607,6 +2761,7 @@
    "detalle": "10:40 · SPX PUT 7705 a 11.20",
    "maximo": 17.0,
    "unidad": "opción",
+   "minimo": -53.6,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2625,6 +2780,7 @@
    "detalle": "10:28 · PUT 771 al ask 1.36",
    "maximo": 11.0,
    "unidad": "opción",
+   "minimo": -50.7,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -2640,6 +2796,7 @@
    "detalle": "10:03 · CALL 347.5 al ask 2.03",
    "maximo": 109.4,
    "unidad": "opción",
+   "minimo": 3.0,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2655,6 +2812,7 @@
    "detalle": "10:28 · XSP CALL 770 a 1.58",
    "maximo": 69.6,
    "unidad": "opción",
+   "minimo": -15.2,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción XSP, 5 min)",
    "activo": "SPY",
@@ -2673,6 +2831,7 @@
    "detalle": "09:42 · PUT 767 al ask 2.00",
    "maximo": 130.0,
    "unidad": "opción",
+   "minimo": -25.0,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -2688,6 +2847,7 @@
    "detalle": "10:13 · PUT 355 al ask 4.80",
    "maximo": 10.4,
    "unidad": "opción",
+   "minimo": -32.3,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2703,6 +2863,7 @@
    "detalle": "10:00 · SPX CALL 7655 a 17.50",
    "maximo": 3.0,
    "unidad": "opción",
+   "minimo": -63.4,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2721,6 +2882,7 @@
    "detalle": "11:00 · SPX PUT 7635 a 16.33",
    "maximo": 58.8,
    "unidad": "opción",
+   "minimo": -35.7,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2739,6 +2901,7 @@
    "detalle": "09:38 · CALL 768 al ask 1.64",
    "maximo": 0.6,
    "unidad": "opción",
+   "minimo": -81.1,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -2754,6 +2917,7 @@
    "detalle": "09:32 · CALL 357.5 al ask 4.70",
    "maximo": 18.1,
    "unidad": "opción",
+   "minimo": -22.3,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2769,6 +2933,7 @@
    "detalle": "12:07 · PUT 372.5 al ask 1.54",
    "maximo": 42.2,
    "unidad": "opción",
+   "minimo": -15.6,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2784,6 +2949,7 @@
    "detalle": "XSP CALL 772 a 2.42 · GAP +0.78%",
    "maximo": 12.4,
    "unidad": "opción",
+   "minimo": -28.1,
    "historico": true,
    "fuente": "Tastytrade (opción XSP, 5 min)",
    "activo": "SPX",
@@ -2801,6 +2967,7 @@
    "detalle": "11:00 · SPX PUT 7740 a 12.90",
    "maximo": 231.8,
    "unidad": "opción",
+   "minimo": -5.4,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2819,6 +2986,7 @@
    "detalle": "11:36 · CALL 377.5 al ask 1.61",
    "maximo": 11.2,
    "unidad": "opción",
+   "minimo": -37.9,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2834,6 +3002,7 @@
    "detalle": "GAP +0.11% · ayer +0.73% · máx +45%",
    "maximo": 45.1,
    "unidad": "opción",
+   "minimo": -4.9,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -2849,6 +3018,7 @@
    "detalle": "11:20 · SPX PUT 7755 a 8.90",
    "maximo": 12.4,
    "unidad": "opción",
+   "minimo": -43.8,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2867,6 +3037,7 @@
    "detalle": "10:03 · CALL 774 al ask 0.97",
    "maximo": 127.8,
    "unidad": "opción",
+   "minimo": -2.1,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -2882,6 +3053,7 @@
    "detalle": "09:38 · CALL 370 al ask 2.91",
    "maximo": 192.1,
    "unidad": "opción",
+   "minimo": -36.4,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2897,6 +3069,7 @@
    "detalle": "09:37 · 6 grandes · CALL 774 al ask 1.07",
    "maximo": 11.2,
    "unidad": "opción",
+   "minimo": -40.2,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -2913,6 +3086,7 @@
    "detalle": "13:55 · PUT 380 al ask 3.05",
    "maximo": 0.0,
    "unidad": "opción",
+   "minimo": -14.1,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2928,6 +3102,7 @@
    "detalle": "GAP +0.41% · ayer +0.66% · máx +21%",
    "maximo": 21.5,
    "unidad": "opción",
+   "minimo": -10.7,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -2943,6 +3118,7 @@
    "detalle": "10:30 · SPX PUT 7815 a 9.70",
    "maximo": 16.5,
    "unidad": "opción",
+   "minimo": -69.1,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -2961,6 +3137,7 @@
    "detalle": "10:21 · PUT 782 al ask 0.89",
    "maximo": 52.8,
    "unidad": "opción",
+   "minimo": -36.0,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -2976,6 +3153,7 @@
    "detalle": "09:35 · CALL 382.5 al ask 4.75",
    "maximo": -3.2,
    "unidad": "opción",
+   "minimo": -46.5,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -2991,6 +3169,7 @@
    "detalle": "10:23 · 5 grandes · CALL 782 al ask 1.21",
    "maximo": 31.4,
    "unidad": "opción",
+   "minimo": -38.0,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -3007,6 +3186,7 @@
    "detalle": "11:01 · PUT 777 al ask 1.17",
    "maximo": 6.8,
    "unidad": "opción",
+   "minimo": -57.3,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3022,6 +3202,7 @@
    "detalle": "11:15 · PUT 375 al ask 1.23",
    "maximo": 2.4,
    "unidad": "opción",
+   "minimo": -31.7,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -3037,6 +3218,7 @@
    "detalle": "9:50 · SPX CALL 7770 a 14.25",
    "maximo": 28.4,
    "unidad": "opción",
+   "minimo": -22.9,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -3055,6 +3237,7 @@
    "detalle": "10:40 · SPX PUT 7775 a 11.35",
    "maximo": 51.5,
    "unidad": "opción",
+   "minimo": -2.2,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -3073,6 +3256,7 @@
    "detalle": "10:20 · CALL 778 al ask 0.95",
    "maximo": 6.3,
    "unidad": "opción",
+   "minimo": -50.5,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3088,6 +3272,7 @@
    "detalle": "09:43 · PUT 377.5 al ask 2.23",
    "maximo": 54.7,
    "unidad": "opción",
+   "minimo": -30.9,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -3103,6 +3288,7 @@
    "detalle": "09:33",
    "maximo": null,
    "unidad": "opción",
+   "minimo": null,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3118,6 +3304,7 @@
    "detalle": "GAP -0.30% · ayer -0.22% · máx +3%",
    "maximo": 2.5,
    "unidad": "opción",
+   "minimo": -23.4,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3133,6 +3320,7 @@
    "detalle": "10:50 · SPX PUT 7785 a 10.10",
    "maximo": 84.2,
    "unidad": "opción",
+   "minimo": -5.0,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -3151,6 +3339,7 @@
    "detalle": "09:58 · CALL 778 al ask 1.27",
    "maximo": 28.3,
    "unidad": "opción",
+   "minimo": -14.2,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3166,6 +3355,7 @@
    "detalle": "09:39 · CALL 375 al ask 3.85",
    "maximo": 11.7,
    "unidad": "opción",
+   "minimo": -43.9,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -3181,6 +3371,7 @@
    "detalle": "10:50",
    "maximo": null,
    "unidad": "opción",
+   "minimo": null,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3196,6 +3387,7 @@
    "detalle": "10:49 · 5 grandes · CALL 778 al ask 1.16",
    "maximo": 1.7,
    "unidad": "opción",
+   "minimo": -52.6,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -3212,6 +3404,7 @@
    "detalle": "15:23 · PUT 385 al ask 1.44",
    "maximo": 52.8,
    "unidad": "opción",
+   "minimo": -22.9,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -3227,6 +3420,7 @@
    "detalle": "10:50 · SPX PUT 7790 a 7.80",
    "maximo": 3.8,
    "unidad": "opción",
+   "minimo": -58.3,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -3245,6 +3439,7 @@
    "detalle": "10:00 · PUT 385 al ask 2.20",
    "maximo": 25.0,
    "unidad": "opción",
+   "minimo": -54.5,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -3260,6 +3455,7 @@
    "detalle": "09:52 · 5 grandes · PUT 779 al ask 1.30",
    "maximo": 14.6,
    "unidad": "opción",
+   "minimo": -35.4,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -3276,6 +3472,7 @@
    "detalle": "MES +0.06%",
    "maximo": 24.6,
    "unidad": "opción",
+   "minimo": -9.4,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3291,6 +3488,7 @@
    "detalle": "GAP siguiente -0.09%",
    "maximo": 0.1,
    "unidad": "GAP",
+   "minimo": null,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3306,6 +3504,7 @@
    "detalle": "GAP +0.02% · ayer +0.59% · máx +25%",
    "maximo": 24.6,
    "unidad": "opción",
+   "minimo": -9.4,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3321,6 +3520,7 @@
    "detalle": "11:30 · SPX PUT 7805 a 4.62",
    "maximo": 19.0,
    "unidad": "opción",
+   "minimo": -66.5,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -3339,6 +3539,7 @@
    "detalle": "09:48 · PUT 781 al ask 0.72",
    "maximo": 61.1,
    "unidad": "opción",
+   "minimo": -16.7,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3354,6 +3555,7 @@
    "detalle": "09:48 · CALL 382.5 al ask 1.63",
    "maximo": 19.6,
    "unidad": "opción",
+   "minimo": -68.1,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -3369,6 +3571,7 @@
    "detalle": "GAP -0.15% · ayer -0.06% · máx -1%",
    "maximo": -1.0,
    "unidad": "opción",
+   "minimo": -51.9,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3384,6 +3587,7 @@
    "detalle": "10:10 · SPX CALL 7800 a 8.50",
    "maximo": 22.4,
    "unidad": "opción",
+   "minimo": -24.7,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -3402,6 +3606,7 @@
    "detalle": "11:00 · SPX PUT 7795 a 6.70",
    "maximo": 65.7,
    "unidad": "opción",
+   "minimo": -37.3,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -3420,6 +3625,7 @@
    "detalle": "09:38 · CALL 781 al ask 0.98",
    "maximo": 15.3,
    "unidad": "opción",
+   "minimo": -59.2,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3435,6 +3641,7 @@
    "detalle": "09:39 · CALL 372.5 al ask 4.40",
    "maximo": 15.9,
    "unidad": "opción",
+   "minimo": -13.6,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -3450,6 +3657,7 @@
    "detalle": "09:52",
    "maximo": null,
    "unidad": "opción",
+   "minimo": null,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3465,6 +3673,7 @@
    "detalle": "09:50 · 5 grandes · CALL 781 al ask 0.88",
    "maximo": 5.7,
    "unidad": "opción",
+   "minimo": -58.0,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -3481,6 +3690,7 @@
    "detalle": "GAP -0.40% · ayer -0.02% · máx +7%",
    "maximo": 6.7,
    "unidad": "opción",
+   "minimo": -39.2,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3496,6 +3706,7 @@
    "detalle": "10:10 · SPX CALL 7755 a 13.80",
    "maximo": 10.5,
    "unidad": "opción",
+   "minimo": -37.0,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -3514,6 +3725,7 @@
    "detalle": "10:14 · CALL 367.5 al ask 1.49",
    "maximo": 30.9,
    "unidad": "opción",
+   "minimo": -15.4,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -3529,6 +3741,7 @@
    "detalle": "09:44",
    "maximo": null,
    "unidad": "opción",
+   "minimo": null,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3544,6 +3757,7 @@
    "detalle": "09:44 · 5 grandes · CALL 778 al ask 1.24",
    "maximo": 38.7,
    "unidad": "opción",
+   "minimo": -75.0,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -3560,6 +3774,7 @@
    "detalle": "MES -0.46%",
    "maximo": 48.4,
    "unidad": "opción",
+   "minimo": -20.4,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3575,6 +3790,7 @@
    "detalle": "10:21 · PUT 357.5 al ask 5.75",
    "maximo": 1.7,
    "unidad": "opción",
+   "minimo": -33.9,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -3590,6 +3806,7 @@
    "detalle": "GAP siguiente +0.19%",
    "maximo": -0.2,
    "unidad": "GAP",
+   "minimo": null,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3605,6 +3822,7 @@
    "detalle": "GAP -0.41% · ayer -1.11% · máx +48%",
    "maximo": 48.4,
    "unidad": "opción",
+   "minimo": -20.4,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3620,6 +3838,7 @@
    "detalle": "10:00 · SPX CALL 7680 a 17.60",
    "maximo": 93.2,
    "unidad": "opción",
+   "minimo": -2.8,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -3638,6 +3857,7 @@
    "detalle": "11:40 · SPX PUT 7725 a 12.40",
    "maximo": 16.1,
    "unidad": "opción",
+   "minimo": -36.3,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -3656,6 +3876,7 @@
    "detalle": "10:03 · CALL 770 al ask 1.53",
    "maximo": 30.1,
    "unidad": "opción",
+   "minimo": -9.8,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3671,6 +3892,7 @@
    "detalle": "10:20 · CALL 357.5 al ask 5.45",
    "maximo": 40.4,
    "unidad": "opción",
+   "minimo": -7.3,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -3686,6 +3908,7 @@
    "detalle": "09:32",
    "maximo": null,
    "unidad": "opción",
+   "minimo": null,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3701,6 +3924,7 @@
    "detalle": "09:45 · 7 grandes · CALL 769 al ask 1.78",
    "maximo": 43.8,
    "unidad": "opción",
+   "minimo": -46.1,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -3717,6 +3941,7 @@
    "detalle": "MES +0.14%",
    "maximo": -14.4,
    "unidad": "opción",
+   "minimo": -52.6,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3732,6 +3957,7 @@
    "detalle": "09:48 · PUT 774 al ask 1.08",
    "maximo": 50.0,
    "unidad": "opción",
+   "minimo": -20.4,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3747,6 +3973,7 @@
    "detalle": "11:47 · CALL 360 al ask 1.85",
    "maximo": -9.7,
    "unidad": "opción",
+   "minimo": -51.4,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -3762,6 +3989,7 @@
    "detalle": "GAP +0.02% · ayer +0.33% · máx -14%",
    "maximo": -14.4,
    "unidad": "opción",
+   "minimo": -52.6,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3777,6 +4005,7 @@
    "detalle": "9:40 · SPX CALL 7740 a 15.10",
    "maximo": 25.2,
    "unidad": "opción",
+   "minimo": -35.8,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -3795,6 +4024,7 @@
    "detalle": "11:10 · SPX PUT 7725 a 11.60",
    "maximo": 75.9,
    "unidad": "opción",
+   "minimo": -17.2,
    "historico": true,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "activo": "SPY",
@@ -3813,6 +4043,7 @@
    "detalle": "09:38 · PUT 775 al ask 1.53",
    "maximo": 33.3,
    "unidad": "opción",
+   "minimo": -17.0,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3828,6 +4059,7 @@
    "detalle": "10:04 · CALL 367.5 al ask 2.98",
    "maximo": 39.3,
    "unidad": "opción",
+   "minimo": -55.7,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -3843,6 +4075,7 @@
    "detalle": "11:40 · CALL 367.5 al ask 1.81",
    "maximo": 15.5,
    "unidad": "opción",
+   "minimo": -19.9,
    "activo": "TSLA",
    "activos": [
     "TSLA"
@@ -3858,6 +4091,7 @@
    "detalle": "",
    "maximo": null,
    "unidad": "GAP",
+   "minimo": null,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3873,6 +4107,7 @@
    "detalle": "CALL 769 al ask 1.53 (Tastytrade: Schwab congelado)",
    "maximo": 101.3,
    "unidad": "opción",
+   "minimo": -21.6,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -3889,6 +4124,7 @@
    "detalle": "PUT 770 al ask 1.26",
    "maximo": 9.5,
    "unidad": "opción",
+   "minimo": -52.4,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -3905,6 +4141,7 @@
    "detalle": "10:02 · PUT 769 al ask 1.44 (Tastytrade: Schwab congelado)",
    "maximo": 20.8,
    "unidad": "opción",
+   "minimo": -65.3,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3920,6 +4157,7 @@
    "detalle": "falta la apertura siguiente",
    "maximo": null,
    "unidad": "opción",
+   "minimo": null,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -3936,6 +4174,7 @@
    "detalle": "",
    "maximo": null,
    "unidad": "GAP",
+   "minimo": null,
    "activo": "SPX",
    "activos": [
     "SPX"
