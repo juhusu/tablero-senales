@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-21 17:30",
+ "actualizado": "2026-10-21 18:05",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -5425,5 +5425,46 @@
    "semana": "2026-10-19",
    "dia_semana": 2
   }
- ]
+ ],
+ "hoy": {
+  "fecha": "2026-10-21",
+  "dia_semana": 2,
+  "eventos": [
+   {
+    "hora": "",
+    "texto": "TSLA presenta resultados despues del cierre"
+   }
+  ],
+  "reportes": [],
+  "gap": {
+   "cuando": "9:28",
+   "lado": 1.0,
+   "mes_pct": 0.2836,
+   "ayer_pct": 0.2574,
+   "ganador": false,
+   "enviado": false
+  },
+  "avisos": [
+   {
+    "hora": "09:30",
+    "texto": "gap continuacion CALL"
+   },
+   {
+    "hora": "09:40",
+    "texto": "Heikin Ashi CALL"
+   }
+  ],
+  "rebote": {
+   "senal": false,
+   "razon_vol": 1.88,
+   "pos_rango": 0.778,
+   "roja": true
+  },
+  "rebote_dia": [
+   "de miércoles para jueves",
+   13,
+   16
+  ],
+  "cobertura_hasta": "2026-12-09"
+ }
 }
