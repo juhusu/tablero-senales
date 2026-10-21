@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-21 16:20",
+ "actualizado": "2026-10-21 17:30",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -5404,6 +5404,23 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-21",
+   "senal": "QQQ / VWAP",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "09:36",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": null,
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
    ],
    "semana": "2026-10-19",
    "dia_semana": 2
