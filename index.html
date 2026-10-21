@@ -10,13 +10,16 @@ header { display:flex; flex-wrap:wrap; gap:12px; align-items:baseline; padding:1
 h1 { font-size:18px; margin:0; } h2 { font-size:15px; margin:22px 16px 8px; color:var(--tenue); font-weight:600; }
 .tenue { color:var(--tenue); font-size:13px; }
 /* TODOS EN UNA LINEA (20/10, pedido: "ponlos todos que quepa en una linea"); en pantallas angostas se desliza. */
-.circulos { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(112px,1fr); gap:8px; padding:0 16px 6px; overflow-x:auto; }
+/* SE ACHICAN CUANDO SE ENSANCHA LA COLUMNA HOY (21/10, pedido: "que se ajuste lo que queda a la izquierda y que no
+   quede tapado"): los circulos comparten el ancho que queda y sus letras se achican con ellos (unidades cqw). */
+.circulos { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(72px,1fr); gap:6px; padding:0 16px 6px; overflow-x:auto; }
+.circ { container-type:inline-size; }
 .circ { background:var(--panel); border:1px solid var(--borde); border-radius:10px; padding:8px 6px; text-align:center; }
-.circ h3 { font-size:11.5px; margin:0 0 4px; font-weight:600; min-height:30px; line-height:1.25; }
-.circ .caja { position:relative; height:118px; }
+.circ h3 { font-size:clamp(9px, 9.5cqw, 11.5px); margin:0 0 4px; font-weight:600; min-height:30px; line-height:1.25; }
+.circ .caja { position:relative; height:clamp(70px, 96cqw, 118px); }
 .circ .pct { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; flex-direction:column; pointer-events:none; }
 /* "22 de 26" del mismo tamaño que el % (20/10, pedido con captura). */
-.circ .pct b, .circ .pct .cuantas { font-size:18px; font-weight:800; line-height:1.15; }
+.circ .pct b, .circ .pct .cuantas { font-size:clamp(10px, 15cqw, 18px); font-weight:800; line-height:1.15; }
 .circ .pct .cuantas { color:#F3F4F6; }
 .circ .pct .porver { font-size:10px; color:var(--tenue); }
 .panel { background:var(--panel); border:1px solid var(--borde); border-radius:10px; margin:0 16px; padding:10px; }
@@ -34,17 +37,21 @@ th { color:var(--tenue); font-weight:600; position:sticky; top:0; background:var
 td:first-child, th:first-child { text-align:left; }
 .g { color:var(--verde); } .p { color:var(--rojo); } .n { color:var(--gris); }
 .celda-g { background:rgba(34,197,94,.14); } .celda-p { background:rgba(239,68,68,.14); } .celda-m { background:rgba(234,179,8,.10); }
-table.grilla { min-width:0; border-collapse:separate; border-spacing:4px; font:13px -apple-system,system-ui,sans-serif; }
+/* La cuadricula ocupa el ancho que queda; los cuadritos se achican (hasta 50 px; si no entran, se desliza). */
+table.grilla { width:100%; table-layout:fixed; border-collapse:separate; border-spacing:4px; font:13px -apple-system,system-ui,sans-serif; }
+table.grilla th:first-child, table.grilla td.nom { width:190px; }
+table.grilla th { white-space:normal; line-height:1.15; font-size:12px; vertical-align:bottom; }
+table.grilla td.nom { white-space:normal !important; line-height:1.2; }
 table.grilla th { border:none; color:#C9D1D9; font-size:13px; font-weight:600; padding:0 0 2px; position:static; background:none; }
 table.grilla td { border:none; padding:0; }
 table.grilla td.nom { text-align:right; padding-right:8px; color:#E5E7EB; font-size:13px; white-space:nowrap;
   position:sticky; left:0; z-index:2; background:var(--fondo); box-shadow:6px 0 8px -6px rgba(0,0,0,.8); }
 table.grilla th:first-child { position:sticky; left:0; z-index:3; background:var(--fondo); }
 /* En el telefono el nombre de la señal queda fijo a la izquierda al deslizar (21/10). */
-@media (max-width:700px) { table.grilla td.nom { font-size:11px; max-width:96px; white-space:normal; line-height:1.2; } }
+@media (max-width:700px) { table.grilla td.nom, table.grilla th:first-child { font-size:11px; width:96px; max-width:96px; white-space:normal; line-height:1.2; } }
 table.grilla tr.total td.nom { font-weight:700; }
-.cuad { width:72px; height:62px; border-radius:8px; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#fff; }
-.cuad b { font-size:17px; line-height:1.1; } .cuad span { font-size:10.5px; opacity:.92; white-space:nowrap; } .cuad span { font-size:11px; opacity:.85; }
+.cuad { width:100%; max-width:76px; margin:0 auto; container-type:inline-size; height:62px; border-radius:8px; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#fff; }
+.cuad b { font-size:clamp(11px, 24cqw, 17px); line-height:1.1; } .cuad span { font-size:10.5px; opacity:.92; white-space:nowrap; } .cuad span { font-size:11px; opacity:.85; }
 .cuad.nada { background:#161B22; color:#4B5563; font-size:16px; }
 .hora { color:#93C5FD; font-weight:600; margin-left:4px; }
 /* LA COLUMNA "HOY" a la derecha (21/10): lo del dia actual; se vacia sola al dia siguiente. En pantallas chicas va arriba. */
@@ -116,7 +123,7 @@ table.diaxdia { font:13px -apple-system,system-ui,sans-serif; }
 #det_tabla tr.fila-g td:first-child { box-shadow:inset 3px 0 #22C55E; } #det_tabla tr.fila-p td:first-child { box-shadow:inset 3px 0 #EF4444; }
 /* Sin franja oscura detras (20/10, pedido: "no me gusta la sombra detras de los numeros"): verde y rojo claros. */
 .cuad .ex { display:flex; flex-direction:column; align-items:center; margin-top:2px; font-style:normal; line-height:1.2; }
-.cuad .ex em { font-style:normal; font-size:11px; font-weight:800; }
+.cuad .ex em { font-style:normal; font-size:clamp(8px, 15cqw, 11px); font-weight:800; }
 .cuad .ex .sube { color:#BBF7D0; } .cuad .ex .baja { color:#FECDD3; }
 .cuad.clic { cursor:pointer; } .cuad.clic:hover { outline:2px solid #fff; }
 #detalle_caja { position:fixed; inset:0; background:rgba(0,0,0,.6); display:flex; align-items:center; justify-content:center; z-index:50; padding:16px; }
@@ -149,8 +156,8 @@ label { color:var(--tenue); font-size:13px; }
 #activos button.on { color:var(--texto); border-color:#60A5FA; background:#1B2333; }
 #dias_f button { background:var(--panel); color:var(--tenue); border:1px solid var(--borde); border-radius:6px; padding:4px 9px; margin-right:3px; cursor:pointer; font:inherit; }
 #dias_f button.on { color:var(--texto); border-color:#F59E0B; background:#2A2112; }
-.circ .max { font-size:12.5px; color:#E5E7EB; margin-top:4px; line-height:1.3; }
-.circ .max b { color:#4ADE80; font-size:14px; } .circ .max b.neg { color:#F87171; }
+.circ .max { font-size:clamp(9px, 10.5cqw, 12.5px); color:#E5E7EB; margin-top:4px; line-height:1.3; }
+.circ .max b { color:#4ADE80; font-size:clamp(10px, 11.5cqw, 14px); } .circ .max b.neg { color:#F87171; }
 </style></head><body>
 <header>
   <h1>Tablero de señales</h1>
@@ -219,7 +226,7 @@ let CELDAS = [];
 function rangoSemana(lunes) {
   const d = new Date(lunes + 'T12:00:00'), v = new Date(d.getTime() + 4 * 864e5);
   const dd = (x) => String(x.getDate()).padStart(2, '0'), mm = (x) => String(x.getMonth() + 1).padStart(2, '0');
-  return d.getMonth() === v.getMonth() ? `${dd(d)}–${dd(v)}/${mm(v)}` : `${dd(d)}/${mm(d)}–${dd(v)}/${mm(v)}`;
+  return d.getMonth() === v.getMonth() ? `${dd(d)}–<wbr>${dd(v)}/${mm(v)}` : `${dd(d)}/${mm(d)}–<wbr>${dd(v)}/${mm(v)}`;
 }
 /* LA HORA AL LADO DEL DIA (20/10, pedido con captura): sale del principio del detalle ("10:00 · ...") y se saca de ahi. */
 const RE_HORA = /^(\d{1,2}:\d{2})( · )?/;
@@ -290,7 +297,7 @@ function pintarModal() {
     `<span class="det_tabs"><button data-v="lista" class="${MODAL.vista === 'lista' ? 'on' : ''}">☰ Lista</button>`
     + `<button data-v="calendario" class="${MODAL.vista === 'calendario' ? 'on' : ''}">📅 Calendario</button></span>`
     + `<label>Señal <select id="f_grupo">${opt('Todas', 'Todas', MODAL.grupo)}${grupos.map(g => opt(g, g, MODAL.grupo)).join('')}</select></label>`
-    + `<label>Semana <select id="f_semana">${opt('Todas', 'Todas', MODAL.semana)}${semanas.map(se => opt(se, rangoSemana(se), MODAL.semana)).join('')}</select></label>`
+    + `<label>Semana <select id="f_semana">${opt('Todas', 'Todas', MODAL.semana)}${semanas.map(se => opt(se, rangoSemana(se).replace('<wbr>', ''), MODAL.semana)).join('')}</select></label>`
     + `<label>Día <select id="f_dia">${opt('Todos', 'Todos', MODAL.dia)}${DIAS.map((d, i) => opt(i, d, MODAL.dia)).join('')}</select></label>`
     + (MODAL.fecha ? `<button id="f_fecha" class="chip">${MODAL.fecha.slice(8)}/${MODAL.fecha.slice(5, 7)} ✕</button>` : '');
   document.querySelectorAll('.det_tabs button').forEach(b => b.onclick = () => { MODAL.vista = b.dataset.v; pintarModal(); });
@@ -429,6 +436,9 @@ document.addEventListener('click', (e) => {
 });
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') document.getElementById('detalle_caja').hidden = true; });
 function cuadricula(orden, cols) {
+  // ancho minimo: nombres + 54 px por columna; mas angosto que eso, se desliza (no se tapa).
+  setTimeout(() => document.querySelectorAll('table.grilla').forEach(t => {
+    const n = t.rows[0] ? t.rows[0].cells.length - 1 : 0; t.style.minWidth = (t.rows[0].cells[0].offsetWidth + n * 58) + 'px'; }), 0);
   let h = '<tr><th></th>' + cols.map(c => `<th>${c.titulo}</th>`).join('') + '</tr>';
   for (const g of orden) h += `<tr><td class="nom">${g}</td>` + cols.map(c => cuadrito(c.de(g), { grupo: g, ...c.filtro })).join('') + '</tr>';
   h += '<tr class="total"><td class="nom">Todas juntas</td>' + cols.map(c => cuadrito(c.todas, { grupo: 'Todas', ...c.filtro })).join('') + '</tr>';
