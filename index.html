@@ -67,7 +67,10 @@ table.grilla tr.total td.nom { font-weight:700; }
 .resumen { display:flex; flex-wrap:wrap; gap:6px 18px; font-size:13.5px; font-weight:400; color:#C9D1D9; margin-top:6px; }
 #det_tabla { font:13px -apple-system,system-ui,sans-serif; }
 #det_tabla th { white-space:normal; font-size:12px; color:#C9D1D9; }
-#det_tabla td { padding:6px 9px; }
+#det_tabla td { padding:6px 9px; overflow:hidden; text-overflow:ellipsis; }
+#det_tabla th { overflow:hidden; text-overflow:ellipsis; }   /* sigue sticky: sirve de base para el borde */
+#det_tabla th .rz { position:absolute; top:0; right:0; width:8px; height:100%; cursor:col-resize; touch-action:none; }
+#det_tabla th .rz:hover, #det_tabla th .rz.on { background:rgba(96,165,250,.55); }
 #det_tabla tr.fila-g td:first-child { box-shadow:inset 3px 0 #22C55E; } #det_tabla tr.fila-p td:first-child { box-shadow:inset 3px 0 #EF4444; }
 /* Sin franja oscura detras (20/10, pedido: "no me gusta la sombra detras de los numeros"): verde y rojo claros. */
 .cuad .ex { display:flex; flex-direction:column; align-items:center; margin-top:2px; font-style:normal; line-height:1.2; }
@@ -280,6 +283,52 @@ function mostrarLista(lista) {
       + `<td>${x.minutos !== undefined && x.minutos !== null ? Math.round(x.minutos) + ' min' : '—'}</td>`
       + `<td>${pc(x.contra)}</td><td>${pc(x.minimo)}</td>`
       + `<td style="text-align:left" class="tenue" title="${x.fuente || ''}">${fuenteCorta(x)}</td></tr>`).join('');
+  columnasAjustables(document.getElementById('det_tabla'), 'lista');
+}
+/* COLUMNAS QUE SE ENSANCHAN O ACHICAN (20/10, pedido: "que las columnas aqui se puedan ajustar de tamaño"): se arrastra
+   el borde derecho del titulo; el ancho queda guardado en este navegador (por nombre de columna); doble clic en el
+   borde: vuelve a su ancho automatico. */
+function columnasAjustables(tabla, clave) {
+  const ths = [...(tabla.rows[0] ? tabla.rows[0].cells : [])];
+  if (!ths.length) return;
+  let guardados = {};
+  try { guardados = JSON.parse(localStorage.getItem('tablero_anchos_' + clave) || '{}'); } catch (e) { /* sin almacenamiento */ }
+  const nombre = (th, i) => th.textContent.trim() || ('col' + i);
+  tabla.style.tableLayout = 'auto'; tabla.style.width = ''; tabla.style.minWidth = ''; ths.forEach(th => { th.style.width = ''; });
+  const anchos = ths.map((th, i) => guardados[nombre(th, i)] || th.offsetWidth);
+  const aplicar = () => {
+    tabla.style.tableLayout = 'fixed';
+    ths.forEach((th, i) => { th.style.width = anchos[i] + 'px'; });
+    tabla.style.width = anchos.reduce((a, b) => a + b, 0) + 'px';
+    tabla.style.minWidth = '0';         // si no, la tabla se estira al ancho de la ventana y no respeta lo elegido
+  };
+  const guardar = () => {
+    const g = {};
+    ths.forEach((th, i) => { if (th.dataset.fijo === '1') g[nombre(th, i)] = anchos[i]; });
+    try { localStorage.setItem('tablero_anchos_' + clave, JSON.stringify({ ...guardados, ...g })); } catch (e) { /* idem */ }
+  };
+  aplicar();
+  ths.forEach((th, i) => {
+    if (guardados[nombre(th, i)]) th.dataset.fijo = '1';
+    const h = document.createElement('span');
+    h.className = 'rz';
+    h.title = 'arrastrá para ensanchar o achicar · doble clic: ancho automático';
+    th.appendChild(h);
+    h.onpointerdown = (e) => {
+      e.preventDefault(); e.stopPropagation();
+      const x0 = e.clientX, w0 = anchos[i];
+      h.setPointerCapture(e.pointerId);
+      h.classList.add('on');
+      h.onpointermove = (ev) => { anchos[i] = Math.max(36, Math.round(w0 + ev.clientX - x0)); aplicar(); };
+      h.onpointerup = () => { h.onpointermove = null; h.classList.remove('on'); th.dataset.fijo = '1'; guardar(); };
+    };
+    h.ondblclick = (e) => {
+      e.stopPropagation();
+      delete guardados[nombre(th, i)];
+      try { localStorage.setItem('tablero_anchos_' + clave, JSON.stringify(guardados)); } catch (x) { /* idem */ }
+      columnasAjustables(tabla, clave);
+    };
+  });
 }
 /* EL CALENDARIO DE CALOR: un mes por bloque, de lunes a viernes; cada dia, cuantas se ganaron (verde) y cuantas se
    perdieron (rojo), con el color segun cuantas se dieron. Tocar un dia: la lista de ese dia. */
