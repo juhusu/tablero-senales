@@ -491,14 +491,46 @@ function pintarHoy(D) {
   h += `<h3>⭐ Lo mejor por día</h3><div class="tabs_mejor"><button data-t="hoy" class="${TAB_MEJOR !== 'manana' ? 'on' : ''}">Hoy · ${NOMBRE}</button>`
     + `<button data-t="manana" class="${TAB_MEJOR === 'manana' ? 'on' : ''}">${sig === 0 ? 'El' : 'Mañana ·'} ${NOMBRE_SIG}</button></div>`;
   const grupos = [...new Set(conHist.map(x => base(x.senal)))];
-  const rank = grupos.map(gr => { const xs = conHist.filter(x => base(x.senal) === gr && x.dia_semana === vista); const c = cuenta(xs), t = c.g + c.p; return { gr, g: c.g, t, p: t ? c.g / t : 0 }; })
-    .filter(r => r.t >= 3).sort((a, b) => b.p - a.p || b.t - a.t).slice(0, 6);
+  const todasFechas = [...new Set(conHist.map(x => x.fecha))];
+  // Cuantas veces SALE cada señal ese dia de la semana (dias con la señal / dias de ese tipo con datos, en el periodo
+  // de esa señal) y cuanto ACIERTA cuando sale.
+  const rank = grupos.map(gr => {
+    const deGr = conHist.filter(x => base(x.senal) === gr);
+    const xs = deGr.filter(x => x.dia_semana === vista); const c = cuenta(xs), t = c.g + c.p;
+    const f0 = deGr.reduce((m, x) => x.fecha < m ? x.fecha : m, '9999'), f1 = deGr.reduce((m, x) => x.fecha > m ? x.fecha : m, '');
+    const diasTipo = todasFechas.filter(f => f >= f0 && f <= f1 && new Date(f + 'T12:00:00').getDay() === vista + 1).length;
+    const diasCon = new Set(xs.map(x => x.fecha)).size;
+    return { gr, g: c.g, t, p: t ? c.g / t : 0, diasCon, diasTipo };
+  }).filter(r => r.t >= 3).sort((a, b) => b.p - a.p || b.t - a.t).slice(0, 7);
   const hoyDe = (gr) => deHoy.filter(x => base(x.senal) === gr);
-  h += rank.length ? rank.map(r => {
-      const hs = vista === ds ? hoyDe(r.gr) : [];
-      const marca = hs.length ? ' ' + hs.map(x => x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : '…').join('') : '';
-      return `<div class="item"><b>${r.g}/${r.t}</b> <span class="sub">(${Math.round(100 * r.p)}%)</span> ${r.gr}${marca}</div>`;
-    }).join('') : '<div class="nada">Pocos casos para este día.</div>';
+  if (vista === sig) {
+    // MAÑANA: para prepararse
+    const M = H.manana || {};
+    h += '<div class="caja" style="margin-bottom:6px">';
+    h += `<div class="sub">📰 Noticias</div>` + ((M.eventos || []).length ? M.eventos.map(e => `<div>${e.hora ? `<span class="hh">${e.hora}</span>` : ''}${e.texto}</div>`).join('')
+      : '<div class="nada">Sin datos importantes en el calendario.</div>');
+    h += '<div class="sub" style="margin-top:6px">📈 GAP de mañana</div>';
+    if (M.gap) {
+      const g = M.gap, ladoG = g.lado > 0 ? 'CALL' : 'PUT';
+      const gapsTodos = conHist.filter(x => base(x.senal) === 'GAP continuación'), gan = conHist.filter(x => x.senal === 'GAP continuación GANADOR');
+      h += `<div>Hoy el SPX ${g.hoy_pct >= 0 ? 'subió' : 'bajó'} <b>${g.hoy_pct > 0 ? '+' : ''}${g.hoy_pct.toFixed(2)}%</b> · el MES marca <b class="${g.mes_pct >= 0 ? 'g' : 'p'}">${g.mes_pct > 0 ? '+' : ''}${g.mes_pct.toFixed(2)}%</b> <span class="sub">(${g.cuando})</span></div>`
+        + (g.continuacion ? `<div>Si abre así: <b>GAP continuación ${ladoG}</b>${g.ganador ? ' <b class="g">GANADOR</b>' : ' (no GANADOR)'}</div>`
+          + `<div class="sub">${g.ganador ? 'GANADOR acierta ' + pctTxt(gan) + ' · los ' + NOMBRE_SIG + ' ' + pctTxt(gan.filter(x => x.dia_semana === sig))
+              : 'GAP continuación acierta ' + pctTxt(gapsTodos) + ' · los ' + NOMBRE_SIG + ' ' + pctTxt(gapsTodos.filter(x => x.dia_semana === sig))}</div>`
+          : '<div>Si abre así: no sería GAP continuación (va para el otro lado de hoy o muy chico).</div>')
+        + '<div class="sub">puede cambiar hasta la apertura; el aviso de las 9:28 lo confirma</div>';
+    } else h += '<div class="nada">Se calcula después del cierre de hoy (16:00).</div>';
+    if (H.rebote && H.rebote.senal && H.rebote_dia) h += `<div class="sub" style="margin-top:6px">🌙 Hoy se dio el rebote al cierre: ${H.rebote_dia[0]} abrió con GAP alcista ${H.rebote_dia[1]} de ${H.rebote_dia[2]} veces</div>`;
+    h += '</div><div class="sub" style="margin:4px 0">Cada señal los ' + NOMBRE_SIG + ': cuántas veces sale y cuánto acierta cuando sale</div>';
+    h += rank.length ? rank.map(r => `<div class="item">${r.gr}<div class="sub">sale <b>${r.diasCon} de ${r.diasTipo}</b> ${NOMBRE_SIG} · acierta <b class="${r.p >= 0.6 ? 'g' : r.p >= 0.4 ? '' : 'p'}">${Math.round(100 * r.p)}%</b> (${r.g} de ${r.t})</div></div>`).join('')
+      : '<div class="nada">Pocos casos para este día.</div>';
+  } else {
+    h += rank.length ? rank.map(r => {
+        const hs = hoyDe(r.gr);
+        const marca = hs.length ? ' ' + hs.map(x => x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : '…').join('') : '';
+        return `<div class="item"><b>${r.g}/${r.t}</b> <span class="sub">(${Math.round(100 * r.p)}%)</span> ${r.gr}${marca}</div>`;
+      }).join('') : '<div class="nada">Pocos casos para este día.</div>';
+  }
   const porDia = [0, 1, 2, 3, 4].map(i => { const c = cuenta(conHist.filter(x => x.dia_semana === i)); return c.g + c.p ? c.g / (c.g + c.p) : 0; });
   const puesto = [...porDia].sort((a, b) => b - a).indexOf(porDia[vista]) + 1;
   h += `<div class="sub" style="margin-top:4px">Todas juntas los ${DIAS[vista]}: ${Math.round(100 * porDia[vista])}% · ${puesto === 1 ? 'es el día con más aciertos de la semana' : 'el ' + puesto + '° día de la semana'}</div>`;
