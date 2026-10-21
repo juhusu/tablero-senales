@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-21 09:35",
+ "actualizado": "2026-10-21 09:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -5322,6 +5322,49 @@
    ],
    "semana": "2026-10-19",
    "dia_semana": 1
+  },
+  {
+   "fecha": "2026-10-21",
+   "senal": "GAP continuación",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "9:30 · GAP +0.31% · ayer +0.28%",
+   "maximo": -9.1,
+   "unidad": "opción",
+   "minimo": -39.4,
+   "contra": -36.4,
+   "minutos": 12.1,
+   "strike": 774.0,
+   "entrada": 1.32,
+   "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-21",
+   "senal": "Heikin Ashi CALL",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "9:40 · CALL 774 al ask 1.16",
+   "maximo": 2.6,
+   "unidad": "opción",
+   "minimo": -29.3,
+   "contra": -14.7,
+   "minutos": 1.8,
+   "strike": 774.0,
+   "entrada": 1.16,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 2
   }
  ]
 }
