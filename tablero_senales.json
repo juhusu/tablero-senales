@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-21 19:43",
+ "actualizado": "2026-10-21 19:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -5465,6 +5465,19 @@
    13,
    16
   ],
-  "cobertura_hasta": "2026-12-09"
+  "cobertura_hasta": "2026-12-09",
+  "manana": {
+   "fecha": "2026-10-22",
+   "dia_semana": 3,
+   "eventos": [],
+   "gap": {
+    "mes_pct": -0.4552,
+    "hoy_pct": 0.59,
+    "lado": -1,
+    "cuando": "21/10 19:45",
+    "continuacion": false,
+    "ganador": true
+   }
+  }
  }
 }
