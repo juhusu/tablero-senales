@@ -10,7 +10,7 @@ header { display:flex; flex-wrap:wrap; gap:12px; align-items:baseline; padding:1
 h1 { font-size:18px; margin:0; } h2 { font-size:15px; margin:22px 16px 8px; color:var(--tenue); font-weight:600; }
 .tenue { color:var(--tenue); font-size:13px; }
 /* TODOS EN UNA LINEA (20/10, pedido: "ponlos todos que quepa en una linea"); en pantallas angostas se desliza. */
-.circulos { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(122px,1fr); gap:8px; padding:0 16px 6px; overflow-x:auto; }
+.circulos { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(112px,1fr); gap:8px; padding:0 16px 6px; overflow-x:auto; }
 .circ { background:var(--panel); border:1px solid var(--borde); border-radius:10px; padding:8px 6px; text-align:center; }
 .circ h3 { font-size:11.5px; margin:0 0 4px; font-weight:600; min-height:30px; line-height:1.25; }
 .circ .caja { position:relative; height:118px; }
@@ -47,6 +47,18 @@ table.grilla tr.total td.nom { font-weight:700; }
 .cuad b { font-size:17px; line-height:1.1; } .cuad span { font-size:10.5px; opacity:.92; white-space:nowrap; } .cuad span { font-size:11px; opacity:.85; }
 .cuad.nada { background:#161B22; color:#4B5563; font-size:16px; }
 .hora { color:#93C5FD; font-weight:600; margin-left:4px; }
+/* LA COLUMNA "HOY" a la derecha (21/10): lo del dia actual; se vacia sola al dia siguiente. En pantallas chicas va arriba. */
+.cuerpo { display:grid; grid-template-columns:minmax(0,1fr) 330px; align-items:start; }
+.principal { min-width:0; }
+.hoy { border-left:1px solid var(--borde); padding:14px 14px 30px; position:sticky; top:0; max-height:100vh; overflow-y:auto; font-size:13.5px; line-height:1.45; }
+.hoy h3 { font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--tenue); margin:16px 0 6px; }
+.hoy .titulo { font-size:18px; font-weight:700; } .hoy .sub { color:var(--tenue); font-size:12px; }
+.hoy .item { padding:5px 0; border-bottom:1px solid #1A2029; } .hoy .item:last-child { border-bottom:none; }
+.hoy .hh { color:#93C5FD; font-weight:700; margin-right:6px; font-variant-numeric:tabular-nums; }
+.hoy .caja { background:var(--panel); border:1px solid var(--borde); border-radius:9px; padding:9px 10px; }
+.hoy .grande { font-size:16px; font-weight:700; }
+.hoy .nada { color:#6B7280; }
+@media (max-width:1100px) { .cuerpo { grid-template-columns:1fr; } .hoy { order:-1; border-left:none; border-bottom:1px solid var(--borde); position:static; max-height:none; } }
 /* LA VENTANA DEL DETALLE EN EL TELEFONO (21/10): sin Minimo ni Datos, titulos cortos, sin cortar el texto. */
 @media (max-width:700px) {
   #detalle_caja { padding:6px; }
@@ -145,6 +157,7 @@ label { color:var(--tenue); font-size:13px; }
   <span id="activos"></span>
   <span id="dias_f"></span>
 </header>
+<div class="cuerpo"><main class="principal">
 <h2>Cuántas señales se dieron</h2>
 <div class="circulos" id="circulos"></div>
 <!-- LAS PESTAÑAS DEBAJO DE LOS CIRCULOS (20/10, pedido con captura: "pasa esas pestañas para el rectangulo verde"):
@@ -164,6 +177,7 @@ label { color:var(--tenue); font-size:13px; }
 <div id="p_detalle" hidden><div class="wrap"><table id="detalle" class="diaxdia"></table></div></div>
 
 <p class="leyenda" style="margin-top:18px"><b>Se dio</b> = después de la señal, la opción llegó a ganar 10% o más. <b>Máx. típico</b> = cuánto llegó a ganar la opción en un día normal de esa señal. Ojo: no se compara con entrar en cualquier otro momento, y en TSLA las opciones del día suben 10% muy seguido igual. La página se actualiza sola de lunes a viernes.</p>
+</main><aside id="hoy" class="hoy"></aside></div>
 <script>
 const COLORES = ['#60A5FA','#F59E0B','#A78BFA','#22D3EE','#F472B6','#34D399','#FB923C','#E879F9','#FACC15','#93C5FD'];
 const DIAS = ['lunes','martes','miércoles','jueves','viernes'];
@@ -417,7 +431,70 @@ function cuadricula(orden, cols) {
   h += '<tr class="total"><td class="nom">Todas juntas</td>' + cols.map(c => cuadrito(c.todas, { grupo: 'Todas', ...c.filtro })).join('') + '</tr>';
   return h;
 }
+function pintarHoy(D) {
+  const H = D.hoy || {}, el = document.getElementById('hoy');
+  if (!H.fecha) { el.innerHTML = ''; return; }
+  const ds = H.dia_semana, NOMBRE = DIAS[ds] || '';
+  const conHist = D.senales;                                       // con el historial: mas casos para comparar
+  const deHoy = D.senales.filter(x => x.fecha === H.fecha && !x.historico);
+  const pctTxt = (xs) => { const c = cuenta(xs), t = c.g + c.p; return t ? `${Math.round(100 * c.g / t)}% (${c.g} de ${t})` : 'sin casos'; };
+  let h = `<div class="titulo">Hoy · ${NOMBRE} ${H.fecha.slice(8)}/${H.fecha.slice(5, 7)}</div><div class="sub">se actualiza solo · mañana arranca vacío</div>`;
+  // NOTICIAS
+  h += '<h3>📰 Noticias del día</h3>';
+  const items = [];
+  for (const e of H.eventos || []) items.push(`<div class="item">${e.hora ? `<span class="hh">${e.hora}</span>` : ''}${e.texto}</div>`);
+  for (const r of H.reportes || []) {
+    const cif = Object.entries(r.cifras || {}).map(([k, v]) => `${k} <b>${v}</b>`).join(' · ');
+    const flecha = r.direccion === 'arriba' ? '<b class="g">MES ⬆</b>' : r.direccion === 'abajo' ? '<b class="p">MES ⬇</b>' : 'MES ↔';
+    items.push(`<div class="item"><span class="hh">${r.hora}</span>${r.datos}: ${cif ? cif + ' · ' : ''}${flecha}${r.mov !== null ? ' ' + (r.mov > 0 ? '+' : '') + r.mov.toFixed(2) + '%' : ''}</div>`);
+  }
+  h += items.length ? items.join('') : '<div class="nada">Sin datos importantes en el calendario.</div>';
+  if (H.cobertura_hasta && H.fecha > H.cobertura_hasta) h += '<div class="p">El calendario no llega a hoy: hay que cargarlo.</div>';
+  // EL GAP
+  h += '<h3>📈 GAP de hoy</h3>';
+  const gapsTodos = conHist.filter(x => base(x.senal) === 'GAP continuación');
+  const gan = conHist.filter(x => x.senal === 'GAP continuación GANADOR');
+  if (H.gap) {
+    const g = H.gap, lado = g.lado > 0 ? 'CALL' : g.lado < 0 ? 'PUT' : null;
+    const mismo = g.lado !== 0 && Math.sign(g.lado) === Math.sign(g.ayer_pct || 0) && Math.abs(g.mes_pct) >= 0.05;
+    h += `<div class="caja"><div class="grande">${g.lado > 0 ? '<span class="g">⬆ alcista</span>' : g.lado < 0 ? '<span class="p">⬇ bajista</span>' : '↔ sin GAP claro'}</div>`
+      + `<div>MES ${g.mes_pct > 0 ? '+' : ''}${g.mes_pct.toFixed(2)}% a las ${g.cuando} · ayer ${g.ayer_pct > 0 ? '+' : ''}${g.ayer_pct.toFixed(2)}%</div>`
+      + (mismo ? `<div style="margin-top:4px">Sería <b>GAP continuación ${lado}</b>${g.ganador ? ' <b class="g">GANADOR</b>' : ' (no GANADOR: el GAP es más grande que ayer)'}</div>`
+               : '<div style="margin-top:4px">No sería GAP continuación (va para el otro lado de ayer o muy chico).</div>')
+      + `<div class="sub" style="margin-top:6px">GAP continuación: ${pctTxt(gapsTodos)} · los ${NOMBRE} ${pctTxt(gapsTodos.filter(x => x.dia_semana === ds))}<br>`
+      + `GANADOR: ${pctTxt(gan)} · los ${NOMBRE} ${pctTxt(gan.filter(x => x.dia_semana === ds))}</div></div>`;
+  } else h += '<div class="nada">Se calcula antes de la apertura (desde las 8:00).</div>';
+  // LO MEJOR DE ESTE DIA
+  h += `<h3>⭐ Lo mejor de los ${NOMBRE}</h3>`;
+  const grupos = [...new Set(conHist.map(x => base(x.senal)))];
+  const rank = grupos.map(gr => { const xs = conHist.filter(x => base(x.senal) === gr && x.dia_semana === ds); const c = cuenta(xs), t = c.g + c.p; return { gr, g: c.g, t, p: t ? c.g / t : 0 }; })
+    .filter(r => r.t >= 3).sort((a, b) => b.p - a.p || b.t - a.t).slice(0, 5);
+  h += rank.length ? rank.map(r => `<div class="item"><b>${r.g}/${r.t}</b> <span class="sub">(${Math.round(100 * r.p)}%)</span> ${r.gr}</div>`).join('') : '<div class="nada">Pocos casos para este día.</div>';
+  const porDia = [0, 1, 2, 3, 4].map(i => { const c = cuenta(conHist.filter(x => x.dia_semana === i)); return c.g + c.p ? c.g / (c.g + c.p) : 0; });
+  const puesto = [...porDia].sort((a, b) => b - a).indexOf(porDia[ds]) + 1;
+  h += `<div class="sub" style="margin-top:4px">Todas juntas los ${NOMBRE}: ${Math.round(100 * porDia[ds])}% · ${puesto === 1 ? 'es el día con más aciertos de la semana' : 'el ' + puesto + '° día de la semana'}</div>`;
+  // LO QUE VA PASANDO
+  h += '<h3>🕘 Lo que va pasando</h3>';
+  const hm = (x) => (horaDe(x) || '00:00').padStart(5, '0');
+  const ord = [...deHoy].sort((a, b) => hm(a).localeCompare(hm(b)));
+  h += ord.length ? ord.map(x => `<div class="item"><span class="hh">${horaDe(x)}</span>${x.lado === 'CALL' ? '🟢' : '🔴'} ${x.senal} `
+      + `${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : '…'}`
+      + `${x.maximo !== null && x.maximo !== undefined && x.unidad === 'opción' ? ` <span class="${x.maximo >= 0 ? 'g' : 'p'}">${x.maximo > 0 ? '+' : ''}${x.maximo.toFixed(1)}%</span>` : ''}</div>`).join('')
+    : '<div class="nada">Todavía no hubo señales hoy.</div>';
+  // AVISOS
+  h += '<h3>🔔 Avisos que salieron</h3>';
+  h += (H.avisos || []).length ? H.avisos.map(a => `<div class="item"><span class="hh">${a.hora}</span>${a.texto}</div>`).join('') : '<div class="nada">Ninguno todavía.</div>';
+  // REBOTE
+  h += '<h3>🌙 Rebote al cierre</h3>';
+  const rd = H.rebote_dia;
+  const est = rd ? `${rd[0]}: GAP alcista ${rd[1]} de ${rd[2]} veces (${Math.round(100 * rd[1] / rd[2])}%)` : '';
+  if (H.rebote) h += H.rebote.senal ? `<div class="caja"><div class="grande g">Se dio la señal</div><div class="sub">${est}</div></div>`
+      : `<div>No se dio hoy${H.rebote.roja ? '' : ' (la última media hora no fue roja)'}.</div><div class="sub">${est}</div>`;
+  else h += `<div class="nada">Se mira a las 16:00.</div><div class="sub">${est}</div>`;
+  el.innerHTML = h;
+}
 function pintar(D) {
+  pintarHoy(D);
   CELDAS = [];
   graficos.forEach(g => g.destroy()); graficos = [];
   const ba = document.getElementById('activos');

@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-21 18:05",
+ "actualizado": "2026-10-21 18:07",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -5447,7 +5447,7 @@
   "avisos": [
    {
     "hora": "09:30",
-    "texto": "gap continuacion CALL"
+    "texto": "GAP continuación CALL"
    },
    {
     "hora": "09:40",
