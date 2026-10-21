@@ -68,6 +68,10 @@ table.grilla tr.total td.nom { font-weight:700; }
 .hoy .caja { background:var(--panel); border:1px solid var(--borde); border-radius:9px; padding:9px 10px; }
 .hoy .grande { font-size:16px; font-weight:700; }
 .hoy .nada { color:#6B7280; }
+.tabs_mejor { display:flex; margin-bottom:6px; }
+.tabs_mejor button { flex:1; background:var(--fondo); color:var(--tenue); border:1px solid var(--borde); padding:5px 8px; cursor:pointer; font:inherit; font-size:12.5px; text-transform:capitalize; }
+.tabs_mejor button:first-child { border-radius:7px 0 0 7px; } .tabs_mejor button:last-child { border-radius:0 7px 7px 0; border-left:none; }
+.tabs_mejor button.on { color:var(--texto); background:#1B2333; border-color:#60A5FA; }
 @media (max-width:1100px) { .hoy_borde { display:none; } .cuerpo { grid-template-columns:1fr !important; } .hoy { order:-1; border-left:none; border-bottom:1px solid var(--borde); position:static; max-height:none; } }
 /* LA VENTANA DEL DETALLE EN EL TELEFONO (21/10): sin Minimo ni Datos, titulos cortos, sin cortar el texto. */
 @media (max-width:700px) {
@@ -444,6 +448,7 @@ function cuadricula(orden, cols) {
   h += '<tr class="total"><td class="nom">Todas juntas</td>' + cols.map(c => cuadrito(c.todas, { grupo: 'Todas', ...c.filtro })).join('') + '</tr>';
   return h;
 }
+let TAB_MEJOR = 'hoy';
 function pintarHoy(D) {
   const H = D.hoy || {}, el = document.getElementById('hoy');
   if (!H.fecha) { el.innerHTML = ''; return; }
@@ -477,15 +482,30 @@ function pintarHoy(D) {
       + `<div class="sub" style="margin-top:6px">GAP continuación: ${pctTxt(gapsTodos)} · los ${NOMBRE} ${pctTxt(gapsTodos.filter(x => x.dia_semana === ds))}<br>`
       + `GANADOR: ${pctTxt(gan)} · los ${NOMBRE} ${pctTxt(gan.filter(x => x.dia_semana === ds))}</div></div>`;
   } else h += '<div class="nada">Se calcula antes de la apertura (desde las 8:00).</div>';
-  // LO MEJOR DE ESTE DIA
-  h += `<h3>⭐ Lo mejor de los ${NOMBRE}</h3>`;
+  // LO MEJOR POR DIA, con dos pestañas: HOY (con lo que paso hoy al lado) y el DIA DE BOLSA SIGUIENTE (21/10, pedido:
+  // "dos pestañas, una para esta y otra para el dia siguiente ... cuando termine el jueves la deja con lo que paso y
+  // sale el viernes"). Cambia sola con la fecha; el viernes, la de al lado es el lunes.
+  const sig = ds >= 4 ? 0 : ds + 1;
+  const NOMBRE_SIG = DIAS[sig] || '';
+  const vista = TAB_MEJOR === 'manana' ? sig : ds;
+  h += `<h3>⭐ Lo mejor por día</h3><div class="tabs_mejor"><button data-t="hoy" class="${TAB_MEJOR !== 'manana' ? 'on' : ''}">Hoy · ${NOMBRE}</button>`
+    + `<button data-t="manana" class="${TAB_MEJOR === 'manana' ? 'on' : ''}">${sig === 0 ? 'El' : 'Mañana ·'} ${NOMBRE_SIG}</button></div>`;
   const grupos = [...new Set(conHist.map(x => base(x.senal)))];
-  const rank = grupos.map(gr => { const xs = conHist.filter(x => base(x.senal) === gr && x.dia_semana === ds); const c = cuenta(xs), t = c.g + c.p; return { gr, g: c.g, t, p: t ? c.g / t : 0 }; })
-    .filter(r => r.t >= 3).sort((a, b) => b.p - a.p || b.t - a.t).slice(0, 5);
-  h += rank.length ? rank.map(r => `<div class="item"><b>${r.g}/${r.t}</b> <span class="sub">(${Math.round(100 * r.p)}%)</span> ${r.gr}</div>`).join('') : '<div class="nada">Pocos casos para este día.</div>';
+  const rank = grupos.map(gr => { const xs = conHist.filter(x => base(x.senal) === gr && x.dia_semana === vista); const c = cuenta(xs), t = c.g + c.p; return { gr, g: c.g, t, p: t ? c.g / t : 0 }; })
+    .filter(r => r.t >= 3).sort((a, b) => b.p - a.p || b.t - a.t).slice(0, 6);
+  const hoyDe = (gr) => deHoy.filter(x => base(x.senal) === gr);
+  h += rank.length ? rank.map(r => {
+      const hs = vista === ds ? hoyDe(r.gr) : [];
+      const marca = hs.length ? ' ' + hs.map(x => x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : '…').join('') : '';
+      return `<div class="item"><b>${r.g}/${r.t}</b> <span class="sub">(${Math.round(100 * r.p)}%)</span> ${r.gr}${marca}</div>`;
+    }).join('') : '<div class="nada">Pocos casos para este día.</div>';
   const porDia = [0, 1, 2, 3, 4].map(i => { const c = cuenta(conHist.filter(x => x.dia_semana === i)); return c.g + c.p ? c.g / (c.g + c.p) : 0; });
-  const puesto = [...porDia].sort((a, b) => b - a).indexOf(porDia[ds]) + 1;
-  h += `<div class="sub" style="margin-top:4px">Todas juntas los ${NOMBRE}: ${Math.round(100 * porDia[ds])}% · ${puesto === 1 ? 'es el día con más aciertos de la semana' : 'el ' + puesto + '° día de la semana'}</div>`;
+  const puesto = [...porDia].sort((a, b) => b - a).indexOf(porDia[vista]) + 1;
+  h += `<div class="sub" style="margin-top:4px">Todas juntas los ${DIAS[vista]}: ${Math.round(100 * porDia[vista])}% · ${puesto === 1 ? 'es el día con más aciertos de la semana' : 'el ' + puesto + '° día de la semana'}</div>`;
+  if (vista === ds) {
+    const c = cuenta(deHoy), t = c.g + c.p;
+    h += `<div class="sub">Hoy: ${t ? `${c.g} de ${t} señales se dieron` : 'todavía sin resultados'}${c.n ? ` · ${c.n} por ver` : ''}</div>`;
+  }
   // LO QUE VA PASANDO
   h += '<h3>🕘 Lo que va pasando</h3>';
   const hm = (x) => (horaDe(x) || '00:00').padStart(5, '0');
@@ -506,6 +526,7 @@ function pintarHoy(D) {
   else h += `<div class="nada">Se mira a las 16:00.</div><div class="sub">${est}</div>`;
   el.innerHTML = '<div class="hoy_borde" title="arrastrá para cambiar el ancho · doble clic: ancho normal"></div>' + h;
   bordeHoy(el.querySelector('.hoy_borde'));
+  el.querySelectorAll('.tabs_mejor button').forEach(b => b.onclick = () => { TAB_MEJOR = b.dataset.t; pintarHoy(D); });
 }
 /* Arrastrar el borde de la columna Hoy: el ancho queda guardado en este navegador; doble clic lo vuelve a 330 px. */
 function anchoHoy(px) {
