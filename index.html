@@ -47,6 +47,18 @@ table.grilla tr.total td.nom { font-weight:700; }
 .cuad b { font-size:17px; line-height:1.1; } .cuad span { font-size:10.5px; opacity:.92; white-space:nowrap; } .cuad span { font-size:11px; opacity:.85; }
 .cuad.nada { background:#161B22; color:#4B5563; font-size:16px; }
 .hora { color:#93C5FD; font-weight:600; margin-left:4px; }
+/* LA VENTANA DEL DETALLE EN EL TELEFONO (21/10): sin Minimo ni Datos, titulos cortos, sin cortar el texto. */
+@media (max-width:700px) {
+  #detalle_caja { padding:6px; }
+  .det { padding:10px 8px; max-height:88vh; }
+  #det_tabla { font-size:12px; }
+  #det_tabla .c-min, #det_tabla .c-dat, #det_tabla .c-txt, #det_tabla .h, #det_tabla .dsem { display:none; }
+  #det_tabla { font-size:11px; }
+  #det_tabla th, #det_tabla td { padding:6px 3px !important; white-space:nowrap !important; overflow:visible; text-overflow:clip; font-size:11px !important; }
+  #det_tabla .hora { margin-left:0; }
+  #det_tabla th .rz { display:none; }
+  .resumen { font-size:12.5px; }
+}
 /* DIA POR DIA en el telefono (21/10, captura: "solo aparecen dos [columnas]"): letra normal, sin Activo ni Detalle. */
 table.diaxdia { font:13px -apple-system,system-ui,sans-serif; }
 @media (max-width:700px) {
@@ -292,19 +304,20 @@ function mostrarLista(lista) {
   const pc = (v) => v === null || v === undefined ? '<span class="n">—</span>'
     : `<span class="${v >= 0 ? 'g' : 'p'}">${v > 0 ? '+' : ''}${v.toFixed(1)}%</span>`;
   const varias = new Set(xs.map(x => x.grupo)).size > 1;
+  const movil = !!(window.matchMedia && window.matchMedia('(max-width:700px)').matches);
   document.getElementById('det_tabla').innerHTML = '<tr><th>Día</th><th>Hora</th>' + (varias ? '<th style="text-align:left">Señal</th>' : '')
     + '<th>Lado</th><th></th>'
-    + '<th>Máximo</th><th>Tardó</th><th>En contra antes del máximo</th><th>Mínimo (30 min)</th><th style="text-align:left">Datos</th></tr>'
+    + '<th>Máximo</th><th>Tardó</th><th>En contra<span class="c-txt"> antes del máximo</span></th><th class="c-min">Mínimo (30 min)</th><th class="c-dat" style="text-align:left">Datos</th></tr>'
     + (xs.length ? '' : '<tr><td colspan="10" class="n" style="text-align:center;padding:18px">sin señales con estos filtros</td></tr>')
     + xs.map(x => `<tr class="${x.resultado === 'G' ? 'fila-g' : x.resultado === 'P' ? 'fila-p' : ''}">`
-      + `<td>${(DIAS[x.dia_semana] || '').slice(0, 3)} ${x.fecha.slice(8)}/${x.fecha.slice(5, 7)}${x.historico ? ' <span class="n">· hist.</span>' : ''}</td>`
+      + `<td><span class="dsem">${(DIAS[x.dia_semana] || '').slice(0, 3)} </span>${x.fecha.slice(8)}/${x.fecha.slice(5, 7)}${x.historico ? ' <span class="n h">· hist.</span>' : ''}</td>`
       + `<td><b class="hora">${horaDe(x)}</b></td>` + (varias ? `<td style="text-align:left">${x.senal}</td>` : '')
       + `<td>${x.lado}</td>`     /* sin strike, entrada ni dolares (20/10, pedido con captura) */
       + `<td>${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : '…'}</td>`
       + `<td>${pc(x.maximo)}${x.unidad && x.unidad !== 'opción' && x.maximo !== null ? ' <span class="n">' + x.unidad + '</span>' : ''}</td>`
-      + `<td>${x.minutos !== undefined && x.minutos !== null ? Math.round(x.minutos) + ' min' : '—'}</td>`
-      + `<td>${pc(x.contra)}</td><td>${pc(x.minimo)}</td>`
-      + `<td style="text-align:left" class="tenue" title="${x.fuente || ''}">${fuenteCorta(x)}</td></tr>`).join('');
+      + `<td>${x.minutos !== undefined && x.minutos !== null ? Math.round(x.minutos) + (movil ? '′' : ' min') : '—'}</td>`
+      + `<td>${pc(x.contra)}</td><td class="c-min">${pc(x.minimo)}</td>`
+      + `<td style="text-align:left" class="tenue c-dat" title="${x.fuente || ''}">${fuenteCorta(x)}</td></tr>`).join('');
   columnasAjustables(document.getElementById('det_tabla'), 'lista');
 }
 /* COLUMNAS QUE SE ENSANCHAN O ACHICAN (20/10, pedido: "que las columnas aqui se puedan ajustar de tamaño"): se arrastra
@@ -313,6 +326,11 @@ function mostrarLista(lista) {
 function columnasAjustables(tabla, clave) {
   const ths = [...(tabla.rows[0] ? tabla.rows[0].cells : [])];
   if (!ths.length) return;
+  // En el telefono no: la tabla se acomoda sola (con anchos fijos cortaba el texto: "CA…", 21/10).
+  if (window.matchMedia && window.matchMedia('(max-width:700px)').matches) {
+    tabla.style.tableLayout = 'auto'; tabla.style.width = ''; tabla.style.minWidth = ''; ths.forEach(th => { th.style.width = ''; });
+    return;
+  }
   let guardados = {};
   try { guardados = JSON.parse(localStorage.getItem('tablero_anchos_' + clave) || '{}'); } catch (e) { /* sin almacenamiento */ }
   const nombre = (th, i) => th.textContent.trim() || ('col' + i);
