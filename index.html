@@ -490,7 +490,7 @@ function pintarHoy(D) {
   h += '<h3>🕘 Lo que va pasando</h3>';
   const hm = (x) => (horaDe(x) || '00:00').padStart(5, '0');
   const ord = [...deHoy].sort((a, b) => hm(a).localeCompare(hm(b)));
-  h += ord.length ? ord.map(x => `<div class="item"><span class="hh">${horaDe(x)}</span>${x.lado === 'CALL' ? '🟢' : '🔴'} ${x.senal} `
+  h += ord.length ? ord.map(x => `<div class="item"><span class="hh">${horaDe(x)}</span>${x.lado === 'CALL' ? '<b class="g">▲</b>' : '<b class="p">▼</b>'} ${x.senal} `
       + `${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : '…'}`
       + `${x.maximo !== null && x.maximo !== undefined && x.unidad === 'opción' ? ` <span class="${x.maximo >= 0 ? 'g' : 'p'}">${x.maximo > 0 ? '+' : ''}${x.maximo.toFixed(1)}%</span>` : ''}</div>`).join('')
     : '<div class="nada">Todavía no hubo señales hoy.</div>';
