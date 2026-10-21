@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-21 12:05",
+ "actualizado": "2026-10-21 16:20",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -5208,9 +5208,9 @@
    "fecha": "2026-10-20",
    "senal": "GAP bajista (amigo)",
    "lado": "PUT",
-   "resultado": null,
-   "detalle": "16:00 · falta la apertura siguiente",
-   "maximo": null,
+   "resultado": "P",
+   "detalle": "16:00 · GAP siguiente +0.28%",
+   "maximo": -0.3,
    "unidad": "GAP",
    "minimo": null,
    "activo": "SPX",
