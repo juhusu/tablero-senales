@@ -170,6 +170,13 @@ function colorPct(p) { const h = Math.round(120 * p); return `hsl(${h} 62% 32%)`
    opcion y si das clic en una casilla se detalle cada una de las veces"): arriba cuantas se dieron (3/4); abajo, en una
    señal tipica de esa casilla (la del medio), cuanto llego a ganar la opcion (▲) y a perder (▼). Clic: el detalle. */
 let CELDAS = [];
+/* El titulo de la columna de una semana: del lunes al viernes, "19–23/10" o "28/09–02/10" (21/10: "solo aparece hasta
+   el 19/10" — la columna con la fecha del lunes parecia un solo dia). */
+function rangoSemana(lunes) {
+  const d = new Date(lunes + 'T12:00:00'), v = new Date(d.getTime() + 4 * 864e5);
+  const dd = (x) => String(x.getDate()).padStart(2, '0'), mm = (x) => String(x.getMonth() + 1).padStart(2, '0');
+  return d.getMonth() === v.getMonth() ? `${dd(d)}–${dd(v)}/${mm(v)}` : `${dd(d)}/${mm(d)}–${dd(v)}/${mm(v)}`;
+}
 /* LA HORA AL LADO DEL DIA (20/10, pedido con captura): sale del principio del detalle ("10:00 · ...") y se saca de ahi. */
 const RE_HORA = /^(\d{1,2}:\d{2})( · )?/;
 function horaDe(x) { const m = (x.detalle || '').match(RE_HORA); return m ? m[1] : ''; }
@@ -239,7 +246,7 @@ function pintarModal() {
     `<span class="det_tabs"><button data-v="lista" class="${MODAL.vista === 'lista' ? 'on' : ''}">☰ Lista</button>`
     + `<button data-v="calendario" class="${MODAL.vista === 'calendario' ? 'on' : ''}">📅 Calendario</button></span>`
     + `<label>Señal <select id="f_grupo">${opt('Todas', 'Todas', MODAL.grupo)}${grupos.map(g => opt(g, g, MODAL.grupo)).join('')}</select></label>`
-    + `<label>Semana <select id="f_semana">${opt('Todas', 'Todas', MODAL.semana)}${semanas.map(se => opt(se, 'del lunes ' + se.slice(8) + '/' + se.slice(5, 7), MODAL.semana)).join('')}</select></label>`
+    + `<label>Semana <select id="f_semana">${opt('Todas', 'Todas', MODAL.semana)}${semanas.map(se => opt(se, rangoSemana(se), MODAL.semana)).join('')}</select></label>`
     + `<label>Día <select id="f_dia">${opt('Todos', 'Todos', MODAL.dia)}${DIAS.map((d, i) => opt(i, d, MODAL.dia)).join('')}</select></label>`
     + (MODAL.fecha ? `<button id="f_fecha" class="chip">${MODAL.fecha.slice(8)}/${MODAL.fecha.slice(5, 7)} ✕</button>` : '');
   document.querySelectorAll('.det_tabs button').forEach(b => b.onclick = () => { MODAL.vista = b.dataset.v; pintarModal(); });
@@ -437,7 +444,7 @@ function pintar(D) {
   // De la mas vieja (izquierda) a la mas nueva (derecha) (20/10, pedido: "los dias aparecen de derecha a izquierda").
   const semanas = [...new Set(filas.map(f => f.semana))].sort();
   document.getElementById('semanas').innerHTML = cuadricula(orden, semanas.map(se => ({
-    titulo: se.slice(8) + '/' + se.slice(5, 7), filtro: { semana: se }, de: (g) => filas.filter(f => f.semana === se && f.grupo === g),
+    titulo: rangoSemana(se), filtro: { semana: se }, de: (g) => filas.filter(f => f.semana === se && f.grupo === g),
     todas: todas.filter(x => x.semana === se) })));
   const caja = document.getElementById('semanas').parentElement;       // se abre mostrando la semana mas nueva
   requestAnimationFrame(() => { caja.scrollLeft = caja.scrollWidth; });
