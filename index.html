@@ -268,17 +268,15 @@ function mostrarLista(lista) {
     : `<span class="${v >= 0 ? 'g' : 'p'}">${v > 0 ? '+' : ''}${v.toFixed(1)}%</span>`;
   const varias = new Set(xs.map(x => x.grupo)).size > 1;
   document.getElementById('det_tabla').innerHTML = '<tr><th>Día</th><th>Hora</th>' + (varias ? '<th style="text-align:left">Señal</th>' : '')
-    + '<th>Lado</th><th>Strike</th><th>Entrada</th><th></th>'
-    + '<th>Máximo</th><th>$ por contrato XSP</th><th>Tardó</th><th>En contra antes del máximo</th><th>Mínimo (30 min)</th><th style="text-align:left">Datos</th></tr>'
-    + (xs.length ? '' : '<tr><td colspan="13" class="n" style="text-align:center;padding:18px">sin señales con estos filtros</td></tr>')
+    + '<th>Lado</th><th></th>'
+    + '<th>Máximo</th><th>Tardó</th><th>En contra antes del máximo</th><th>Mínimo (30 min)</th><th style="text-align:left">Datos</th></tr>'
+    + (xs.length ? '' : '<tr><td colspan="10" class="n" style="text-align:center;padding:18px">sin señales con estos filtros</td></tr>')
     + xs.map(x => `<tr class="${x.resultado === 'G' ? 'fila-g' : x.resultado === 'P' ? 'fila-p' : ''}">`
       + `<td>${(DIAS[x.dia_semana] || '').slice(0, 3)} ${x.fecha.slice(8)}/${x.fecha.slice(5, 7)}${x.historico ? ' <span class="n">· hist.</span>' : ''}</td>`
       + `<td><b class="hora">${horaDe(x)}</b></td>` + (varias ? `<td style="text-align:left">${x.senal}</td>` : '')
-      + `<td>${x.lado}</td><td>${x.strike === undefined || x.strike === null ? '—' : x.strike > 2000 ? x.strike + ' <span class="n">SPX</span>' : x.strike}</td>`
-      + `<td>${x.entrada !== undefined && x.entrada !== null ? '$' + Number(x.entrada).toFixed(2) : '—'}</td>`
+      + `<td>${x.lado}</td>`     /* sin strike, entrada ni dolares (20/10, pedido con captura) */
       + `<td>${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : '…'}</td>`
       + `<td>${pc(x.maximo)}${x.unidad && x.unidad !== 'opción' && x.maximo !== null ? ' <span class="n">' + x.unidad + '</span>' : ''}</td>`
-      + `<td>${dolares(x)}</td>`
       + `<td>${x.minutos !== undefined && x.minutos !== null ? Math.round(x.minutos) + ' min' : '—'}</td>`
       + `<td>${pc(x.contra)}</td><td>${pc(x.minimo)}</td>`
       + `<td style="text-align:left" class="tenue" title="${x.fuente || ''}">${fuenteCorta(x)}</td></tr>`).join('');
