@@ -48,8 +48,11 @@ table.grilla tr.total td.nom { font-weight:700; }
 .cuad.nada { background:#161B22; color:#4B5563; font-size:16px; }
 .hora { color:#93C5FD; font-weight:600; margin-left:4px; }
 /* LA COLUMNA "HOY" a la derecha (21/10): lo del dia actual; se vacia sola al dia siguiente. En pantallas chicas va arriba. */
-.cuerpo { display:grid; grid-template-columns:minmax(0,1fr) 330px; align-items:start; }
+.cuerpo { display:grid; grid-template-columns:minmax(0,1fr) var(--ancho-hoy, 330px); align-items:start; }
 .principal { min-width:0; }
+/* El borde izquierdo se arrastra para cambiar el ancho (21/10, pedido: "que la columna se ajuste el ancho"). */
+.hoy_borde { position:absolute; left:-4px; top:0; bottom:0; width:8px; cursor:col-resize; z-index:5; touch-action:none; }
+.hoy_borde:hover, .hoy_borde.on { background:rgba(96,165,250,.5); }
 .hoy { border-left:1px solid var(--borde); padding:14px 14px 30px; position:sticky; top:0; max-height:100vh; overflow-y:auto; font-size:13.5px; line-height:1.45; }
 .hoy h3 { font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--tenue); margin:16px 0 6px; }
 .hoy .titulo { font-size:18px; font-weight:700; } .hoy .sub { color:var(--tenue); font-size:12px; }
@@ -58,7 +61,7 @@ table.grilla tr.total td.nom { font-weight:700; }
 .hoy .caja { background:var(--panel); border:1px solid var(--borde); border-radius:9px; padding:9px 10px; }
 .hoy .grande { font-size:16px; font-weight:700; }
 .hoy .nada { color:#6B7280; }
-@media (max-width:1100px) { .cuerpo { grid-template-columns:1fr; } .hoy { order:-1; border-left:none; border-bottom:1px solid var(--borde); position:static; max-height:none; } }
+@media (max-width:1100px) { .hoy_borde { display:none; } .cuerpo { grid-template-columns:1fr !important; } .hoy { order:-1; border-left:none; border-bottom:1px solid var(--borde); position:static; max-height:none; } }
 /* LA VENTANA DEL DETALLE EN EL TELEFONO (21/10): sin Minimo ni Datos, titulos cortos, sin cortar el texto. */
 @media (max-width:700px) {
   #detalle_caja { padding:6px; }
@@ -491,8 +494,29 @@ function pintarHoy(D) {
   if (H.rebote) h += H.rebote.senal ? `<div class="caja"><div class="grande g">Se dio la señal</div><div class="sub">${est}</div></div>`
       : `<div>No se dio hoy${H.rebote.roja ? '' : ' (la última media hora no fue roja)'}.</div><div class="sub">${est}</div>`;
   else h += `<div class="nada">Se mira a las 16:00.</div><div class="sub">${est}</div>`;
-  el.innerHTML = h;
+  el.innerHTML = '<div class="hoy_borde" title="arrastrá para cambiar el ancho · doble clic: ancho normal"></div>' + h;
+  bordeHoy(el.querySelector('.hoy_borde'));
 }
+/* Arrastrar el borde de la columna Hoy: el ancho queda guardado en este navegador; doble clic lo vuelve a 330 px. */
+function anchoHoy(px) {
+  const w = Math.max(220, Math.min(Math.round(px), Math.round(window.innerWidth * 0.6)));
+  document.querySelector('.cuerpo').style.setProperty('--ancho-hoy', w + 'px');
+  return w;
+}
+function bordeHoy(b) {
+  b.onpointerdown = (e) => {
+    e.preventDefault();
+    const x0 = e.clientX, w0 = document.getElementById('hoy').getBoundingClientRect().width;
+    b.setPointerCapture(e.pointerId); b.classList.add('on');
+    let w = w0;
+    b.onpointermove = (ev) => { w = anchoHoy(w0 - (ev.clientX - x0)); graficos.forEach(g => g.resize()); };
+    b.onpointerup = () => { b.onpointermove = null; b.classList.remove('on');
+      try { localStorage.setItem('tablero_ancho_hoy', String(w)); } catch (x) { /* sin almacenamiento */ } };
+  };
+  b.ondblclick = () => { try { localStorage.removeItem('tablero_ancho_hoy'); } catch (x) { /* idem */ }
+    document.querySelector('.cuerpo').style.removeProperty('--ancho-hoy'); graficos.forEach(g => g.resize()); };
+}
+try { const w = Number(localStorage.getItem('tablero_ancho_hoy')); if (w) anchoHoy(w); } catch (e) { /* idem */ }
 function pintar(D) {
   pintarHoy(D);
   CELDAS = [];
