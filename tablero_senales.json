@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-22 12:05",
+ "actualizado": "2026-10-22 16:20",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -5455,7 +5455,7 @@
    "detalle": "11:40 · PUT 766 al ask 1.55",
    "maximo": 7.1,
    "unidad": "opción",
-   "minimo": -56.1,
+   "minimo": -57.4,
    "contra": -5.2,
    "minutos": 0.8,
    "strike": 766.0,
@@ -5535,7 +5535,12 @@
     "texto": "Heikin Ashi PUT"
    }
   ],
-  "rebote": null,
+  "rebote": {
+   "senal": false,
+   "razon_vol": 2.45,
+   "pos_rango": 0.429,
+   "roja": false
+  },
   "rebote_dia": [
    "de jueves para viernes",
    14,
@@ -5555,7 +5560,14 @@
      "texto": "Sentimiento Univ. de Michigan (final)"
     }
    ],
-   "gap": null
+   "gap": {
+    "mes_pct": 0.0162,
+    "hoy_pct": -1.2079,
+    "lado": 1,
+    "cuando": "22/10 16:19",
+    "continuacion": false,
+    "ganador": true
+   }
   }
  }
 }
