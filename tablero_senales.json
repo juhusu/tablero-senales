@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-22 09:45",
+ "actualizado": "2026-10-22 10:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -5424,6 +5424,70 @@
    ],
    "semana": "2026-10-19",
    "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-22",
+   "senal": "Heikin Ashi CALL",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "10:20 · CALL 768 al ask 1.61",
+   "maximo": -1.2,
+   "unidad": "opción",
+   "minimo": -59.6,
+   "contra": 0.0,
+   "minutos": 0.2,
+   "strike": 768.0,
+   "entrada": 1.61,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-10-22",
+   "senal": "Opening Eyes (motor) SPX",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "10:02 · CALL 770 al ask 1.51",
+   "maximo": 9.9,
+   "unidad": "opción",
+   "minimo": -77.5,
+   "contra": -6.0,
+   "minutos": 1.2,
+   "strike": 770.0,
+   "entrada": 1.51,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-10-22",
+   "senal": "Opening Eyes (motor) TSLA",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "10:22 · PUT 385 al ask 5.35",
+   "maximo": -4.7,
+   "unidad": "opción",
+   "minimo": -21.5,
+   "contra": -5.6,
+   "minutos": 0.5,
+   "strike": 385.0,
+   "entrada": 5.35,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "TSLA",
+   "activos": [
+    "TSLA"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 3
   }
  ],
  "hoy": {
@@ -5439,7 +5503,12 @@
    "ganador": false,
    "enviado": false
   },
-  "avisos": [],
+  "avisos": [
+   {
+    "hora": "10:20",
+    "texto": "Heikin Ashi CALL"
+   }
+  ],
   "rebote": null,
   "rebote_dia": [
    "de jueves para viernes",
