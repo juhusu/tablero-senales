@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-22 10:45",
+ "actualizado": "2026-10-22 12:05",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -5449,6 +5449,28 @@
   },
   {
    "fecha": "2026-10-22",
+   "senal": "Heikin Ashi PUT",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "11:40 · PUT 766 al ask 1.55",
+   "maximo": 7.1,
+   "unidad": "opción",
+   "minimo": -56.1,
+   "contra": -5.2,
+   "minutos": 0.8,
+   "strike": 766.0,
+   "entrada": 1.55,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-10-22",
    "senal": "Opening Eyes (motor) SPX",
    "lado": "CALL",
    "resultado": "P",
@@ -5507,6 +5529,10 @@
    {
     "hora": "10:20",
     "texto": "Heikin Ashi CALL"
+   },
+   {
+    "hora": "11:40",
+    "texto": "Heikin Ashi PUT"
    }
   ],
   "rebote": null,
