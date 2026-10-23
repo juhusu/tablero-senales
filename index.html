@@ -35,6 +35,7 @@ h1 { font-size:18px; margin:0; } h2 { font-size:15px; margin:22px 16px 8px; colo
       border-bottom:1px solid var(--borde); cursor:pointer; font:13px 'SF Mono',ui-monospace,monospace; }
 .fz:last-child { border-bottom:none; } .fz:hover { background:#1B2333; }
 .fz .pct { text-align:right; font-weight:800; } .fz .act { color:#93C5FD; font-weight:700; }
+.fz .act.ha { color:#FBBF24; }
 .fz .mx { color:var(--tenue); font-size:12px; } .fz.pocas { opacity:.5; }
 .fz-vacio { color:var(--tenue); font-size:13px; padding:8px 2px; }
 .panel { background:var(--panel); border:1px solid var(--borde); border-radius:10px; margin:0 16px; padding:10px; }
@@ -199,7 +200,7 @@ label { color:var(--tenue); font-size:13px; }
 <!-- LAS PESTAÑAS DEBAJO DE LOS CIRCULOS (20/10, pedido con captura: "pasa esas pestañas para el rectangulo verde"):
      los circulos quedan siempre a la vista; las pestañas cambian lo de abajo. -->
 <div class="cabeza">
-  <span class="pestanas"><button data-p="semanas" class="on">Por semana</button><button data-p="dias">Por día de la semana</button><button data-p="curva">Curva</button><button data-p="detalle">Día por día</button><button data-p="fuertes">💪 Lo más fuerte</button></span>
+  <span class="pestanas"><button data-p="semanas" class="on">Por semana</button><button data-p="dias">Por día de la semana</button><button data-p="curva">Curva</button><button data-p="detalle">Día por día</button><button data-p="fuertes">💪 Lo más fuerte UT Bot y Heikin Ashi</button></span>
   <span class="tenue" id="titulo_panel"></span>
 </div>
 <div id="p_semanas"><div class="wrap"><table id="semanas" class="grilla"></table></div></div>
@@ -213,7 +214,7 @@ label { color:var(--tenue); font-size:13px; }
 <div id="p_detalle" hidden><div class="wrap"><table id="detalle" class="diaxdia"></table></div></div>
 <!-- "Lo mas fuerte" es una pestaña mas del panel (22/10, pedido con captura: "estas dos tarjetas hazlas separadas pero
      dentro del mismo panel con pestañas, una para cada tarjeta"). -->
-<div id="p_fuertes" hidden><div class="fz-tarjeta"><div class="fz-titulo">💪 Lo más fuerte · UT Bot (velas de 10 min Heikin Ashi)</div>
+<div id="p_fuertes" hidden><div class="fz-tarjeta"><div class="fz-titulo">💪 Lo más fuerte · UT Bot y Heikin Ashi (velas de 10 min)</div>
 <div class="fuertes" id="fuertes"></div></div></div>
 
 <p class="leyenda" style="margin-top:18px"><b>Se dio</b> = después de la señal, la opción llegó a ganar 10% o más. <b>Máx. típico</b> = cuánto llegó a ganar la opción en un día normal de esa señal. Ojo: no se compara con entrar en cualquier otro momento, y en TSLA las opciones del día suben 10% muy seguido igual. La página se actualiza sola de lunes a viernes.</p>
@@ -308,16 +309,21 @@ let MODAL = { grupo: 'Todas', semana: 'Todas', dia: 'Todos', fecha: null, vista:
    dejan pasar los filtros de arriba. Mas fuerte = mas % de aciertos; con el mismo %, la que tiene mas casos. Con menos
    de 5 señales se ve tenue (pocos casos). Clic: la lista de esas señales. */
 function minutosDe(h) { const m = /^(\d{1,2}):(\d{2})$/.exec(h || ''); return m ? Number(m[1]) * 60 + Number(m[2]) : null; }
+/* La hora de la VELA como TradingView (su inicio). El UT Bot ya la anota asi; Heikin Ashi anota la hora de CIERRE de la
+   vela de 10 min: se le restan 10 min para que las dos queden en la misma hora (23/10). */
+function minutoVela(x) { const m = minutosDe(horaDe(x)); return m === null ? null : m - (x.senal.startsWith('Heikin') ? 10 : 0); }
 function hhmm(m) { return Math.floor(m / 60) + ':' + String(m % 60).padStart(2, '0'); }
 function pintarFuertes(todas) {
   const caja = document.getElementById('fuertes');
-  const ut = todas.filter(s => s.senal.startsWith('UT Bot') && (s.resultado === 'G' || s.resultado === 'P'));
+  // 23/10: tambien Heikin Ashi CALL y PUT (pedido: "ponle 'Lo mas fuerte UT Bot y Heikin Ashi'"), con la etiqueta HA.
+  const ut = todas.filter(s => (s.senal.startsWith('UT Bot') || s.senal.startsWith('Heikin Ashi'))
+    && (s.resultado === 'G' || s.resultado === 'P'));
   const grupos = {};
   for (const s of ut) {
-    const m = minutosDe(horaDe(s)); if (m === null) continue;
-    const ini = m - (m % 30), papel = s.senal.split(' ')[2];
+    const m = minutoVela(s); if (m === null) continue;
+    const ini = m - (m % 30), papel = s.senal.startsWith('Heikin') ? 'HA' : s.senal.split(' ')[2];
     const k = `${s.lado}|${papel}|${ini}`;
-    (grupos[k] = grupos[k] || { lado: s.lado, papel, ini, xs: [] }).xs.push(s);
+    (grupos[k] = grupos[k] || { lado: s.lado, papel, ini, grupo: base(s.senal), xs: [] }).xs.push(s);
   }
   const col = (lado) => {
     const filas = Object.values(grupos).filter(g => g.lado === lado).map(g => {
@@ -327,16 +333,16 @@ function pintarFuertes(todas) {
     const cab = `<h3>${lado === 'CALL' ? '🟢 Lo más fuerte CALL' : '🔴 Lo más fuerte PUT'}</h3>`;
     if (!filas.length) return `<div class="fz-col">${cab}<div class="fz-vacio">${document.getElementById('historial').checked
       ? 'Sin señales del UT Bot con estos filtros.' : 'Prendé <b>historial</b> arriba: las del UT Bot son días medidos hacia atrás.'}</div></div>`;
-    return `<div class="fz-col">${cab}` + filas.map(f => `<div class="fz${f.n < 5 ? ' pocas' : ''}" data-k="${f.lado}|${f.papel}|${f.ini}"`
+    return `<div class="fz-col">${cab}` + filas.map(f => `<div class="fz${f.n < 5 ? ' pocas' : ''}" data-k="${f.grupo}|${f.ini}"`
       + ` title="${f.n < 5 ? 'Pocos casos (menos de 5). ' : ''}Clic: ver estas señales">`
       + `<span class="pct ${f.pct >= 0.5 ? 'g' : 'p'}">${Math.round(100 * f.pct)}%</span><span>${f.g} de ${f.n}</span>`
-      + `<span class="act">${f.papel}</span><span>de ${hhmm(f.ini)} a ${hhmm(f.ini + 29)}</span>`
+      + `<span class="act${f.papel === 'HA' ? ' ha' : ''}" title="${f.papel === 'HA' ? 'Heikin Ashi (velas del SPY)' : 'UT Bot ' + f.papel}">${f.papel}</span><span>de ${hhmm(f.ini)} a ${hhmm(f.ini + 29)}</span>`
       + `<span class="mx">${f.mx === null ? '' : 'máx. típico ' + (f.mx > 0 ? '+' : '') + f.mx.toFixed(0) + '%'}</span></div>`).join('') + '</div>';
   };
   caja.innerHTML = col('CALL') + col('PUT');
   caja.querySelectorAll('.fz').forEach(el => el.onclick = () => {
-    const [lado, papel, ini] = el.dataset.k.split('|');
-    abrirModal({ grupo: `UT Bot ${papel} ${lado}`, desde: Number(ini), hasta: Number(ini) + 30 });
+    const [grupo, ini] = el.dataset.k.split('|');
+    abrirModal({ grupo, desde: Number(ini), hasta: Number(ini) + 30 });
   });
 }
 function abrirDetalle(k) { abrirModal(CELDAS[k]); }
@@ -352,7 +358,7 @@ function baseModal() {
     : FILAS_ACTUALES.filter(f => f.grupo === MODAL.grupo);
   if (MODAL.semana !== 'Todas') xs = xs.filter(x => x.semana === MODAL.semana);
   if (MODAL.dia !== 'Todos') xs = xs.filter(x => x.dia_semana === Number(MODAL.dia));
-  if (MODAL.desde !== undefined) xs = xs.filter(x => { const m = minutosDe(horaDe(x)); return m !== null && m >= MODAL.desde && m < MODAL.hasta; });
+  if (MODAL.desde !== undefined) xs = xs.filter(x => { const m = minutoVela(x); return m !== null && m >= MODAL.desde && m < MODAL.hasta; });
   return xs;
 }
 function pintarModal() {
@@ -701,7 +707,7 @@ function pintar(D) {
 let panel = 'semanas';
 const TITULOS = { semanas: '', dias: '',
   curva: 'ganadas menos perdidas, acumulado día a día', detalle: 'cada señal, del día más nuevo al más viejo',
-  fuertes: 'UT Bot por activo y media hora, del más fuerte al más flojo · clic en una fila para ver sus señales' };
+  fuertes: 'UT Bot (SPX, QQQ) y Heikin Ashi (HA, del SPY) por media hora, del más fuerte al más flojo · clic en una fila para ver sus señales' };
 document.querySelectorAll('.pestanas button').forEach(b => b.onclick = () => {
   panel = b.dataset.p;
   document.querySelectorAll('.pestanas button').forEach(x => x.classList.toggle('on', x === b));
