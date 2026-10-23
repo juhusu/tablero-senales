@@ -24,7 +24,7 @@ h1 { font-size:18px; margin:0; } h2 { font-size:15px; margin:22px 16px 8px; colo
 .circ .pct .porver { font-size:10px; color:var(--tenue); }
 /* UNA SOLA TARJETA (22/10, pedido con captura: "mete esto en una sola tarjeta"): titulo y las dos columnas adentro,
    separadas por una linea. */
-.fz-tarjeta { background:var(--panel); border:1px solid var(--borde); border-radius:10px; margin:22px 16px 0; padding:10px 12px; }
+.fz-tarjeta { background:var(--panel); border:1px solid var(--borde); border-radius:10px; margin:0 16px; padding:10px 12px; }
 .fz-titulo { font-size:15px; font-weight:600; color:var(--tenue); margin:0 0 8px; }
 .fuertes { display:grid; grid-template-columns:1fr 1fr; gap:0; }
 @media (max-width:700px) { .fuertes { grid-template-columns:1fr; } .fz-col + .fz-col { border-left:none; border-top:1px solid var(--borde); padding-left:0; padding-top:8px; margin-top:6px; } }
@@ -155,6 +155,7 @@ table.diaxdia { font:13px -apple-system,system-ui,sans-serif; }
 .det_cab button { background:none; border:1px solid var(--borde); color:var(--texto); border-radius:6px; padding:3px 10px; cursor:pointer; font-size:15px; }
 table.grilla tr.total .cuad { outline:2px solid rgba(255,255,255,.35); }
 .escala { display:flex; align-items:center; gap:8px; margin:8px 16px; font-size:12px; color:var(--tenue); }
+.escala[hidden] { display:none; }   /* sin esto el display:flex le ganaba a hidden (22/10) */
 .escala i { display:block; width:160px; height:10px; border-radius:5px;
   background:linear-gradient(to right, hsl(0 62% 32%), hsl(60 62% 32%), hsl(120 62% 32%)); }
 table.facil { font:15px -apple-system,system-ui,sans-serif; }
@@ -195,12 +196,10 @@ label { color:var(--tenue); font-size:13px; }
 <!-- LO MAS FUERTE (22/10, pedido: "un apartado que ponga lo mas fuerte call y lo mas fuerte put ... todas las señales de
      QQQ y de SPX" y "que tambien aparezcan los horarios de tal hora a tal hora en tal activo"). Las señales del UT Bot
      por rango de media hora y activo, de la mas fuerte a la mas floja; respeta los filtros de arriba. -->
-<div class="fz-tarjeta"><div class="fz-titulo">💪 Lo más fuerte · UT Bot (velas de 10 min Heikin Ashi)</div>
-<div class="fuertes" id="fuertes"></div></div>
 <!-- LAS PESTAÑAS DEBAJO DE LOS CIRCULOS (20/10, pedido con captura: "pasa esas pestañas para el rectangulo verde"):
      los circulos quedan siempre a la vista; las pestañas cambian lo de abajo. -->
 <div class="cabeza">
-  <span class="pestanas"><button data-p="semanas" class="on">Por semana</button><button data-p="dias">Por día de la semana</button><button data-p="curva">Curva</button><button data-p="detalle">Día por día</button></span>
+  <span class="pestanas"><button data-p="semanas" class="on">Por semana</button><button data-p="dias">Por día de la semana</button><button data-p="curva">Curva</button><button data-p="detalle">Día por día</button><button data-p="fuertes">💪 Lo más fuerte</button></span>
   <span class="tenue" id="titulo_panel"></span>
 </div>
 <div id="p_semanas"><div class="wrap"><table id="semanas" class="grilla"></table></div></div>
@@ -212,6 +211,10 @@ label { color:var(--tenue); font-size:13px; }
 <div class="escala"><span>no se dio ninguna</span><i></i><span>se dieron todas</span><span style="margin-left:14px"><b style="color:#4ADE80">verde</b> cuánto llegó a ganar la opción · <b style="color:#F87171">rojo</b> cuánto llegó a perder (una señal típica) · clic en un cuadrito para ver cada una</span></div>
 <div id="p_curva" hidden><div class="panel"><div id="curva"><canvas id="cv"></canvas></div></div></div>
 <div id="p_detalle" hidden><div class="wrap"><table id="detalle" class="diaxdia"></table></div></div>
+<!-- "Lo mas fuerte" es una pestaña mas del panel (22/10, pedido con captura: "estas dos tarjetas hazlas separadas pero
+     dentro del mismo panel con pestañas, una para cada tarjeta"). -->
+<div id="p_fuertes" hidden><div class="fz-tarjeta"><div class="fz-titulo">💪 Lo más fuerte · UT Bot (velas de 10 min Heikin Ashi)</div>
+<div class="fuertes" id="fuertes"></div></div></div>
 
 <p class="leyenda" style="margin-top:18px"><b>Se dio</b> = después de la señal, la opción llegó a ganar 10% o más. <b>Máx. típico</b> = cuánto llegó a ganar la opción en un día normal de esa señal. Ojo: no se compara con entrar en cualquier otro momento, y en TSLA las opciones del día suben 10% muy seguido igual. La página se actualiza sola de lunes a viernes.</p>
 </main><aside id="hoy" class="hoy"></aside></div>
@@ -693,7 +696,8 @@ function pintar(D) {
 /* LA CURVA EN UNA PESTAÑA (20/10, pedido: "mete la curva en una pestaña a la derecha del panel"): Círculos | Curva. */
 let panel = 'semanas';
 const TITULOS = { semanas: '', dias: '',
-  curva: 'ganadas menos perdidas, acumulado día a día', detalle: 'cada señal, del día más nuevo al más viejo' };
+  curva: 'ganadas menos perdidas, acumulado día a día', detalle: 'cada señal, del día más nuevo al más viejo',
+  fuertes: 'UT Bot por activo y media hora, del más fuerte al más flojo · clic en una fila para ver sus señales' };
 document.querySelectorAll('.pestanas button').forEach(b => b.onclick = () => {
   panel = b.dataset.p;
   document.querySelectorAll('.pestanas button').forEach(x => x.classList.toggle('on', x === b));
