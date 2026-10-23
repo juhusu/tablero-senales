@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-22 21:25",
+ "actualizado": "2026-10-23 04:00",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14655,61 +14655,40 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-10-22",
-  "dia_semana": 3,
-  "eventos": [],
-  "reportes": [],
-  "gap": {
-   "cuando": "9:28",
-   "lado": -1.0,
-   "mes_pct": -0.9296,
-   "ayer_pct": 0.59,
-   "ganador": false,
-   "enviado": false
-  },
-  "avisos": [
+  "fecha": "2026-10-23",
+  "dia_semana": 4,
+  "eventos": [
    {
-    "hora": "10:20",
-    "texto": "Heikin Ashi CALL"
+    "hora": "09:45",
+    "texto": "PMI preliminar S&P Global (flash)"
    },
    {
-    "hora": "11:40",
-    "texto": "Heikin Ashi PUT"
+    "hora": "10:00",
+    "texto": "Sentimiento Univ. de Michigan (final)"
    }
   ],
-  "rebote": {
-   "senal": false,
-   "razon_vol": 2.45,
-   "pos_rango": 0.429,
-   "roja": false
+  "reportes": [],
+  "gap": {
+   "cuando": "04:00",
+   "lado": -1,
+   "mes_pct": -0.1394971613949747,
+   "ayer_pct": -1.207910070644047,
+   "ganador": true,
+   "enviado": false
   },
+  "avisos": [],
+  "rebote": null,
   "rebote_dia": [
-   "de jueves para viernes",
-   14,
-   15
+   "de viernes para lunes",
+   6,
+   7
   ],
   "cobertura_hasta": "2026-12-09",
   "manana": {
-   "fecha": "2026-10-23",
-   "dia_semana": 4,
-   "eventos": [
-    {
-     "hora": "09:45",
-     "texto": "PMI preliminar S&P Global (flash)"
-    },
-    {
-     "hora": "10:00",
-     "texto": "Sentimiento Univ. de Michigan (final)"
-    }
-   ],
-   "gap": {
-    "mes_pct": -0.1265,
-    "hoy_pct": -1.2079,
-    "lado": -1,
-    "cuando": "22/10 21:24",
-    "continuacion": true,
-    "ganador": true
-   }
+   "fecha": "2026-10-26",
+   "dia_semana": 0,
+   "eventos": [],
+   "gap": null
   }
  }
 }
