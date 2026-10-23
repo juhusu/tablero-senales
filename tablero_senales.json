@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-23 10:45",
+ "actualizado": "2026-10-23 12:05",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14697,6 +14697,28 @@
   },
   {
    "fecha": "2026-10-23",
+   "senal": "Heikin Ashi PUT",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "11:50 · PUT 765 al ask 1.34",
+   "maximo": 0.0,
+   "unidad": "opción",
+   "minimo": -24.6,
+   "contra": -11.9,
+   "minutos": 2.5,
+   "strike": 765.0,
+   "entrada": 1.34,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-23",
    "senal": "Opening Eyes (motor) SPX",
    "lado": "CALL",
    "resultado": "P",
@@ -14739,6 +14761,28 @@
   },
   {
    "fecha": "2026-10-23",
+   "senal": "Toque Magnífico",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "09:47 · 6 grandes · CALL 763 al ask 1.97",
+   "maximo": 16.8,
+   "unidad": "opción",
+   "minimo": -36.5,
+   "contra": -1.0,
+   "minutos": 4.0,
+   "strike": 763.0,
+   "entrada": 1.97,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-23",
    "senal": "UT Bot QQQ CALL",
    "lado": "CALL",
    "resultado": "G",
@@ -14754,6 +14798,27 @@
    "activo": "QQQ",
    "activos": [
     "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-23",
+   "senal": "UT Bot SPX CALL",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "10:40 · vela 10:40-10:50 · CALL 765 al ask 1.60",
+   "maximo": 20.0,
+   "unidad": "opción",
+   "minimo": -23.8,
+   "contra": -6.2,
+   "minutos": 5.8,
+   "strike": 765.0,
+   "entrada": 1.6,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPX",
+   "activos": [
     "SPX"
    ],
    "semana": "2026-10-19",
@@ -14826,6 +14891,10 @@
    {
     "hora": "09:48",
     "texto": "Toque Magnífico CALL"
+   },
+   {
+    "hora": "11:50",
+    "texto": "Heikin Ashi PUT"
    }
   ],
   "rebote": null,
