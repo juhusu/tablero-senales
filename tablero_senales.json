@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-23 09:45",
+ "actualizado": "2026-10-23 10:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14697,13 +14697,34 @@
   },
   {
    "fecha": "2026-10-23",
+   "senal": "Opening Eyes (motor) SPX",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "09:59 · CALL 763 al ask 2.01",
+   "maximo": 9.5,
+   "unidad": "opción",
+   "minimo": -49.3,
+   "contra": 0.0,
+   "minutos": 1.0,
+   "strike": 763.0,
+   "entrada": 2.01,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-23",
    "senal": "Opening Eyes (motor) TSLA",
    "lado": "CALL",
    "resultado": "G",
    "detalle": "09:41 · CALL 372.5 al ask 3.45",
    "maximo": 40.6,
    "unidad": "opción",
-   "minimo": -13.0,
+   "minimo": -80.9,
    "contra": 0.0,
    "minutos": 1.2,
    "strike": 372.5,
@@ -14718,13 +14739,35 @@
   },
   {
    "fecha": "2026-10-23",
+   "senal": "UT Bot QQQ CALL",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "9:40 · vela 9:40-9:50 · CALL 763 al ask 2.08",
+   "maximo": 10.6,
+   "unidad": "opción",
+   "minimo": -46.2,
+   "contra": -5.8,
+   "minutos": 2.0,
+   "strike": 763.0,
+   "entrada": 2.08,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-23",
    "senal": "UT Bot SPX PUT",
    "lado": "PUT",
-   "resultado": null,
+   "resultado": "P",
    "detalle": "9:30 · vela 9:30-9:40 · PUT 762 al ask 2.15",
    "maximo": 0.9,
    "unidad": "opción",
-   "minimo": -29.3,
+   "minimo": -46.5,
    "contra": 0.0,
    "minutos": 0.2,
    "strike": 762.0,
@@ -14751,7 +14794,22 @@
     "texto": "Sentimiento Univ. de Michigan (final)"
    }
   ],
-  "reportes": [],
+  "reportes": [
+   {
+    "hora": "09:45",
+    "datos": "PMI preliminar S&P Global",
+    "mov": -0.0261,
+    "direccion": "neutro",
+    "cifras": {}
+   },
+   {
+    "hora": "10:00",
+    "datos": "Michigan final",
+    "mov": -0.0391,
+    "direccion": "neutro",
+    "cifras": {}
+   }
+  ],
   "gap": {
    "cuando": "9:28",
    "lado": -1.0,
@@ -14764,6 +14822,10 @@
    {
     "hora": "09:28",
     "texto": "GAP GANADOR PUT"
+   },
+   {
+    "hora": "09:48",
+    "texto": "Toque Magnífico CALL"
    }
   ],
   "rebote": null,
