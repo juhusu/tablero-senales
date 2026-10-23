@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-23 09:35",
+ "actualizado": "2026-10-23 09:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14657,11 +14657,79 @@
    "fecha": "2026-10-23",
    "senal": "Aviso 9:28",
    "lado": "PUT",
-   "resultado": null,
+   "resultado": "P",
    "detalle": "9:28 · MES -0.48%",
-   "maximo": null,
+   "maximo": 9.5,
    "unidad": "opción",
-   "minimo": null,
+   "minimo": -21.3,
+   "contra": -19.4,
+   "minutos": 7.3,
+   "strike": 764.0,
+   "entrada": 3.15,
+   "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-23",
+   "senal": "GAP continuación GANADOR",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "9:30 · GAP -0.34% · ayer -1.21%",
+   "maximo": 9.5,
+   "unidad": "opción",
+   "minimo": -21.3,
+   "contra": -19.4,
+   "minutos": 7.3,
+   "strike": 764.0,
+   "entrada": 3.15,
+   "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-23",
+   "senal": "Opening Eyes (motor) TSLA",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "09:41 · CALL 372.5 al ask 3.45",
+   "maximo": 40.6,
+   "unidad": "opción",
+   "minimo": -13.0,
+   "contra": 0.0,
+   "minutos": 1.2,
+   "strike": 372.5,
+   "entrada": 3.45,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "TSLA",
+   "activos": [
+    "TSLA"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-23",
+   "senal": "UT Bot SPX PUT",
+   "lado": "PUT",
+   "resultado": null,
+   "detalle": "9:30 · vela 9:30-9:40 · PUT 762 al ask 2.15",
+   "maximo": 0.9,
+   "unidad": "opción",
+   "minimo": -29.3,
+   "contra": 0.0,
+   "minutos": 0.2,
+   "strike": 762.0,
+   "entrada": 2.15,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "activo": "SPX",
    "activos": [
     "SPX"
