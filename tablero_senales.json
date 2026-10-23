@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-22 20:56",
+ "actualizado": "2026-10-22 20:58",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14839,10 +14839,10 @@
     }
    ],
    "gap": {
-    "mes_pct": 0.0389,
+    "mes_pct": 0.0454,
     "hoy_pct": -1.2079,
     "lado": 1,
-    "cuando": "22/10 20:56",
+    "cuando": "22/10 20:58",
     "continuacion": false,
     "ganador": true
    }

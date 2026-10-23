@@ -22,6 +22,16 @@ h1 { font-size:18px; margin:0; } h2 { font-size:15px; margin:22px 16px 8px; colo
 .circ .pct b, .circ .pct .cuantas { font-size:clamp(10px, 15cqw, 18px); font-weight:800; line-height:1.15; }
 .circ .pct .cuantas { color:#F3F4F6; }
 .circ .pct .porver { font-size:10px; color:var(--tenue); }
+.fuertes { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:0 16px; }
+@media (max-width:700px) { .fuertes { grid-template-columns:1fr; } }
+.fz-col { background:var(--panel); border:1px solid var(--borde); border-radius:10px; padding:8px 10px; min-width:0; }
+.fz-col h3 { margin:2px 0 6px; font-size:14px; }
+.fz { display:grid; grid-template-columns:46px 64px 42px 1fr auto; gap:8px; align-items:baseline; padding:5px 2px;
+      border-bottom:1px solid var(--borde); cursor:pointer; font:13px 'SF Mono',ui-monospace,monospace; }
+.fz:last-child { border-bottom:none; } .fz:hover { background:#1B2333; }
+.fz .pct { text-align:right; font-weight:800; } .fz .act { color:#93C5FD; font-weight:700; }
+.fz .mx { color:var(--tenue); font-size:12px; } .fz.pocas { opacity:.5; }
+.fz-vacio { color:var(--tenue); font-size:13px; padding:8px 2px; }
 .panel { background:var(--panel); border:1px solid var(--borde); border-radius:10px; margin:0 16px; padding:10px; }
 #curva { height:360px; }
 .cabeza { display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin:22px 16px 8px; }
@@ -177,6 +187,11 @@ label { color:var(--tenue); font-size:13px; }
 <div class="cuerpo"><main class="principal">
 <h2>Cuántas señales se dieron</h2>
 <div class="circulos" id="circulos"></div>
+<!-- LO MAS FUERTE (22/10, pedido: "un apartado que ponga lo mas fuerte call y lo mas fuerte put ... todas las señales de
+     QQQ y de SPX" y "que tambien aparezcan los horarios de tal hora a tal hora en tal activo"). Las señales del UT Bot
+     por rango de media hora y activo, de la mas fuerte a la mas floja; respeta los filtros de arriba. -->
+<h2>💪 Lo más fuerte · UT Bot (velas de 10 min Heikin Ashi)</h2>
+<div class="fuertes" id="fuertes"></div>
 <!-- LAS PESTAÑAS DEBAJO DE LOS CIRCULOS (20/10, pedido con captura: "pasa esas pestañas para el rectangulo verde"):
      los circulos quedan siempre a la vista; las pestañas cambian lo de abajo. -->
 <div class="cabeza">
@@ -281,6 +296,41 @@ function fuenteCorta(x) {
    perdieron ese mismo dia"). Filtros: señal, semana, dia de la semana (y un dia puntual al tocar el calendario).
    Pestañas: Lista y 📅 Calendario. */
 let MODAL = { grupo: 'Todas', semana: 'Todas', dia: 'Todos', fecha: null, vista: 'lista' };
+/* LO MAS FUERTE DEL UT BOT (22/10): por activo, lado y media hora (hora de la vela en TradingView), de las señales que
+   dejan pasar los filtros de arriba. Mas fuerte = mas % de aciertos; con el mismo %, la que tiene mas casos. Con menos
+   de 5 señales se ve tenue (pocos casos). Clic: la lista de esas señales. */
+function minutosDe(h) { const m = /^(\d{1,2}):(\d{2})$/.exec(h || ''); return m ? Number(m[1]) * 60 + Number(m[2]) : null; }
+function hhmm(m) { return Math.floor(m / 60) + ':' + String(m % 60).padStart(2, '0'); }
+function pintarFuertes(todas) {
+  const caja = document.getElementById('fuertes');
+  const ut = todas.filter(s => s.senal.startsWith('UT Bot') && (s.resultado === 'G' || s.resultado === 'P'));
+  const grupos = {};
+  for (const s of ut) {
+    const m = minutosDe(horaDe(s)); if (m === null) continue;
+    const ini = m - (m % 30), papel = s.senal.split(' ')[2];
+    const k = `${s.lado}|${papel}|${ini}`;
+    (grupos[k] = grupos[k] || { lado: s.lado, papel, ini, xs: [] }).xs.push(s);
+  }
+  const col = (lado) => {
+    const filas = Object.values(grupos).filter(g => g.lado === lado).map(g => {
+      const c = cuenta(g.xs), n = c.g + c.p;
+      return { ...g, g: c.g, n, pct: n ? c.g / n : 0, mx: mediana(g.xs.map(x => x.maximo).filter(v => v !== null && v !== undefined)) };
+    }).sort((a, b) => b.pct - a.pct || b.n - a.n || a.ini - b.ini);
+    const cab = `<h3>${lado === 'CALL' ? '🟢 Lo más fuerte CALL' : '🔴 Lo más fuerte PUT'}</h3>`;
+    if (!filas.length) return `<div class="fz-col">${cab}<div class="fz-vacio">${document.getElementById('historial').checked
+      ? 'Sin señales del UT Bot con estos filtros.' : 'Prendé <b>historial</b> arriba: las del UT Bot son días medidos hacia atrás.'}</div></div>`;
+    return `<div class="fz-col">${cab}` + filas.map(f => `<div class="fz${f.n < 5 ? ' pocas' : ''}" data-k="${f.lado}|${f.papel}|${f.ini}"`
+      + ` title="${f.n < 5 ? 'Pocos casos (menos de 5). ' : ''}Clic: ver estas señales">`
+      + `<span class="pct ${f.pct >= 0.5 ? 'g' : 'p'}">${Math.round(100 * f.pct)}%</span><span>${f.g} de ${f.n}</span>`
+      + `<span class="act">${f.papel}</span><span>de ${hhmm(f.ini)} a ${hhmm(f.ini + 29)}</span>`
+      + `<span class="mx">${f.mx === null ? '' : 'máx. típico ' + (f.mx > 0 ? '+' : '') + f.mx.toFixed(0) + '%'}</span></div>`).join('') + '</div>';
+  };
+  caja.innerHTML = col('CALL') + col('PUT');
+  caja.querySelectorAll('.fz').forEach(el => el.onclick = () => {
+    const [lado, papel, ini] = el.dataset.k.split('|');
+    abrirModal({ grupo: `UT Bot ${papel} ${lado}`, desde: Number(ini), hasta: Number(ini) + 30 });
+  });
+}
 function abrirDetalle(k) { abrirModal(CELDAS[k]); }
 function abrirLista(gr) { abrirModal({ grupo: gr }); }
 function abrirModal(est) {
@@ -294,6 +344,7 @@ function baseModal() {
     : FILAS_ACTUALES.filter(f => f.grupo === MODAL.grupo);
   if (MODAL.semana !== 'Todas') xs = xs.filter(x => x.semana === MODAL.semana);
   if (MODAL.dia !== 'Todos') xs = xs.filter(x => x.dia_semana === Number(MODAL.dia));
+  if (MODAL.desde !== undefined) xs = xs.filter(x => { const m = minutosDe(horaDe(x)); return m !== null && m >= MODAL.desde && m < MODAL.hasta; });
   return xs;
 }
 function pintarModal() {
@@ -306,12 +357,14 @@ function pintarModal() {
     + `<label>Señal <select id="f_grupo">${opt('Todas', 'Todas', MODAL.grupo)}${grupos.map(g => opt(g, g, MODAL.grupo)).join('')}</select></label>`
     + `<label>Semana <select id="f_semana">${opt('Todas', 'Todas', MODAL.semana)}${semanas.map(se => opt(se, rangoSemana(se).replace('<wbr>', ''), MODAL.semana)).join('')}</select></label>`
     + `<label>Día <select id="f_dia">${opt('Todos', 'Todos', MODAL.dia)}${DIAS.map((d, i) => opt(i, d, MODAL.dia)).join('')}</select></label>`
-    + (MODAL.fecha ? `<button id="f_fecha" class="chip">${MODAL.fecha.slice(8)}/${MODAL.fecha.slice(5, 7)} ✕</button>` : '');
+    + (MODAL.fecha ? `<button id="f_fecha" class="chip">${MODAL.fecha.slice(8)}/${MODAL.fecha.slice(5, 7)} ✕</button>` : '')
+    + (MODAL.desde !== undefined ? `<button id="f_hora" class="chip">de ${hhmm(MODAL.desde)} a ${hhmm(MODAL.hasta - 1)} ✕</button>` : '');
   document.querySelectorAll('.det_tabs button').forEach(b => b.onclick = () => { MODAL.vista = b.dataset.v; pintarModal(); });
   document.getElementById('f_grupo').onchange = (e) => { MODAL.grupo = e.target.value; pintarModal(); };
   document.getElementById('f_semana').onchange = (e) => { MODAL.semana = e.target.value; pintarModal(); };
   document.getElementById('f_dia').onchange = (e) => { MODAL.dia = e.target.value; pintarModal(); };
   if (MODAL.fecha) document.getElementById('f_fecha').onclick = () => { MODAL.fecha = null; pintarModal(); };
+  if (MODAL.desde !== undefined) document.getElementById('f_hora').onclick = () => { delete MODAL.desde; delete MODAL.hasta; pintarModal(); };
   const xs = baseModal();
   const enLista = MODAL.fecha ? xs.filter(x => x.fecha === MODAL.fecha) : xs;
   pintarResumen(MODAL.vista === 'lista' ? enLista : xs);
@@ -571,6 +624,7 @@ function pintar(D) {
     if (s.senal.includes('GANADOR')) filas.push({ ...s, grupo: 'GAP continuación (solo GANADOR)' }); }
   const grupos = [...new Set(filas.map(f => f.grupo))].sort();
   FILAS_ACTUALES = filas; TODAS_ACTUALES = todas;
+  pintarFuertes(todas);
   document.getElementById('actualizado').textContent = 'actualizado ' + D.actualizado;
   // CIRCULOS
   const cc = document.getElementById('circulos'); cc.innerHTML = '';
