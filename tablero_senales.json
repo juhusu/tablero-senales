@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-22 20:00",
+ "actualizado": "2026-10-22 20:56",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -1391,27 +1391,6 @@
   },
   {
    "fecha": "2026-08-26",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "13:50 · CALL 347.5 al ask 0.69",
-   "maximo": 10.1,
-   "unidad": "opción",
-   "minimo": -72.5,
-   "contra": -11.6,
-   "minutos": 3.0,
-   "strike": 347.5,
-   "entrada": 0.69,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-08-24",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-08-26",
    "senal": "Heikin Ashi CALL",
    "lado": "CALL",
    "resultado": "G",
@@ -1479,27 +1458,6 @@
   },
   {
    "fecha": "2026-08-27",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "CALL",
-   "resultado": "P",
-   "detalle": "14:57 · CALL 355 al ask 3.50",
-   "maximo": 8.6,
-   "unidad": "opción",
-   "minimo": -16.3,
-   "contra": 0.0,
-   "minutos": 2.0,
-   "strike": 355.0,
-   "entrada": 3.5,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-08-24",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-08-27",
    "senal": "Heikin Ashi PUT",
    "lado": "PUT",
    "resultado": "G",
@@ -1543,27 +1501,6 @@
    ],
    "semana": "2026-08-24",
    "dia_semana": 3
-  },
-  {
-   "fecha": "2026-08-28",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "CALL",
-   "resultado": "P",
-   "detalle": "09:48 · CALL 357.5 al ask 2.27",
-   "maximo": 7.0,
-   "unidad": "opción",
-   "minimo": -79.7,
-   "contra": 0.0,
-   "minutos": 0.5,
-   "strike": 357.5,
-   "entrada": 2.27,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-08-24",
-   "dia_semana": 4
   },
   {
    "fecha": "2026-08-28",
@@ -1630,27 +1567,6 @@
    ],
    "semana": "2026-08-24",
    "dia_semana": 4
-  },
-  {
-   "fecha": "2026-08-31",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "13:08 · CALL 365 al ask 1.96",
-   "maximo": 46.9,
-   "unidad": "opción",
-   "minimo": -17.3,
-   "contra": -17.3,
-   "minutos": 28.0,
-   "strike": 365.0,
-   "entrada": 1.96,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-08-31",
-   "dia_semana": 0
   },
   {
    "fecha": "2026-08-31",
@@ -1745,27 +1661,6 @@
   },
   {
    "fecha": "2026-09-01",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "PUT",
-   "resultado": "P",
-   "detalle": "12:43 · PUT 357.5 al ask 3.70",
-   "maximo": 9.5,
-   "unidad": "opción",
-   "minimo": -4.1,
-   "contra": -4.1,
-   "minutos": 18.0,
-   "strike": 357.5,
-   "entrada": 3.7,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-08-31",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-09-01",
    "senal": "GAP continuación",
    "lado": "PUT",
    "resultado": "G",
@@ -1829,27 +1724,6 @@
    ],
    "semana": "2026-08-31",
    "dia_semana": 1
-  },
-  {
-   "fecha": "2026-09-02",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "14:55 · CALL 352.5 al ask 0.84",
-   "maximo": 28.6,
-   "unidad": "opción",
-   "minimo": -33.3,
-   "contra": -33.3,
-   "minutos": 19.0,
-   "strike": 352.5,
-   "entrada": 0.84,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-08-31",
-   "dia_semana": 2
   },
   {
    "fecha": "2026-09-02",
@@ -2138,27 +2012,6 @@
    ],
    "semana": "2026-09-07",
    "dia_semana": 1
-  },
-  {
-   "fecha": "2026-09-09",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "12:11 · CALL 370 al ask 1.68",
-   "maximo": 10.1,
-   "unidad": "opción",
-   "minimo": -48.2,
-   "contra": 0.0,
-   "minutos": 1.0,
-   "strike": 370.0,
-   "entrada": 1.68,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-09-07",
-   "dia_semana": 2
   },
   {
    "fecha": "2026-09-09",
@@ -2451,27 +2304,6 @@
   },
   {
    "fecha": "2026-09-15",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "PUT",
-   "resultado": "P",
-   "detalle": "15:01 · PUT 357.5 al ask 4.40",
-   "maximo": 4.5,
-   "unidad": "opción",
-   "minimo": -9.1,
-   "contra": -9.1,
-   "minutos": 23.0,
-   "strike": 357.5,
-   "entrada": 4.4,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-09-14",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-09-15",
    "senal": "GAP continuación GANADOR",
    "lado": "PUT",
    "resultado": "G",
@@ -2628,27 +2460,6 @@
   },
   {
    "fecha": "2026-09-17",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "CALL",
-   "resultado": "P",
-   "detalle": "13:47 · CALL 367.5 al ask 3.85",
-   "maximo": 3.9,
-   "unidad": "opción",
-   "minimo": -10.4,
-   "contra": -3.9,
-   "minutos": 17.0,
-   "strike": 367.5,
-   "entrada": 3.85,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-09-14",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-09-17",
    "senal": "Heikin Ashi CALL",
    "lado": "CALL",
    "resultado": "G",
@@ -2713,27 +2524,6 @@
    ],
    "semana": "2026-09-14",
    "dia_semana": 3
-  },
-  {
-   "fecha": "2026-09-18",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "PUT",
-   "resultado": "P",
-   "detalle": "13:18 · PUT 362.5 al ask 1.09",
-   "maximo": -0.9,
-   "unidad": "opción",
-   "minimo": -39.4,
-   "contra": -24.8,
-   "minutos": 20.0,
-   "strike": 362.5,
-   "entrada": 1.09,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-09-14",
-   "dia_semana": 4
   },
   {
    "fecha": "2026-09-18",
@@ -3136,27 +2926,6 @@
   },
   {
    "fecha": "2026-09-25",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "09:57 · PUT 375 al ask 2.14",
-   "maximo": 173.4,
-   "unidad": "opción",
-   "minimo": 18.2,
-   "contra": 0.0,
-   "minutos": 17.8,
-   "strike": 375.0,
-   "entrada": 2.14,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-09-21",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-09-25",
    "senal": "Heikin Ashi CALL",
    "lado": "CALL",
    "resultado": "G",
@@ -3221,27 +2990,6 @@
    ],
    "semana": "2026-09-21",
    "dia_semana": 4
-  },
-  {
-   "fecha": "2026-09-28",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "10:37 · PUT 360 al ask 1.19",
-   "maximo": 68.1,
-   "unidad": "opción",
-   "minimo": 1.7,
-   "contra": 0.0,
-   "minutos": 7.0,
-   "strike": 360.0,
-   "entrada": 1.19,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-09-28",
-   "dia_semana": 0
   },
   {
    "fecha": "2026-09-28",
@@ -3488,27 +3236,6 @@
   },
   {
    "fecha": "2026-10-01",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "10:13 · PUT 355 al ask 4.80",
-   "maximo": 10.4,
-   "unidad": "opción",
-   "minimo": -32.3,
-   "contra": -11.5,
-   "minutos": 10.0,
-   "strike": 355.0,
-   "entrada": 4.8,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-09-28",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-01",
    "senal": "Heikin Ashi CALL",
    "lado": "CALL",
    "resultado": "P",
@@ -3597,27 +3324,6 @@
   },
   {
    "fecha": "2026-10-02",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "12:07 · PUT 372.5 al ask 1.54",
-   "maximo": 42.2,
-   "unidad": "opción",
-   "minimo": -15.6,
-   "contra": -15.6,
-   "minutos": 19.0,
-   "strike": 372.5,
-   "entrada": 1.54,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-09-28",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-10-02",
    "senal": "GAP continuación",
    "lado": "CALL",
    "resultado": "G",
@@ -3660,27 +3366,6 @@
    ],
    "semana": "2026-09-28",
    "dia_semana": 4
-  },
-  {
-   "fecha": "2026-10-05",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "11:36 · CALL 377.5 al ask 1.61",
-   "maximo": 11.2,
-   "unidad": "opción",
-   "minimo": -37.9,
-   "contra": 0.0,
-   "minutos": 2.0,
-   "strike": 377.5,
-   "entrada": 1.61,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-10-05",
-   "dia_semana": 0
   },
   {
    "fecha": "2026-10-05",
@@ -3789,27 +3474,6 @@
    ],
    "semana": "2026-10-05",
    "dia_semana": 0
-  },
-  {
-   "fecha": "2026-10-06",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "PUT",
-   "resultado": "P",
-   "detalle": "13:55 · PUT 380 al ask 3.05",
-   "maximo": 0.0,
-   "unidad": "opción",
-   "minimo": -14.1,
-   "contra": -1.6,
-   "minutos": 2.0,
-   "strike": 380.0,
-   "entrada": 3.05,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-10-05",
-   "dia_semana": 1
   },
   {
    "fecha": "2026-10-06",
@@ -3936,27 +3600,6 @@
    "activo": "SPX",
    "activos": [
     "SPX"
-   ],
-   "semana": "2026-10-05",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-10-07",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "PUT",
-   "resultado": "P",
-   "detalle": "11:15 · PUT 375 al ask 1.23",
-   "maximo": 2.4,
-   "unidad": "opción",
-   "minimo": -31.7,
-   "contra": -18.7,
-   "minutos": 18.0,
-   "strike": 375.0,
-   "entrada": 1.23,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
    ],
    "semana": "2026-10-05",
    "dia_semana": 2
@@ -4190,27 +3833,6 @@
    ],
    "semana": "2026-10-05",
    "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-09",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "15:23 · PUT 385 al ask 1.44",
-   "maximo": 52.8,
-   "unidad": "opción",
-   "minimo": -22.9,
-   "contra": -22.9,
-   "minutos": 19.0,
-   "strike": 385.0,
-   "entrada": 1.44,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-10-05",
-   "dia_semana": 4
   },
   {
    "fecha": "2026-10-09",
@@ -4676,27 +4298,6 @@
   },
   {
    "fecha": "2026-10-15",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "PUT",
-   "resultado": "P",
-   "detalle": "10:21 · PUT 357.5 al ask 5.75",
-   "maximo": 1.7,
-   "unidad": "opción",
-   "minimo": -33.9,
-   "contra": 0.0,
-   "minutos": 0.8,
-   "strike": 357.5,
-   "entrada": 5.75,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-10-12",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-15",
    "senal": "GAP bajista (amigo)",
    "lado": "PUT",
    "resultado": "P",
@@ -4903,27 +4504,6 @@
   },
   {
    "fecha": "2026-10-16",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "CALL",
-   "resultado": "P",
-   "detalle": "11:47 · CALL 360 al ask 1.85",
-   "maximo": -9.7,
-   "unidad": "opción",
-   "minimo": -51.4,
-   "contra": 0.0,
-   "minutos": 1.0,
-   "strike": 360.0,
-   "entrada": 1.85,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-10-12",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-10-16",
    "senal": "GAP continuación GANADOR",
    "lado": "CALL",
    "resultado": "P",
@@ -5030,27 +4610,6 @@
    ],
    "semana": "2026-10-12",
    "dia_semana": 4
-  },
-  {
-   "fecha": "2026-10-19",
-   "senal": "Combo StochRSI (motor) TSLA",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "11:40 · CALL 367.5 al ask 1.81",
-   "maximo": 15.5,
-   "unidad": "opción",
-   "minimo": -19.9,
-   "contra": -12.2,
-   "minutos": 18.0,
-   "strike": 367.5,
-   "entrada": 1.81,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "TSLA",
-   "activos": [
-    "TSLA"
-   ],
-   "semana": "2026-10-19",
-   "dia_semana": 0
   },
   {
    "fecha": "2026-10-19",
@@ -5561,10 +5120,10 @@
     }
    ],
    "gap": {
-    "mes_pct": 0.0,
+    "mes_pct": 0.0227,
     "hoy_pct": -1.2079,
-    "lado": 0,
-    "cuando": "22/10 19:59",
+    "lado": 1,
+    "cuando": "22/10 20:55",
     "continuacion": false,
     "ganador": true
    }
