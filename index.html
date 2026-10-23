@@ -549,11 +549,15 @@ function pintarHoy(D) {
   // LO MEJOR POR DIA, con dos pestañas: HOY (con lo que paso hoy al lado) y el DIA DE BOLSA SIGUIENTE (21/10, pedido:
   // "dos pestañas, una para esta y otra para el dia siguiente ... cuando termine el jueves la deja con lo que paso y
   // sale el viernes"). Cambia sola con la fecha; el viernes, la de al lado es el lunes.
-  const sig = ds >= 4 ? 0 : ds + 1;
+  // CON FECHA (22/10, pedido: "a las 4 am que aparezca hoy viernes y mañana, como es sabado, lunes y su fecha"): el
+  // dia de bolsa siguiente lo arma el motor (salta fin de semana y feriados); sin el, el de la semana.
+  const M = H.manana && H.manana.fecha ? H.manana : null;
+  const sig = M ? M.dia_semana : (ds >= 4 ? 0 : ds + 1);
   const NOMBRE_SIG = DIAS[sig] || '';
+  const ddmm = (f) => f ? ` ${f.slice(8)}/${f.slice(5, 7)}` : '';
   const vista = TAB_MEJOR === 'manana' ? sig : ds;
-  h += `<h3>⭐ Lo mejor por día</h3><div class="tabs_mejor"><button data-t="hoy" class="${TAB_MEJOR !== 'manana' ? 'on' : ''}">Hoy · ${NOMBRE}</button>`
-    + `<button data-t="manana" class="${TAB_MEJOR === 'manana' ? 'on' : ''}">${sig === 0 ? 'El' : 'Mañana ·'} ${NOMBRE_SIG}</button></div>`;
+  h += `<h3>⭐ Lo mejor por día</h3><div class="tabs_mejor"><button data-t="hoy" class="${TAB_MEJOR !== 'manana' ? 'on' : ''}">Hoy · ${NOMBRE}${ddmm(H.fecha)}</button>`
+    + `<button data-t="manana" class="${TAB_MEJOR === 'manana' ? 'on' : ''}">Mañana · ${NOMBRE_SIG}${ddmm(M && M.fecha)}</button></div>`;
   const grupos = [...new Set(conHist.map(x => base(x.senal)))];
   const rank = grupos.map(gr => { const xs = conHist.filter(x => base(x.senal) === gr && x.dia_semana === vista); const c = cuenta(xs), t = c.g + c.p; return { gr, g: c.g, t, p: t ? c.g / t : 0 }; })
     .filter(r => r.t >= 3).sort((a, b) => b.p - a.p || b.t - a.t).slice(0, 6);
