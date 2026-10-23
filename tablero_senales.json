@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-23 12:05",
+ "actualizado": "2026-10-23 16:20",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14676,6 +14676,22 @@
   },
   {
    "fecha": "2026-10-23",
+   "senal": "GAP bajista (amigo)",
+   "lado": "PUT",
+   "resultado": null,
+   "detalle": "16:00 · falta la apertura siguiente",
+   "maximo": null,
+   "unidad": "GAP",
+   "minimo": null,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-23",
    "senal": "GAP continuación GANADOR",
    "lado": "PUT",
    "resultado": "P",
@@ -14701,11 +14717,11 @@
    "lado": "PUT",
    "resultado": "P",
    "detalle": "11:50 · PUT 765 al ask 1.34",
-   "maximo": 0.0,
+   "maximo": 0.7,
    "unidad": "opción",
    "minimo": -24.6,
-   "contra": -11.9,
-   "minutos": 2.5,
+   "contra": -24.6,
+   "minutos": 29.0,
    "strike": 765.0,
    "entrada": 1.34,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
@@ -14761,6 +14777,22 @@
   },
   {
    "fecha": "2026-10-23",
+   "senal": "Rectángulo (amigo)",
+   "lado": "PUT",
+   "resultado": null,
+   "detalle": "16:00 · falta la apertura siguiente",
+   "maximo": null,
+   "unidad": "GAP",
+   "minimo": null,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-23",
    "senal": "Toque Magnífico",
    "lado": "CALL",
    "resultado": "G",
@@ -14805,6 +14837,28 @@
   },
   {
    "fecha": "2026-10-23",
+   "senal": "UT Bot QQQ PUT",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "12:20 · vela 12:20-12:30 · PUT 764 al ask 1.12",
+   "maximo": 8.9,
+   "unidad": "opción",
+   "minimo": -46.4,
+   "contra": -46.4,
+   "minutos": 24.5,
+   "strike": 764.0,
+   "entrada": 1.12,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-23",
    "senal": "UT Bot SPX CALL",
    "lado": "CALL",
    "resultado": "G",
@@ -14837,6 +14891,27 @@
    "minutos": 0.2,
    "strike": 762.0,
    "entrada": 2.15,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-23",
+   "senal": "UT Bot SPX PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "13:00 · vela 13:00-13:10 · PUT 763 al ask 1.25",
+   "maximo": 11.2,
+   "unidad": "opción",
+   "minimo": -32.0,
+   "contra": -19.2,
+   "minutos": 6.0,
+   "strike": 763.0,
+   "entrada": 1.25,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "activo": "SPX",
    "activos": [
@@ -14897,7 +14972,12 @@
     "texto": "Heikin Ashi PUT"
    }
   ],
-  "rebote": null,
+  "rebote": {
+   "senal": false,
+   "razon_vol": 2.63,
+   "pos_rango": 0.257,
+   "roja": true
+  },
   "rebote_dia": [
    "de viernes para lunes",
    6,
@@ -14908,7 +14988,14 @@
    "fecha": "2026-10-26",
    "dia_semana": 0,
    "eventos": [],
-   "gap": null
+   "gap": {
+    "mes_pct": 0.0783,
+    "hoy_pct": -0.5285,
+    "lado": 1,
+    "cuando": "23/10 16:19",
+    "continuacion": false,
+    "ganador": true
+   }
   }
  }
 }
