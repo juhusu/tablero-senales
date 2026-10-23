@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-22 21:17",
+ "actualizado": "2026-10-22 21:20",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -12335,23 +12335,6 @@
   },
   {
    "fecha": "2026-10-07",
-   "senal": "QQQ / VWAP",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "09:33",
-   "maximo": null,
-   "unidad": "opción",
-   "minimo": null,
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-05",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-10-07",
    "senal": "UT Bot QQQ CALL",
    "lado": "CALL",
    "resultado": "G",
@@ -12500,23 +12483,6 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
-   ],
-   "semana": "2026-10-05",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-08",
-   "senal": "QQQ / VWAP",
-   "lado": "CALL",
-   "resultado": "P",
-   "detalle": "10:50",
-   "maximo": null,
-   "unidad": "opción",
-   "minimo": null,
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
    ],
    "semana": "2026-10-05",
    "dia_semana": 3
@@ -13248,23 +13214,6 @@
   },
   {
    "fecha": "2026-10-13",
-   "senal": "QQQ / VWAP",
-   "lado": "CALL",
-   "resultado": "P",
-   "detalle": "09:52",
-   "maximo": null,
-   "unidad": "opción",
-   "minimo": null,
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-12",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-10-13",
    "senal": "Toque Magnífico",
    "lado": "CALL",
    "resultado": "P",
@@ -13555,23 +13504,6 @@
   },
   {
    "fecha": "2026-10-14",
-   "senal": "QQQ / VWAP",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "09:44",
-   "maximo": null,
-   "unidad": "opción",
-   "minimo": null,
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-12",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-10-14",
    "senal": "Toque Magnífico",
    "lado": "CALL",
    "resultado": "G",
@@ -13801,23 +13733,6 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
-   ],
-   "semana": "2026-10-12",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-15",
-   "senal": "QQQ / VWAP",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "09:32",
-   "maximo": null,
-   "unidad": "opción",
-   "minimo": null,
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
    ],
    "semana": "2026-10-12",
    "dia_semana": 3
@@ -14413,23 +14328,6 @@
   },
   {
    "fecha": "2026-10-19",
-   "senal": "QQQ / VWAP",
-   "lado": "PUT",
-   "resultado": "P",
-   "detalle": "10:10",
-   "maximo": null,
-   "unidad": "opción",
-   "minimo": null,
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-19",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-10-19",
    "senal": "Rebote al cierre",
    "lado": "CALL",
    "resultado": "P",
@@ -14564,23 +14462,6 @@
   },
   {
    "fecha": "2026-10-20",
-   "senal": "QQQ / VWAP",
-   "lado": "PUT",
-   "resultado": "P",
-   "detalle": "09:46",
-   "maximo": null,
-   "unidad": "opción",
-   "minimo": null,
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-19",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-10-20",
    "senal": "Toque Magnífico",
    "lado": "PUT",
    "resultado": "P",
@@ -14682,23 +14563,6 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
-   ],
-   "semana": "2026-10-19",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-10-21",
-   "senal": "QQQ / VWAP",
-   "lado": "PUT",
-   "resultado": "P",
-   "detalle": "09:36",
-   "maximo": null,
-   "unidad": "opción",
-   "minimo": null,
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
    ],
    "semana": "2026-10-19",
    "dia_semana": 2
@@ -14839,10 +14703,10 @@
     }
    ],
    "gap": {
-    "mes_pct": -0.2368,
+    "mes_pct": -0.1427,
     "hoy_pct": -1.2079,
     "lado": -1,
-    "cuando": "22/10 21:16",
+    "cuando": "22/10 21:19",
     "continuacion": true,
     "ganador": true
    }
