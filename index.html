@@ -403,8 +403,9 @@ function mostrarLista(lista) {
     : `<span class="${v >= 0 ? 'g' : 'p'}">${v > 0 ? '+' : ''}${v.toFixed(1)}%</span>`;
   const varias = new Set(xs.map(x => x.grupo)).size > 1;
   const movil = !!(window.matchMedia && window.matchMedia('(max-width:700px)').matches);
+  const conVenta = xs.some(x => x.venta);     /* 25/10: la hora en que se vendio, en las señales que la anotan */
   document.getElementById('det_tabla').innerHTML = '<tr><th>Día</th><th>Hora</th>' + (varias ? '<th style="text-align:left">Señal</th>' : '')
-    + '<th>Lado</th><th></th>'
+    + '<th>Lado</th><th></th>' + (conVenta ? '<th>Vendió</th>' : '')
     + '<th>Máximo</th><th>Tardó</th><th>En contra<span class="c-txt"> antes del máximo</span></th><th class="c-min">Mínimo (30 min)</th><th class="c-dat" style="text-align:left">Datos</th></tr>'
     + (xs.length ? '' : '<tr><td colspan="10" class="n" style="text-align:center;padding:18px">sin señales con estos filtros</td></tr>')
     + xs.map(x => `<tr class="${x.resultado === 'G' ? 'fila-g' : x.resultado === 'P' ? 'fila-p' : ''}">`
@@ -413,6 +414,7 @@ function mostrarLista(lista) {
       + `<td>${x.lado}</td>`     /* sin strike, entrada ni dolares (20/10, pedido con captura) */
       /* 25/10: el detalle de la señal al pasar el mouse por el resultado (por ejemplo, contra que precio se gano) */
       + `<td title="${(x.detalle || '').replace(/"/g, '&quot;')}">${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : '…'}</td>`
+      + (conVenta ? `<td><b class="hora">${x.venta || '—'}</b></td>` : '')
       + `<td>${pc(x.maximo)}${x.unidad && x.unidad !== 'opción' && x.maximo !== null ? ' <span class="n">' + x.unidad + '</span>' : ''}</td>`
       + `<td>${x.minutos !== undefined && x.minutos !== null ? Math.round(x.minutos) + (movil ? '′' : ' min') : '—'}</td>`
       + `<td>${pc(x.contra)}</td><td class="c-min">${pc(x.minimo)}</td>`
