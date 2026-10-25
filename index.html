@@ -411,7 +411,8 @@ function mostrarLista(lista) {
       + `<td><span class="dsem">${(DIAS[x.dia_semana] || '').slice(0, 3)} </span>${x.fecha.slice(8)}/${x.fecha.slice(5, 7)}${x.historico ? ' <span class="n h">· hist.</span>' : ''}</td>`
       + `<td><b class="hora">${horaDe(x)}</b></td>` + (varias ? `<td style="text-align:left">${x.senal}</td>` : '')
       + `<td>${x.lado}</td>`     /* sin strike, entrada ni dolares (20/10, pedido con captura) */
-      + `<td>${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : '…'}</td>`
+      /* 25/10: el detalle de la señal al pasar el mouse por el resultado (por ejemplo, contra que precio se gano) */
+      + `<td title="${(x.detalle || '').replace(/"/g, '&quot;')}">${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : '…'}</td>`
       + `<td>${pc(x.maximo)}${x.unidad && x.unidad !== 'opción' && x.maximo !== null ? ' <span class="n">' + x.unidad + '</span>' : ''}</td>`
       + `<td>${x.minutos !== undefined && x.minutos !== null ? Math.round(x.minutos) + (movil ? '′' : ' min') : '—'}</td>`
       + `<td>${pc(x.contra)}</td><td class="c-min">${pc(x.minimo)}</td>`
@@ -523,7 +524,8 @@ function pintarHoy(D) {
   const H = D.hoy || {}, el = document.getElementById('hoy');
   if (!H.fecha) { el.innerHTML = ''; return; }
   const ds = H.dia_semana, NOMBRE = DIAS[ds] || '';
-  const conHist = D.senales;                                       // con el historial: mas casos para comparar
+  // con el historial: mas casos para comparar; sin los dias con que se armo una regla (25/10: inflaban su ranking)
+  const conHist = D.senales.filter(x => !x.armado);
   const deHoy = D.senales.filter(x => x.fecha === H.fecha && !x.historico);
   const pctTxt = (xs) => { const c = cuenta(xs), t = c.g + c.p; return t ? `${Math.round(100 * c.g / t)}% (${c.g} de ${t})` : 'sin casos'; };
   let h = `<div class="titulo">Hoy · ${NOMBRE} ${H.fecha.slice(8)}/${H.fecha.slice(5, 7)}</div><div class="sub">se actualiza solo · mañana arranca vacío</div>`;
@@ -657,7 +659,9 @@ function pintar(D) {
     div.title = 'clic para ver todas las señales';
     div.dataset.grupo = gr;
     div.innerHTML = `<h3>${gr}</h3><div class="caja"><canvas></canvas><div class="pct"><b class="${pct === null ? 'n' : pct >= 50 ? 'g' : 'p'}">${pct === null ? '—' : pct + '%'}</b>${pct === null ? '' : `<span class="cuantas">${c.g} de ${tot}</span>`}${c.n ? `<span class="porver">${c.n} por ver</span>` : ''}</div></div>`
-      + `<div class="max">${mx === null ? '' : 'máx. típico <b class="' + (mx < 0 ? 'neg' : '') + '">' + (mx > 0 ? '+' : '') + mx.toFixed(1) + '%</b>' + (u === 'opción' ? '' : u === 'SPY' ? ' SPY' : ' GAP')}</div>`;
+      + `<div class="max">${mx === null ? '' : 'máx. típico <b class="' + (mx < 0 ? 'neg' : '') + '">' + (mx > 0 ? '+' : '') + mx.toFixed(1) + '%</b>' + (u === 'opción' ? '' : u === 'SPY' ? ' SPY' : ' GAP')}</div>`
+      /* 25/10: si cuenta dias con que se armo la señal, que se vea (no son una prueba) */
+      + (fg.some(f => f.armado) ? `<div class="max n" title="Esos días se usaron para armar la señal: no son una prueba. La prueba es desde que se mide en vivo.">${fg.every(f => f.armado) ? 'solo días del armado' : 'incluye días del armado'}</div>` : '');
     cc.appendChild(div);
     graficos.push(new Chart(div.querySelector('canvas'), { type: 'doughnut',
       data: { labels: ['ganadas', 'perdidas', 'pendientes'], datasets: [{ data: [c.g, c.p, c.n], backgroundColor: ['#22C55E', '#EF4444', '#374151'], borderWidth: 0 }] },

@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-23 20:00",
+ "actualizado": "2026-10-25 12:23",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -10890,6 +10890,29 @@
   },
   {
    "fecha": "2026-09-29",
+   "senal": "Bollinger SPX",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "11:20 · XSP PUT 764 al ask 0.53 (11:21:03, 63 s después: ese día la cadena no tuvo fotos cada 15 s) · reforzó 11:40 a 0.34 · venció en cero",
+   "maximo": 26.4,
+   "unidad": "opción",
+   "minimo": -45.3,
+   "contra": -7.5,
+   "minutos": 6.0,
+   "strike": 764.0,
+   "entrada": 0.53,
+   "fuente": "Schwab (fotos de la cadena cada 15 s), medido el 25/10: son los días con que se armó la regla",
+   "historico": true,
+   "armado": true,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-09-28",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-09-29",
    "senal": "Heikin Ashi CALL",
    "lado": "CALL",
    "resultado": "G",
@@ -11136,6 +11159,29 @@
   },
   {
    "fecha": "2026-09-30",
+   "senal": "Bollinger SPX",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "10:20 · XSP CALL 774 al ask 0.39 (10:20:28) · reforzó 10:28 a 0.22 · vendió 10:55 a 0.43 = +35% sobre el promedio 0.316",
+   "maximo": 10.3,
+   "unidad": "opción",
+   "minimo": -61.5,
+   "contra": -61.5,
+   "minutos": 34.8,
+   "strike": 774.0,
+   "entrada": 0.39,
+   "fuente": "Schwab (fotos de la cadena cada 15 s), medido el 25/10: son los días con que se armó la regla",
+   "historico": true,
+   "armado": true,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-09-28",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-09-30",
    "senal": "Heikin Ashi PUT",
    "lado": "PUT",
    "resultado": "G",
@@ -11356,6 +11402,29 @@
    ],
    "semana": "2026-09-28",
    "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-01",
+   "senal": "Bollinger SPX",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "09:43 · XSP PUT 762 al ask 0.45 (09:43:15) · vendió 09:49 a 0.61 = +35% sobre el promedio 0.450",
+   "maximo": 46.7,
+   "unidad": "opción",
+   "minimo": -8.9,
+   "contra": -8.9,
+   "minutos": 6.5,
+   "strike": 762.0,
+   "entrada": 0.45,
+   "fuente": "Schwab (fotos de la cadena cada 15 s), medido el 25/10: son los días con que se armó la regla",
+   "historico": true,
+   "armado": true,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-09-28",
+   "dia_semana": 3
   },
   {
    "fecha": "2026-10-01",
@@ -11626,6 +11695,29 @@
   },
   {
    "fecha": "2026-10-02",
+   "senal": "Bollinger SPX",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "09:31 · XSP CALL 776 al ask 0.37 (09:31:23) · vendió 09:34 a 0.50 = +35% sobre el promedio 0.370",
+   "maximo": 51.4,
+   "unidad": "opción",
+   "minimo": -18.9,
+   "contra": -18.9,
+   "minutos": 3.5,
+   "strike": 776.0,
+   "entrada": 0.37,
+   "fuente": "Schwab (fotos de la cadena cada 15 s), medido el 25/10: son los días con que se armó la regla",
+   "historico": true,
+   "armado": true,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-09-28",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-02",
    "senal": "GAP continuación",
    "lado": "CALL",
    "resultado": "G",
@@ -11805,6 +11897,29 @@
    ],
    "semana": "2026-09-28",
    "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-05",
+   "senal": "Bollinger SPX",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "10:06 · XSP CALL 776 al ask 0.39 (10:06:29) · vendió 10:12 a 0.53 = +35% sobre el promedio 0.390",
+   "maximo": 38.5,
+   "unidad": "opción",
+   "minimo": -12.8,
+   "contra": -12.8,
+   "minutos": 6.0,
+   "strike": 776.0,
+   "entrada": 0.39,
+   "fuente": "Schwab (fotos de la cadena cada 15 s), medido el 25/10: son los días con que se armó la regla",
+   "historico": true,
+   "armado": true,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-05",
+   "dia_semana": 0
   },
   {
    "fecha": "2026-10-05",
@@ -12226,6 +12341,29 @@
   },
   {
    "fecha": "2026-10-07",
+   "senal": "Bollinger SPX",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "10:29 · XSP PUT 775 al ask 0.43 (10:29:29) · reforzó 11:13 a 0.23 · venció en cero",
+   "maximo": 27.9,
+   "unidad": "opción",
+   "minimo": -25.6,
+   "contra": -25.6,
+   "minutos": 21.0,
+   "strike": 775.0,
+   "entrada": 0.43,
+   "fuente": "Schwab (fotos de la cadena cada 15 s), medido el 25/10: son los días con que se armó la regla",
+   "historico": true,
+   "armado": true,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-05",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-07",
    "senal": "Combo StochRSI (motor) SPX",
    "lado": "PUT",
    "resultado": "P",
@@ -12400,6 +12538,29 @@
    ],
    "semana": "2026-10-05",
    "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-08",
+   "senal": "Bollinger SPX",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "09:31 · XSP PUT 774 al ask 0.37 (09:31:17) · reforzó 09:46 a 0.23 · vendió 12:50 a 0.43 = +35% sobre el promedio 0.313",
+   "maximo": 21.6,
+   "unidad": "opción",
+   "minimo": -59.5,
+   "contra": -94.6,
+   "minutos": 199.3,
+   "strike": 774.0,
+   "entrada": 0.37,
+   "fuente": "Schwab (fotos de la cadena cada 15 s), medido el 25/10: son los días con que se armó la regla",
+   "historico": true,
+   "armado": true,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-05",
+   "dia_semana": 3
   },
   {
    "fecha": "2026-10-08",
@@ -12733,6 +12894,29 @@
    ],
    "semana": "2026-10-05",
    "dia_semana": 3
+  },
+  {
+   "fecha": "2026-10-09",
+   "senal": "Bollinger SPX",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "10:59 · XSP CALL 781 al ask 0.46 (10:59:21) · reforzó 11:08 a 0.26 · vendió 11:19 a 0.51 = +35% sobre el promedio 0.375",
+   "maximo": 13.0,
+   "unidad": "opción",
+   "minimo": -47.8,
+   "contra": -47.8,
+   "minutos": 20.0,
+   "strike": 781.0,
+   "entrada": 0.46,
+   "fuente": "Schwab (fotos de la cadena cada 15 s), medido el 25/10: son los días con que se armó la regla",
+   "historico": true,
+   "armado": true,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-05",
+   "dia_semana": 4
   },
   {
    "fecha": "2026-10-09",
@@ -13105,6 +13289,29 @@
   },
   {
    "fecha": "2026-10-13",
+   "senal": "Bollinger SPX",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "11:11 · XSP PUT 779 al ask 0.50 (11:11:29) · vendió 11:29 a 0.68 = +35% sobre el promedio 0.500",
+   "maximo": 42.0,
+   "unidad": "opción",
+   "minimo": -40.0,
+   "contra": -40.0,
+   "minutos": 17.5,
+   "strike": 779.0,
+   "entrada": 0.5,
+   "fuente": "Schwab (fotos de la cadena cada 15 s), medido el 25/10: son los días con que se armó la regla",
+   "historico": true,
+   "armado": true,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-12",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-10-13",
    "senal": "GAP continuación",
    "lado": "PUT",
    "resultado": "P",
@@ -13439,6 +13646,29 @@
   },
   {
    "fecha": "2026-10-14",
+   "senal": "Bollinger SPX",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "09:31 · XSP PUT 774 al ask 0.36 (09:31:15) · reforzó 09:39 a 0.22 · vendió 09:57 a 0.41 = +35% sobre el promedio 0.302",
+   "maximo": 16.7,
+   "unidad": "opción",
+   "minimo": -66.7,
+   "contra": -66.7,
+   "minutos": 26.0,
+   "strike": 774.0,
+   "entrada": 0.36,
+   "fuente": "Schwab (fotos de la cadena cada 15 s), medido el 25/10: son los días con que se armó la regla",
+   "historico": true,
+   "armado": true,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-12",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-14",
    "senal": "GAP continuación",
    "lado": "PUT",
    "resultado": "P",
@@ -13605,6 +13835,29 @@
    "strike": 769.0,
    "entrada": 1.57,
    "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-12",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-10-15",
+   "senal": "Bollinger SPX",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "09:33 · XSP PUT 764 al ask 0.47 (09:33:23) · vendió 09:54 a 0.64 = +35% sobre el promedio 0.470",
+   "maximo": 48.9,
+   "unidad": "opción",
+   "minimo": -38.3,
+   "contra": -38.3,
+   "minutos": 21.0,
+   "strike": 764.0,
+   "entrada": 0.47,
+   "fuente": "Schwab (fotos de la cadena cada 15 s), medido el 25/10: son los días con que se armó la regla",
+   "historico": true,
+   "armado": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -13974,6 +14227,29 @@
    "strike": 775.0,
    "entrada": 1.94,
    "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-12",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-16",
+   "senal": "Bollinger SPX",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "11:57 · XSP PUT 768 al ask 0.35 (11:57:18) · vendió 12:00 a 0.48 = +35% sobre el promedio 0.350",
+   "maximo": 40.0,
+   "unidad": "opción",
+   "minimo": -2.9,
+   "contra": -2.9,
+   "minutos": 2.8,
+   "strike": 768.0,
+   "entrada": 0.35,
+   "fuente": "Schwab (fotos de la cadena cada 15 s), medido el 25/10: son los días con que se armó la regla",
+   "historico": true,
+   "armado": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -14484,6 +14760,29 @@
   },
   {
    "fecha": "2026-10-21",
+   "senal": "Bollinger SPX",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "11:37 · XSP CALL 776 al ask 0.54 (11:37:16) · reforzó 12:09 a 0.32 · vendió 12:40 a 0.61 = +35% sobre el promedio 0.448",
+   "maximo": 87.0,
+   "unidad": "opción",
+   "minimo": -35.2,
+   "contra": -61.1,
+   "minutos": 62.8,
+   "strike": 776.0,
+   "entrada": 0.54,
+   "fuente": "Schwab (fotos de la cadena cada 15 s), medido el 25/10: son los días con que se armó la regla",
+   "historico": true,
+   "armado": true,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-21",
    "senal": "GAP continuación",
    "lado": "CALL",
    "resultado": "P",
@@ -14566,6 +14865,29 @@
    ],
    "semana": "2026-10-19",
    "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-22",
+   "senal": "Bollinger SPX",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "10:05 · XSP PUT 766 al ask 0.45 (10:05:29) · vendió 10:06 a 0.61 = +35% sobre el promedio 0.450",
+   "maximo": 37.8,
+   "unidad": "opción",
+   "minimo": 2.2,
+   "contra": 0.0,
+   "minutos": 1.2,
+   "strike": 766.0,
+   "entrada": 0.45,
+   "fuente": "Schwab (fotos de la cadena cada 15 s), medido el 25/10: son los días con que se armó la regla",
+   "historico": true,
+   "armado": true,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 3
   },
   {
    "fecha": "2026-10-22",
@@ -14667,6 +14989,29 @@
    "strike": 764.0,
    "entrada": 3.15,
    "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-19",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-23",
+   "senal": "Bollinger SPX",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "09:32 · XSP PUT 757 al ask 0.44 (09:32:26) · vendió 09:35 a 0.60 = +35% sobre el promedio 0.440",
+   "maximo": 43.2,
+   "unidad": "opción",
+   "minimo": -6.8,
+   "contra": -6.8,
+   "minutos": 3.2,
+   "strike": 757.0,
+   "entrada": 0.44,
+   "fuente": "Schwab (fotos de la cadena cada 15 s), medido el 25/10: son los días con que se armó la regla",
+   "historico": true,
+   "armado": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -14922,80 +15267,20 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-10-23",
-  "dia_semana": 4,
-  "eventos": [
-   {
-    "hora": "09:45",
-    "texto": "PMI preliminar S&P Global (flash)"
-   },
-   {
-    "hora": "10:00",
-    "texto": "Sentimiento Univ. de Michigan (final)"
-   }
-  ],
-  "reportes": [
-   {
-    "hora": "09:45",
-    "datos": "PMI preliminar S&P Global",
-    "mov": -0.0261,
-    "direccion": "neutro",
-    "cifras": {}
-   },
-   {
-    "hora": "10:00",
-    "datos": "Michigan final",
-    "mov": -0.0391,
-    "direccion": "neutro",
-    "cifras": {}
-   }
-  ],
-  "gap": {
-   "cuando": "9:28",
-   "lado": -1.0,
-   "mes_pct": -0.4801,
-   "ayer_pct": -1.2079,
-   "ganador": true,
-   "enviado": true
-  },
-  "avisos": [
-   {
-    "hora": "09:28",
-    "texto": "GAP GANADOR PUT"
-   },
-   {
-    "hora": "09:48",
-    "texto": "Toque Magnífico CALL"
-   },
-   {
-    "hora": "11:50",
-    "texto": "Heikin Ashi PUT"
-   }
-  ],
-  "rebote": {
-   "senal": false,
-   "razon_vol": 2.63,
-   "pos_rango": 0.257,
-   "roja": true
-  },
-  "rebote_dia": [
-   "de viernes para lunes",
-   6,
-   7
-  ],
+  "fecha": "2026-10-25",
+  "dia_semana": 6,
+  "eventos": [],
+  "reportes": [],
+  "gap": null,
+  "avisos": [],
+  "rebote": null,
+  "rebote_dia": null,
   "cobertura_hasta": "2026-12-09",
   "manana": {
    "fecha": "2026-10-26",
    "dia_semana": 0,
    "eventos": [],
-   "gap": {
-    "mes_pct": 0.1534,
-    "hoy_pct": -0.5285,
-    "lado": 1,
-    "cuando": "23/10 16:59",
-    "continuacion": false,
-    "ganador": true
-   }
+   "gap": null
   }
  }
 }
