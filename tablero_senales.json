@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-26 09:35",
+ "actualizado": "2026-10-26 09:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15567,6 +15567,27 @@
    ],
    "semana": "2026-10-19",
    "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-26",
+   "senal": "UT Bot SPX CALL",
+   "lado": "CALL",
+   "resultado": null,
+   "detalle": "9:30 · vela 9:30-9:40 · CALL 765 al ask 1.99",
+   "maximo": 2.5,
+   "unidad": "opción",
+   "minimo": -15.6,
+   "contra": -9.5,
+   "minutos": 2.0,
+   "strike": 765.0,
+   "entrada": 1.99,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 0
   }
  ],
  "hoy": {
