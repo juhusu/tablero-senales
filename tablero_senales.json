@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-26 10:45",
+ "actualizado": "2026-10-26 12:05",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15570,6 +15570,28 @@
   },
   {
    "fecha": "2026-10-26",
+   "senal": "Bollinger SPX",
+   "lado": "CALL",
+   "resultado": null,
+   "detalle": "10:54 · XSP CALL 771.0 al ask 0.48 (10:54:20) · en curso: el resultado se anota a las 3:30 de mañana",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": null,
+   "strike": 771.0,
+   "entro": "10:54:20",
+   "entrada": 0.48,
+   "venta": "",
+   "en_curso": true,
+   "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-10-26",
    "senal": "Combo StochRSI (motor) SPX",
    "lado": "CALL",
    "resultado": "G",
@@ -15584,6 +15606,28 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "activo": "SPX",
    "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-10-26",
+   "senal": "Heikin Ashi PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "11:40 · PUT 770 al ask 1.13",
+   "maximo": 131.9,
+   "unidad": "opción",
+   "minimo": 0.0,
+   "contra": 0.0,
+   "minutos": 20.2,
+   "strike": 770.0,
+   "entrada": 1.13,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
     "SPX"
    ],
    "semana": "2026-10-26",
@@ -15614,13 +15658,13 @@
    "fecha": "2026-10-26",
    "senal": "UT Bot QQQ CALL",
    "lado": "CALL",
-   "resultado": null,
+   "resultado": "G",
    "detalle": "10:10 · vela 10:10-10:20 · CALL 768 al ask 1.33",
-   "maximo": 6.0,
+   "maximo": 24.1,
    "unidad": "opción",
    "minimo": -45.9,
-   "contra": 0.0,
-   "minutos": 0.2,
+   "contra": -45.9,
+   "minutos": 27.5,
    "strike": 768.0,
    "entrada": 1.33,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
@@ -15652,6 +15696,27 @@
    ],
    "semana": "2026-10-26",
    "dia_semana": 0
+  },
+  {
+   "fecha": "2026-10-26",
+   "senal": "UT Bot SPX PUT",
+   "lado": "PUT",
+   "resultado": null,
+   "detalle": "11:50 · vela 11:50-12:00 · PUT 768 al ask 1.14",
+   "maximo": 2.6,
+   "unidad": "opción",
+   "minimo": -14.9,
+   "contra": 0.0,
+   "minutos": 0.2,
+   "strike": 768.0,
+   "entrada": 1.14,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 0
   }
  ],
  "hoy": {
@@ -15667,7 +15732,12 @@
    "ganador": true,
    "enviado": false
   },
-  "avisos": [],
+  "avisos": [
+   {
+    "hora": "11:40",
+    "texto": "Heikin Ashi PUT"
+   }
+  ],
   "rebote": null,
   "rebote_dia": [
    "de lunes para martes",
