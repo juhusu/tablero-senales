@@ -568,14 +568,19 @@ function pintarHoy(D) {
   const vista = TAB_MEJOR === 'manana' ? sig : ds;
   h += `<h3>⭐ Lo mejor por día</h3><div class="tabs_mejor"><button data-t="hoy" class="${TAB_MEJOR !== 'manana' ? 'on' : ''}">Hoy · ${NOMBRE}${ddmm(H.fecha)}</button>`
     + `<button data-t="manana" class="${TAB_MEJOR === 'manana' ? 'on' : ''}">Mañana · ${NOMBRE_SIG}${ddmm(M && M.fecha)}</button></div>`;
-  const grupos = [...new Set(conHist.map(x => base(x.senal)))];
-  const rank = grupos.map(gr => { const xs = conHist.filter(x => base(x.senal) === gr && x.dia_semana === vista); const c = cuenta(xs), t = c.g + c.p; return { gr, g: c.g, t, p: t ? c.g / t : 0 }; })
+  // 26/10, pedido: "eso es como un anuncio, lo que ha pasado": el ranking cuenta TAMBIEN los dias del armado (como los
+  // circulos de arriba), con la misma nota, para que se vea que no son una prueba.
+  const grupos = [...new Set(D.senales.map(x => base(x.senal)))];
+  const rank = grupos.map(gr => { const xs = D.senales.filter(x => base(x.senal) === gr && x.dia_semana === vista); const c = cuenta(xs), t = c.g + c.p;
+      const arm = xs.filter(x => x.armado && (x.resultado === 'G' || x.resultado === 'P')).length;
+      return { gr, g: c.g, t, p: t ? c.g / t : 0, armado: arm ? (arm === t ? 'solo días del armado' : 'incluye días del armado') : '' }; })
     .filter(r => r.t >= 3).sort((a, b) => b.p - a.p || b.t - a.t).slice(0, 6);
   const hoyDe = (gr) => deHoy.filter(x => base(x.senal) === gr);
   h += rank.length ? rank.map(r => {
       const hs = vista === ds ? hoyDe(r.gr) : [];
       const marca = hs.length ? ' ' + hs.map(x => x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : '…').join('') : '';
-      return `<div class="item"><b>${r.g}/${r.t}</b> <span class="sub">(${Math.round(100 * r.p)}%)</span> ${r.gr}${marca}</div>`;
+      const arm = r.armado ? ` <span class="sub" title="Esos días se usaron para armar la señal: no son una prueba. La prueba es desde que se mide en vivo.">· ${r.armado}</span>` : '';
+      return `<div class="item"><b>${r.g}/${r.t}</b> <span class="sub">(${Math.round(100 * r.p)}%)</span> ${r.gr}${arm}${marca}</div>`;
     }).join('') : '<div class="nada">Pocos casos para este día.</div>';
   const porDia = [0, 1, 2, 3, 4].map(i => { const c = cuenta(conHist.filter(x => x.dia_semana === i)); return c.g + c.p ? c.g / (c.g + c.p) : 0; });
   const puesto = [...porDia].sort((a, b) => b - a).indexOf(porDia[vista]) + 1;
@@ -735,5 +740,5 @@ document.getElementById('historial').onchange = (e) => {
   try { localStorage.setItem('tablero_historial', e.target.checked ? '1' : '0'); } catch (x) { /* idem */ }
   if (ultimo) pintar(ultimo);
 };
-cargar(); setInterval(cargar, 5 * 60 * 1000);
+cargar(); setInterval(cargar, 60 * 1000);   // 26/10: cada minuto (com.juhusu.tableroenvivo lo arma cada minuto en la rueda)
 </script></body></html>
