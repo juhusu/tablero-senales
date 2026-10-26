@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-26 09:45",
+ "actualizado": "2026-10-26 10:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15570,15 +15570,79 @@
   },
   {
    "fecha": "2026-10-26",
-   "senal": "UT Bot SPX CALL",
+   "senal": "Combo StochRSI (motor) SPX",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "10:09 · CALL 765 al ask 1.74",
+   "maximo": 105.7,
+   "unidad": "opción",
+   "minimo": -13.8,
+   "contra": -13.8,
+   "minutos": 11.2,
+   "strike": 765.0,
+   "entrada": 1.74,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-10-26",
+   "senal": "Opening Eyes (motor) SPX",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "10:08 · PUT 765 al ask 1.31",
+   "maximo": 1.5,
+   "unidad": "opción",
+   "minimo": -70.2,
+   "contra": -0.8,
+   "minutos": 1.0,
+   "strike": 765.0,
+   "entrada": 1.31,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-10-26",
+   "senal": "UT Bot QQQ CALL",
    "lado": "CALL",
    "resultado": null,
-   "detalle": "9:30 · vela 9:30-9:40 · CALL 765 al ask 1.99",
-   "maximo": 2.5,
+   "detalle": "10:10 · vela 10:10-10:20 · CALL 768 al ask 1.33",
+   "maximo": 6.0,
    "unidad": "opción",
-   "minimo": -15.6,
-   "contra": -9.5,
-   "minutos": 2.0,
+   "minimo": -45.9,
+   "contra": 0.0,
+   "minutos": 0.2,
+   "strike": 768.0,
+   "entrada": 1.33,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-10-26",
+   "senal": "UT Bot SPX CALL",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "9:30 · vela 9:30-9:40 · CALL 765 al ask 1.99",
+   "maximo": 30.2,
+   "unidad": "opción",
+   "minimo": -17.6,
+   "contra": -15.6,
+   "minutos": 15.5,
    "strike": 765.0,
    "entrada": 1.99,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
