@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-25 15:20",
+ "actualizado": "2026-10-26 04:00",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15570,19 +15570,35 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-10-25",
-  "dia_semana": 6,
+  "fecha": "2026-10-26",
+  "dia_semana": 0,
   "eventos": [],
   "reportes": [],
-  "gap": null,
+  "gap": {
+   "cuando": "04:00",
+   "lado": 1,
+   "mes_pct": 0.088108602010184,
+   "ayer_pct": -0.5284791544333589,
+   "ganador": true,
+   "enviado": false
+  },
   "avisos": [],
   "rebote": null,
-  "rebote_dia": null,
+  "rebote_dia": [
+   "de lunes para martes",
+   4,
+   9
+  ],
   "cobertura_hasta": "2026-12-09",
   "manana": {
-   "fecha": "2026-10-26",
-   "dia_semana": 0,
-   "eventos": [],
+   "fecha": "2026-10-27",
+   "dia_semana": 1,
+   "eventos": [
+    {
+     "hora": "10:00",
+     "texto": "Confianza del consumidor (Conference Board)"
+    }
+   ],
    "gap": null
   }
  }
