@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-26 20:00",
+ "actualizado": "2026-10-27 03:31",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15572,17 +15572,20 @@
    "fecha": "2026-10-26",
    "senal": "Bollinger SPX",
    "lado": "CALL",
-   "resultado": null,
-   "detalle": "10:54 · XSP CALL 771.0 al ask 0.48 (10:54:20) · en curso: el resultado se anota a las 3:30 de mañana",
-   "maximo": null,
+   "resultado": "G",
+   "detalle": "09:49 · SPXW CALL 7690 a 5.00 (09:49, vela de 1 min) · reforzó 10:09 a 3.10 · vendió 10:10 a 5.80 = +35% sobre el promedio 4.24",
+   "maximo": 26.0,
    "unidad": "opción",
-   "minimo": null,
-   "strike": 771.0,
-   "entro": "10:54:20",
-   "entrada": 0.48,
-   "venta": "",
-   "en_curso": true,
-   "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py)",
+   "minimo": -43.0,
+   "contra": -22.0,
+   "minutos": 6.0,
+   "strike": 7690.0,
+   "venta": "10:10",
+   "entro": "09:49:15",
+   "max_sin_tp": 274.0,
+   "hora_max_sin_tp": "11:02",
+   "entrada": 5.0,
+   "fuente": "Tastytrade (velas de 1 min de la opción SPX)",
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -15930,53 +15933,41 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-10-26",
-  "dia_semana": 0,
-  "eventos": [],
+  "fecha": "2026-10-27",
+  "dia_semana": 1,
+  "eventos": [
+   {
+    "hora": "10:00",
+    "texto": "Confianza del consumidor (Conference Board)"
+   }
+  ],
   "reportes": [],
   "gap": {
-   "cuando": "9:28",
-   "lado": 1.0,
-   "mes_pct": 0.2382,
-   "ayer_pct": -0.5285,
+   "cuando": "03:31",
+   "lado": -1,
+   "mes_pct": -0.1069414738479435,
+   "ayer_pct": 0.7031352485898035,
    "ganador": true,
    "enviado": false
   },
-  "avisos": [
-   {
-    "hora": "11:40",
-    "texto": "Heikin Ashi PUT"
-   }
-  ],
-  "rebote": {
-   "senal": false,
-   "razon_vol": 2.06,
-   "pos_rango": 0.6,
-   "roja": true
-  },
+  "avisos": [],
+  "rebote": null,
   "rebote_dia": [
-   "de lunes para martes",
-   4,
+   "de martes para miércoles",
+   6,
    9
   ],
   "cobertura_hasta": "2026-12-09",
   "manana": {
-   "fecha": "2026-10-27",
-   "dia_semana": 1,
+   "fecha": "2026-10-28",
+   "dia_semana": 2,
    "eventos": [
     {
-     "hora": "10:00",
-     "texto": "Confianza del consumidor (Conference Board)"
+     "hora": "14:00",
+     "texto": "decision + conferencia"
     }
    ],
-   "gap": {
-    "mes_pct": 0.1426,
-    "hoy_pct": 0.7031,
-    "lado": 1,
-    "cuando": "26/10 19:59",
-    "continuacion": true,
-    "ganador": true
-   }
+   "gap": null
   }
  }
 }
