@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-27 09:20",
+ "actualizado": "2026-10-27 09:35",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15957,6 +15957,22 @@
    ],
    "semana": "2026-10-26",
    "dia_semana": 0
+  },
+  {
+   "fecha": "2026-10-27",
+   "senal": "Aviso 9:28",
+   "lado": "CALL",
+   "resultado": null,
+   "detalle": "9:28 · MES +0.25%",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": null,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 1
   }
  ],
  "hoy": {
@@ -15970,14 +15986,19 @@
   ],
   "reportes": [],
   "gap": {
-   "cuando": "09:20",
-   "lado": 1,
-   "mes_pct": 0.2592520578132085,
-   "ayer_pct": 0.7031352485898035,
+   "cuando": "9:28",
+   "lado": 1.0,
+   "mes_pct": 0.2528,
+   "ayer_pct": 0.7031,
    "ganador": true,
-   "enviado": false
+   "enviado": true
   },
-  "avisos": [],
+  "avisos": [
+   {
+    "hora": "09:28",
+    "texto": "GAP GANADOR CALL"
+   }
+  ],
   "rebote": null,
   "rebote_dia": [
    "de martes para miércoles",
