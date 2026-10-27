@@ -231,15 +231,16 @@ function fmtMax(s) { if (s.maximo === null || s.maximo === undefined) return '<s
   const u = s.unidad === 'opción' ? '' : s.unidad === 'SPY' ? ' SPY' : ' GAP';
   return `<span class="${s.maximo >= 10 || (s.unidad !== 'opción' && s.maximo > 0) ? 'g' : s.maximo > 0 ? '' : 'p'}">${s.maximo > 0 ? '+' : ''}${s.maximo.toFixed(1)}%${u}</span>`; }
 function base(s) { return s.replace(' GANADOR', ''); }
+/* no_cuenta (27/10): filas que no van a tener resultado (la app no compró, vendida a mano): ni ganadas ni "por ver" */
 function cuenta(xs) { const g = xs.filter(x => x.resultado === 'G').length, p = xs.filter(x => x.resultado === 'P').length;
-  return { g, p, n: xs.length - g - p }; }
+  return { g, p, n: xs.filter(x => !x.no_cuenta).length - g - p }; }
 /* LA CASILLA FACIL DE LEER (20/10, pedido: "esa tabla no se entiende bien para alguien mayor. Hazla mas intuitiva"):
    "9 de 10" en grande, una barra que se llena de verde y el % en palabras. Colores: verde = gano 6 de cada 10 o mas;
    amarillo = entre 4 y 6; rojo = menos de 4. Sin señales: un guion. */
 function celda(xs) {
   if (!xs.length) return '<td class="vacia">—</td>';
   const c = cuenta(xs), tot = c.g + c.p;
-  if (!tot) return `<td class="vacia">${c.n} por ver</td>`;
+  if (!tot) return `<td class="vacia">${c.n ? c.n + ' por ver' : 'no cuenta'}</td>`;
   const pct = Math.round(100 * c.g / tot);
   const cls = pct >= 60 ? 'bien' : pct >= 40 ? 'medio' : 'mal';
   return `<td class="cas ${cls}"><div class="num">${c.g} de ${tot}</div><div class="barra"><span style="width:${pct}%"></span></div>`
@@ -294,6 +295,7 @@ function dolares(x) {
 }
 function fuenteCorta(x) {
   const f = x.fuente || '';
+  if (f.includes('cuenta de papel')) return 'app (papel)';     /* 27/10: lo que compro la app (Bollinger SPX) */
   if (f.includes('Schwab congelado')) return 'Tastytrade';
   if (f.includes('5 min')) return 'Tastytrade 5 min';
   if (f.includes('15 s')) return 'Schwab 15 s';
@@ -413,7 +415,7 @@ function mostrarLista(lista) {
       + `<td><b class="hora">${horaDe(x)}</b></td>` + (varias ? `<td style="text-align:left">${x.senal}</td>` : '')
       + `<td>${x.lado}</td>`     /* sin strike, entrada ni dolares (20/10, pedido con captura) */
       /* 25/10: el detalle de la señal al pasar el mouse por el resultado (por ejemplo, contra que precio se gano) */
-      + `<td title="${(x.detalle || '').replace(/"/g, '&quot;')}">${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : '…'}</td>`
+      + `<td title="${(x.detalle || '').replace(/"/g, '&quot;')}">${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : x.no_cuenta ? '—' : '…'}</td>`
       + (conVenta ? `<td><b class="hora">${x.entro || '—'}</b></td><td><b class="hora">${x.venta || '—'}</b></td><td>${pc(x.max_sin_tp)}${x.hora_max_sin_tp ? ' <span class="n">' + x.hora_max_sin_tp + '</span>' : ''}</td>` : '')
       + `<td>${pc(x.maximo)}${x.unidad && x.unidad !== 'opción' && x.maximo !== null ? ' <span class="n">' + x.unidad + '</span>' : ''}</td>`
       + `<td>${x.minutos !== undefined && x.minutos !== null ? Math.round(x.minutos) + (movil ? '′' : ' min') : '—'}</td>`
@@ -578,7 +580,7 @@ function pintarHoy(D) {
   const hoyDe = (gr) => deHoy.filter(x => base(x.senal) === gr);
   h += rank.length ? rank.map(r => {
       const hs = vista === ds ? hoyDe(r.gr) : [];
-      const marca = hs.length ? ' ' + hs.map(x => x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : '…').join('') : '';
+      const marca = hs.length ? ' ' + hs.map(x => x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : x.no_cuenta ? '—' : '…').join('') : '';
       const arm = r.armado ? ` <span class="sub" title="Esos días se usaron para armar la señal: no son una prueba. La prueba es desde que se mide en vivo.">· ${r.armado}</span>` : '';
       return `<div class="item"><b>${r.g}/${r.t}</b> <span class="sub">(${Math.round(100 * r.p)}%)</span> ${r.gr}${arm}${marca}</div>`;
     }).join('') : '<div class="nada">Pocos casos para este día.</div>';
@@ -594,7 +596,7 @@ function pintarHoy(D) {
   const hm = (x) => (horaDe(x) || '00:00').padStart(5, '0');
   const ord = [...deHoy].sort((a, b) => hm(a).localeCompare(hm(b)));
   h += ord.length ? ord.map(x => `<div class="item"><span class="hh">${horaDe(x)}</span>${x.lado === 'CALL' ? '<b class="g">▲</b>' : '<b class="p">▼</b>'} ${x.senal} `
-      + `${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : '…'}`
+      + `${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : x.no_cuenta ? '—' : '…'}`
       + `${x.maximo !== null && x.maximo !== undefined && x.unidad === 'opción' ? ` <span class="${x.maximo >= 0 ? 'g' : 'p'}">${x.maximo > 0 ? '+' : ''}${x.maximo.toFixed(1)}%</span>` : ''}</div>`).join('')
     : '<div class="nada">Todavía no hubo señales hoy.</div>';
   // AVISOS
@@ -709,7 +711,7 @@ function pintar(D) {
   for (const s of [...todas].sort((a, b) => (b.fecha + hm(b)).localeCompare(a.fecha + hm(a)))) {
     const d = new Date(s.fecha + 'T12:00:00');
     h += `<tr><td>${(DIAS[s.dia_semana] || '').slice(0, 3)} ${s.fecha.slice(8)}/${s.fecha.slice(5, 7)} <b class="hora">${horaDe(s)}</b></td><td class="c-act">${(s.activos || [s.activo]).length > 1 ? s.activo + ' → SPX' : s.activo}</td><td style="text-align:left">${s.senal}${s.historico ? ' <span class="n" title="' + (s.fuente || '') + '">· historial</span>' : ''}</td><td>${s.lado}</td>`
-      + `<td class="${s.resultado === 'G' ? 'g' : s.resultado === 'P' ? 'p' : 'n'}">${s.resultado === 'G' ? '✅<span class="c-txt"> ganada</span>' : s.resultado === 'P' ? '❌<span class="c-txt"> perdida</span>' : '…'}</td>`
+      + `<td class="${s.resultado === 'G' ? 'g' : s.resultado === 'P' ? 'p' : 'n'}">${s.resultado === 'G' ? '✅<span class="c-txt"> ganada</span>' : s.resultado === 'P' ? '❌<span class="c-txt"> perdida</span>' : s.no_cuenta ? '—<span class="c-txt"> no cuenta</span>' : '…'}</td>`
       + `<td>${fmtMax(s)}</td><td class="c-det tenue" style="text-align:left">${sinHora(s)}</td></tr>`;
   }
   document.getElementById('detalle').innerHTML = h;
