@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-28 09:45",
+ "actualizado": "2026-10-28 10:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -18008,10 +18008,10 @@
    "senal": "Bollinger SPX (app)",
    "lado": "CALL",
    "resultado": null,
-   "detalle": "09:35 · SPX CALL 7780 a 4.20 (09:35:55) · en curso: vende en el objetivo (+35%) o a las 15:55 · VWAP SPY en contra -0.01%",
+   "detalle": "09:35 · SPX CALL 7780 a 4.20 (09:35:55) · reforzó 09:48 a 2.50 · en curso: vende en el objetivo (+35%) o a las 15:55 · VWAP SPY en contra -0.01%",
    "maximo": 7.1,
    "unidad": "opción",
-   "minimo": -23.8,
+   "minimo": -42.9,
    "contra": 0.0,
    "minutos": 0.5,
    "max_sin_tp": 7.1,
@@ -18024,6 +18024,27 @@
    "en_curso": true,
    "no_cuenta": false,
    "fuente": "la compra de la app en la cuenta de papel (caja negra) · el máximo, con las fotos de la cadena cada 15 s",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-28",
+   "senal": "Combo StochRSI (motor) SPX",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "10:28 · CALL 773 al ask 2.08",
+   "maximo": 8.7,
+   "unidad": "opción",
+   "minimo": -11.5,
+   "contra": -0.5,
+   "minutos": 3.2,
+   "strike": 773.0,
+   "entrada": 2.08,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -18054,15 +18075,59 @@
   },
   {
    "fecha": "2026-10-28",
-   "senal": "Opening Eyes (motor) SPX",
+   "senal": "Heikin Ashi CALL",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "9:50 · CALL 772 al ask 2.30",
+   "maximo": 25.2,
+   "unidad": "opción",
+   "minimo": -6.5,
+   "contra": -6.5,
+   "minutos": 24.3,
+   "strike": 772.0,
+   "entrada": 2.3,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-28",
+   "senal": "Heikin Ashi PUT",
    "lado": "PUT",
    "resultado": "P",
-   "detalle": "09:44 · PUT 773 al ask 1.96",
-   "maximo": 1.0,
+   "detalle": "10:40 · PUT 773 al ask 2.01",
+   "maximo": 1.5,
    "unidad": "opción",
-   "minimo": 1.0,
+   "minimo": -9.5,
    "contra": 0.0,
-   "minutos": 0.2,
+   "minutos": 1.0,
+   "strike": 773.0,
+   "entrada": 2.01,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-28",
+   "senal": "Opening Eyes (motor) SPX",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "09:44 · PUT 773 al ask 1.96",
+   "maximo": 35.2,
+   "unidad": "opción",
+   "minimo": -11.7,
+   "contra": 0.0,
+   "minutos": 4.5,
    "strike": 773.0,
    "entrada": 1.96,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
@@ -18075,17 +18140,60 @@
   },
   {
    "fecha": "2026-10-28",
-   "senal": "UT Bot SPX CALL",
+   "senal": "Rebote EMA 9 (5 min)",
    "lado": "CALL",
    "resultado": null,
-   "detalle": "9:30 · vela 9:30-9:40 · CALL 773 al ask 2.08",
-   "maximo": 1.0,
+   "detalle": "10:30 · vela de 5 min que cerró 10:35 · SPX CALL 7735 al ask 18.80 (10:35:26) · en curso: gana con el bid a +35%, pierde con el punto medio a -35%, o 15:55",
+   "maximo": 0.0,
    "unidad": "opción",
-   "minimo": -5.8,
-   "contra": -1.0,
-   "minutos": 0.8,
+   "minimo": -15.4,
+   "strike": 7735,
+   "entrada": 18.8,
+   "entro": "10:35:26",
+   "venta": "",
+   "en_curso": true,
+   "fuente": "Schwab (cadena del SPX cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-28",
+   "senal": "UT Bot SPX CALL",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "9:30 · vela 9:30-9:40 · CALL 773 al ask 2.08",
+   "maximo": 5.3,
+   "unidad": "opción",
+   "minimo": -24.5,
+   "contra": -24.5,
+   "minutos": 25.8,
    "strike": 773.0,
    "entrada": 2.08,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-28",
+   "senal": "UT Bot SPX PUT",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "9:40 · vela 9:40-9:50 · PUT 772 al ask 1.87",
+   "maximo": 7.5,
+   "unidad": "opción",
+   "minimo": -30.5,
+   "contra": 0.0,
+   "minutos": 0.5,
+   "strike": 772.0,
+   "entrada": 1.87,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "activo": "SPX",
    "activos": [
@@ -18117,6 +18225,18 @@
    {
     "hora": "09:28",
     "texto": "GAP GANADOR CALL"
+   },
+   {
+    "hora": "09:50",
+    "texto": "Heikin Ashi CALL"
+   },
+   {
+    "hora": "09:57",
+    "texto": "Toque Magnífico PUT"
+   },
+   {
+    "hora": "10:40",
+    "texto": "Heikin Ashi PUT"
    }
   ],
   "rebote": null,
