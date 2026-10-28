@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-28 12:05",
+ "actualizado": "2026-10-28 16:20",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -17670,9 +17670,9 @@
    "fecha": "2026-10-27",
    "senal": "GAP bajista (amigo)",
    "lado": "PUT",
-   "resultado": null,
-   "detalle": "16:00 · falta la apertura siguiente",
-   "maximo": null,
+   "resultado": "P",
+   "detalle": "16:00 · GAP siguiente +0.23%",
+   "maximo": -0.2,
    "unidad": "GAP",
    "minimo": null,
    "activo": "SPX",
@@ -18007,21 +18007,21 @@
    "fecha": "2026-10-28",
    "senal": "Bollinger SPX (app)",
    "lado": "CALL",
-   "resultado": null,
-   "detalle": "09:35 · SPX CALL 7780 a 4.20 (09:35:55) · reforzó 09:48 a 2.50 · en curso: vende en el objetivo (+35%) o a las 15:55 · VWAP SPY en contra -0.01%",
-   "maximo": 7.1,
+   "resultado": "G",
+   "detalle": "09:35 · SPX CALL 7780 a 4.20 (09:35:55) · reforzó 09:48 a 2.50 · vendió 12:54 a 4.90 en el objetivo = +41% sobre el promedio 3.47 · VWAP SPY en contra -0.01%",
+   "maximo": 16.7,
    "unidad": "opción",
    "minimo": -45.2,
-   "contra": 0.0,
-   "minutos": 0.5,
-   "max_sin_tp": 7.1,
-   "hora_max_sin_tp": "09:36",
+   "contra": -45.2,
+   "minutos": 198.6,
+   "max_sin_tp": 59.5,
+   "hora_max_sin_tp": "12:55",
    "strike": 7780.0,
    "entrada": 4.2,
    "papel": "SPX",
    "entro": "09:35:55",
-   "venta": "",
-   "en_curso": true,
+   "venta": "12:54",
+   "en_curso": false,
    "no_cuenta": false,
    "fuente": "la compra de la app en la cuenta de papel (caja negra) · el máximo, con las fotos de la cadena cada 15 s",
    "activo": "SPX",
@@ -18142,16 +18142,16 @@
    "fecha": "2026-10-28",
    "senal": "Rebote EMA 9 (5 min)",
    "lado": "CALL",
-   "resultado": null,
-   "detalle": "10:30 · vela de 5 min que cerró 10:35 · SPX CALL 7735 al ask 18.80 (10:35:26) · en curso: gana con el bid a +35%, pierde con el punto medio a -35%, o 15:55",
-   "maximo": 14.9,
+   "resultado": "G",
+   "detalle": "10:30 · vela de 5 min que cerró 10:35 · SPX CALL 7735 al ask 18.80 (10:35:26) · +35% (bid 28.00) a las 12:55:01",
+   "maximo": 48.9,
    "unidad": "opción",
    "minimo": -21.8,
    "strike": 7735,
    "entrada": 18.8,
    "entro": "10:35:26",
-   "venta": "",
-   "en_curso": true,
+   "venta": "12:55:01",
+   "en_curso": false,
    "fuente": "Schwab (cadena del SPX cada 15 s)",
    "activo": "SPX",
    "activos": [
@@ -18177,6 +18177,72 @@
    "activo": "SPY",
    "activos": [
     "SPY",
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-28",
+   "senal": "UT Bot QQQ CALL",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "12:50 · vela 12:50-13:00 · CALL 774 al ask 1.85",
+   "maximo": 4.3,
+   "unidad": "opción",
+   "minimo": -27.0,
+   "contra": -1.6,
+   "minutos": 4.8,
+   "strike": 774.0,
+   "entrada": 1.85,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-28",
+   "senal": "UT Bot QQQ CALL",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "14:30 · vela 14:30-14:40 · CALL 774 al ask 1.68",
+   "maximo": 37.5,
+   "unidad": "opción",
+   "minimo": -64.3,
+   "contra": -16.1,
+   "minutos": 2.5,
+   "strike": 774.0,
+   "entrada": 1.68,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-28",
+   "senal": "UT Bot QQQ PUT",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "13:20 · vela 13:20-13:30 · PUT 773 al ask 1.50",
+   "maximo": 4.0,
+   "unidad": "opción",
+   "minimo": -22.7,
+   "contra": -1.3,
+   "minutos": 2.0,
+   "strike": 773.0,
+   "entrada": 1.5,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
     "SPX"
    ],
    "semana": "2026-10-26",
@@ -18226,6 +18292,27 @@
   },
   {
    "fecha": "2026-10-28",
+   "senal": "UT Bot SPX CALL",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "14:30 · vela 14:30-14:40 · CALL 774 al ask 1.68",
+   "maximo": 37.5,
+   "unidad": "opción",
+   "minimo": -64.3,
+   "contra": -16.1,
+   "minutos": 2.5,
+   "strike": 774.0,
+   "entrada": 1.68,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-28",
    "senal": "UT Bot SPX PUT",
    "lado": "PUT",
    "resultado": "P",
@@ -18244,6 +18331,48 @@
    ],
    "semana": "2026-10-26",
    "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-28",
+   "senal": "UT Bot SPX PUT",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "13:20 · vela 13:20-13:30 · PUT 773 al ask 1.50",
+   "maximo": 4.0,
+   "unidad": "opción",
+   "minimo": -22.7,
+   "contra": -1.3,
+   "minutos": 2.0,
+   "strike": 773.0,
+   "entrada": 1.5,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-28",
+   "senal": "UT Bot SPX PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "15:10 · vela 15:10-15:20 · PUT 774 al ask 1.08",
+   "maximo": 30.6,
+   "unidad": "opción",
+   "minimo": -80.6,
+   "contra": -13.9,
+   "minutos": 7.8,
+   "strike": 774.0,
+   "entrada": 1.08,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 2
   }
  ],
  "hoy": {
@@ -18255,7 +18384,15 @@
     "texto": "decision + conferencia"
    }
   ],
-  "reportes": [],
+  "reportes": [
+   {
+    "hora": "14:00",
+    "datos": "FOMC",
+    "mov": -0.0579,
+    "direccion": "abajo",
+    "cifras": {}
+   }
+  ],
   "gap": {
    "cuando": "9:28",
    "lado": 1.0,
@@ -18282,7 +18419,12 @@
     "texto": "Heikin Ashi PUT"
    }
   ],
-  "rebote": null,
+  "rebote": {
+   "senal": false,
+   "razon_vol": 2.83,
+   "pos_rango": 0.745,
+   "roja": false
+  },
   "rebote_dia": [
    "de miércoles para jueves",
    13,
@@ -18302,7 +18444,14 @@
      "texto": "PIB (GDP)"
     }
    ],
-   "gap": null
+   "gap": {
+    "mes_pct": -0.1381,
+    "hoy_pct": 0.3367,
+    "lado": -1,
+    "cuando": "28/10 16:19",
+    "continuacion": false,
+    "ganador": true
+   }
   }
  }
 }
