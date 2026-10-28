@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-27 17:30",
+ "actualizado": "2026-10-27 20:00",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15595,7 +15595,7 @@
   },
   {
    "fecha": "2026-10-26",
-   "senal": "Bollinger SPX (app XSP)",
+   "senal": "Bollinger SPX (app)",
    "lado": "CALL",
    "resultado": "G",
    "detalle": "10:54 · XSP CALL 771 a 0.50 (10:54:51) · vendió 11:01 a 0.70 en el objetivo = +40%",
@@ -15608,6 +15608,7 @@
    "hora_max_sin_tp": "11:02",
    "strike": 771.0,
    "entrada": 0.5,
+   "papel": "XSP",
    "entro": "10:54:51",
    "venta": "11:01",
    "en_curso": false,
@@ -15981,7 +15982,7 @@
   },
   {
    "fecha": "2026-10-27",
-   "senal": "Bollinger SPX (app XSP)",
+   "senal": "Bollinger SPX (app)",
    "lado": "CALL",
    "resultado": "G",
    "detalle": "09:50 · XSP CALL 772 a 0.31 (09:50:19) · reforzó 10:11 a 0.19 · vendió 10:33 a 0.36 en el objetivo = +38% sobre el promedio 0.26 · VWAP SPY en contra -0.04%",
@@ -15994,6 +15995,7 @@
    "hora_max_sin_tp": "12:00",
    "strike": 772.0,
    "entrada": 0.31,
+   "papel": "XSP",
    "entro": "09:50:19",
    "venta": "10:33",
    "en_curso": false,
@@ -16381,10 +16383,10 @@
     }
    ],
    "gap": {
-    "mes_pct": -0.0322,
+    "mes_pct": 0.0193,
     "hoy_pct": 0.5914,
-    "lado": -1,
-    "cuando": "27/10 16:59",
+    "lado": 1,
+    "cuando": "27/10 19:59",
     "continuacion": false,
     "ganador": true
    }
