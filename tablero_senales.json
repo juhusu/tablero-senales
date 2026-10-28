@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-28 09:35",
+ "actualizado": "2026-10-28 09:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -17986,11 +17986,107 @@
    "fecha": "2026-10-28",
    "senal": "Aviso 9:28",
    "lado": "CALL",
-   "resultado": null,
+   "resultado": "P",
    "detalle": "9:28 · MES +0.22%",
-   "maximo": null,
+   "maximo": 8.9,
    "unidad": "opción",
-   "minimo": null,
+   "minimo": -19.8,
+   "contra": -9.9,
+   "minutos": 1.0,
+   "strike": 774.0,
+   "entrada": 1.92,
+   "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-28",
+   "senal": "Bollinger SPX (app)",
+   "lado": "CALL",
+   "resultado": null,
+   "detalle": "09:35 · SPX CALL 7780 a 4.20 (09:35:55) · en curso: vende en el objetivo (+35%) o a las 15:55 · VWAP SPY en contra -0.01%",
+   "maximo": 7.1,
+   "unidad": "opción",
+   "minimo": -23.8,
+   "contra": 0.0,
+   "minutos": 0.5,
+   "max_sin_tp": 7.1,
+   "hora_max_sin_tp": "09:36",
+   "strike": 7780.0,
+   "entrada": 4.2,
+   "papel": "SPX",
+   "entro": "09:35:55",
+   "venta": "",
+   "en_curso": true,
+   "no_cuenta": false,
+   "fuente": "la compra de la app en la cuenta de papel (caja negra) · el máximo, con las fotos de la cadena cada 15 s",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-28",
+   "senal": "GAP continuación GANADOR",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "9:30 · GAP +0.17% · ayer +0.60%",
+   "maximo": 8.9,
+   "unidad": "opción",
+   "minimo": -19.8,
+   "contra": -9.9,
+   "minutos": 1.0,
+   "strike": 774.0,
+   "entrada": 1.92,
+   "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-28",
+   "senal": "Opening Eyes (motor) SPX",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "09:44 · PUT 773 al ask 1.96",
+   "maximo": 1.0,
+   "unidad": "opción",
+   "minimo": 1.0,
+   "contra": 0.0,
+   "minutos": 0.2,
+   "strike": 773.0,
+   "entrada": 1.96,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-28",
+   "senal": "UT Bot SPX CALL",
+   "lado": "CALL",
+   "resultado": null,
+   "detalle": "9:30 · vela 9:30-9:40 · CALL 773 al ask 2.08",
+   "maximo": 1.0,
+   "unidad": "opción",
+   "minimo": -5.8,
+   "contra": -1.0,
+   "minutos": 0.8,
+   "strike": 773.0,
+   "entrada": 2.08,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "activo": "SPX",
    "activos": [
     "SPX"
