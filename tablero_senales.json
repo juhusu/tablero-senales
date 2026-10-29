@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-28 20:00",
+ "actualizado": "2026-10-29 03:31",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -18005,6 +18005,31 @@
   },
   {
    "fecha": "2026-10-28",
+   "senal": "Bollinger SPX",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "09:31 · SPXW CALL 7785 a 4.10 (09:31, vela de 1 min) · reforzó 09:46 a 2.45 · vendió 12:54 a 4.60 = +35% sobre el promedio 3.39 · VWAP SPY a favor +0.03%",
+   "maximo": 12.2,
+   "unidad": "opción",
+   "minimo": -54.4,
+   "contra": -12.2,
+   "minutos": 203.0,
+   "strike": 7785.0,
+   "venta": "12:54",
+   "entro": "09:31:15",
+   "max_sin_tp": 36.6,
+   "hora_max_sin_tp": "12:55",
+   "entrada": 4.1,
+   "fuente": "Tastytrade (velas de 1 min de la opción SPX)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-10-28",
    "senal": "Bollinger SPX (app)",
    "lado": "CALL",
    "resultado": "G",
@@ -18376,82 +18401,45 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-10-28",
-  "dia_semana": 2,
+  "fecha": "2026-10-29",
+  "dia_semana": 3,
   "eventos": [
    {
-    "hora": "14:00",
-    "texto": "decision + conferencia"
-   }
-  ],
-  "reportes": [
+    "hora": "08:30",
+    "texto": "Ingreso y gasto personal (PCE)"
+   },
    {
-    "hora": "14:00",
-    "datos": "FOMC",
-    "mov": -0.0579,
-    "direccion": "abajo",
-    "cifras": {}
+    "hora": "08:30",
+    "texto": "PIB (GDP)"
    }
   ],
+  "reportes": [],
   "gap": {
-   "cuando": "9:28",
-   "lado": 1.0,
-   "mes_pct": 0.2223,
-   "ayer_pct": 0.5914,
-   "ganador": true,
-   "enviado": true
+   "cuando": "03:31",
+   "lado": -1,
+   "mes_pct": -0.36611214593101904,
+   "ayer_pct": 0.33670033670032407,
+   "ganador": false,
+   "enviado": false
   },
-  "avisos": [
-   {
-    "hora": "09:28",
-    "texto": "GAP GANADOR CALL"
-   },
-   {
-    "hora": "09:50",
-    "texto": "Heikin Ashi CALL"
-   },
-   {
-    "hora": "09:57",
-    "texto": "Toque Magnífico PUT"
-   },
-   {
-    "hora": "10:40",
-    "texto": "Heikin Ashi PUT"
-   }
-  ],
-  "rebote": {
-   "senal": false,
-   "razon_vol": 2.83,
-   "pos_rango": 0.745,
-   "roja": false
-  },
+  "avisos": [],
+  "rebote": null,
   "rebote_dia": [
-   "de miércoles para jueves",
-   13,
-   16
+   "de jueves para viernes",
+   14,
+   15
   ],
   "cobertura_hasta": "2026-12-09",
   "manana": {
-   "fecha": "2026-10-29",
-   "dia_semana": 3,
+   "fecha": "2026-10-30",
+   "dia_semana": 4,
    "eventos": [
     {
-     "hora": "08:30",
-     "texto": "Ingreso y gasto personal (PCE)"
-    },
-    {
-     "hora": "08:30",
-     "texto": "PIB (GDP)"
+     "hora": "09:45",
+     "texto": "PMI de Chicago (MNI)"
     }
    ],
-   "gap": {
-    "mes_pct": -0.4014,
-    "hoy_pct": 0.3367,
-    "lado": -1,
-    "cuando": "28/10 19:59",
-    "continuacion": false,
-    "ganador": false
-   }
+   "gap": null
   }
  }
 }
