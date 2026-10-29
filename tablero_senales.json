@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-29 12:05",
+ "actualizado": "2026-10-29 16:20",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -18487,6 +18487,22 @@
   },
   {
    "fecha": "2026-10-29",
+   "senal": "Rectángulo (amigo)",
+   "lado": "CALL",
+   "resultado": null,
+   "detalle": "16:00 · falta la apertura siguiente",
+   "maximo": null,
+   "unidad": "GAP",
+   "minimo": null,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-10-29",
    "senal": "Toque Magnífico",
    "lado": "PUT",
    "resultado": "G",
@@ -18531,6 +18547,28 @@
   },
   {
    "fecha": "2026-10-29",
+   "senal": "UT Bot QQQ PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "13:10 · vela 13:10-13:20 · PUT 771 al ask 0.76",
+   "maximo": 102.6,
+   "unidad": "opción",
+   "minimo": -26.3,
+   "contra": -26.3,
+   "minutos": 27.3,
+   "strike": 771.0,
+   "entrada": 0.76,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-10-29",
    "senal": "UT Bot SPX CALL",
    "lado": "CALL",
    "resultado": "P",
@@ -18542,6 +18580,48 @@
    "minutos": 0.2,
    "strike": 773.0,
    "entrada": 1.11,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-10-29",
+   "senal": "UT Bot SPX CALL",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "15:20 · vela 15:20-15:30 · CALL 771 al ask 0.40",
+   "maximo": 125.0,
+   "unidad": "opción",
+   "minimo": -67.5,
+   "contra": -67.5,
+   "minutos": 27.5,
+   "strike": 771.0,
+   "entrada": 0.4,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-10-29",
+   "senal": "UT Bot SPX PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "12:40 · vela 12:40-12:50 · PUT 771 al ask 0.64",
+   "maximo": 48.4,
+   "unidad": "opción",
+   "minimo": -48.4,
+   "contra": -48.4,
+   "minutos": 24.3,
+   "strike": 771.0,
+   "entrada": 0.64,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "activo": "SPX",
    "activos": [
@@ -18595,7 +18675,12 @@
     "texto": "Heikin Ashi PUT"
    }
   ],
-  "rebote": null,
+  "rebote": {
+   "senal": false,
+   "razon_vol": 3.05,
+   "pos_rango": 0.696,
+   "roja": false
+  },
   "rebote_dia": [
    "de jueves para viernes",
    14,
@@ -18611,7 +18696,14 @@
      "texto": "PMI de Chicago (MNI)"
     }
    ],
-   "gap": null
+   "gap": {
+    "mes_pct": -0.4997,
+    "hoy_pct": -0.3485,
+    "lado": -1,
+    "cuando": "29/10 16:19",
+    "continuacion": true,
+    "ganador": false
+   }
   }
  }
 }
