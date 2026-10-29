@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-29 09:45",
+ "actualizado": "2026-10-29 10:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -18405,17 +18405,38 @@
    "lado": "CALL",
    "resultado": "G",
    "detalle": "9:40 · CALL 770 al ask 1.91",
-   "maximo": 28.3,
+   "maximo": 60.7,
    "unidad": "opción",
-   "minimo": -2.6,
-   "contra": -2.6,
-   "minutos": 4.8,
+   "minimo": -20.4,
+   "contra": -20.4,
+   "minutos": 25.0,
    "strike": 770.0,
    "entrada": 1.91,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "activo": "SPY",
    "activos": [
     "SPY",
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-10-29",
+   "senal": "Opening Eyes (motor) SPX",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "10:01 · CALL 772 al ask 1.36",
+   "maximo": 29.4,
+   "unidad": "opción",
+   "minimo": -32.4,
+   "contra": 0.0,
+   "minutos": 4.0,
+   "strike": 772.0,
+   "entrada": 1.36,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPX",
+   "activos": [
     "SPX"
    ],
    "semana": "2026-10-26",
@@ -18438,6 +18459,49 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-10-29",
+   "senal": "UT Bot QQQ CALL",
+   "lado": "CALL",
+   "resultado": null,
+   "detalle": "10:30 · vela 10:30-10:40 · CALL 773 al ask 1.11",
+   "maximo": -8.1,
+   "unidad": "opción",
+   "minimo": -37.8,
+   "contra": 0.0,
+   "minutos": 0.2,
+   "strike": 773.0,
+   "entrada": 1.11,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-10-29",
+   "senal": "UT Bot SPX CALL",
+   "lado": "CALL",
+   "resultado": null,
+   "detalle": "10:30 · vela 10:30-10:40 · CALL 773 al ask 1.11",
+   "maximo": -8.1,
+   "unidad": "opción",
+   "minimo": -37.8,
+   "contra": 0.0,
+   "minutos": 0.2,
+   "strike": 773.0,
+   "entrada": 1.11,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
    ],
    "semana": "2026-10-26",
    "dia_semana": 3
