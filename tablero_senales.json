@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-30 09:45",
+ "actualizado": "2026-10-30 10:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -18698,6 +18698,34 @@
   },
   {
    "fecha": "2026-10-30",
+   "senal": "Bollinger SPX (app)",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "10:11 · SPX PUT 7575 a 4.00 (10:11:08) · vendió 10:12 a 5.40 en el objetivo = +35% · VWAP SPY a favor +0.11% · PUT tarde de 2da salida",
+   "maximo": 35.0,
+   "unidad": "opción",
+   "minimo": 0.0,
+   "contra": 0.0,
+   "minutos": 1.6,
+   "max_sin_tp": 162.5,
+   "hora_max_sin_tp": "10:25",
+   "strike": 7575.0,
+   "entrada": 4.0,
+   "papel": "SPX",
+   "entro": "10:11:08",
+   "venta": "10:12",
+   "en_curso": false,
+   "no_cuenta": false,
+   "fuente": "la compra de la app en la cuenta de papel (caja negra) · el máximo, con las fotos de la cadena cada 15 s",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-30",
    "senal": "GAP continuación",
    "lado": "PUT",
    "resultado": "P",
@@ -18719,15 +18747,58 @@
   },
   {
    "fecha": "2026-10-30",
+   "senal": "Heikin Ashi CALL",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "9:50 · CALL 763 al ask 1.71",
+   "maximo": 26.9,
+   "unidad": "opción",
+   "minimo": -50.9,
+   "contra": -6.4,
+   "minutos": 9.2,
+   "strike": 763.0,
+   "entrada": 1.71,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-30",
+   "senal": "Opening Eyes (motor) TSLA",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "09:46 · CALL 392.5 al ask 3.20",
+   "maximo": 96.9,
+   "unidad": "opción",
+   "minimo": -25.3,
+   "contra": -25.3,
+   "minutos": 21.3,
+   "strike": 392.5,
+   "entrada": 3.2,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "TSLA",
+   "activos": [
+    "TSLA"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-30",
    "senal": "UT Bot SPX PUT",
    "lado": "PUT",
    "resultado": "G",
    "detalle": "9:30 · vela 9:30-9:40 · PUT 763 al ask 1.84",
-   "maximo": 13.6,
+   "maximo": 22.8,
    "unidad": "opción",
-   "minimo": -6.5,
+   "minimo": -27.7,
    "contra": -6.5,
-   "minutos": 3.5,
+   "minutos": 8.2,
    "strike": 763.0,
    "entrada": 1.84,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
@@ -18748,7 +18819,15 @@
     "texto": "PMI de Chicago (MNI)"
    }
   ],
-  "reportes": [],
+  "reportes": [
+   {
+    "hora": "09:45",
+    "datos": "PMI de Chicago",
+    "mov": 0.0261,
+    "direccion": "neutro",
+    "cifras": {}
+   }
+  ],
   "gap": {
    "cuando": "9:28",
    "lado": -1.0,
@@ -18765,6 +18844,10 @@
    {
     "hora": "09:33",
     "texto": "Toque Magnífico PUT"
+   },
+   {
+    "hora": "09:50",
+    "texto": "Heikin Ashi CALL"
    }
   ],
   "rebote": null,
