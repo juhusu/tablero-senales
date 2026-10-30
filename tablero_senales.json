@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-30 09:35",
+ "actualizado": "2026-10-30 09:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -18695,6 +18695,48 @@
    ],
    "semana": "2026-10-26",
    "dia_semana": 3
+  },
+  {
+   "fecha": "2026-10-30",
+   "senal": "GAP continuación",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "9:30 · GAP -1.13% · ayer -0.30%",
+   "maximo": 37.4,
+   "unidad": "opción",
+   "minimo": -12.1,
+   "contra": -12.1,
+   "minutos": 6.0,
+   "strike": 763.0,
+   "entrada": 1.82,
+   "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-30",
+   "senal": "UT Bot SPX PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "9:30 · vela 9:30-9:40 · PUT 763 al ask 1.84",
+   "maximo": 13.6,
+   "unidad": "opción",
+   "minimo": -6.5,
+   "contra": -6.5,
+   "minutos": 3.5,
+   "strike": 763.0,
+   "entrada": 1.84,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 4
   }
  ],
  "hoy": {
