@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-29 20:00",
+ "actualizado": "2026-10-30 03:31",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -18527,15 +18527,59 @@
    "fecha": "2026-10-29",
    "senal": "UT Bot QQQ CALL",
    "lado": "CALL",
-   "resultado": "P",
-   "detalle": "10:30 · vela 10:30-10:40 · CALL 773 al ask 1.11",
-   "maximo": -8.1,
+   "resultado": "G",
+   "detalle": "10:20 · vela 10:20-10:30 · CALL 772 al ask 1.42",
+   "maximo": 18.3,
    "unidad": "opción",
-   "minimo": -64.0,
+   "minimo": -52.8,
+   "contra": -7.0,
+   "minutos": 7.8,
+   "strike": 772.0,
+   "entrada": 1.42,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-10-29",
+   "senal": "UT Bot QQQ CALL",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "11:10 · vela 11:10-11:20 · CALL 772 al ask 1.29",
+   "maximo": 42.6,
+   "unidad": "opción",
+   "minimo": -26.4,
+   "contra": -4.7,
+   "minutos": 13.8,
+   "strike": 772.0,
+   "entrada": 1.29,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-10-29",
+   "senal": "UT Bot QQQ PUT",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "10:50 · vela 10:50-11:00 · PUT 771 al ask 1.22",
+   "maximo": -8.2,
+   "unidad": "opción",
+   "minimo": -56.6,
    "contra": 0.0,
    "minutos": 0.2,
-   "strike": 773.0,
-   "entrada": 1.11,
+   "strike": 771.0,
+   "entrada": 1.22,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "activo": "QQQ",
    "activos": [
@@ -18632,78 +18676,41 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-10-29",
-  "dia_semana": 3,
+  "fecha": "2026-10-30",
+  "dia_semana": 4,
   "eventos": [
    {
-    "hora": "08:30",
-    "texto": "Ingreso y gasto personal (PCE)"
-   },
-   {
-    "hora": "08:30",
-    "texto": "PIB (GDP)"
+    "hora": "09:45",
+    "texto": "PMI de Chicago (MNI)"
    }
   ],
-  "reportes": [
-   {
-    "hora": "08:30",
-    "datos": "PCE (inflacion e ingreso personal) + PIB",
-    "mov": 0.0355,
-    "direccion": "neutro",
-    "cifras": {}
-   }
-  ],
+  "reportes": [],
   "gap": {
-   "cuando": "9:28",
-   "lado": -1.0,
-   "mes_pct": -0.4625,
-   "ayer_pct": 0.3367,
+   "cuando": "03:31",
+   "lado": -1,
+   "mes_pct": -0.899448724975016,
+   "ayer_pct": -0.3484770263293635,
    "ganador": false,
    "enviado": false
   },
-  "avisos": [
-   {
-    "hora": "09:37",
-    "texto": "Toque Magnífico PUT"
-   },
-   {
-    "hora": "09:40",
-    "texto": "Heikin Ashi CALL"
-   },
-   {
-    "hora": "10:50",
-    "texto": "Heikin Ashi PUT"
-   }
-  ],
-  "rebote": {
-   "senal": false,
-   "razon_vol": 3.05,
-   "pos_rango": 0.696,
-   "roja": false
-  },
+  "avisos": [],
+  "rebote": null,
   "rebote_dia": [
-   "de jueves para viernes",
-   14,
-   15
+   "de viernes para lunes",
+   6,
+   7
   ],
   "cobertura_hasta": "2026-12-09",
   "manana": {
-   "fecha": "2026-10-30",
-   "dia_semana": 4,
+   "fecha": "2026-11-02",
+   "dia_semana": 0,
    "eventos": [
     {
-     "hora": "09:45",
-     "texto": "PMI de Chicago (MNI)"
+     "hora": "10:00",
+     "texto": "ISM manufacturero"
     }
    ],
-   "gap": {
-    "mes_pct": -0.6254,
-    "hoy_pct": -0.3485,
-    "lado": -1,
-    "cuando": "29/10 19:59",
-    "continuacion": true,
-    "ganador": false
-   }
+   "gap": null
   }
  }
 }
