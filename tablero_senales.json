@@ -25,31 +25,6 @@
   },
   {
    "fecha": "2026-07-06",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "09:35 · SPX CALL 7540 a 4.65 · +15% a las 13:05 · +$687 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -60,
-   "strike": 7540,
-   "entrada": 4.65,
-   "entro": "09:35",
-   "venta": "13:05",
-   "usd_10": 687,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-07-06",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-07-06",
    "senal": "UT Bot SPX CALL",
    "lado": "CALL",
    "resultado": "G",
@@ -91,31 +66,6 @@
    ],
    "semana": "2026-07-06",
    "dia_semana": 0
-  },
-  {
-   "fecha": "2026-07-07",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "11:45 · SPX CALL 7505 a 4.15 · +15% a las 11:45 · +$612 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7505,
-   "entrada": 4.15,
-   "entro": "11:45",
-   "venta": "11:45",
-   "usd_10": 612,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-07-06",
-   "dia_semana": 1
   },
   {
    "fecha": "2026-07-07",
@@ -178,31 +128,6 @@
    "historico": true,
    "activo": "SPX",
    "activos": [
-    "SPX"
-   ],
-   "semana": "2026-07-06",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-07-08",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "11:15 · SPX PUT 7400 a 4.55 · +15% a las 11:15 · +$672 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7400,
-   "entrada": 4.55,
-   "entro": "11:15",
-   "venta": "11:15",
-   "usd_10": 672,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-07-06",
@@ -386,31 +311,6 @@
   },
   {
    "fecha": "2026-07-10",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "09:30 · SPX CALL 7575 a 3.96 · +15% a las 09:30 · +$584 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7575,
-   "entrada": 3.96,
-   "entro": "09:30",
-   "venta": "09:30",
-   "usd_10": 584,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-07-06",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-07-10",
    "senal": "UT Bot SPX CALL",
    "lado": "CALL",
    "resultado": "G",
@@ -496,31 +396,6 @@
    ],
    "semana": "2026-07-13",
    "dia_semana": 0
-  },
-  {
-   "fecha": "2026-07-14",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "10:35 · SPX CALL 7570 a 3.75 · +15% a las 11:00 · +$552 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -61,
-   "strike": 7570,
-   "entrada": 3.75,
-   "entro": "10:35",
-   "venta": "11:00",
-   "usd_10": 552,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-07-13",
-   "dia_semana": 1
   },
   {
    "fecha": "2026-07-14",
@@ -988,56 +863,6 @@
   },
   {
    "fecha": "2026-07-20",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "11:10 · SPX CALL 7500 a 4.05 · +15% a las 11:20 · +$597 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -33,
-   "strike": 7500,
-   "entrada": 4.05,
-   "entro": "11:10",
-   "venta": "11:20",
-   "usd_10": 597,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-07-20",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-07-20",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "11:10 · SPX CALL 7500 a 4.05 · +15% a las 11:20 · +$597 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -33,
-   "strike": 7500,
-   "entrada": 4.05,
-   "entro": "11:10",
-   "venta": "11:20",
-   "usd_10": 597,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-07-20",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-07-20",
    "senal": "UT Bot SPX CALL",
    "lado": "CALL",
    "resultado": "G",
@@ -1126,31 +951,6 @@
   },
   {
    "fecha": "2026-07-21",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "09:40 · SPX CALL 7505 a 3.85 · +15% a las 10:25 · +$567 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -43,
-   "strike": 7505,
-   "entrada": 3.85,
-   "entro": "09:40",
-   "venta": "10:25",
-   "usd_10": 567,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-07-20",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-07-21",
    "senal": "UT Bot SPX CALL",
    "lado": "CALL",
    "resultado": "G",
@@ -1192,56 +992,6 @@
    ],
    "semana": "2026-07-20",
    "dia_semana": 1
-  },
-  {
-   "fecha": "2026-07-22",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "11:00 · SPX CALL 7515 a 4.85 · +15% a las 11:00 · +$717 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7515,
-   "entrada": 4.85,
-   "entro": "11:00",
-   "venta": "11:00",
-   "usd_10": 717,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-07-20",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-07-22",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "11:40 · SPX PUT 7505 a 4.85 · +15% a las 15:35 · +$717 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -78,
-   "strike": 7505,
-   "entrada": 4.85,
-   "entro": "11:40",
-   "venta": "15:35",
-   "usd_10": 717,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-07-20",
-   "dia_semana": 2
   },
   {
    "fecha": "2026-07-22",
@@ -1348,31 +1098,6 @@
    "historico": true,
    "activo": "SPX",
    "activos": [
-    "SPX"
-   ],
-   "semana": "2026-07-20",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-07-23",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "09:35 · SPX CALL 7485 a 3.95 · +15% a las 09:40 · +$582 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -19,
-   "strike": 7485,
-   "entrada": 3.95,
-   "entro": "09:35",
-   "venta": "09:40",
-   "usd_10": 582,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-07-20",
@@ -1595,56 +1320,6 @@
    "activo": "SPY",
    "activos": [
     "SPY",
-    "SPX"
-   ],
-   "semana": "2026-07-27",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-07-27",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "12:05 · SPX CALL 7425 a 5.05 · +15% a las 12:10 · +$747 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -19,
-   "strike": 7425,
-   "entrada": 5.05,
-   "entro": "12:05",
-   "venta": "12:10",
-   "usd_10": 747,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-07-27",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-07-27",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "12:05 · SPX CALL 7425 a 5.05 · +15% a las 12:10 · +$747 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -19,
-   "strike": 7425,
-   "entrada": 5.05,
-   "entro": "12:05",
-   "venta": "12:10",
-   "usd_10": 747,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-07-27",
@@ -1944,31 +1619,6 @@
   },
   {
    "fecha": "2026-07-28",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "10:30 · SPX CALL 7435 a 3.95 · +15% a las 10:35 · +$582 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -24,
-   "strike": 7435,
-   "entrada": 3.95,
-   "entro": "10:30",
-   "venta": "10:35",
-   "usd_10": 582,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-07-27",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-07-28",
    "senal": "Rebote EMA 9 (5 min)",
    "lado": "CALL",
    "resultado": "G",
@@ -1985,31 +1635,6 @@
    "fuente": "Schwab SPX + Tastytrade (opción SPX, 5 min); con estos días se eligió la regla (27/10)",
    "activo": "SPX",
    "activos": [
-    "SPX"
-   ],
-   "semana": "2026-07-27",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-07-28",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "10:30 · SPX CALL 7435 a 3.95 · +15% a las 10:35 · +$582 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -24,
-   "strike": 7435,
-   "entrada": 3.95,
-   "entro": "10:30",
-   "venta": "10:35",
-   "usd_10": 582,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-07-27",
@@ -2243,56 +1868,6 @@
   },
   {
    "fecha": "2026-07-29",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "P",
-   "detalle": "09:30 · SPX CALL 7485 a 4.65 · 15:55 · −$4.630 con 10 contratos",
-   "maximo": null,
-   "unidad": "opción",
-   "minimo": -99,
-   "strike": 7485,
-   "entrada": 4.65,
-   "entro": "09:30",
-   "venta": "15:55",
-   "usd_10": -4630,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-07-27",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-07-29",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "12:25 · SPX CALL 7435 a 4.15 · +15% a las 12:25 · +$612 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7435,
-   "entrada": 4.15,
-   "entro": "12:25",
-   "venta": "12:25",
-   "usd_10": 612,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-07-27",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-07-29",
    "senal": "Toque Magnífico",
    "lado": "PUT",
    "resultado": "G",
@@ -2422,56 +1997,6 @@
    "activo": "SPY",
    "activos": [
     "SPY",
-    "SPX"
-   ],
-   "semana": "2026-07-27",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-07-30",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "10:10 · SPX PUT 7340 a 4.25 · +15% a las 10:50 · +$627 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -53,
-   "strike": 7340,
-   "entrada": 4.25,
-   "entro": "10:10",
-   "venta": "10:50",
-   "usd_10": 627,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-07-27",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-07-30",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "10:50 · SPX PUT 7345 a 4.35 · +15% a las 10:50 · +$642 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7345,
-   "entrada": 4.35,
-   "entro": "10:50",
-   "venta": "10:50",
-   "usd_10": 642,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-07-27",
@@ -3165,31 +2690,6 @@
   },
   {
    "fecha": "2026-08-06",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "11:20 · SPX PUT 7690 a 4.65 · +15% a las 11:20 · +$687 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7690,
-   "entrada": 4.65,
-   "entro": "11:20",
-   "venta": "11:20",
-   "usd_10": 687,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-08-03",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-08-06",
    "senal": "UT Bot QQQ CALL",
    "lado": "CALL",
    "resultado": "P",
@@ -3318,31 +2818,6 @@
    "activo": "SPY",
    "activos": [
     "SPY",
-    "SPX"
-   ],
-   "semana": "2026-08-03",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-08-07",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "11:10 · SPX CALL 7770 a 4.35 · +15% a las 11:10 · +$642 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7770,
-   "entrada": 4.35,
-   "entro": "11:10",
-   "venta": "11:10",
-   "usd_10": 642,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-08-03",
@@ -3540,31 +3015,6 @@
    "activo": "SPY",
    "activos": [
     "SPY",
-    "SPX"
-   ],
-   "semana": "2026-08-10",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-08-10",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "10:10 · SPX CALL 7775 a 5.05 · +15% a las 10:15 · +$747 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -11,
-   "strike": 7775,
-   "entrada": 5.05,
-   "entro": "10:10",
-   "venta": "10:15",
-   "usd_10": 747,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-08-10",
@@ -3832,31 +3282,6 @@
   },
   {
    "fecha": "2026-08-11",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "11:10 · SPX PUT 7740 a 4.25 · +15% a las 11:10 · +$627 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7740,
-   "entrada": 4.25,
-   "entro": "11:10",
-   "venta": "11:10",
-   "usd_10": 627,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-08-10",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-08-11",
    "senal": "Toque Magnífico",
    "lado": "PUT",
    "resultado": "G",
@@ -4076,31 +3501,6 @@
    "activo": "SPY",
    "activos": [
     "SPY",
-    "SPX"
-   ],
-   "semana": "2026-08-10",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-08-12",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "12:10 · SPX CALL 7755 a 3.59 · +15% a las 12:10 · +$528 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7755,
-   "entrada": 3.59,
-   "entro": "12:10",
-   "venta": "12:10",
-   "usd_10": 528,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-08-10",
@@ -4342,31 +3742,6 @@
    "activo": "SPY",
    "activos": [
     "SPY",
-    "SPX"
-   ],
-   "semana": "2026-08-10",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-08-13",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "12:10 · SPX CALL 7790 a 4.65 · +15% a las 12:25 · +$687 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -29,
-   "strike": 7790,
-   "entrada": 4.65,
-   "entro": "12:10",
-   "venta": "12:25",
-   "usd_10": 687,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-08-10",
@@ -4765,31 +4140,6 @@
    "activo": "SPY",
    "activos": [
     "SPY",
-    "SPX"
-   ],
-   "semana": "2026-08-17",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-08-17",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "11:00 · SPX CALL 7780 a 3.45 · +15% a las 11:00 · +$507 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7780,
-   "entrada": 3.45,
-   "entro": "11:00",
-   "venta": "11:00",
-   "usd_10": 507,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-08-17",
@@ -5255,31 +4605,6 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
-   ],
-   "semana": "2026-08-17",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-08-19",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "12:30 · SPX PUT 7715 a 3.85 · +15% a las 12:30 · +$567 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7715,
-   "entrada": 3.85,
-   "entro": "12:30",
-   "venta": "12:30",
-   "usd_10": 567,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
    ],
    "semana": "2026-08-17",
    "dia_semana": 2
@@ -5917,31 +5242,6 @@
   },
   {
    "fecha": "2026-08-24",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "11:30 · SPX CALL 7665 a 4.10 · +15% a las 11:30 · +$605 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7665,
-   "entrada": 4.1,
-   "entro": "11:30",
-   "venta": "11:30",
-   "usd_10": 605,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-08-24",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-08-24",
    "senal": "Opening Eyes (motor) TSLA",
    "lado": "CALL",
    "resultado": "G",
@@ -5957,31 +5257,6 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
-   ],
-   "semana": "2026-08-24",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-08-24",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "11:30 · SPX CALL 7665 a 4.10 · +15% a las 11:30 · +$605 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7665,
-   "entrada": 4.1,
-   "entro": "11:30",
-   "venta": "11:30",
-   "usd_10": 605,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
    ],
    "semana": "2026-08-24",
    "dia_semana": 0
@@ -6595,31 +5870,6 @@
   },
   {
    "fecha": "2026-08-26",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "11:45 · SPX CALL 7685 a 3.55 · +15% a las 11:45 · +$522 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7685,
-   "entrada": 3.55,
-   "entro": "11:45",
-   "venta": "11:45",
-   "usd_10": 522,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-08-24",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-08-26",
    "senal": "Opening Eyes (motor) TSLA",
    "lado": "CALL",
    "resultado": "G",
@@ -6635,56 +5885,6 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
-   ],
-   "semana": "2026-08-24",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-08-26",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "10:45 · SPX CALL 7680 a 4.45 · +15% a las 10:50 · +$657 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -20,
-   "strike": 7680,
-   "entrada": 4.45,
-   "entro": "10:45",
-   "venta": "10:50",
-   "usd_10": 657,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-08-24",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-08-26",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "10:10 · SPX PUT 7670 a 4.55 · +15% a las 10:10 · +$672 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7670,
-   "entrada": 4.55,
-   "entro": "10:10",
-   "venta": "10:10",
-   "usd_10": 672,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
    ],
    "semana": "2026-08-24",
    "dia_semana": 2
@@ -6954,56 +6154,6 @@
    "activo": "SPY",
    "activos": [
     "SPY",
-    "SPX"
-   ],
-   "semana": "2026-08-24",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-08-27",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "09:45 · SPX CALL 7735 a 4.15 · +15% a las 09:45 · +$612 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7735,
-   "entrada": 4.15,
-   "entro": "09:45",
-   "venta": "09:45",
-   "usd_10": 612,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-08-24",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-08-27",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "09:30 · SPX PUT 7665 a 4.10 · +15% a las 09:30 · +$605 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7665,
-   "entrada": 4.1,
-   "entro": "09:30",
-   "venta": "09:30",
-   "usd_10": 605,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-08-24",
@@ -7552,31 +6702,6 @@
   },
   {
    "fecha": "2026-08-31",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "11:35 · SPX PUT 7665 a 4.95 · +15% a las 11:35 · +$732 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7665,
-   "entrada": 4.95,
-   "entro": "11:35",
-   "venta": "11:35",
-   "usd_10": 732,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-08-31",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-08-31",
    "senal": "Toque Magnífico",
    "lado": "PUT",
    "resultado": "G",
@@ -7825,31 +6950,6 @@
   },
   {
    "fecha": "2026-09-01",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "11:30 · SPX CALL 7660 a 4.25 · +15% a las 11:30 · +$627 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7660,
-   "entrada": 4.25,
-   "entro": "11:30",
-   "venta": "11:30",
-   "usd_10": 627,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-08-31",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-09-01",
    "senal": "Opening Eyes (motor) TSLA",
    "lado": "CALL",
    "resultado": "G",
@@ -7865,31 +6965,6 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
-   ],
-   "semana": "2026-08-31",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-09-01",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "12:05 · SPX PUT 7650 a 3.81 · +15% a las 12:05 · +$561 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7650,
-   "entrada": 3.81,
-   "entro": "12:05",
-   "venta": "12:05",
-   "usd_10": 561,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
    ],
    "semana": "2026-08-31",
    "dia_semana": 1
@@ -8164,31 +7239,6 @@
   },
   {
    "fecha": "2026-09-02",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "12:25 · SPX PUT 7660 a 5.05 · +15% a las 12:25 · +$747 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7660,
-   "entrada": 5.05,
-   "entro": "12:25",
-   "venta": "12:25",
-   "usd_10": 747,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-08-31",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-09-02",
    "senal": "UT Bot QQQ CALL",
    "lado": "CALL",
    "resultado": "G",
@@ -8393,31 +7443,6 @@
   },
   {
    "fecha": "2026-09-03",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "11:00 · SPX CALL 7720 a 4.05 · +15% a las 11:00 · +$597 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7720,
-   "entrada": 4.05,
-   "entro": "11:00",
-   "venta": "11:00",
-   "usd_10": 597,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-08-31",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-09-03",
    "senal": "Opening Eyes (motor) TSLA",
    "lado": "PUT",
    "resultado": "P",
@@ -8455,31 +7480,6 @@
    "fuente": "Schwab SPX + Tastytrade (opción SPX, 5 min); con estos días se eligió la regla (27/10)",
    "activo": "SPX",
    "activos": [
-    "SPX"
-   ],
-   "semana": "2026-08-31",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-09-03",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "11:00 · SPX CALL 7720 a 4.05 · +15% a las 11:00 · +$597 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7720,
-   "entrada": 4.05,
-   "entro": "11:00",
-   "venta": "11:00",
-   "usd_10": 597,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-08-31",
@@ -8637,31 +7637,6 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
-   ],
-   "semana": "2026-08-31",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-09-04",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "10:10 · SPX PUT 7710 a 4.35 · +15% a las 10:10 · +$642 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7710,
-   "entrada": 4.35,
-   "entro": "10:10",
-   "venta": "10:10",
-   "usd_10": 642,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
    ],
    "semana": "2026-08-31",
    "dia_semana": 4
@@ -8954,31 +7929,6 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
-   ],
-   "semana": "2026-09-07",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-09-08",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "09:30 · SPX PUT 7680 a 4.05 · +15% a las 09:30 · +$597 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7680,
-   "entrada": 4.05,
-   "entro": "09:30",
-   "venta": "09:30",
-   "usd_10": 597,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
    ],
    "semana": "2026-09-07",
    "dia_semana": 1
@@ -9412,31 +8362,6 @@
   },
   {
    "fecha": "2026-09-10",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "10:20 · SPX CALL 7615 a 4.35 · +15% a las 10:20 · +$642 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7615,
-   "entrada": 4.35,
-   "entro": "10:20",
-   "venta": "10:20",
-   "usd_10": 642,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-09-07",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-09-10",
    "senal": "Opening Eyes (motor) TSLA",
    "lado": "CALL",
    "resultado": "G",
@@ -9452,56 +8377,6 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
-   ],
-   "semana": "2026-09-07",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-09-10",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "09:55 · SPX PUT 7555 a 4.85 · +15% a las 09:55 · +$717 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7555,
-   "entrada": 4.85,
-   "entro": "09:55",
-   "venta": "09:55",
-   "usd_10": 717,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-09-07",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-09-10",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "11:55 · SPX PUT 7580 a 4.05 · +15% a las 11:55 · +$597 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7580,
-   "entrada": 4.05,
-   "entro": "11:55",
-   "venta": "11:55",
-   "usd_10": 597,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
    ],
    "semana": "2026-09-07",
    "dia_semana": 3
@@ -9748,31 +8623,6 @@
    "fuente": "Schwab SPX + Tastytrade (opción SPX, 5 min); con estos días se eligió la regla (27/10)",
    "activo": "SPX",
    "activos": [
-    "SPX"
-   ],
-   "semana": "2026-09-07",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-09-11",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "10:40 · SPX PUT 7630 a 4.65 · +15% a las 10:40 · +$687 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7630,
-   "entrada": 4.65,
-   "entro": "10:40",
-   "venta": "10:40",
-   "usd_10": 687,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-09-07",
@@ -10100,31 +8950,6 @@
   },
   {
    "fecha": "2026-09-14",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "10:25 · SPX PUT 7580 a 4.58 · +15% a las 10:25 · +$677 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7580,
-   "entrada": 4.58,
-   "entro": "10:25",
-   "venta": "10:25",
-   "usd_10": 677,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-09-14",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-09-14",
    "senal": "UT Bot QQQ CALL",
    "lado": "CALL",
    "resultado": "G",
@@ -10354,31 +9179,6 @@
   },
   {
    "fecha": "2026-09-15",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "P",
-   "detalle": "12:25 · SPX CALL 7595 a 5.15 · 15:55 · −$5.110 con 10 contratos",
-   "maximo": null,
-   "unidad": "opción",
-   "minimo": -100,
-   "strike": 7595,
-   "entrada": 5.15,
-   "entro": "12:25",
-   "venta": "15:55",
-   "usd_10": -5110,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-09-14",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-09-15",
    "senal": "Opening Eyes (motor) TSLA",
    "lado": "PUT",
    "resultado": "G",
@@ -10394,56 +9194,6 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
-   ],
-   "semana": "2026-09-14",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-09-15",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "09:40 · SPX CALL 7630 a 4.05 · +15% a las 09:40 · +$597 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7630,
-   "entrada": 4.05,
-   "entro": "09:40",
-   "venta": "09:40",
-   "usd_10": 597,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-09-14",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-09-15",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "P",
-   "detalle": "11:05 · SPX CALL 7600 a 4.05 · 15:55 · −$4.010 con 10 contratos",
-   "maximo": null,
-   "unidad": "opción",
-   "minimo": -100,
-   "strike": 7600,
-   "entrada": 4.05,
-   "entro": "11:05",
-   "venta": "15:55",
-   "usd_10": -4010,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
    ],
    "semana": "2026-09-14",
    "dia_semana": 1
@@ -11106,56 +9856,6 @@
   },
   {
    "fecha": "2026-09-18",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "09:30 · SPX CALL 7665 a 4.45 · +15% a las 09:30 · +$657 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7665,
-   "entrada": 4.45,
-   "entro": "09:30",
-   "venta": "09:30",
-   "usd_10": 657,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-09-14",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-09-18",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "12:30 · SPX CALL 7625 a 4.45 · +15% a las 12:30 · +$657 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7625,
-   "entrada": 4.45,
-   "entro": "12:30",
-   "venta": "12:30",
-   "usd_10": 657,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-09-14",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-09-18",
    "senal": "Opening Eyes (motor) TSLA",
    "lado": "PUT",
    "resultado": "G",
@@ -11171,31 +9871,6 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
-   ],
-   "semana": "2026-09-14",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-09-18",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "10:55 · SPX CALL 7645 a 3.80 · +15% a las 14:45 · +$560 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -89,
-   "strike": 7645,
-   "entrada": 3.8,
-   "entro": "10:55",
-   "venta": "14:45",
-   "usd_10": 560,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
    ],
    "semana": "2026-09-14",
    "dia_semana": 4
@@ -11357,31 +10032,6 @@
    "historico": true,
    "activo": "SPX",
    "activos": [
-    "SPX"
-   ],
-   "semana": "2026-09-21",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-09-21",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "09:35 · SPX CALL 7705 a 3.75 · +15% a las 09:35 · +$552 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7705,
-   "entrada": 3.75,
-   "entro": "09:35",
-   "venta": "09:35",
-   "usd_10": 552,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-09-21",
@@ -11767,31 +10417,6 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
-   ],
-   "semana": "2026-09-21",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-09-23",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "11:35 · SPX PUT 7710 a 5.10 · +15% a las 11:40 · +$755 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -12,
-   "strike": 7710,
-   "entrada": 5.1,
-   "entro": "11:35",
-   "venta": "11:40",
-   "usd_10": 755,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
    ],
    "semana": "2026-09-21",
    "dia_semana": 2
@@ -12369,31 +10994,6 @@
   },
   {
    "fecha": "2026-09-25",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "12:00 · SPX CALL 7745 a 4.27 · +15% a las 12:00 · +$630 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7745,
-   "entrada": 4.27,
-   "entro": "12:00",
-   "venta": "12:00",
-   "usd_10": 630,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-09-21",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-09-25",
    "senal": "Opening Eyes (motor) TSLA",
    "lado": "PUT",
    "resultado": "G",
@@ -12431,81 +11031,6 @@
    "fuente": "Schwab SPX + Tastytrade (opción SPX, 5 min); con estos días se eligió la regla (27/10)",
    "activo": "SPX",
    "activos": [
-    "SPX"
-   ],
-   "semana": "2026-09-21",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-09-25",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "12:00 · SPX CALL 7745 a 4.27 · +15% a las 12:00 · +$630 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7745,
-   "entrada": 4.27,
-   "entro": "12:00",
-   "venta": "12:00",
-   "usd_10": 630,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-09-21",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-09-25",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "10:05 · SPX PUT 7670 a 4.12 · +15% a las 10:05 · +$608 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7670,
-   "entrada": 4.12,
-   "entro": "10:05",
-   "venta": "10:05",
-   "usd_10": 608,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-09-21",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-09-25",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "12:25 · SPX PUT 7715 a 4.45 · +15% a las 12:30 · +$657 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -49,
-   "strike": 7715,
-   "entrada": 4.45,
-   "entro": "12:25",
-   "venta": "12:30",
-   "usd_10": 657,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-09-21",
@@ -12738,31 +11263,6 @@
    "activo": "SPY",
    "activos": [
     "SPY",
-    "SPX"
-   ],
-   "semana": "2026-09-28",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-09-28",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "11:05 · SPX CALL 7695 a 5.05 · +15% a las 11:05 · +$747 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7695,
-   "entrada": 5.05,
-   "entro": "11:05",
-   "venta": "11:05",
-   "usd_10": 747,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-09-28",
@@ -14248,31 +12748,6 @@
   },
   {
    "fecha": "2026-10-06",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "11:35 · SPX PUT 7830 a 4.45 · +15% a las 11:45 · +$657 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -21,
-   "strike": 7830,
-   "entrada": 4.45,
-   "entro": "11:35",
-   "venta": "11:45",
-   "usd_10": 657,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-05",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-10-06",
    "senal": "Toque Magnífico",
    "lado": "CALL",
    "resultado": "G",
@@ -14627,31 +13102,6 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
-   ],
-   "semana": "2026-10-05",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-10-07",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "09:30 · SPX PUT 7750 a 4.55 · +15% a las 09:35 · +$672 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -30,
-   "strike": 7750,
-   "entrada": 4.55,
-   "entro": "09:30",
-   "venta": "09:35",
-   "usd_10": 672,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
    ],
    "semana": "2026-10-05",
    "dia_semana": 2
@@ -15180,31 +13630,6 @@
   },
   {
    "fecha": "2026-10-09",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "09:30 · SPX PUT 7760 a 4.45 · +15% a las 09:40 · +$657 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -34,
-   "strike": 7760,
-   "entrada": 4.45,
-   "entro": "09:30",
-   "venta": "09:40",
-   "usd_10": 657,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-05",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-10-09",
    "senal": "Toque Magnífico",
    "lado": "PUT",
    "resultado": "G",
@@ -15324,31 +13749,6 @@
    "activo": "SPY",
    "activos": [
     "SPY",
-    "SPX"
-   ],
-   "semana": "2026-10-12",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-10-12",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "11:45 · SPX CALL 7815 a 3.85 · +15% a las 11:45 · +$567 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7815,
-   "entrada": 3.85,
-   "entro": "11:45",
-   "venta": "11:45",
-   "usd_10": 567,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-10-12",
@@ -16270,31 +14670,6 @@
   },
   {
    "fecha": "2026-10-15",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "12:20 · SPX PUT 7700 a 4.15 · +15% a las 12:20 · +$612 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7700,
-   "entrada": 4.15,
-   "entro": "12:20",
-   "venta": "12:20",
-   "usd_10": 612,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-12",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-15",
    "senal": "Toque Magnífico",
    "lado": "CALL",
    "resultado": "G",
@@ -16654,31 +15029,6 @@
   },
   {
    "fecha": "2026-10-16",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "12:15 · SPX CALL 7725 a 3.85 · +15% a las 12:15 · +$567 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7725,
-   "entrada": 3.85,
-   "entro": "12:15",
-   "venta": "12:15",
-   "usd_10": 567,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-12",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-10-16",
    "senal": "Opening Eyes (motor) SPX",
    "lado": "PUT",
    "resultado": "G",
@@ -17031,56 +15381,6 @@
    "minimo": null,
    "activo": "SPX",
    "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-19",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-10-19",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "10:15 · SPX CALL 7735 a 4.13 · +15% a las 10:15 · +$609 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7735,
-   "entrada": 4.13,
-   "entro": "10:15",
-   "venta": "10:15",
-   "usd_10": 609,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-19",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-10-19",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "10:55 · SPX CALL 7725 a 4.65 · +15% a las 11:00 · +$687 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -6,
-   "strike": 7725,
-   "entrada": 4.65,
-   "entro": "10:55",
-   "venta": "11:00",
-   "usd_10": 687,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-10-19",
@@ -17981,31 +16281,6 @@
   },
   {
    "fecha": "2026-10-22",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "12:00 · SPX CALL 7700 a 4.65 · +15% a las 12:00 · +$687 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7700,
-   "entrada": 4.65,
-   "entro": "12:00",
-   "venta": "12:00",
-   "usd_10": 687,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-19",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-22",
    "senal": "Opening Eyes (motor) SPX",
    "lado": "CALL",
    "resultado": "P",
@@ -18042,31 +16317,6 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
-   ],
-   "semana": "2026-10-19",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-22",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "12:00 · SPX CALL 7700 a 4.65 · +15% a las 12:00 · +$687 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7700,
-   "entrada": 4.65,
-   "entro": "12:00",
-   "venta": "12:00",
-   "usd_10": 687,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
    ],
    "semana": "2026-10-19",
    "dia_semana": 3
@@ -18389,56 +16639,6 @@
    "minimo": null,
    "activo": "SPX",
    "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-19",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-10-23",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "10:40 · SPX CALL 7665 a 4.35 · +15% a las 10:40 · +$642 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7665,
-   "entrada": 4.35,
-   "entro": "10:40",
-   "venta": "10:40",
-   "usd_10": 642,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-19",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-10-23",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "11:45 · SPX PUT 7615 a 4.25 · +15% a las 12:20 · +$627 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -50,
-   "strike": 7615,
-   "entrada": 4.25,
-   "entro": "11:45",
-   "venta": "12:20",
-   "usd_10": 627,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-10-19",
@@ -18822,31 +17022,6 @@
   },
   {
    "fecha": "2026-10-26",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "09:40 · SPX CALL 7695 a 4.65 · +15% a las 10:15 · +$687 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -52,
-   "strike": 7695,
-   "entrada": 4.65,
-   "entro": "09:40",
-   "venta": "10:15",
-   "usd_10": 687,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-10-26",
    "senal": "Opening Eyes (motor) SPX",
    "lado": "PUT",
    "resultado": "P",
@@ -18884,31 +17059,6 @@
    "fuente": "Schwab SPX + Tastytrade (opción SPX, 5 min); con estos días se eligió la regla (27/10)",
    "activo": "SPX",
    "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-10-26",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "P",
-   "detalle": "10:00 · SPX PUT 7615 a 4.65 · 15:55 · −$4.630 con 10 contratos",
-   "maximo": null,
-   "unidad": "opción",
-   "minimo": -99,
-   "strike": 7615,
-   "entrada": 4.65,
-   "entro": "10:00",
-   "venta": "15:55",
-   "usd_10": -4630,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-10-26",
@@ -19619,31 +17769,6 @@
   },
   {
    "fecha": "2026-10-27",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "10:30 · SPX CALL 7710 a 4.65 · +15% a las 10:30 · +$687 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7710,
-   "entrada": 4.65,
-   "entro": "10:30",
-   "venta": "10:30",
-   "usd_10": 687,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-10-27",
    "senal": "UT Bot QQQ CALL",
    "lado": "CALL",
    "resultado": "P",
@@ -20320,31 +18445,6 @@
   },
   {
    "fecha": "2026-10-29",
-   "senal": "Línea + UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "09:45 · SPX CALL 7745 a 4.85 · +15% a las 09:45 · +$717 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7745,
-   "entrada": 4.85,
-   "entro": "09:45",
-   "venta": "09:45",
-   "usd_10": 717,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-29",
    "senal": "Opening Eyes (motor) SPX",
    "lado": "CALL",
    "resultado": "G",
@@ -20396,31 +18496,6 @@
    "minimo": null,
    "activo": "SPX",
    "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-29",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "12:10 · SPX PUT 7705 a 4.15 · +15% a las 12:10 · +$612 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7705,
-   "entrada": 4.15,
-   "entro": "12:10",
-   "venta": "12:10",
-   "usd_10": 612,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
     "SPX"
    ],
    "semana": "2026-10-26",
@@ -20777,56 +18852,6 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-10-30",
-   "senal": "StochRSI+UT QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "09:55 · SPX CALL 7670 a 4.65 · +15% a las 09:55 · +$687 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": 0,
-   "strike": 7670,
-   "entrada": 4.65,
-   "entro": "09:55",
-   "venta": "09:55",
-   "usd_10": 687,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-10-30",
-   "senal": "StochRSI+UT QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "11:05 · SPX PUT 7580 a 4.85 · +15% a las 11:35 · +$717 con 10 contratos",
-   "maximo": 15.0,
-   "unidad": "opción",
-   "minimo": -26,
-   "strike": 7580,
-   "entrada": 4.85,
-   "entro": "11:05",
-   "venta": "11:35",
-   "usd_10": 717,
-   "armado": true,
-   "historico": true,
-   "fuente": "Schwab QQQ 5 min con premercado + Tastytrade (opción SPX, 5 min); TP 15% sin stop; con estos días se eligieron las reglas (31/10)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
    ],
    "semana": "2026-10-26",
    "dia_semana": 4
