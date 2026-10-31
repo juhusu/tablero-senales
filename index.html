@@ -34,6 +34,8 @@ h2.con-switch { display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
 /* UNA SOLA TARJETA (22/10, pedido con captura: "mete esto en una sola tarjeta"): titulo y las dos columnas adentro,
    separadas por una linea. */
 .fz-tarjeta { background:var(--panel); border:1px solid var(--borde); border-radius:10px; margin:0 16px; padding:10px 12px; }
+.neon-c { color:#39FF88; text-shadow:0 0 4px rgba(57,255,136,.75), 0 0 9px rgba(57,255,136,.35); }
+.neon-p { color:#FF3B5C; text-shadow:0 0 4px rgba(255,59,92,.75), 0 0 9px rgba(255,59,92,.35); }
 .fz-titulo { font-size:15px; font-weight:600; color:var(--tenue); margin:0 0 8px; }
 .fuertes { display:grid; grid-template-columns:1fr 1fr; gap:0; }
 @media (max-width:700px) { .fuertes { grid-template-columns:1fr; } .fz-col + .fz-col { border-left:none; border-top:1px solid var(--borde); padding-left:0; padding-top:8px; margin-top:6px; } }
@@ -243,6 +245,12 @@ function fmtMax(s) { if (s.maximo === null || s.maximo === undefined) return '<s
   const u = s.unidad === 'opción' ? '' : s.unidad === 'SPY' ? ' SPY' : ' GAP';
   return `<span class="${s.maximo >= 10 || (s.unidad !== 'opción' && s.maximo > 0) ? 'g' : s.maximo > 0 ? '' : 'p'}">${s.maximo > 0 ? '+' : ''}${s.maximo.toFixed(1)}%${u}</span>`; }
 function base(s) { return s.replace(' GANADOR', ''); }
+/* 31/10, pedido con captura: "que se llame SELL & SELL (PUT) y el (PUT) en rojo un poquito neon ... BUY & BUY (CALL) y el
+   (CALL) en verde un poquito neon". Solo lo que se VE: el nombre guardado sigue siendo "BUY BUY & SELL SELL CALL/PUT"
+   (historial, app y pagina publica lo usan como clave). */
+const NOMBRES_VISTA = { 'BUY BUY & SELL SELL CALL': ['BUY & BUY', 'CALL'], 'BUY BUY & SELL SELL PUT': ['SELL & SELL', 'PUT'] };
+function vista(s) { const n = NOMBRES_VISTA[s]; return n ? `${n[0]} <span class="neon-${n[1] === 'CALL' ? 'c' : 'p'}">(${n[1]})</span>` : s; }
+function vistaTxt(s) { const n = NOMBRES_VISTA[s]; return n ? `${n[0]} (${n[1]})` : s; }
 /* no_cuenta (27/10): filas que no van a tener resultado (la app no compró, vendida a mano): ni ganadas ni "por ver" */
 function cuenta(xs) { const g = xs.filter(x => x.resultado === 'G').length, p = xs.filter(x => x.resultado === 'P').length;
   return { g, p, n: xs.filter(x => !x.no_cuenta).length - g - p }; }
@@ -405,7 +413,7 @@ function pintarResumen(xs) {
   const opc = xs.filter(x => x.unidad === 'opción');
   const med = (k) => medio(opc.map(x => x[k]).filter(v => v !== null && v !== undefined));
   const mMax = med('maximo'), mCon = med('contra'), mMin = med('minutos');
-  document.getElementById('det_titulo').innerHTML = (MODAL.grupo === 'Todas' ? 'Todas las señales' : MODAL.grupo)
+  document.getElementById('det_titulo').innerHTML = (MODAL.grupo === 'Todas' ? 'Todas las señales' : vista(MODAL.grupo))
     + `<div class="resumen"><span><b>${tot ? Math.round(100 * c.g / tot) + '%' : '—'}</b> aciertos (${c.g} de ${tot}${c.n ? ', ' + c.n + ' por ver' : ''})</span>`
     + (mMax === null ? '' : `<span>máximo típico <b class="g">${mMax > 0 ? '+' : ''}${mMax.toFixed(1)}%</b></span>`)
     + (mCon === null ? '' : `<span>en contra antes del máximo, típico <b class="p">${mCon.toFixed(1)}%</b></span>`)
@@ -425,7 +433,7 @@ function mostrarLista(lista) {
     + (xs.length ? '' : '<tr><td colspan="10" class="n" style="text-align:center;padding:18px">sin señales con estos filtros</td></tr>')
     + xs.map(x => `<tr class="${x.resultado === 'G' ? 'fila-g' : x.resultado === 'P' ? 'fila-p' : ''}">`
       + `<td><span class="dsem">${(DIAS[x.dia_semana] || '').slice(0, 3)} </span>${x.fecha.slice(8)}/${x.fecha.slice(5, 7)}${x.historico ? ' <span class="n h">· hist.</span>' : ''}</td>`
-      + `<td><b class="hora">${horaDe(x)}</b></td>` + (varias ? `<td style="text-align:left">${x.senal}</td>` : '')
+      + `<td><b class="hora">${horaDe(x)}</b></td>` + (varias ? `<td style="text-align:left">${vista(x.senal)}</td>` : '')
       + `<td>${x.lado}</td>`     /* sin strike, entrada ni dolares (20/10, pedido con captura) */
       /* 25/10: el detalle de la señal al pasar el mouse por el resultado (por ejemplo, contra que precio se gano) */
       + `<td title="${(x.detalle || '').replace(/"/g, '&quot;')}">${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : x.no_cuenta ? '—' : '…'}</td>`
@@ -532,7 +540,7 @@ function cuadricula(orden, cols) {
   setTimeout(() => document.querySelectorAll('table.grilla').forEach(t => {
     const n = t.rows[0] ? t.rows[0].cells.length - 1 : 0; t.style.minWidth = (t.rows[0].cells[0].offsetWidth + n * 58) + 'px'; }), 0);
   let h = '<tr><th></th>' + cols.map(c => `<th>${c.titulo}</th>`).join('') + '</tr>';
-  for (const g of orden) h += `<tr><td class="nom">${g}</td>` + cols.map(c => cuadrito(c.de(g), { grupo: g, ...c.filtro })).join('') + '</tr>';
+  for (const g of orden) h += `<tr><td class="nom">${vista(g)}</td>` + cols.map(c => cuadrito(c.de(g), { grupo: g, ...c.filtro })).join('') + '</tr>';
   h += '<tr class="total"><td class="nom">Todas juntas</td>' + cols.map(c => cuadrito(c.todas, { grupo: 'Todas', ...c.filtro })).join('') + '</tr>';
   return h;
 }
@@ -595,7 +603,7 @@ function pintarHoy(D) {
       const hs = vista === ds ? hoyDe(r.gr) : [];
       const marca = hs.length ? ' ' + hs.map(x => x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : x.no_cuenta ? '—' : '…').join('') : '';
       const arm = r.armado ? ` <span class="sub" title="Esos días se usaron para armar la señal: no son una prueba. La prueba es desde que se mide en vivo.">· ${r.armado}</span>` : '';
-      return `<div class="item"><b>${r.g}/${r.t}</b> <span class="sub">(${Math.round(100 * r.p)}%)</span> ${r.gr}${arm}${marca}</div>`;
+      return `<div class="item"><b>${r.g}/${r.t}</b> <span class="sub">(${Math.round(100 * r.p)}%)</span> ${vista(r.gr)}${arm}${marca}</div>`;
     }).join('') : '<div class="nada">Pocos casos para este día.</div>';
   const porDia = [0, 1, 2, 3, 4].map(i => { const c = cuenta(conHist.filter(x => x.dia_semana === i)); return c.g + c.p ? c.g / (c.g + c.p) : 0; });
   const puesto = [...porDia].sort((a, b) => b - a).indexOf(porDia[vista]) + 1;
@@ -608,7 +616,7 @@ function pintarHoy(D) {
   h += '<h3>🕘 Lo que va pasando</h3>';
   const hm = (x) => (horaDe(x) || '00:00').padStart(5, '0');
   const ord = [...deHoy].sort((a, b) => hm(a).localeCompare(hm(b)));
-  h += ord.length ? ord.map(x => `<div class="item"><span class="hh">${horaDe(x)}</span>${x.lado === 'CALL' ? '<b class="g">▲</b>' : '<b class="p">▼</b>'} ${x.senal} `
+  h += ord.length ? ord.map(x => `<div class="item"><span class="hh">${horaDe(x)}</span>${x.lado === 'CALL' ? '<b class="g">▲</b>' : '<b class="p">▼</b>'} ${vista(x.senal)} `
       + `${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : x.no_cuenta ? '—' : '…'}`
       + `${x.maximo !== null && x.maximo !== undefined && x.unidad === 'opción' ? ` <span class="${x.maximo >= 0 ? 'g' : 'p'}">${x.maximo > 0 ? '+' : ''}${x.maximo.toFixed(1)}%</span>` : ''}</div>`).join('')
     : '<div class="nada">Todavía no hubo señales hoy.</div>';
@@ -680,7 +688,7 @@ function pintar(D) {
     const div = document.createElement('div'); div.className = 'circ';
     div.title = 'clic para ver todas las señales';
     div.dataset.grupo = gr;
-    div.innerHTML = `<h3>${gr}</h3><div class="caja"><canvas></canvas><div class="pct"><b class="${pct === null ? 'n' : pct >= 50 ? 'g' : 'p'}">${pct === null ? '—' : pct + '%'}</b>${pct === null ? '' : `<span class="cuantas">${c.g} de ${tot}</span>`}${c.n ? `<span class="porver">${c.n} por ver</span>` : ''}</div></div>`
+    div.innerHTML = `<h3>${vista(gr)}</h3><div class="caja"><canvas></canvas><div class="pct"><b class="${pct === null ? 'n' : pct >= 50 ? 'g' : 'p'}">${pct === null ? '—' : pct + '%'}</b>${pct === null ? '' : `<span class="cuantas">${c.g} de ${tot}</span>`}${c.n ? `<span class="porver">${c.n} por ver</span>` : ''}</div></div>`
       + `<div class="max">${mx === null ? '' : 'máx. típico <b class="' + (mx < 0 ? 'neg' : '') + '">' + (mx > 0 ? '+' : '') + mx.toFixed(1) + '%</b>' + (u === 'opción' ? '' : u === 'SPY' ? ' SPY' : ' GAP')}</div>`
       /* 25/10: si cuenta dias con que se armo la señal, que se vea (no son una prueba) */
       + (fg.some(f => f.armado) ? `<div class="max n" title="Esos días se usaron para armar la señal: no son una prueba. La prueba es desde que se mide en vivo.">${fg.every(f => f.armado) ? 'solo días del armado' : 'incluye días del armado'}</div>` : '');
@@ -692,7 +700,7 @@ function pintar(D) {
   // CURVA
   const fechas = [...new Set(todas.map(s => s.fecha))].sort();
   const curvas = grupos.filter(g => !g.includes('solo GANADOR')).map((gr, i) => {
-    let acc = 0; return { label: gr, borderColor: COLORES[i % COLORES.length], backgroundColor: COLORES[i % COLORES.length],
+    let acc = 0; return { label: vistaTxt(gr), borderColor: COLORES[i % COLORES.length], backgroundColor: COLORES[i % COLORES.length],
       tension: .25, pointRadius: 2, borderWidth: 2,
       data: fechas.map(fe => { filas.filter(f => f.grupo === gr && f.fecha === fe).forEach(f => { acc += f.resultado === 'G' ? 1 : f.resultado === 'P' ? -1 : 0; }); return acc; }) };
   });
