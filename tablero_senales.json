@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-30 20:00",
+ "actualizado": "2026-10-31 03:31",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -18698,6 +18698,31 @@
   },
   {
    "fecha": "2026-10-30",
+   "senal": "Bollinger SPX",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "10:10 · SPXW PUT 7575 a 4.10 (10:10, vela de 1 min) · vendió 10:12 a 5.60 = +35% sobre el promedio 4.10 · VWAP SPY a favor +0.11% · PUT tarde de 2da salida",
+   "maximo": 36.6,
+   "unidad": "opción",
+   "minimo": -4.9,
+   "contra": -4.9,
+   "minutos": 2.0,
+   "strike": 7575.0,
+   "venta": "10:12",
+   "entro": "10:10:15",
+   "max_sin_tp": 1070.2,
+   "hora_max_sin_tp": "14:52",
+   "entrada": 4.1,
+   "fuente": "Tastytrade (velas de 1 min de la opción SPX)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-10-26",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-10-30",
    "senal": "Bollinger SPX (app)",
    "lado": "PUT",
    "resultado": "G",
@@ -18902,14 +18927,14 @@
    "senal": "UT Bot QQQ PUT",
    "lado": "PUT",
    "resultado": "G",
-   "detalle": "11:30 · vela 11:30-11:40 · PUT 760 al ask 1.29",
-   "maximo": 29.5,
+   "detalle": "11:20 · vela 11:20-11:30 · PUT 761 al ask 1.50",
+   "maximo": 48.0,
    "unidad": "opción",
-   "minimo": -16.3,
-   "contra": -16.3,
-   "minutos": 25.0,
-   "strike": 760.0,
-   "entrada": 1.29,
+   "minimo": -2.7,
+   "contra": -2.7,
+   "minutos": 15.8,
+   "strike": 761.0,
+   "entrada": 1.5,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "activo": "QQQ",
    "activos": [
@@ -19005,60 +19030,14 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-10-30",
-  "dia_semana": 4,
-  "eventos": [
-   {
-    "hora": "09:45",
-    "texto": "PMI de Chicago (MNI)"
-   }
-  ],
-  "reportes": [
-   {
-    "hora": "09:45",
-    "datos": "PMI de Chicago",
-    "mov": 0.0261,
-    "direccion": "neutro",
-    "cifras": {}
-   }
-  ],
-  "gap": {
-   "cuando": "9:28",
-   "lado": -1.0,
-   "mes_pct": -1.1283,
-   "ayer_pct": -0.3485,
-   "ganador": false,
-   "enviado": false
-  },
-  "avisos": [
-   {
-    "hora": "09:30",
-    "texto": "GAP continuación PUT"
-   },
-   {
-    "hora": "09:33",
-    "texto": "Toque Magnífico PUT"
-   },
-   {
-    "hora": "09:50",
-    "texto": "Heikin Ashi CALL"
-   },
-   {
-    "hora": "11:10",
-    "texto": "Heikin Ashi PUT"
-   }
-  ],
-  "rebote": {
-   "senal": false,
-   "razon_vol": 2.78,
-   "pos_rango": 0.48,
-   "roja": false
-  },
-  "rebote_dia": [
-   "de viernes para lunes",
-   6,
-   7
-  ],
+  "fecha": "2026-10-31",
+  "dia_semana": 5,
+  "eventos": [],
+  "reportes": [],
+  "gap": null,
+  "avisos": [],
+  "rebote": null,
+  "rebote_dia": null,
   "cobertura_hasta": "2026-12-09",
   "manana": {
    "fecha": "2026-11-02",
@@ -19069,14 +19048,7 @@
      "texto": "ISM manufacturero"
     }
    ],
-   "gap": {
-    "mes_pct": 0.0263,
-    "hoy_pct": -1.8132,
-    "lado": 1,
-    "cuando": "30/10 16:59",
-    "continuacion": false,
-    "ganador": true
-   }
+   "gap": null
   }
  }
 }

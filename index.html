@@ -8,6 +8,15 @@
 body { margin:0; background:var(--fondo); color:var(--texto); font:14px -apple-system,system-ui,sans-serif; }
 header { display:flex; flex-wrap:wrap; gap:12px; align-items:baseline; padding:14px 16px; border-bottom:1px solid var(--borde); }
 h1 { font-size:18px; margin:0; } h2 { font-size:15px; margin:22px 16px 8px; color:var(--tenue); font-weight:600; }
+h2.con-switch { display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
+.switch { display:inline-flex; align-items:center; gap:8px; cursor:pointer; font-size:13px; font-weight:500; color:var(--texto);
+  border:1px solid var(--borde); border-radius:8px; padding:5px 10px; background:var(--panel); user-select:none; }
+.switch input { position:absolute; opacity:0; width:0; height:0; }
+.switch .riel { position:relative; width:34px; height:18px; border-radius:9px; background:var(--gris); transition:background .15s; flex:none; }
+.switch .riel::after { content:""; position:absolute; top:2px; left:2px; width:14px; height:14px; border-radius:50%; background:#fff; transition:transform .15s; }
+.switch input:checked + .riel { background:var(--verde); }
+.switch input:checked + .riel::after { transform:translateX(16px); }
+.switch input:focus-visible + .riel { outline:2px solid var(--verde); outline-offset:2px; }
 .tenue { color:var(--tenue); font-size:13px; }
 /* TODOS EN UNA LINEA (20/10, pedido: "ponlos todos que quepa en una linea"); en pantallas angostas se desliza. */
 /* SE ACHICAN CUANDO SE ENSANCHA LA COLUMNA HOY (21/10, pedido: "que se ajuste lo que queda a la izquierda y que no
@@ -187,12 +196,15 @@ label { color:var(--tenue); font-size:13px; }
   <h1>Tablero de señales</h1>
   <span class="tenue" id="actualizado"></span>
   <label><input type="checkbox" id="amigo" checked> incluir las del amigo</label>
-  <label title="Suma los días medidos hacia atrás (opciones de Tastytrade, SPY de Schwab): GAP continuación desde el 06/07, Heikin Ashi desde el 27/07, Toque Magnífico desde el 15/07"><input type="checkbox" id="historial"> historial (días medidos hacia atrás)</label>
   <span id="activos"></span>
   <span id="dias_f"></span>
 </header>
 <div class="cuerpo"><main class="principal">
-<h2>Cuántas señales se dieron</h2>
+<!-- 31/10, pedido: "pasalo (el historial) al lado del titulo, en forma de boton switch". Sigue siendo la misma casilla
+     (id="historial"): solo cambia el lugar y el aspecto. -->
+<h2 class="con-switch">Cuántas señales se dieron
+  <label class="switch" title="Suma los días medidos hacia atrás (opciones de Tastytrade, SPY de Schwab): GAP continuación desde el 06/07, Heikin Ashi desde el 27/07, Toque Magnífico desde el 15/07"><input type="checkbox" id="historial"><span class="riel"></span><span class="txt">historial (días medidos hacia atrás)</span></label>
+</h2>
 <div class="circulos" id="circulos"></div>
 <!-- LO MAS FUERTE (22/10, pedido: "un apartado que ponga lo mas fuerte call y lo mas fuerte put ... todas las señales de
      QQQ y de SPX" y "que tambien aparezcan los horarios de tal hora a tal hora en tal activo"). Las señales del UT Bot
@@ -334,7 +346,7 @@ function pintarFuertes(todas) {
     }).sort((a, b) => b.pct - a.pct || b.n - a.n || a.ini - b.ini);
     const cab = `<h3>${lado === 'CALL' ? '🟢 Lo más fuerte CALL' : '🔴 Lo más fuerte PUT'}</h3>`;
     if (!filas.length) return `<div class="fz-col">${cab}<div class="fz-vacio">${document.getElementById('historial').checked
-      ? 'Sin señales del UT Bot con estos filtros.' : 'Prendé <b>historial</b> arriba: las del UT Bot son días medidos hacia atrás.'}</div></div>`;
+      ? 'Sin señales del UT Bot con estos filtros.' : 'Prendé <b>historial</b> (al lado de «Cuántas señales se dieron»): las del UT Bot son días medidos hacia atrás.'}</div></div>`;
     return `<div class="fz-col">${cab}` + filas.map(f => `<div class="fz${f.n < 5 ? ' pocas' : ''}" data-k="${f.grupo}|${f.ini}"`
       + ` title="${f.n < 5 ? 'Pocos casos (menos de 5). ' : ''}Clic: ver estas señales">`
       + `<span class="pct ${f.pct >= 0.5 ? 'g' : 'p'}">${Math.round(100 * f.pct)}%</span><span>${f.g} de ${f.n}</span>`
