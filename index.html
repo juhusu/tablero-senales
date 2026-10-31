@@ -275,9 +275,12 @@ function colorPct(p) { const h = Math.round(120 * p); return `hsl(${h} 62% 32%)`
 let CELDAS = [];
 /* El titulo de la columna de una semana: del lunes al viernes, "19–23/10" o "28/09–02/10" (21/10: "solo aparece hasta
    el 19/10" — la columna con la fecha del lunes parecia un solo dia). */
+/* 31/10, pedido: "que la fecha se vea 19/OCT, 10/SEPT ... asi". */
+const MESES = ['ENE', 'FEB', 'MAR', 'ABR', 'MAY', 'JUN', 'JUL', 'AGO', 'SEPT', 'OCT', 'NOV', 'DIC'];
+function fechaCorta(iso) { return iso ? `${iso.slice(8, 10)}/${MESES[Number(iso.slice(5, 7)) - 1] || iso.slice(5, 7)}` : ''; }
 function rangoSemana(lunes) {
   const d = new Date(lunes + 'T12:00:00'), v = new Date(d.getTime() + 4 * 864e5);
-  const dd = (x) => String(x.getDate()).padStart(2, '0'), mm = (x) => String(x.getMonth() + 1).padStart(2, '0');
+  const dd = (x) => String(x.getDate()).padStart(2, '0'), mm = (x) => MESES[x.getMonth()];
   return d.getMonth() === v.getMonth() ? `${dd(d)}–<wbr>${dd(v)}/${mm(v)}` : `${dd(d)}/${mm(d)}–<wbr>${dd(v)}/${mm(v)}`;
 }
 /* LA HORA AL LADO DEL DIA (20/10, pedido con captura): sale del principio del detalle ("10:00 · ...") y se saca de ahi. */
@@ -396,7 +399,7 @@ function pintarModal() {
     + `<label>Señal <select id="f_grupo">${opt('Todas', 'Todas', MODAL.grupo)}${grupos.map(g => opt(g, vistaTxt(g), MODAL.grupo)).join('')}</select></label>`
     + `<label>Semana <select id="f_semana">${opt('Todas', 'Todas', MODAL.semana)}${semanas.map(se => opt(se, rangoSemana(se).replace('<wbr>', ''), MODAL.semana)).join('')}</select></label>`
     + `<label>Día <select id="f_dia">${opt('Todos', 'Todos', MODAL.dia)}${DIAS.map((d, i) => opt(i, d, MODAL.dia)).join('')}</select></label>`
-    + (MODAL.fecha ? `<button id="f_fecha" class="chip">${MODAL.fecha.slice(8)}/${MODAL.fecha.slice(5, 7)} ✕</button>` : '')
+    + (MODAL.fecha ? `<button id="f_fecha" class="chip">${fechaCorta(MODAL.fecha)} ✕</button>` : '')
     + (MODAL.desde !== undefined ? `<button id="f_hora" class="chip">de ${hhmm(MODAL.desde)} a ${hhmm(MODAL.hasta - 1)} ✕</button>` : '');
   document.querySelectorAll('.det_tabs button').forEach(b => b.onclick = () => { MODAL.vista = b.dataset.v; pintarModal(); });
   document.getElementById('f_grupo').onchange = (e) => { MODAL.grupo = e.target.value; pintarModal(); };
@@ -434,7 +437,7 @@ function mostrarLista(lista) {
     + '<th>En contra<span class="c-txt"> antes del máximo</span></th><th class="c-min">Mínimo (30 min)</th><th class="c-dat" style="text-align:left">Datos</th></tr>'
     + (xs.length ? '' : '<tr><td colspan="10" class="n" style="text-align:center;padding:18px">sin señales con estos filtros</td></tr>')
     + xs.map(x => `<tr class="${x.resultado === 'G' ? 'fila-g' : x.resultado === 'P' ? 'fila-p' : ''}">`
-      + `<td><span class="dsem">${(DIAS[x.dia_semana] || '').slice(0, 3)} </span>${x.fecha.slice(8)}/${x.fecha.slice(5, 7)}${x.historico ? ' <span class="n h">· hist.</span>' : ''}</td>`
+      + `<td><span class="dsem">${(DIAS[x.dia_semana] || '').slice(0, 3)} </span>${fechaCorta(x.fecha)}${x.historico ? ' <span class="n h">· hist.</span>' : ''}</td>`
       + `<td><b class="hora">${horaDe(x)}</b></td>` + (varias ? `<td style="text-align:left">${vista(x.senal)}</td>` : '')
       + `<td>${x.lado}</td>`     /* sin strike, entrada ni dolares (20/10, pedido con captura) */
       /* 25/10: el detalle de la señal al pasar el mouse por el resultado (por ejemplo, contra que precio se gano) */
@@ -555,7 +558,7 @@ function pintarHoy(D) {
   const conHist = D.senales.filter(x => !x.armado);
   const deHoy = D.senales.filter(x => x.fecha === H.fecha && !x.historico);
   const pctTxt = (xs) => { const c = cuenta(xs), t = c.g + c.p; return t ? `${Math.round(100 * c.g / t)}% (${c.g} de ${t})` : 'sin casos'; };
-  let h = `<div class="titulo">Hoy · ${NOMBRE} ${H.fecha.slice(8)}/${H.fecha.slice(5, 7)}</div><div class="sub">se actualiza solo · mañana arranca vacío</div>`;
+  let h = `<div class="titulo">Hoy · ${NOMBRE} ${fechaCorta(H.fecha)}</div><div class="sub">se actualiza solo · mañana arranca vacío</div>`;
   // NOTICIAS
   h += '<h3>📰 Noticias del día</h3>';
   const items = [];
@@ -589,7 +592,7 @@ function pintarHoy(D) {
   const M = H.manana && H.manana.fecha ? H.manana : null;
   const sig = M ? M.dia_semana : (ds >= 4 ? 0 : ds + 1);
   const NOMBRE_SIG = DIAS[sig] || '';
-  const ddmm = (f) => f ? ` ${f.slice(8)}/${f.slice(5, 7)}` : '';
+  const ddmm = (f) => f ? ` ${fechaCorta(f)}` : '';
   const vista = TAB_MEJOR === 'manana' ? sig : ds;
   h += `<h3>⭐ Lo mejor por día</h3><div class="tabs_mejor"><button data-t="hoy" class="${TAB_MEJOR !== 'manana' ? 'on' : ''}">Hoy · ${NOMBRE}${ddmm(H.fecha)}</button>`
     + `<button data-t="manana" class="${TAB_MEJOR === 'manana' ? 'on' : ''}">Mañana · ${NOMBRE_SIG}${ddmm(M && M.fecha)}</button></div>`;
@@ -709,7 +712,7 @@ function pintar(D) {
   let accT = 0;
   curvas.push({ label: 'TODAS', borderColor: '#E5E7EB', backgroundColor: '#E5E7EB', borderDash: [6, 4], tension: .25, pointRadius: 0, borderWidth: 2,
     data: fechas.map(fe => { todas.filter(s => s.fecha === fe).forEach(s => { accT += s.resultado === 'G' ? 1 : s.resultado === 'P' ? -1 : 0; }); return accT; }) });
-  graficos.push(new Chart(document.getElementById('cv'), { type: 'line', data: { labels: fechas.map(f => f.slice(8) + '/' + f.slice(5, 7)), datasets: curvas },
+  graficos.push(new Chart(document.getElementById('cv'), { type: 'line', data: { labels: fechas.map(f => fechaCorta(f)), datasets: curvas },
     options: { maintainAspectRatio: false, interaction: { mode: 'index', intersect: false },
       scales: { x: { ticks: { color: '#8B95A5' }, grid: { color: '#1A2029' } }, y: { ticks: { color: '#8B95A5', precision: 0 }, grid: { color: '#1A2029' } } },
       plugins: { legend: { labels: { color: '#C9D1D9', boxWidth: 12 } } } } }));
@@ -733,7 +736,7 @@ function pintar(D) {
   const hm = (x) => { const h = horaDe(x); return h ? h.padStart(5, '0') : '00:00'; };
   for (const s of [...todas].sort((a, b) => (b.fecha + hm(b)).localeCompare(a.fecha + hm(a)))) {
     const d = new Date(s.fecha + 'T12:00:00');
-    h += `<tr><td>${(DIAS[s.dia_semana] || '').slice(0, 3)} ${s.fecha.slice(8)}/${s.fecha.slice(5, 7)} <b class="hora">${horaDe(s)}</b></td><td class="c-act">${(s.activos || [s.activo]).length > 1 ? s.activo + ' → SPX' : s.activo}</td><td style="text-align:left">${s.senal}${s.historico ? ' <span class="n" title="' + (s.fuente || '') + '">· historial</span>' : ''}</td><td>${s.lado}</td>`
+    h += `<tr><td>${(DIAS[s.dia_semana] || '').slice(0, 3)} ${fechaCorta(s.fecha)} <b class="hora">${horaDe(s)}</b></td><td class="c-act">${(s.activos || [s.activo]).length > 1 ? s.activo + ' → SPX' : s.activo}</td><td style="text-align:left">${s.senal}${s.historico ? ' <span class="n" title="' + (s.fuente || '') + '">· historial</span>' : ''}</td><td>${s.lado}</td>`
       + `<td class="${s.resultado === 'G' ? 'g' : s.resultado === 'P' ? 'p' : 'n'}">${s.resultado === 'G' ? '✅<span class="c-txt"> ganada</span>' : s.resultado === 'P' ? '❌<span class="c-txt"> perdida</span>' : s.no_cuenta ? '—<span class="c-txt"> no cuenta</span>' : '…'}</td>`
       + `<td>${fmtMax(s)}</td><td class="c-det tenue" style="text-align:left">${sinHora(s)}</td></tr>`;
   }
