@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-31 12:35",
+ "actualizado": "2026-10-31 12:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -9998,7 +9998,7 @@
    "usd_10": -4010,
    "tp_fijo": 15,
    "contra": -99.8,
-   "minutos": null,
+   "minutos": 295,
    "max_sin_tp": 11.1,
    "hora_max_sin_tp": "11:40",
    "armado": true,
@@ -18281,7 +18281,7 @@
    "usd_10": -4630,
    "tp_fijo": 15,
    "contra": -99.4,
-   "minutos": null,
+   "minutos": 360,
    "max_sin_tp": 3.2,
    "hora_max_sin_tp": "10:00",
    "armado": true,
