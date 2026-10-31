@@ -330,6 +330,9 @@ let MODAL = { grupo: 'Todas', semana: 'Todas', dia: 'Todos', fecha: null, vista:
 /* LO MAS FUERTE DEL UT BOT (22/10): por activo, lado y media hora (hora de la vela en TradingView), de las señales que
    dejan pasar los filtros de arriba. Mas fuerte = mas % de aciertos; con el mismo %, la que tiene mas casos. Con menos
    de 5 señales se ve tenue (pocos casos). Clic: la lista de esas señales. */
+/* 31/10, pedido: "que se vea el tiempo del contrato en HH:mm:ss". Lo que tardo, de minutos a 00:05:00. */
+function hms(min) { const t = Math.max(0, Math.round(Number(min) * 60)); const d = (n) => String(n).padStart(2, '0');
+  return `${d(Math.floor(t / 3600))}:${d(Math.floor(t / 60) % 60)}:${d(t % 60)}`; }
 function minutosDe(h) { const m = /^(\d{1,2}):(\d{2})$/.exec(h || ''); return m ? Number(m[1]) * 60 + Number(m[2]) : null; }
 /* La hora de la VELA como TradingView (su inicio). El UT Bot ya la anota asi; Heikin Ashi anota la hora de CIERRE de la
    vela de 10 min: se le restan 10 min para que las dos queden en la misma hora (23/10). */
@@ -390,7 +393,7 @@ function pintarModal() {
   document.getElementById('det_ctrl').innerHTML =
     `<span class="det_tabs"><button data-v="lista" class="${MODAL.vista === 'lista' ? 'on' : ''}">☰ Lista</button>`
     + `<button data-v="calendario" class="${MODAL.vista === 'calendario' ? 'on' : ''}">📅 Calendario</button></span>`
-    + `<label>Señal <select id="f_grupo">${opt('Todas', 'Todas', MODAL.grupo)}${grupos.map(g => opt(g, g, MODAL.grupo)).join('')}</select></label>`
+    + `<label>Señal <select id="f_grupo">${opt('Todas', 'Todas', MODAL.grupo)}${grupos.map(g => opt(g, vistaTxt(g), MODAL.grupo)).join('')}</select></label>`
     + `<label>Semana <select id="f_semana">${opt('Todas', 'Todas', MODAL.semana)}${semanas.map(se => opt(se, rangoSemana(se).replace('<wbr>', ''), MODAL.semana)).join('')}</select></label>`
     + `<label>Día <select id="f_dia">${opt('Todos', 'Todos', MODAL.dia)}${DIAS.map((d, i) => opt(i, d, MODAL.dia)).join('')}</select></label>`
     + (MODAL.fecha ? `<button id="f_fecha" class="chip">${MODAL.fecha.slice(8)}/${MODAL.fecha.slice(5, 7)} ✕</button>` : '')
@@ -417,14 +420,13 @@ function pintarResumen(xs) {
     + `<div class="resumen"><span><b>${tot ? Math.round(100 * c.g / tot) + '%' : '—'}</b> aciertos (${c.g} de ${tot}${c.n ? ', ' + c.n + ' por ver' : ''})</span>`
     + (mMax === null ? '' : `<span>máximo típico <b class="g">${mMax > 0 ? '+' : ''}${mMax.toFixed(1)}%</b></span>`)
     + (mCon === null ? '' : `<span>en contra antes del máximo, típico <b class="p">${mCon.toFixed(1)}%</b></span>`)
-    + (mMin === null ? '' : `<span>llega al máximo en <b>${Math.round(mMin)} min</b> (típico)</span>`) + '</div>';
+    + (mMin === null ? '' : `<span>llega al máximo en <b>${hms(mMin)}</b> (típico)</span>`) + '</div>';
 }
 function mostrarLista(lista) {
   const xs = [...lista].sort((a, b) => a.fecha < b.fecha ? 1 : a.fecha > b.fecha ? -1 : 0);
   const pc = (v) => v === null || v === undefined ? '<span class="n">—</span>'
     : `<span class="${v >= 0 ? 'g' : 'p'}">${v > 0 ? '+' : ''}${v.toFixed(1)}%</span>`;
   const varias = new Set(xs.map(x => x.grupo)).size > 1;
-  const movil = !!(window.matchMedia && window.matchMedia('(max-width:700px)').matches);
   const conVenta = xs.some(x => x.venta);     /* 25/10: la hora en que se vendio, en las señales que la anotan */
   document.getElementById('det_tabla').innerHTML = '<tr><th>Día</th><th>Hora</th>' + (varias ? '<th style="text-align:left">Señal</th>' : '')
     + '<th>Lado</th><th></th>' + (conVenta ? '<th>Entró</th><th>Vendió</th><th title="Lo más alto que llegó la opción en el día después de comprar (hasta las 15:55), contra el precio de la primera compra, sin vender al TP">Máx. sin TP</th>' : '')
@@ -439,7 +441,7 @@ function mostrarLista(lista) {
       + `<td title="${(x.detalle || '').replace(/"/g, '&quot;')}">${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : x.no_cuenta ? '—' : '…'}</td>`
       + (conVenta ? `<td><b class="hora">${x.entro || '—'}</b></td><td><b class="hora">${x.venta || '—'}</b></td><td>${pc(x.max_sin_tp)}${x.hora_max_sin_tp ? ' <span class="n">' + x.hora_max_sin_tp + '</span>' : ''}</td>` : '')
       + `<td>${x.tp_fijo && x.resultado === 'P' ? '<span class="p">no llegó</span>' : pc(x.maximo)}${x.unidad && x.unidad !== 'opción' && x.maximo !== null ? ' <span class="n">' + x.unidad + '</span>' : ''}</td>`   /* 31/10 */
-      + `<td>${x.minutos !== undefined && x.minutos !== null ? Math.round(x.minutos) + (movil ? '′' : ' min') : '—'}</td>`
+      + `<td class="hora">${x.minutos !== undefined && x.minutos !== null ? hms(x.minutos) : '—'}</td>`
       + `<td>${pc(x.contra)}</td><td class="c-min">${pc(x.minimo)}</td>`
       + `<td style="text-align:left" class="tenue c-dat" title="${x.fuente || ''}">${fuenteCorta(x)}</td></tr>`).join('');
   columnasAjustables(document.getElementById('det_tabla'), 'lista');
