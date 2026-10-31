@@ -163,6 +163,9 @@ table.diaxdia { font:13px -apple-system,system-ui,sans-serif; }
 .cuad.clic { cursor:pointer; } .cuad.clic:hover { outline:2px solid #fff; }
 #detalle_caja { position:fixed; inset:0; background:rgba(0,0,0,.6); display:flex; align-items:center; justify-content:center; z-index:50; padding:16px; }
 #detalle_caja[hidden] { display:none; }
+/* 31/10, pedido: "cuando haya una ventana abierta delante, al hacer scroll que lo que hay detras no se mueva". */
+html:has(#detalle_caja:not([hidden])) { overflow:hidden; }
+#detalle_caja, #detalle_caja * { overscroll-behavior:contain; }
 .det { background:var(--panel); border:1px solid var(--borde); border-radius:12px; max-width:1000px; width:100%; max-height:80vh; overflow:auto; padding:12px 14px; }
 .det_cab { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; font-size:15px; }
 .det_cab button { background:none; border:1px solid var(--borde); color:var(--texto); border-radius:6px; padding:3px 10px; cursor:pointer; font-size:15px; }
@@ -543,6 +546,13 @@ document.addEventListener('click', (e) => {
   if (e.target.id === 'detalle_caja' || e.target.id === 'det_cerrar') document.getElementById('detalle_caja').hidden = true;
 });
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') document.getElementById('detalle_caja').hidden = true; });
+/* Con la ventana abierta, la rueda o el dedo afuera de ella (en lo oscurecido) no mueven nada. */
+const frenarAtras = (e) => {
+  if (document.getElementById('detalle_caja').hidden) return;
+  if (!(e.target.closest && e.target.closest('.det'))) e.preventDefault();
+};
+document.addEventListener('wheel', frenarAtras, { passive: false });
+document.addEventListener('touchmove', frenarAtras, { passive: false });
 function cuadricula(orden, cols) {
   // ancho minimo: nombres + 54 px por columna; mas angosto que eso, se desliza (no se tapa).
   setTimeout(() => document.querySelectorAll('table.grilla').forEach(t => {
