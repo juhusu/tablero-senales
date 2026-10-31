@@ -82,6 +82,7 @@ table.grilla tr.total td.nom { font-weight:700; }
 .cuad b { font-size:clamp(11px, 24cqw, 17px); line-height:1.1; } .cuad span { font-size:10.5px; opacity:.92; white-space:nowrap; } .cuad span { font-size:11px; opacity:.85; }
 .cuad.nada { background:#161B22; color:#4B5563; font-size:16px; }
 .hora { color:#93C5FD; font-weight:600; margin-left:4px; }
+.tardo { color:#93C5FD; font-weight:400; }   /* 31/10, pedido con captura: "que la fuente sea mas fina" (Tardo) */
 /* LA COLUMNA "HOY" a la derecha (21/10): lo del dia actual; se vacia sola al dia siguiente. En pantallas chicas va arriba. */
 .cuerpo { display:grid; grid-template-columns:minmax(0,1fr) var(--ancho-hoy, 330px); align-items:start; }
 .principal { min-width:0; }
@@ -446,7 +447,7 @@ function mostrarLista(lista) {
       + `<td title="${(x.detalle || '').replace(/"/g, '&quot;')}">${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : x.no_cuenta ? '—' : '…'}</td>`
       + (conVenta ? `<td><b class="hora">${x.entro || '—'}</b></td><td><b class="hora">${x.venta || '—'}</b></td><td>${pc(x.max_sin_tp)}${x.hora_max_sin_tp ? ' <span class="n">' + x.hora_max_sin_tp + '</span>' : ''}</td>` : '')
       + `<td>${x.tp_fijo && x.resultado === 'P' ? '<span class="p">no llegó</span>' : pc(x.maximo)}${x.unidad && x.unidad !== 'opción' && x.maximo !== null ? ' <span class="n">' + x.unidad + '</span>' : ''}</td>`   /* 31/10 */
-      + `<td class="hora">${x.minutos !== undefined && x.minutos !== null ? hms(x.minutos) : '—'}</td>`
+      + `<td class="tardo">${x.minutos !== undefined && x.minutos !== null ? hms(x.minutos) : '—'}</td>`
       + `<td>${pc(x.contra)}</td><td class="c-min">${pc(x.minimo)}</td>`
       + `<td style="text-align:left" class="tenue c-dat" title="${x.fuente || ''}">${fuenteCorta(x)}</td></tr>`).join('');
   columnasAjustables(document.getElementById('det_tabla'), 'lista');
