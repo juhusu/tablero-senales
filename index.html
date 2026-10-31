@@ -420,7 +420,8 @@ function mostrarLista(lista) {
   const conVenta = xs.some(x => x.venta);     /* 25/10: la hora en que se vendio, en las señales que la anotan */
   document.getElementById('det_tabla').innerHTML = '<tr><th>Día</th><th>Hora</th>' + (varias ? '<th style="text-align:left">Señal</th>' : '')
     + '<th>Lado</th><th></th>' + (conVenta ? '<th>Entró</th><th>Vendió</th><th title="Lo más alto que llegó la opción en el día después de comprar (hasta las 15:55), contra el precio de la primera compra, sin vender al TP">Máx. sin TP</th>' : '')
-    + '<th>Máximo</th><th>Tardó</th><th>En contra<span class="c-txt"> antes del máximo</span></th><th class="c-min">Mínimo (30 min)</th><th class="c-dat" style="text-align:left">Datos</th></tr>'
+    + '<th>' + (xs.length && xs.every(x => x.tp_fijo) ? 'TP alcanzado' : 'Máximo') + '</th><th>Tardó</th>'   /* 31/10: reglas con TP fijo */
+    + '<th>En contra<span class="c-txt"> antes del máximo</span></th><th class="c-min">Mínimo (30 min)</th><th class="c-dat" style="text-align:left">Datos</th></tr>'
     + (xs.length ? '' : '<tr><td colspan="10" class="n" style="text-align:center;padding:18px">sin señales con estos filtros</td></tr>')
     + xs.map(x => `<tr class="${x.resultado === 'G' ? 'fila-g' : x.resultado === 'P' ? 'fila-p' : ''}">`
       + `<td><span class="dsem">${(DIAS[x.dia_semana] || '').slice(0, 3)} </span>${x.fecha.slice(8)}/${x.fecha.slice(5, 7)}${x.historico ? ' <span class="n h">· hist.</span>' : ''}</td>`
