@@ -333,9 +333,10 @@ let MODAL = { grupo: 'Todas', semana: 'Todas', dia: 'Todos', fecha: null, vista:
 /* LO MAS FUERTE DEL UT BOT (22/10): por activo, lado y media hora (hora de la vela en TradingView), de las señales que
    dejan pasar los filtros de arriba. Mas fuerte = mas % de aciertos; con el mismo %, la que tiene mas casos. Con menos
    de 5 señales se ve tenue (pocos casos). Clic: la lista de esas señales. */
-/* 31/10, pedido: "que se vea el tiempo del contrato en HH:mm:ss". Lo que tardo, de minutos a 00:05:00. */
-function hms(min) { const t = Math.max(0, Math.round(Number(min) * 60)); const d = (n) => String(n).padStart(2, '0');
-  return `${d(Math.floor(t / 3600))}:${d(Math.floor(t / 60) % 60)}:${d(t % 60)}`; }
+/* 31/10, pedido: "que se vea el tiempo del contrato en HH:mm:ss" y despues "el tiempo no me gusta, hazlo asi: H:mm".
+   Lo que tardo, de minutos a 0:05 (3 h 35 min = 3:35). */
+function hms(min) { const t = Math.max(0, Math.round(Number(min)));
+  return `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`; }
 function minutosDe(h) { const m = /^(\d{1,2}):(\d{2})$/.exec(h || ''); return m ? Number(m[1]) * 60 + Number(m[2]) : null; }
 /* La hora de la VELA como TradingView (su inicio). El UT Bot ya la anota asi; Heikin Ashi anota la hora de CIERRE de la
    vela de 10 min: se le restan 10 min para que las dos queden en la misma hora (23/10). */
