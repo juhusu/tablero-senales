@@ -149,6 +149,7 @@ table.grilla tr.total td.nom { font-weight:700; }
 /* LA VENTANA DEL DETALLE EN EL TELEFONO (21/10): sin Minimo ni Datos, titulos cortos, sin cortar el texto. */
 @media (max-width:700px) {
   #detalle_caja { padding:6px; }
+  .det_rz { display:none; }
   .det { padding:10px 8px; max-height:88vh; }
   #det_tabla { font-size:12px; }
   #det_tabla .c-min, #det_tabla .c-dat, #det_tabla .c-txt, #det_tabla .h, #det_tabla .dsem { display:none; }
@@ -217,8 +218,22 @@ html:has(#detalle_caja:not([hidden])) { overflow:hidden; }
    esta maximizada": toda la ventana del navegador con 12 px a cada lado (GRAFICO_MAX_DEF de la app) y las columnas a
    lo que ocupa su texto, sin cortarlo ("CA…", "Tastytrade (velas de 1 min de la op"); si sobra lugar, se reparte. */
 @media (min-width:701px) {
-  #detalle_caja { padding:12px; }
-  .det { max-width:none !important; width:100%; height:calc(100vh - 24px); max-height:none; }
+  /* 01/11 (2), pedido: "las ventanas no se ajustan desde sus lados": como el grafico maximizado de la app, se agranda o
+     achica desde los cuatro costados y las cuatro esquinas, y queda recordado (margenes en --ml/--mt/--mr/--mb). */
+  #detalle_caja { display:block; padding:0; --ml:12px; --mt:12px; --mr:12px; --mb:12px; }
+  .det { position:absolute; left:var(--ml); top:var(--mt); right:var(--mr); bottom:var(--mb);
+         max-width:none !important; width:auto; height:auto; max-height:none; }
+  .det_rz { position:absolute; z-index:2; touch-action:none; }
+  .det_rz:hover, .det_rz.on { background:rgba(96,165,250,.35); }
+  .det_rz[data-b="l"], .det_rz[data-b="r"] { top:calc(var(--mt) + 10px); bottom:calc(var(--mb) + 10px); width:8px; cursor:ew-resize; }
+  .det_rz[data-b="t"], .det_rz[data-b="b"] { left:calc(var(--ml) + 10px); right:calc(var(--mr) + 10px); height:8px; cursor:ns-resize; }
+  .det_rz[data-b="l"] { left:calc(var(--ml) - 4px); } .det_rz[data-b="r"] { right:calc(var(--mr) - 4px); }
+  .det_rz[data-b="t"] { top:calc(var(--mt) - 4px); } .det_rz[data-b="b"] { bottom:calc(var(--mb) - 4px); }
+  .det_rz[data-b="tl"], .det_rz[data-b="tr"], .det_rz[data-b="bl"], .det_rz[data-b="br"] { width:16px; height:16px; }
+  .det_rz[data-b="tl"] { left:calc(var(--ml) - 5px); top:calc(var(--mt) - 5px); cursor:nwse-resize; }
+  .det_rz[data-b="br"] { right:calc(var(--mr) - 5px); bottom:calc(var(--mb) - 5px); cursor:nwse-resize; }
+  .det_rz[data-b="tr"] { right:calc(var(--mr) - 5px); top:calc(var(--mt) - 5px); cursor:nesw-resize; }
+  .det_rz[data-b="bl"] { left:calc(var(--ml) - 5px); bottom:calc(var(--mb) - 5px); cursor:nesw-resize; }
   #det_tabla td { white-space:nowrap; text-overflow:clip; }
 }
 .det_cab button { background:none; border:1px solid var(--borde); color:var(--texto); border-radius:6px; padding:3px 10px; cursor:pointer; font-size:15px; }
@@ -280,7 +295,7 @@ label { color:var(--tenue); font-size:13px; }
 <div id="detalle_caja" hidden><div class="det"><div class="det_cab"><b id="det_titulo"></b><button id="det_cerrar">✕</button></div>
 <div id="det_ctrl"></div>
 <div id="det_lista"><div class="wrap" style="margin:0"><table id="det_tabla"></table></div></div>
-<div id="det_cal" hidden></div></div></div>
+<div id="det_cal" hidden></div></div><div class="det_rz" data-b="l"></div><div class="det_rz" data-b="r"></div><div class="det_rz" data-b="t"></div><div class="det_rz" data-b="b"></div><div class="det_rz" data-b="tl"></div><div class="det_rz" data-b="tr"></div><div class="det_rz" data-b="bl"></div><div class="det_rz" data-b="br"></div></div>
 <div class="escala"><span>no se dio ninguna</span><i></i><span>se dieron todas</span><span style="margin-left:14px"><b style="color:#4ADE80">verde</b> cuánto llegó a ganar la opción · <b style="color:#F87171">rojo</b> cuánto llegó a perder (una señal típica) · clic en un cuadrito para ver cada una</span></div>
 <div id="p_curva" hidden><div class="panel"><div id="curva"><canvas id="cv"></canvas></div></div></div>
 <div id="p_detalle" hidden><div class="wrap"><table id="detalle" class="diaxdia"></table></div></div>
@@ -435,7 +450,50 @@ function pintarFuertes(todas) {
 }
 function abrirDetalle(k) { abrirModal(CELDAS[k]); }
 function abrirLista(gr) { abrirModal({ grupo: gr }); }
+/* Los bordes de la ventana (01/11): margenes a cada lado, minimo 420 x 320, guardados en este navegador. */
+const VENTANA_KEY = 'tablero_ventana_margenes';
+function leerMargenes() {
+  try { const m = JSON.parse(localStorage.getItem(VENTANA_KEY) || 'null'); if (m && ['l', 't', 'r', 'b'].every(k => typeof m[k] === 'number')) return m; }
+  catch (e) { /* sin almacenamiento */ }
+  return { l: 12, t: 12, r: 12, b: 12 };
+}
+function limitarMargenes(m, W, H) {
+  const o = {};
+  for (const k of ['l', 't', 'r', 'b']) o[k] = Math.max(0, Math.round(m[k]));
+  if (W - o.l - o.r < 420) { const sobra = Math.max(0, W - 420); const f = (o.l + o.r) ? sobra / (o.l + o.r) : 0; o.l = Math.floor(o.l * f); o.r = Math.floor(o.r * f); }
+  if (H - o.t - o.b < 320) { const sobra = Math.max(0, H - 320); const f = (o.t + o.b) ? sobra / (o.t + o.b) : 0; o.t = Math.floor(o.t * f); o.b = Math.floor(o.b * f); }
+  return o;
+}
+function ponerMargenes(m) {
+  const caja = document.getElementById('detalle_caja');
+  const o = limitarMargenes(m, window.innerWidth, window.innerHeight);
+  for (const k of ['l', 't', 'r', 'b']) caja.style.setProperty('--m' + k, o[k] + 'px');
+  return o;
+}
+document.querySelectorAll('.det_rz').forEach(h => {
+  h.onpointerdown = (e) => {
+    e.preventDefault(); e.stopPropagation();
+    const b = h.dataset.b, m0 = ponerMargenes(leerMargenes()), x0 = e.clientX, y0 = e.clientY;
+    let m = m0;
+    h.setPointerCapture(e.pointerId); h.classList.add('on');
+    h.onpointermove = (ev) => {
+      const dx = ev.clientX - x0, dy = ev.clientY - y0, n = { ...m0 };
+      if (b.includes('l')) n.l = m0.l + dx; if (b.includes('r')) n.r = m0.r - dx;
+      if (b.includes('t')) n.t = m0.t + dy; if (b.includes('b')) n.b = m0.b - dy;
+      m = ponerMargenes(n);
+    };
+    h.onpointerup = () => {
+      h.onpointermove = null; h.classList.remove('on');
+      try { localStorage.setItem(VENTANA_KEY, JSON.stringify(m)); } catch (x) { /* igual cambia */ }
+      if (!document.getElementById('det_lista').hidden) columnasAjustables(document.getElementById('det_tabla'), 'lista');
+    };
+  };
+  h.onclick = (e) => e.stopPropagation();       // soltar sobre el fondo no cierra la ventana
+  h.ondblclick = (e) => { e.stopPropagation(); try { localStorage.removeItem(VENTANA_KEY); } catch (x) { /* idem */ } ponerMargenes(leerMargenes()); };
+});
+window.addEventListener('resize', () => ponerMargenes(leerMargenes()));
 function abrirModal(est) {
+  ponerMargenes(leerMargenes());
   MODAL = { grupo: 'Todas', semana: 'Todas', dia: 'Todos', fecha: null, vista: MODAL.vista || 'lista', ...est };
   document.getElementById('detalle_caja').hidden = false;
   pintarModal();
