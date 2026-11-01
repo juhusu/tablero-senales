@@ -213,6 +213,14 @@ html:has(#detalle_caja:not([hidden])) { overflow:hidden; }
 #detalle_caja, #detalle_caja .det { overscroll-behavior:contain; }
 .det { background:var(--panel); border:1px solid var(--borde); border-radius:12px; max-width:1000px; width:100%; max-height:80vh; overflow:auto; padding:12px 14px; }
 .det_cab { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; font-size:15px; }
+/* 01/11, pedido: "cuando salga una ventana que se ajuste el tamaño y sus columnas como las ventanas de la app cuando
+   esta maximizada": toda la ventana del navegador con 12 px a cada lado (GRAFICO_MAX_DEF de la app) y las columnas a
+   lo que ocupa su texto, sin cortarlo ("CA…", "Tastytrade (velas de 1 min de la op"); si sobra lugar, se reparte. */
+@media (min-width:701px) {
+  #detalle_caja { padding:12px; }
+  .det { max-width:none !important; width:100%; height:calc(100vh - 24px); max-height:none; }
+  #det_tabla td { white-space:nowrap; text-overflow:clip; }
+}
 .det_cab button { background:none; border:1px solid var(--borde); color:var(--texto); border-radius:6px; padding:3px 10px; cursor:pointer; font-size:15px; }
 table.grilla tr.total .cuad { outline:2px solid rgba(255,255,255,.35); }
 .escala { display:flex; align-items:center; gap:8px; margin:8px 16px; font-size:12px; color:var(--tenue); }
@@ -518,7 +526,17 @@ function columnasAjustables(tabla, clave) {
   try { guardados = JSON.parse(localStorage.getItem('tablero_anchos_' + clave) || '{}'); } catch (e) { /* sin almacenamiento */ }
   const nombre = (th, i) => th.textContent.trim() || ('col' + i);
   tabla.style.tableLayout = 'auto'; tabla.style.width = ''; tabla.style.minWidth = ''; ths.forEach(th => { th.style.width = ''; });
-  const anchos = ths.map((th, i) => guardados[nombre(th, i)] || th.offsetWidth);
+  // 01/11: el ancho natural de cada columna con el texto entero (sin apretarla al ancho de la ventana); lo guardado a
+  // mano nunca la deja mas angosta que su texto, y si sobra lugar se reparte entre las que no se tocaron.
+  tabla.style.width = 'max-content';
+  const natural = ths.map(th => th.offsetWidth);
+  tabla.style.width = '';
+  const anchos = ths.map((th, i) => Math.max(guardados[nombre(th, i)] || 0, natural[i]));
+  const lugar = (tabla.parentElement ? tabla.parentElement.clientWidth : 0) - 2;
+  const total = anchos.reduce((a, b) => a + b, 0);
+  const libres = ths.map((th, i) => !guardados[nombre(th, i)]);
+  const base = anchos.reduce((a, w, i) => a + (libres[i] ? w : 0), 0);
+  if (lugar > total && base > 0) ths.forEach((th, i) => { if (libres[i]) anchos[i] = Math.floor(anchos[i] * (1 + (lugar - total) / base)); });
   const aplicar = () => {
     tabla.style.tableLayout = 'fixed';
     ths.forEach((th, i) => { th.style.width = anchos[i] + 'px'; });
