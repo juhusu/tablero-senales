@@ -563,7 +563,9 @@ function pintarResumen(xs) {
   const c = cuenta(xs), tot = c.g + c.p;
   const opc = xs.filter(x => x.unidad === 'opción');
   const med = (k) => medio(opc.map(x => x[k]).filter(v => v !== null && v !== undefined));
-  const mMax = med('maximo'), mCon = med('contra'), mMin = med('minutos');
+  // 01/11: sin las "< 5 min" en el tipico de En contra y Tardo (su 0 no es un dato)
+  const medExacto = (k) => medio(opc.filter(x => !x.min_aprox).map(x => x[k]).filter(v => v !== null && v !== undefined));
+  const mMax = med('maximo'), mCon = medExacto('contra'), mMin = medExacto('minutos');
   document.getElementById('det_titulo').innerHTML = (MODAL.grupo === 'Todas' ? 'Todas las señales' : vista(MODAL.grupo))
     + `<div class="resumen"><span><b>${tot ? Math.round(100 * c.g / tot) + '%' : '—'}</b> aciertos (${c.g} de ${tot}${c.n ? ', ' + c.n + ' por ver' : ''})</span>`
     + (mMax === null ? '' : `<span>máximo típico <b class="g">${mMax > 0 ? '+' : ''}${mMax.toFixed(1)}%</b></span>`)
@@ -591,8 +593,10 @@ function mostrarLista(lista) {
       + (conVenta ? `<td><b class="hora">${x.entro || '—'}</b></td><td><b class="hora">${x.venta || '—'}</b></td>` : '')
       + (conMax ? `<td>${pc(x.max_sin_tp)}${x.hora_max_sin_tp ? ' <span class="n">' + x.hora_max_sin_tp + '</span>' : ''}</td>` : '')
       + `<td>${x.tp_fijo && x.resultado === 'P' ? '<span class="p">no llegó</span>' : pc(x.maximo)}${x.unidad && x.unidad !== 'opción' && x.maximo !== null ? ' <span class="n">' + x.unidad + '</span>' : ''}</td>`   /* 31/10 */
-      + `<td class="tardo">${x.minutos !== undefined && x.minutos !== null ? hms(x.minutos) : '—'}</td>`
-      + `<td>${pc(x.contra)}</td><td class="c-min">${pc(x.minimo)}</td>`
+      /* 01/11: "min_aprox" = historial de velas de 5 min sin velas de 1 min: llego dentro de la primera vela, no se sabe
+         en que minuto ni si antes bajo (antes decia "00 min" y "0,0%", que parecian exactos) */
+      + `<td class="tardo">${x.min_aprox ? '<span title="Dentro de los primeros 5 minutos: para esta fecha u opción solo hay velas de 5 min">&lt; 5 min</span>' : x.minutos !== undefined && x.minutos !== null ? hms(x.minutos) : '—'}</td>`
+      + `<td>${x.min_aprox ? '<span class="n" title="No se sabe: pasó dentro de la primera vela de 5 min">—</span>' : pc(x.contra)}</td><td class="c-min">${pc(x.minimo)}</td>`
       + `<td style="text-align:left" class="tenue c-dat" title="${x.fuente || ''}">${fuenteCorta(x)}</td></tr>`).join('');
   columnasAjustables(document.getElementById('det_tabla'), 'lista');
 }
