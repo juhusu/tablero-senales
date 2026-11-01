@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-31 23:55",
+ "actualizado": "2026-10-31 23:56",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -19081,29 +19081,6 @@
   },
   {
    "fecha": "2026-10-27",
-   "senal": "Heikin Ashi CALL",
-   "lado": "CALL",
-   "resultado": "P",
-   "detalle": "10:00 · SPX CALL 7690 a 12.00",
-   "maximo": 3.3,
-   "unidad": "opción",
-   "minimo": -44.0,
-   "contra": 0.0,
-   "minutos": 0,
-   "entrada": 12.0,
-   "strike": 7690,
-   "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "SPY",
-   "activos": [
-    "SPY",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-10-27",
    "senal": "Opening Eyes (motor) SPX",
    "lado": "PUT",
    "resultado": "G",
@@ -19212,75 +19189,6 @@
   },
   {
    "fecha": "2026-10-27",
-   "senal": "UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "P",
-   "detalle": "9:30 · vela 9:30-9:40 · SPX CALL 7710 a 11.30",
-   "maximo": 0.0,
-   "unidad": "opción",
-   "minimo": -70.8,
-   "contra": 0.0,
-   "minutos": 0,
-   "entrada": 11.3,
-   "strike": 7710,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-10-27",
-   "senal": "UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "10:30 · vela 10:30-10:40 · SPX CALL 7700 a 11.10",
-   "maximo": 103.3,
-   "unidad": "opción",
-   "minimo": -13.5,
-   "contra": -13.5,
-   "minutos": 20,
-   "entrada": 11.1,
-   "strike": 7700,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-10-27",
-   "senal": "UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "15:00 · vela 15:00-15:10 · SPX CALL 7725 a 3.60",
-   "maximo": 233.3,
-   "unidad": "opción",
-   "minimo": -13.9,
-   "contra": -13.9,
-   "minutos": 25,
-   "entrada": 3.6,
-   "strike": 7725,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-10-27",
    "senal": "UT Bot QQQ PUT",
    "lado": "PUT",
    "resultado": "G",
@@ -19315,52 +19223,6 @@
    "strike": 772.0,
    "entrada": 0.85,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-10-27",
-   "senal": "UT Bot QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "9:50 · vela 9:50-10:00 · SPX PUT 7690 a 14.50",
-   "maximo": 33.1,
-   "unidad": "opción",
-   "minimo": -26.6,
-   "contra": -11.7,
-   "minutos": 20,
-   "entrada": 14.5,
-   "strike": 7690,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-10-27",
-   "senal": "UT Bot QQQ PUT",
-   "lado": "PUT",
-   "resultado": "P",
-   "detalle": "12:40 · vela 12:40-12:50 · SPX PUT 7715 a 6.60",
-   "maximo": 1.5,
-   "unidad": "opción",
-   "minimo": -61.4,
-   "contra": 0.0,
-   "minutos": 0,
-   "entrada": 6.6,
-   "strike": 7715,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -19434,72 +19296,6 @@
   },
   {
    "fecha": "2026-10-27",
-   "senal": "UT Bot SPX CALL",
-   "lado": "CALL",
-   "resultado": "P",
-   "detalle": "9:30 · vela 9:30-9:40 · SPX CALL 7710 a 11.30",
-   "maximo": 0.0,
-   "unidad": "opción",
-   "minimo": -70.8,
-   "contra": 0.0,
-   "minutos": 0,
-   "entrada": 11.3,
-   "strike": 7710,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-10-27",
-   "senal": "UT Bot SPX CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "10:30 · vela 10:30-10:40 · SPX CALL 7700 a 11.10",
-   "maximo": 103.3,
-   "unidad": "opción",
-   "minimo": -13.5,
-   "contra": -13.5,
-   "minutos": 20,
-   "entrada": 11.1,
-   "strike": 7700,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-10-27",
-   "senal": "UT Bot SPX CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "15:00 · vela 15:00-15:10 · SPX CALL 7725 a 3.60",
-   "maximo": 233.3,
-   "unidad": "opción",
-   "minimo": -13.9,
-   "contra": -13.9,
-   "minutos": 25,
-   "entrada": 3.6,
-   "strike": 7725,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-10-27",
    "senal": "UT Bot SPX PUT",
    "lado": "PUT",
    "resultado": "G",
@@ -19533,50 +19329,6 @@
    "strike": 772.0,
    "entrada": 0.85,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-10-27",
-   "senal": "UT Bot SPX PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "9:50 · vela 9:50-10:00 · SPX PUT 7690 a 14.50",
-   "maximo": 33.1,
-   "unidad": "opción",
-   "minimo": -26.6,
-   "contra": -11.7,
-   "minutos": 20,
-   "entrada": 14.5,
-   "strike": 7690,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-10-27",
-   "senal": "UT Bot SPX PUT",
-   "lado": "PUT",
-   "resultado": "P",
-   "detalle": "12:40 · vela 12:40-12:50 · SPX PUT 7715 a 6.60",
-   "maximo": 1.5,
-   "unidad": "opción",
-   "minimo": -61.4,
-   "contra": 0.0,
-   "minutos": 0,
-   "entrada": 6.6,
-   "strike": 7715,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -19696,29 +19448,6 @@
   },
   {
    "fecha": "2026-10-28",
-   "senal": "Heikin Ashi CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "9:50 · SPX CALL 7725 a 19.60",
-   "maximo": 31.1,
-   "unidad": "opción",
-   "minimo": -4.9,
-   "contra": -4.9,
-   "minutos": 25,
-   "entrada": 19.6,
-   "strike": 7725,
-   "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "SPY",
-   "activos": [
-    "SPY",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-10-28",
    "senal": "Heikin Ashi PUT",
    "lado": "PUT",
    "resultado": "P",
@@ -19731,29 +19460,6 @@
    "strike": 773.0,
    "entrada": 2.01,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "SPY",
-   "activos": [
-    "SPY",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-10-28",
-   "senal": "Heikin Ashi PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "10:40 · SPX PUT 7730 a 19.90",
-   "maximo": 10.6,
-   "unidad": "opción",
-   "minimo": -17.1,
-   "contra": -9.5,
-   "minutos": 15,
-   "entrada": 19.9,
-   "strike": 7730,
-   "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -19873,52 +19579,6 @@
   },
   {
    "fecha": "2026-10-28",
-   "senal": "UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "P",
-   "detalle": "12:50 · vela 12:50-13:00 · SPX CALL 7745 a 16.50",
-   "maximo": 1.8,
-   "unidad": "opción",
-   "minimo": -32.1,
-   "contra": 0.0,
-   "minutos": 0,
-   "entrada": 16.5,
-   "strike": 7745,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-10-28",
-   "senal": "UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "14:30 · vela 14:30-14:40 · SPX CALL 7740 a 14.60",
-   "maximo": 63.7,
-   "unidad": "opción",
-   "minimo": -62.3,
-   "contra": 0.0,
-   "minutos": 0,
-   "entrada": 14.6,
-   "strike": 7740,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-10-28",
    "senal": "UT Bot QQQ PUT",
    "lado": "PUT",
    "resultado": "P",
@@ -19931,29 +19591,6 @@
    "strike": 773.0,
    "entrada": 1.5,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-10-28",
-   "senal": "UT Bot QQQ PUT",
-   "lado": "PUT",
-   "resultado": "P",
-   "detalle": "13:20 · vela 13:20-13:30 · SPX PUT 7735 a 17.40",
-   "maximo": 6.9,
-   "unidad": "opción",
-   "minimo": -21.3,
-   "contra": 0.0,
-   "minutos": 0,
-   "entrada": 17.4,
-   "strike": 7735,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -20027,72 +19664,6 @@
   },
   {
    "fecha": "2026-10-28",
-   "senal": "UT Bot SPX CALL",
-   "lado": "CALL",
-   "resultado": "P",
-   "detalle": "9:30 · vela 9:30-9:40 · SPX CALL 7735 a 18.70",
-   "maximo": 3.2,
-   "unidad": "opción",
-   "minimo": -31.6,
-   "contra": -31.6,
-   "minutos": 25,
-   "entrada": 18.7,
-   "strike": 7735,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-10-28",
-   "senal": "UT Bot SPX CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "11:10 · vela 11:10-11:20 · SPX CALL 7735 a 19.20",
-   "maximo": 13.6,
-   "unidad": "opción",
-   "minimo": -9.9,
-   "contra": -9.9,
-   "minutos": 25,
-   "entrada": 19.2,
-   "strike": 7735,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-10-28",
-   "senal": "UT Bot SPX CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "14:30 · vela 14:30-14:40 · SPX CALL 7740 a 14.60",
-   "maximo": 63.7,
-   "unidad": "opción",
-   "minimo": -62.3,
-   "contra": 0.0,
-   "minutos": 0,
-   "entrada": 14.6,
-   "strike": 7740,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-10-28",
    "senal": "UT Bot SPX PUT",
    "lado": "PUT",
    "resultado": "P",
@@ -20155,72 +19726,6 @@
    "dia_semana": 2
   },
   {
-   "fecha": "2026-10-28",
-   "senal": "UT Bot SPX PUT",
-   "lado": "PUT",
-   "resultado": "P",
-   "detalle": "9:40 · vela 9:40-9:50 · SPX PUT 7725 a 21.60",
-   "maximo": 7.4,
-   "unidad": "opción",
-   "minimo": -31.3,
-   "contra": 0.0,
-   "minutos": 0,
-   "entrada": 21.6,
-   "strike": 7725,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-10-28",
-   "senal": "UT Bot SPX PUT",
-   "lado": "PUT",
-   "resultado": "P",
-   "detalle": "13:20 · vela 13:20-13:30 · SPX PUT 7735 a 17.40",
-   "maximo": 6.9,
-   "unidad": "opción",
-   "minimo": -21.3,
-   "contra": 0.0,
-   "minutos": 0,
-   "entrada": 17.4,
-   "strike": 7735,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-10-28",
-   "senal": "UT Bot SPX PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "15:10 · vela 15:10-15:20 · SPX PUT 7735 a 7.40",
-   "maximo": 51.4,
-   "unidad": "opción",
-   "minimo": -88.9,
-   "contra": -14.9,
-   "minutos": 5,
-   "entrada": 7.4,
-   "strike": 7735,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 2
-  },
-  {
    "fecha": "2026-10-29",
    "senal": "BUY BUY & SELL SELL PUT",
    "lado": "PUT",
@@ -20274,29 +19779,6 @@
   },
   {
    "fecha": "2026-10-29",
-   "senal": "Heikin Ashi CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "9:40 · SPX CALL 7700 a 18.70",
-   "maximo": 66.8,
-   "unidad": "opción",
-   "minimo": -15.5,
-   "contra": -15.5,
-   "minutos": 25,
-   "entrada": 18.7,
-   "strike": 7700,
-   "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "SPY",
-   "activos": [
-    "SPY",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-29",
    "senal": "Heikin Ashi PUT",
    "lado": "PUT",
    "resultado": "P",
@@ -20309,29 +19791,6 @@
    "strike": 770.0,
    "entrada": 1.15,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "SPY",
-   "activos": [
-    "SPY",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-29",
-   "senal": "Heikin Ashi PUT",
-   "lado": "PUT",
-   "resultado": "P",
-   "detalle": "10:50 · SPX PUT 7705 a 14.30",
-   "maximo": 5.7,
-   "unidad": "opción",
-   "minimo": -64.3,
-   "contra": 0.0,
-   "minutos": 0,
-   "entrada": 14.3,
-   "strike": 7705,
-   "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -20466,52 +19925,6 @@
   },
   {
    "fecha": "2026-10-29",
-   "senal": "UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "10:20 · vela 10:20-10:30 · SPX CALL 7720 a 13.60",
-   "maximo": 28.7,
-   "unidad": "opción",
-   "minimo": -51.7,
-   "contra": -6.2,
-   "minutos": 5,
-   "entrada": 13.6,
-   "strike": 7720,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-29",
-   "senal": "UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "11:10 · vela 11:10-11:20 · SPX CALL 7720 a 12.80",
-   "maximo": 46.1,
-   "unidad": "opción",
-   "minimo": -26.6,
-   "contra": -4.7,
-   "minutos": 10,
-   "entrada": 12.8,
-   "strike": 7720,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-29",
    "senal": "UT Bot QQQ PUT",
    "lado": "PUT",
    "resultado": "P",
@@ -20578,52 +19991,6 @@
   },
   {
    "fecha": "2026-10-29",
-   "senal": "UT Bot QQQ PUT",
-   "lado": "PUT",
-   "resultado": "P",
-   "detalle": "10:50 · vela 10:50-11:00 · SPX PUT 7710 a 11.70",
-   "maximo": 2.1,
-   "unidad": "opción",
-   "minimo": -55.1,
-   "contra": 0.0,
-   "minutos": 0,
-   "entrada": 11.7,
-   "strike": 7710,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-29",
-   "senal": "UT Bot QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "13:10 · vela 13:10-13:20 · SPX PUT 7710 a 7.00",
-   "maximo": 131.4,
-   "unidad": "opción",
-   "minimo": -20.0,
-   "contra": -20.0,
-   "minutos": 25,
-   "entrada": 7.0,
-   "strike": 7710,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-29",
    "senal": "UT Bot SPX CALL",
    "lado": "CALL",
    "resultado": "P",
@@ -20666,50 +20033,6 @@
   },
   {
    "fecha": "2026-10-29",
-   "senal": "UT Bot SPX CALL",
-   "lado": "CALL",
-   "resultado": "P",
-   "detalle": "10:30 · vela 10:30-10:40 · SPX CALL 7725 a 13.10",
-   "maximo": 3.9,
-   "unidad": "opción",
-   "minimo": -61.1,
-   "contra": 0.0,
-   "minutos": 0,
-   "entrada": 13.1,
-   "strike": 7725,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-29",
-   "senal": "UT Bot SPX CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "15:20 · vela 15:20-15:30 · SPX CALL 7705 a 5.10",
-   "maximo": 158.8,
-   "unidad": "opción",
-   "minimo": -56.9,
-   "contra": -56.9,
-   "minutos": 20,
-   "entrada": 5.1,
-   "strike": 7705,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-29",
    "senal": "UT Bot SPX PUT",
    "lado": "PUT",
    "resultado": "G",
@@ -20722,28 +20045,6 @@
    "strike": 771.0,
    "entrada": 0.64,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-29",
-   "senal": "UT Bot SPX PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "12:40 · vela 12:40-12:50 · SPX PUT 7715 a 8.50",
-   "maximo": 50.6,
-   "unidad": "opción",
-   "minimo": -45.9,
-   "contra": -45.9,
-   "minutos": 20,
-   "entrada": 8.5,
-   "strike": 7715,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -20902,29 +20203,6 @@
   },
   {
    "fecha": "2026-10-30",
-   "senal": "Heikin Ashi CALL",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "9:50 · SPX CALL 7625 a 19.70",
-   "maximo": 26.9,
-   "unidad": "opción",
-   "minimo": -48.7,
-   "contra": -5.1,
-   "minutos": 5,
-   "entrada": 19.7,
-   "strike": 7625,
-   "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "SPY",
-   "activos": [
-    "SPY",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-10-30",
    "senal": "Heikin Ashi PUT",
    "lado": "PUT",
    "resultado": "G",
@@ -20937,29 +20215,6 @@
    "strike": 762.0,
    "entrada": 1.64,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "SPY",
-   "activos": [
-    "SPY",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-10-30",
-   "senal": "Heikin Ashi PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "11:10 · SPX PUT 7615 a 14.60",
-   "maximo": 45.2,
-   "unidad": "opción",
-   "minimo": -7.5,
-   "contra": -7.5,
-   "minutos": 25,
-   "entrada": 14.6,
-   "strike": 7615,
-   "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -21057,29 +20312,6 @@
   },
   {
    "fecha": "2026-10-30",
-   "senal": "UT Bot QQQ CALL",
-   "lado": "CALL",
-   "resultado": "P",
-   "detalle": "10:40 · vela 10:40-10:50 · SPX CALL 7625 a 16.50",
-   "maximo": 3.6,
-   "unidad": "opción",
-   "minimo": -49.1,
-   "contra": 0.0,
-   "minutos": 0,
-   "entrada": 16.5,
-   "strike": 7625,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-10-30",
    "senal": "UT Bot QQQ PUT",
    "lado": "PUT",
    "resultado": "G",
@@ -21092,29 +20324,6 @@
    "strike": 761.0,
    "entrada": 1.5,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "QQQ",
-   "activos": [
-    "QQQ",
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-10-30",
-   "senal": "UT Bot QQQ PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "11:20 · vela 11:20-11:30 · SPX PUT 7610 a 14.70",
-   "maximo": 54.4,
-   "unidad": "opción",
-   "minimo": -0.7,
-   "contra": -0.7,
-   "minutos": 15,
-   "entrada": 14.7,
-   "strike": 7610,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -21167,28 +20376,6 @@
   },
   {
    "fecha": "2026-10-30",
-   "senal": "UT Bot SPX CALL",
-   "lado": "CALL",
-   "resultado": "P",
-   "detalle": "10:40 · vela 10:40-10:50 · SPX CALL 7625 a 16.50",
-   "maximo": 3.6,
-   "unidad": "opción",
-   "minimo": -49.1,
-   "contra": 0.0,
-   "minutos": 0,
-   "entrada": 16.5,
-   "strike": 7625,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-10-30",
    "senal": "UT Bot SPX PUT",
    "lado": "PUT",
    "resultado": "G",
@@ -21222,50 +20409,6 @@
    "strike": 760.0,
    "entrada": 1.29,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-10-30",
-   "senal": "UT Bot SPX PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "9:30 · vela 9:30-9:40 · SPX PUT 7630 a 18.00",
-   "maximo": 26.1,
-   "unidad": "opción",
-   "minimo": -26.4,
-   "contra": -5.9,
-   "minutos": 5,
-   "entrada": 18.0,
-   "strike": 7630,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-10-30",
-   "senal": "UT Bot SPX PUT",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "11:30 · vela 11:30-11:40 · SPX PUT 7600 a 12.50",
-   "maximo": 35.2,
-   "unidad": "opción",
-   "minimo": -15.2,
-   "contra": -15.2,
-   "minutos": 25,
-   "entrada": 12.5,
-   "strike": 7600,
-   "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
-   "historico": true,
    "activo": "SPX",
    "activos": [
     "SPX"
