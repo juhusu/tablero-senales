@@ -21,8 +21,15 @@ h2.con-switch { display:flex; align-items:center; gap:16px; flex-wrap:wrap; posi
   color:transparent; text-shadow:none; background:linear-gradient(105deg,transparent 42%,rgba(255,255,255,.95) 50%,transparent 58%);
   background-size:300% 100%; background-repeat:no-repeat; -webkit-background-clip:text; background-clip:text;
   animation:dia-destello 4.5s ease-in-out infinite; }
-@keyframes dia-destello { 0% { background-position:120% 0; } 35%, 100% { background-position:-20% 0; } }
-@media (prefers-reduced-motion: reduce) { #dia_grande::after { animation:none; display:none; } }
+@keyframes dia-destello { 0%, 40% { background-position:120% 0; } 75%, 100% { background-position:-20% 0; } }
+/* 01/11, pedido: "la misma animacion del logo CAG pero solo de izquierda de la pantalla hacia el centro": la raya con
+   la luz que corre (cab-brillo del generador) desde el borde izquierdo hasta el dia; al llegar, cruza el texto. */
+#dia_linea { position:absolute; left:-16px;   /* el titulo tiene 16 px de margen: asi arranca en el borde */ top:calc(100% + 3px); height:2px;   /* abajo, como en el generador: a media altura tachaba el titulo y el switch */ pointer-events:none; display:none;
+  background:linear-gradient(90deg, transparent, #FBBF24, transparent) no-repeat, linear-gradient(90deg, transparent, rgba(251,191,36,.25));
+  background-size:35% 100%, 100% 100%; animation:dia-linea 4.5s ease-in infinite; }
+#dia_linea.on { display:block; }
+@keyframes dia-linea { 0% { background-position:-60% 0, 0 0; } 40%, 100% { background-position:160% 0, 0 0; } }
+@media (prefers-reduced-motion: reduce) { #dia_grande::after { animation:none; display:none; } #dia_linea { animation:none; } }
 .switch { display:inline-flex; align-items:center; gap:8px; cursor:pointer; font-size:13px; font-weight:500; color:var(--texto);
   border:1px solid var(--borde); border-radius:8px; padding:5px 10px; background:var(--panel); user-select:none; }
 .switch input { position:absolute; opacity:0; width:0; height:0; }
@@ -229,7 +236,7 @@ label { color:var(--tenue); font-size:13px; }
      (id="historial"): solo cambia el lugar y el aspecto. -->
 <h2 class="con-switch">Cuántas señales se dieron
   <label class="switch" title="Suma los días medidos hacia atrás (opciones de Tastytrade, SPY de Schwab): GAP continuación desde el 06/07, Heikin Ashi desde el 27/07, Toque Magnífico desde el 15/07"><input type="checkbox" id="historial"><span class="riel"></span><span class="txt">historial (días medidos hacia atrás)</span></label>
-  <span id="dia_grande"></span>
+  <span id="dia_linea"></span><span id="dia_grande"></span>
 </h2>
 <div class="circulos" id="circulos"></div>
 <!-- LO MAS FUERTE (22/10, pedido: "un apartado que ponga lo mas fuerte call y lo mas fuerte put ... todas las señales de
@@ -584,6 +591,16 @@ function cuadricula(orden, cols) {
   h += '<tr class="total"><td class="nom">Todas juntas</td>' + cols.map(c => cuadrito(c.todas, { grupo: 'Todas', ...c.filtro })).join('') + '</tr>';
   return h;
 }
+/* La raya del dia: del borde izquierdo hasta 14 px antes del texto (se recalcula al elegir dia y al cambiar el ancho). */
+function ubicarLineaDia() {
+  const dg = document.getElementById('dia_grande'), ln = document.getElementById('dia_linea');
+  if (!dg || !ln) return;
+  if (!dg.textContent) { ln.classList.remove('on'); return; }
+  const caja = dg.parentElement.getBoundingClientRect(), r = dg.getBoundingClientRect();
+  ln.style.width = Math.max(0, Math.round(r.left - caja.left + 16 - 14)) + 'px';
+  ln.classList.add('on');
+}
+window.addEventListener('resize', () => ubicarLineaDia());
 let TAB_MEJOR = 'hoy';
 function pintarHoy(D) {
   const H = D.hoy || {}, el = document.getElementById('hoy');
@@ -710,6 +727,7 @@ function pintar(D) {
   bd.querySelectorAll('button').forEach(b => b.onclick = () => { diaSel = b.dataset.d === 'Todos' ? 'Todos' : Number(b.dataset.d); pintar(D); });
   const dg = document.getElementById('dia_grande');
   if (dg) { dg.textContent = diaSel === 'Todos' ? '' : 'Los ' + DIAS[diaSel][0].toUpperCase() + DIAS[diaSel].slice(1); dg.dataset.txt = dg.textContent; }
+  ubicarLineaDia();
   const todas = D.senales.filter(s => (document.getElementById('amigo').checked || !s.senal.includes('amigo'))
     && (activo === 'Todos' || (s.activos || [s.activo]).includes(activo))
     && (diaSel === 'Todos' || s.dia_semana === diaSel)
