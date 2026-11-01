@@ -224,6 +224,9 @@ html:has(#detalle_caja:not([hidden])) { overflow:hidden; }
   .det { position:absolute; left:var(--ml); top:var(--mt); right:var(--mr); bottom:var(--mb);
          max-width:none !important; width:auto; height:auto; max-height:none; }
   .det_rz { position:absolute; z-index:2; touch-action:none; }
+  /* 01/11 (3), pedido: "que se dejen mover con la manito desde la banda superior" */
+  .det_cab { cursor:grab; user-select:none; touch-action:none; } .det_cab.on { cursor:grabbing; }
+  .det_cab button { cursor:pointer; }
   .det_rz:hover, .det_rz.on { background:rgba(96,165,250,.35); }
   .det_rz[data-b="l"], .det_rz[data-b="r"] { top:calc(var(--mt) + 10px); bottom:calc(var(--mb) + 10px); width:8px; cursor:ew-resize; }
   .det_rz[data-b="t"], .det_rz[data-b="b"] { left:calc(var(--ml) + 10px); right:calc(var(--mr) + 10px); height:8px; cursor:ns-resize; }
@@ -491,6 +494,30 @@ document.querySelectorAll('.det_rz').forEach(h => {
   h.onclick = (e) => e.stopPropagation();       // soltar sobre el fondo no cierra la ventana
   h.ondblclick = (e) => { e.stopPropagation(); try { localStorage.removeItem(VENTANA_KEY); } catch (x) { /* idem */ } ponerMargenes(leerMargenes()); };
 });
+/* Mover la ventana tomandola de la banda de arriba (01/11): corre los cuatro margenes juntos, sin salirse de la
+   pantalla y sin cambiar el tamaño; queda recordado. La X y los textos con clic siguen andando. */
+(() => {
+  const cab = document.querySelector('.det_cab');
+  if (!cab) return;
+  cab.addEventListener('pointerdown', (e) => {
+    if (e.button !== 0 || e.target.closest('button, a, select, input')) return;
+    if (window.matchMedia && window.matchMedia('(max-width:700px)').matches) return;
+    e.preventDefault();
+    const m0 = ponerMargenes(leerMargenes()), x0 = e.clientX, y0 = e.clientY;
+    let m = m0;
+    cab.setPointerCapture(e.pointerId); cab.classList.add('on');
+    const mover = (ev) => {
+      const dx = Math.max(-m0.l, Math.min(m0.r, ev.clientX - x0)), dy = Math.max(-m0.t, Math.min(m0.b, ev.clientY - y0));
+      m = ponerMargenes({ l: m0.l + dx, r: m0.r - dx, t: m0.t + dy, b: m0.b - dy });
+    };
+    const soltar = () => {
+      cab.removeEventListener('pointermove', mover); cab.removeEventListener('pointerup', soltar);
+      cab.removeEventListener('pointercancel', soltar); cab.classList.remove('on');
+      try { localStorage.setItem(VENTANA_KEY, JSON.stringify(m)); } catch (x) { /* igual se movio */ }
+    };
+    cab.addEventListener('pointermove', mover); cab.addEventListener('pointerup', soltar); cab.addEventListener('pointercancel', soltar);
+  });
+})();
 window.addEventListener('resize', () => ponerMargenes(leerMargenes()));
 function abrirModal(est) {
   ponerMargenes(leerMargenes());
