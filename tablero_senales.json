@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-31 13:53",
+ "actualizado": "2026-10-31 23:55",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -20466,7 +20466,14 @@
      "texto": "ISM manufacturero"
     }
    ],
-   "gap": null
+   "gap": {
+    "mes_pct": 0.0296,
+    "hoy_pct": -1.8132,
+    "lado": 1,
+    "cuando": "30/10 21:15",
+    "continuacion": false,
+    "ganador": true
+   }
   }
  }
 }
