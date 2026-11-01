@@ -14176,8 +14176,8 @@
    "entrada": 1.64,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "activo": "SPX",
-   "max_sin_tp": -14.0,
-   "hora_max_sin_tp": "09:40",
+   "max_sin_tp": 0.6,
+   "hora_max_sin_tp": "",
    "activos": [
     "SPX"
    ],
@@ -15264,8 +15264,8 @@
    "entrada": 1.17,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "activo": "SPX",
-   "max_sin_tp": -6.8,
-   "hora_max_sin_tp": "11:05",
+   "max_sin_tp": 6.8,
+   "hora_max_sin_tp": "",
    "activos": [
     "SPX"
    ],
@@ -17872,8 +17872,8 @@
    "entrada": 1.44,
    "fuente": "Tastytrade (Schwab congelado)",
    "activo": "SPX",
-   "max_sin_tp": 4.9,
-   "hora_max_sin_tp": "10:05",
+   "max_sin_tp": 20.8,
+   "hora_max_sin_tp": "",
    "activos": [
     "SPX"
    ],
@@ -18103,8 +18103,8 @@
    "entrada": 1.06,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "activo": "SPX",
-   "max_sin_tp": 7.5,
-   "hora_max_sin_tp": "12:35",
+   "max_sin_tp": 12.3,
+   "hora_max_sin_tp": "",
    "activos": [
     "SPX"
    ],
@@ -18234,8 +18234,8 @@
    "strike": 768.0,
    "entrada": 1.57,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "max_sin_tp": -14.0,
-   "hora_max_sin_tp": "09:50",
+   "max_sin_tp": 0.0,
+   "hora_max_sin_tp": "",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -18950,8 +18950,8 @@
    "entrada": 1.51,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "activo": "SPX",
-   "max_sin_tp": 5.3,
-   "hora_max_sin_tp": "10:05",
+   "max_sin_tp": 9.9,
+   "hora_max_sin_tp": "",
    "activos": [
     "SPX"
    ],
@@ -19777,8 +19777,8 @@
    "entrada": 1.31,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "activo": "SPX",
-   "max_sin_tp": -14.5,
-   "hora_max_sin_tp": "10:10",
+   "max_sin_tp": 1.5,
+   "hora_max_sin_tp": "",
    "activos": [
     "SPX"
    ],
@@ -21385,8 +21385,8 @@
    "strike": 770.0,
    "entrada": 1.52,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "max_sin_tp": 6.6,
-   "hora_max_sin_tp": "09:40",
+   "max_sin_tp": 12.5,
+   "hora_max_sin_tp": "",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -21552,8 +21552,8 @@
    "strike": 771.0,
    "entrada": 0.4,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "max_sin_tp": 105.0,
-   "hora_max_sin_tp": "15:50",
+   "max_sin_tp": 125.0,
+   "hora_max_sin_tp": "",
    "activo": "SPX",
    "activos": [
     "SPX"
