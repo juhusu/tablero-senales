@@ -13,8 +13,16 @@ h2.con-switch { display:flex; align-items:center; gap:16px; flex-wrap:wrap; posi
 /* 01/11: debajo de los botones de dias (~64% del ancho) y centrado en alto entre la raya del encabezado (22px arriba
    del titulo) y las tarjetas (8px abajo): de ahi el -7px. */
 #dia_grande { position:absolute; left:64.5%; top:calc(50% - 7px); transform:translate(-50%,-50%); font-size:30px; font-weight:800; line-height:1;
-  color:#E5E7EB; letter-spacing:.5px; white-space:nowrap; pointer-events:none; }
+  color:#FBBF24; letter-spacing:.5px; white-space:nowrap; pointer-events:none; text-shadow:0 0 14px rgba(251,191,36,.35); }
 #dia_grande:empty { display:none; }
+/* 01/11, pedido: "ponle un color diferente que destaque y con un destello como el logo de CAG": dorado (el color del
+   boton del dia elegido) y la misma franja de luz que cruza el texto cada 4,5 s (logo-destello del generador). */
+#dia_grande::after { content:attr(data-txt); position:absolute; left:0; top:0; white-space:nowrap; pointer-events:none;
+  color:transparent; text-shadow:none; background:linear-gradient(105deg,transparent 42%,rgba(255,255,255,.95) 50%,transparent 58%);
+  background-size:300% 100%; background-repeat:no-repeat; -webkit-background-clip:text; background-clip:text;
+  animation:dia-destello 4.5s ease-in-out infinite; }
+@keyframes dia-destello { 0% { background-position:120% 0; } 35%, 100% { background-position:-20% 0; } }
+@media (prefers-reduced-motion: reduce) { #dia_grande::after { animation:none; display:none; } }
 .switch { display:inline-flex; align-items:center; gap:8px; cursor:pointer; font-size:13px; font-weight:500; color:var(--texto);
   border:1px solid var(--borde); border-radius:8px; padding:5px 10px; background:var(--panel); user-select:none; }
 .switch input { position:absolute; opacity:0; width:0; height:0; }
@@ -701,7 +709,7 @@ function pintar(D) {
   bd.innerHTML = ['Todos', ...DIAS].map((d, i) => `<button class="${(i === 0 ? 'Todos' : i - 1) === diaSel ? 'on' : ''}" data-d="${i === 0 ? 'Todos' : i - 1}">${i === 0 ? 'Todos los días' : d.slice(0, 3)}</button>`).join('');
   bd.querySelectorAll('button').forEach(b => b.onclick = () => { diaSel = b.dataset.d === 'Todos' ? 'Todos' : Number(b.dataset.d); pintar(D); });
   const dg = document.getElementById('dia_grande');
-  if (dg) dg.textContent = diaSel === 'Todos' ? '' : 'Los ' + DIAS[diaSel][0].toUpperCase() + DIAS[diaSel].slice(1);
+  if (dg) { dg.textContent = diaSel === 'Todos' ? '' : 'Los ' + DIAS[diaSel][0].toUpperCase() + DIAS[diaSel].slice(1); dg.dataset.txt = dg.textContent; }
   const todas = D.senales.filter(s => (document.getElementById('amigo').checked || !s.senal.includes('amigo'))
     && (activo === 'Todos' || (s.activos || [s.activo]).includes(activo))
     && (diaSel === 'Todos' || s.dia_semana === diaSel)
