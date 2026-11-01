@@ -20,16 +20,36 @@ h2.con-switch { display:flex; align-items:center; gap:16px; flex-wrap:wrap; posi
 #dia_grande::after { content:attr(data-txt); position:absolute; left:0; top:0; white-space:nowrap; pointer-events:none;
   color:transparent; text-shadow:none; background:linear-gradient(105deg,transparent 42%,rgba(255,255,255,.95) 50%,transparent 58%);
   background-size:300% 100%; background-repeat:no-repeat; -webkit-background-clip:text; background-clip:text;
-  animation:dia-destello 4.5s ease-in-out infinite; }
-@keyframes dia-destello { 0%, 40% { background-position:120% 0; } 75%, 100% { background-position:-20% 0; } }
+  background-position:120% 0; }
+@keyframes dia-destello { 0%, 40% { background-position:120% 0; } 60%, 100% { background-position:-20% 0; } }
+/* 01/11, pedido: "el movimiento de Los Lunes en grande que vaya de izq a derecha moviendose como un carro acelerado
+   inclinando las letras". Cada 6 s: entra desde el borde izquierdo acelerando con las letras inclinadas hacia adelante,
+   frena en su lugar (las letras se van para atras y se enderezan), queda quieto con el destello, y sale acelerando por la
+   derecha. --desde y --hasta (px) los pone ubicarLineaDia(): del borde izquierdo al lugar, y del lugar al borde derecho. */
+@keyframes dia-carro {
+  0%   { transform:translate(calc(-50% + var(--desde, -600px)), -50%) skewX(-28deg); opacity:0; animation-timing-function:cubic-bezier(.55,0,1,.45); }
+  3%   { opacity:1; }
+  20%  { transform:translate(calc(-50% + 14px), -50%) skewX(-28deg); animation-timing-function:ease-out; }
+  26%  { transform:translate(-50%, -50%) skewX(14deg); animation-timing-function:ease-in-out; }
+  31%  { transform:translate(-50%, -50%) skewX(-5deg); }
+  35%, 82% { transform:translate(-50%, -50%) skewX(0deg); opacity:1; animation-timing-function:cubic-bezier(.55,0,1,.45); }
+  86%  { transform:translate(calc(-50% - 6px), -50%) skewX(6deg); animation-timing-function:cubic-bezier(.55,0,1,.45); }
+  97%  { opacity:1; }
+  100% { transform:translate(calc(-50% + var(--hasta, 900px)), -50%) skewX(-28deg); opacity:0; }
+}
+h2.dia-anda #dia_grande { animation:dia-carro 6s infinite; }
+h2.dia-anda #dia_grande::after { animation:dia-destello 6s ease-in-out infinite; }
+h2.dia-anda #dia_linea { animation:dia-linea 6s ease-in infinite; }
+.principal { overflow-x:clip; }   /* al salir por la derecha no pasa por encima de la columna Hoy */
 /* 01/11, pedido: "la misma animacion del logo CAG pero solo de izquierda de la pantalla hacia el centro": la raya con
    la luz que corre (cab-brillo del generador) desde el borde izquierdo hasta el dia; al llegar, cruza el texto. */
-#dia_linea { position:absolute; left:-16px;   /* el titulo tiene 16 px de margen: asi arranca en el borde */ top:calc(100% + 3px); height:2px;   /* abajo, como en el generador: a media altura tachaba el titulo y el switch */ pointer-events:none; display:none;
+#dia_linea { position:absolute; left:-16px; right:-16px;   /* 01/11: "llevalo hasta la derecha" */   /* el titulo tiene 16 px de margen: asi arranca en el borde */ top:calc(100% + 3px); height:2px;   /* abajo, como en el generador: a media altura tachaba el titulo y el switch */ pointer-events:none; display:none;
   background:linear-gradient(90deg, transparent, #FBBF24, transparent) no-repeat, linear-gradient(90deg, transparent, rgba(251,191,36,.25));
-  background-size:35% 100%, 100% 100%; animation:dia-linea 4.5s ease-in infinite; }
+  background-size:35% 100%, 100% 100%; }
 #dia_linea.on { display:block; }
-@keyframes dia-linea { 0% { background-position:-60% 0, 0 0; } 40%, 100% { background-position:160% 0, 0 0; } }
-@media (prefers-reduced-motion: reduce) { #dia_grande::after { animation:none; display:none; } #dia_linea { animation:none; } }
+@keyframes dia-linea { 0% { background-position:-60% 0, 0 0; } 30%, 100% { background-position:160% 0, 0 0; } }
+@media (prefers-reduced-motion: reduce) { h2.dia-anda #dia_grande, h2.dia-anda #dia_linea { animation:none; }
+  h2.dia-anda #dia_grande::after { animation:none; display:none; } }
 .switch { display:inline-flex; align-items:center; gap:8px; cursor:pointer; font-size:13px; font-weight:500; color:var(--texto);
   border:1px solid var(--borde); border-radius:8px; padding:5px 10px; background:var(--panel); user-select:none; }
 .switch input { position:absolute; opacity:0; width:0; height:0; }
@@ -591,16 +611,24 @@ function cuadricula(orden, cols) {
   h += '<tr class="total"><td class="nom">Todas juntas</td>' + cols.map(c => cuadrito(c.todas, { grupo: 'Todas', ...c.filtro })).join('') + '</tr>';
   return h;
 }
-/* La raya del dia: del borde izquierdo hasta 14 px antes del texto (se recalcula al elegir dia y al cambiar el ancho). */
-function ubicarLineaDia() {
+/* La raya y el "carro" del dia (01/11): la raya va de borde a borde; el texto entra desde el borde izquierdo y sale por el
+   derecho. Las distancias salen del lugar SIN la animacion (offsetLeft no cuenta el transform). Al elegir otro dia la
+   animacion arranca de cero; al cambiar el ancho solo se recalculan las distancias. */
+function ubicarLineaDia(reiniciar) {
   const dg = document.getElementById('dia_grande'), ln = document.getElementById('dia_linea');
   if (!dg || !ln) return;
-  if (!dg.textContent) { ln.classList.remove('on'); return; }
-  const caja = dg.parentElement.getBoundingClientRect(), r = dg.getBoundingClientRect();
-  ln.style.width = Math.max(0, Math.round(r.left - caja.left + 16 - 14)) + 'px';
+  const h2 = dg.parentElement;
+  if (!dg.textContent) { ln.classList.remove('on'); h2.classList.remove('dia-anda'); return; }
+  const izq = dg.offsetLeft - dg.offsetWidth / 2;            // borde izquierdo del texto quieto, dentro del titulo
+  dg.style.setProperty('--desde', -Math.round(izq + 16 + dg.offsetWidth + 10) + 'px');   // 16 = margen del titulo
+  dg.style.setProperty('--hasta', Math.round(h2.clientWidth + 16 - izq + 10) + 'px');
   ln.classList.add('on');
+  // solo si cambio el dia (pintar() corre con cualquier filtro: tocar SPX no tiene que hacerlo arrancar de nuevo)
+  if (reiniciar !== false && dg.dataset.ultimo !== dg.textContent) { h2.classList.remove('dia-anda'); void h2.offsetWidth; }
+  dg.dataset.ultimo = dg.textContent;
+  h2.classList.add('dia-anda');
 }
-window.addEventListener('resize', () => ubicarLineaDia());
+window.addEventListener('resize', () => ubicarLineaDia(false));
 let TAB_MEJOR = 'hoy';
 function pintarHoy(D) {
   const H = D.hoy || {}, el = document.getElementById('hoy');
