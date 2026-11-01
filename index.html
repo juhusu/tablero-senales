@@ -71,6 +71,9 @@ table.grilla th:first-child, table.grilla td.nom { width:190px; }
 table.grilla th { white-space:normal; line-height:1.15; font-size:12px; vertical-align:bottom; }
 table.grilla td.nom { white-space:normal !important; line-height:1.2; }
 table.grilla th { border:none; color:#C9D1D9; font-size:13px; font-weight:600; padding:0 0 2px; position:static; background:none; }
+/* 01/11, pedido con captura: "reducir el tamaño de la fuente para que quepa justo encima del cuadrado verde": el titulo
+   de la semana ("28/SEPT–02/OCT") en dos renglones del ancho del cuadrado, sin pasarse al de al lado. */
+table.grilla th:not(:first-child) { font-size:clamp(9px, 0.72vw, 11px); letter-spacing:-.2px; overflow:hidden; }
 table.grilla td { border:none; padding:0; }
 table.grilla td.nom { text-align:right; padding-right:8px; color:#E5E7EB; font-size:13px; white-space:nowrap;
   position:sticky; left:0; z-index:2; background:var(--fondo); box-shadow:6px 0 8px -6px rgba(0,0,0,.8); }
@@ -736,7 +739,7 @@ function pintar(D) {
   // De la mas vieja (izquierda) a la mas nueva (derecha) (20/10, pedido: "los dias aparecen de derecha a izquierda").
   const semanas = [...new Set(filas.map(f => f.semana))].sort();
   document.getElementById('semanas').innerHTML = cuadricula(orden, semanas.map(se => ({
-    titulo: rangoSemana(se), filtro: { semana: se }, de: (g) => filas.filter(f => f.semana === se && f.grupo === g),
+    titulo: rangoSemana(se).replace('<wbr>', '<br>'), filtro: { semana: se }, de: (g) => filas.filter(f => f.semana === se && f.grupo === g),
     todas: todas.filter(x => x.semana === se) })));
   const caja = document.getElementById('semanas').parentElement;       // se abre mostrando la semana mas nueva
   requestAnimationFrame(() => { caja.scrollLeft = caja.scrollWidth; });
