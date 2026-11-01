@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-01 10:38",
+ "actualizado": "2026-11-01 10:57",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -48,6 +48,7 @@
    "historico": true,
    "max_sin_tp": 115.4,
    "hora_max_sin_tp": "15:20",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -96,6 +97,7 @@
    "historico": true,
    "max_sin_tp": 89.2,
    "hora_max_sin_tp": "13:40",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -198,6 +200,7 @@
    "historico": true,
    "max_sin_tp": 94.7,
    "hora_max_sin_tp": "11:25",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -270,6 +273,7 @@
    "historico": true,
    "max_sin_tp": 21.2,
    "hora_max_sin_tp": "14:00",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -342,6 +346,7 @@
    "historico": true,
    "max_sin_tp": 24.3,
    "hora_max_sin_tp": "10:20",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -366,6 +371,7 @@
    "historico": true,
    "max_sin_tp": 12.8,
    "hora_max_sin_tp": "15:10",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -438,6 +444,7 @@
    "historico": true,
    "max_sin_tp": 150.6,
    "hora_max_sin_tp": "15:50",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -582,6 +589,7 @@
    "historico": true,
    "max_sin_tp": 0.0,
    "hora_max_sin_tp": "10:20",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -606,6 +614,7 @@
    "historico": true,
    "max_sin_tp": 25.2,
    "hora_max_sin_tp": "12:10",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -679,6 +688,7 @@
    "historico": true,
    "max_sin_tp": 2.2,
    "hora_max_sin_tp": "10:20",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -751,6 +761,7 @@
    "historico": true,
    "max_sin_tp": 215.9,
    "hora_max_sin_tp": "12:40",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -775,6 +786,7 @@
    "historico": true,
    "max_sin_tp": 13.0,
    "hora_max_sin_tp": "15:00",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -799,6 +811,7 @@
    "historico": true,
    "max_sin_tp": 130.1,
    "hora_max_sin_tp": "15:45",
+   "min_aprox": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -920,6 +933,7 @@
    "historico": true,
    "max_sin_tp": 9.9,
    "hora_max_sin_tp": "12:00",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -944,6 +958,7 @@
    "historico": true,
    "max_sin_tp": 13.5,
    "hora_max_sin_tp": "09:40",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -968,6 +983,7 @@
    "historico": true,
    "max_sin_tp": 76.1,
    "hora_max_sin_tp": "15:25",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -1166,6 +1182,7 @@
    "historico": true,
    "max_sin_tp": 13.5,
    "hora_max_sin_tp": "14:40",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -1376,6 +1393,7 @@
    "historico": true,
    "max_sin_tp": 100.4,
    "hora_max_sin_tp": "11:30",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -1448,6 +1466,7 @@
    "historico": true,
    "max_sin_tp": 29.5,
    "hora_max_sin_tp": "09:55",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -1520,6 +1539,7 @@
    "historico": true,
    "max_sin_tp": 5.0,
    "hora_max_sin_tp": "15:20",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -1622,6 +1642,7 @@
    "historico": true,
    "max_sin_tp": 12.7,
    "hora_max_sin_tp": "10:00",
+   "min_aprox": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -1672,6 +1693,7 @@
    "historico": true,
    "max_sin_tp": 21.5,
    "hora_max_sin_tp": "11:10",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -1697,6 +1719,7 @@
    "historico": true,
    "max_sin_tp": 22.8,
    "hora_max_sin_tp": "12:30",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -1722,6 +1745,7 @@
    "historico": true,
    "max_sin_tp": 151.9,
    "hora_max_sin_tp": "15:30",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -1747,6 +1771,7 @@
    "historico": true,
    "max_sin_tp": 15.0,
    "hora_max_sin_tp": "13:15",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -1797,6 +1822,7 @@
    "historico": true,
    "max_sin_tp": 0.6,
    "hora_max_sin_tp": "09:40",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -1821,6 +1847,7 @@
    "historico": true,
    "max_sin_tp": 21.5,
    "hora_max_sin_tp": "11:10",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -1845,6 +1872,7 @@
    "historico": true,
    "max_sin_tp": 5.3,
    "hora_max_sin_tp": "12:40",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -1869,6 +1897,7 @@
    "historico": true,
    "max_sin_tp": 151.9,
    "hora_max_sin_tp": "15:30",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -1917,6 +1946,7 @@
    "historico": true,
    "max_sin_tp": 15.0,
    "hora_max_sin_tp": "13:15",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -1995,6 +2025,7 @@
    "historico": true,
    "max_sin_tp": 160.5,
    "hora_max_sin_tp": "13:00",
+   "min_aprox": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -2023,6 +2054,7 @@
    "hora_max_sin_tp": "12:55",
    "minutos": 0,
    "contra": 0.0,
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -2072,6 +2104,7 @@
    "historico": true,
    "max_sin_tp": 0.5,
    "hora_max_sin_tp": "15:30",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -2501,6 +2534,7 @@
    "historico": true,
    "max_sin_tp": 209.0,
    "hora_max_sin_tp": "15:15",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -2672,6 +2706,7 @@
    "historico": true,
    "max_sin_tp": 13.5,
    "hora_max_sin_tp": "11:30",
+   "min_aprox": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -2700,6 +2735,7 @@
    "hora_max_sin_tp": "15:50",
    "minutos": 0,
    "contra": 0.0,
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -2799,6 +2835,7 @@
    "historico": true,
    "max_sin_tp": 13.5,
    "hora_max_sin_tp": "11:30",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -2948,6 +2985,7 @@
    "historico": true,
    "max_sin_tp": 31.1,
    "hora_max_sin_tp": "09:40",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -3013,6 +3051,7 @@
    "historico": true,
    "max_sin_tp": 22.8,
    "hora_max_sin_tp": "09:40",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3078,6 +3117,7 @@
    "historico": true,
    "max_sin_tp": 15.5,
    "hora_max_sin_tp": "12:40",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -3128,6 +3168,7 @@
    "historico": true,
    "max_sin_tp": 6.5,
    "hora_max_sin_tp": "09:40",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3152,6 +3193,7 @@
    "historico": true,
    "max_sin_tp": 15.5,
    "hora_max_sin_tp": "12:40",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3230,6 +3272,7 @@
    "historico": true,
    "max_sin_tp": 64.4,
    "hora_max_sin_tp": "12:15",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3279,6 +3322,7 @@
    "historico": true,
    "max_sin_tp": 7.5,
    "hora_max_sin_tp": "09:50",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -3353,6 +3397,7 @@
    "historico": true,
    "max_sin_tp": 23.2,
    "hora_max_sin_tp": "14:20",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3377,6 +3422,7 @@
    "historico": true,
    "max_sin_tp": 92.0,
    "hora_max_sin_tp": "12:15",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3519,6 +3565,7 @@
    "historico": true,
    "max_sin_tp": 43.8,
    "hora_max_sin_tp": "12:30",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -3592,6 +3639,7 @@
    "historico": true,
    "max_sin_tp": 43.8,
    "hora_max_sin_tp": "12:30",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3616,6 +3664,7 @@
    "historico": true,
    "max_sin_tp": 108.8,
    "hora_max_sin_tp": "12:30",
+   "min_aprox": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -3682,6 +3731,7 @@
    "historico": true,
    "max_sin_tp": 5.4,
    "hora_max_sin_tp": "12:00",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -3732,6 +3782,7 @@
    "historico": true,
    "max_sin_tp": 117.3,
    "hora_max_sin_tp": "12:30",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -3757,6 +3808,7 @@
    "historico": true,
    "max_sin_tp": 22.8,
    "hora_max_sin_tp": "12:50",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -3806,6 +3858,7 @@
    "historico": true,
    "max_sin_tp": 117.3,
    "hora_max_sin_tp": "12:30",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -3978,6 +4031,7 @@
    "historico": true,
    "max_sin_tp": 8.9,
    "hora_max_sin_tp": "10:10",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -4053,6 +4107,7 @@
    "historico": true,
    "max_sin_tp": 8.7,
    "hora_max_sin_tp": "11:00",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -4101,6 +4156,7 @@
    "historico": true,
    "max_sin_tp": 198.2,
    "hora_max_sin_tp": "14:25",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -4565,6 +4621,7 @@
    "historico": true,
    "max_sin_tp": 21.6,
    "hora_max_sin_tp": "14:10",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -4662,6 +4719,7 @@
    "historico": true,
    "max_sin_tp": 8.4,
    "hora_max_sin_tp": "09:30",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -4727,6 +4785,7 @@
    "historico": true,
    "max_sin_tp": 2.7,
    "hora_max_sin_tp": "12:30",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -4752,6 +4811,7 @@
    "historico": true,
    "max_sin_tp": 135.0,
    "hora_max_sin_tp": "13:35",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -4801,6 +4861,7 @@
    "historico": true,
    "max_sin_tp": 2.7,
    "hora_max_sin_tp": "12:30",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -4825,6 +4886,7 @@
    "historico": true,
    "max_sin_tp": 32.4,
    "hora_max_sin_tp": "14:50",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -4849,6 +4911,7 @@
    "historico": true,
    "max_sin_tp": 134.7,
    "hora_max_sin_tp": "13:35",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -4873,6 +4936,7 @@
    "historico": true,
    "max_sin_tp": 10.8,
    "hora_max_sin_tp": "13:35",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -4897,6 +4961,7 @@
    "historico": true,
    "max_sin_tp": 338.5,
    "hora_max_sin_tp": "15:50",
+   "min_aprox": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -4993,6 +5058,7 @@
    "historico": true,
    "max_sin_tp": 8.1,
    "hora_max_sin_tp": "15:00",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -5018,6 +5084,7 @@
    "historico": true,
    "max_sin_tp": 375.0,
    "hora_max_sin_tp": "15:50",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -5068,6 +5135,7 @@
    "historico": true,
    "max_sin_tp": 10.9,
    "hora_max_sin_tp": "11:30",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -5116,6 +5184,7 @@
    "historico": true,
    "max_sin_tp": 375.0,
    "hora_max_sin_tp": "15:50",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -5140,6 +5209,7 @@
    "historico": true,
    "max_sin_tp": 36.9,
    "hora_max_sin_tp": "09:30",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -5164,6 +5234,7 @@
    "historico": true,
    "max_sin_tp": 28.6,
    "hora_max_sin_tp": "11:00",
+   "min_aprox": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -5280,6 +5351,7 @@
    "historico": true,
    "max_sin_tp": 4.4,
    "hora_max_sin_tp": "12:50",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -5352,6 +5424,7 @@
    "historico": true,
    "max_sin_tp": 98.4,
    "hora_max_sin_tp": "15:50",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -5576,6 +5649,7 @@
    "historico": true,
    "max_sin_tp": 1.5,
    "hora_max_sin_tp": "12:20",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -5600,6 +5674,7 @@
    "historico": true,
    "max_sin_tp": 158.1,
    "hora_max_sin_tp": "15:50",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -5694,6 +5769,7 @@
    "historico": true,
    "max_sin_tp": 21.7,
    "hora_max_sin_tp": "09:40",
+   "min_aprox": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -5719,6 +5795,7 @@
    "historico": true,
    "max_sin_tp": 20.7,
    "hora_max_sin_tp": "12:50",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -5744,6 +5821,7 @@
    "historico": true,
    "max_sin_tp": 46.9,
    "hora_max_sin_tp": "15:20",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -5819,6 +5897,7 @@
    "historico": true,
    "max_sin_tp": 17.7,
    "hora_max_sin_tp": "11:10",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -5843,6 +5922,7 @@
    "historico": true,
    "max_sin_tp": 189.6,
    "hora_max_sin_tp": "15:50",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -5965,6 +6045,7 @@
    "historico": true,
    "max_sin_tp": 62.2,
    "hora_max_sin_tp": "15:45",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -6039,6 +6120,7 @@
    "historico": true,
    "max_sin_tp": 62.2,
    "hora_max_sin_tp": "15:45",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -6063,6 +6145,7 @@
    "historico": true,
    "max_sin_tp": 34.4,
    "hora_max_sin_tp": "14:30",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -6188,6 +6271,7 @@
    "historico": true,
    "max_sin_tp": 103.4,
    "hora_max_sin_tp": "12:20",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -6384,6 +6468,7 @@
    "historico": true,
    "max_sin_tp": 21.5,
    "hora_max_sin_tp": "11:20",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -6457,6 +6542,7 @@
    "historico": true,
    "max_sin_tp": 7.8,
    "hora_max_sin_tp": "11:50",
+   "min_aprox": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -6506,6 +6592,7 @@
    "hora_max_sin_tp": "11:30",
    "minutos": 0,
    "contra": 0.0,
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -6555,6 +6642,7 @@
    "historico": true,
    "max_sin_tp": 22.9,
    "hora_max_sin_tp": "15:50",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -6605,6 +6693,7 @@
    "historico": true,
    "max_sin_tp": 11.4,
    "hora_max_sin_tp": "13:30",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -6630,6 +6719,7 @@
    "historico": true,
    "max_sin_tp": 30.4,
    "hora_max_sin_tp": "15:30",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -6655,6 +6745,7 @@
    "historico": true,
    "max_sin_tp": 24.8,
    "hora_max_sin_tp": "09:40",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -6703,6 +6794,7 @@
    "historico": true,
    "max_sin_tp": 22.9,
    "hora_max_sin_tp": "15:50",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -6751,6 +6843,7 @@
    "historico": true,
    "max_sin_tp": 11.4,
    "hora_max_sin_tp": "13:30",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -6775,6 +6868,7 @@
    "historico": true,
    "max_sin_tp": 21.1,
    "hora_max_sin_tp": "15:20",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -6884,6 +6978,7 @@
    "historico": true,
    "max_sin_tp": 225.0,
    "hora_max_sin_tp": "12:40",
+   "min_aprox": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -6955,6 +7050,7 @@
    "historico": true,
    "max_sin_tp": 54.8,
    "hora_max_sin_tp": "15:00",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -7005,6 +7101,7 @@
    "historico": true,
    "max_sin_tp": 55.6,
    "hora_max_sin_tp": "12:40",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -7079,6 +7176,7 @@
    "historico": true,
    "max_sin_tp": 54.8,
    "hora_max_sin_tp": "15:00",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -7127,6 +7225,7 @@
    "historico": true,
    "max_sin_tp": 75.7,
    "hora_max_sin_tp": "12:40",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -7151,6 +7250,7 @@
    "historico": true,
    "max_sin_tp": 55.6,
    "hora_max_sin_tp": "12:40",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -7314,6 +7414,7 @@
    "historico": true,
    "max_sin_tp": 1.0,
    "hora_max_sin_tp": "09:35",
+   "min_aprox": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -7414,6 +7515,7 @@
    "historico": true,
    "max_sin_tp": 1.4,
    "hora_max_sin_tp": "11:50",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -7512,6 +7614,7 @@
    "historico": true,
    "max_sin_tp": 1.4,
    "hora_max_sin_tp": "11:50",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -7705,6 +7808,7 @@
    "historico": true,
    "max_sin_tp": 86.7,
    "hora_max_sin_tp": "13:10",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -7931,6 +8035,7 @@
    "historico": true,
    "max_sin_tp": 48.5,
    "hora_max_sin_tp": "10:25",
+   "min_aprox": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -8006,6 +8111,7 @@
    "historico": true,
    "max_sin_tp": 3.7,
    "hora_max_sin_tp": "10:30",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -8031,6 +8137,7 @@
    "historico": true,
    "max_sin_tp": 48.9,
    "hora_max_sin_tp": "14:40",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -8128,6 +8235,7 @@
    "historico": true,
    "max_sin_tp": 48.9,
    "hora_max_sin_tp": "14:40",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -8182,6 +8290,7 @@
    "historico": true,
    "max_sin_tp": 81.2,
    "hora_max_sin_tp": "14:45",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -8351,6 +8460,7 @@
    "historico": true,
    "max_sin_tp": 4.7,
    "hora_max_sin_tp": "11:50",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -8399,6 +8509,7 @@
    "historico": true,
    "max_sin_tp": 82.3,
    "hora_max_sin_tp": "14:45",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -8423,6 +8534,7 @@
    "historico": true,
    "max_sin_tp": 362.1,
    "hora_max_sin_tp": "14:45",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -8501,6 +8613,7 @@
    "historico": true,
    "max_sin_tp": 34.9,
    "hora_max_sin_tp": "13:40",
+   "min_aprox": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -8599,6 +8712,7 @@
    "historico": true,
    "max_sin_tp": 8.4,
    "hora_max_sin_tp": "11:30",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -8624,6 +8738,7 @@
    "historico": true,
    "max_sin_tp": 9.5,
    "hora_max_sin_tp": "10:00",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -8649,6 +8764,7 @@
    "historico": true,
    "max_sin_tp": 20.8,
    "hora_max_sin_tp": "13:40",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -8674,6 +8790,7 @@
    "historico": true,
    "max_sin_tp": 13.2,
    "hora_max_sin_tp": "13:20",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -8699,6 +8816,7 @@
    "historico": true,
    "max_sin_tp": 13.1,
    "hora_max_sin_tp": "14:20",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -8850,6 +8968,7 @@
    "hora_max_sin_tp": "14:15",
    "minutos": 0,
    "contra": 0.0,
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -8899,6 +9018,7 @@
    "historico": true,
    "max_sin_tp": 108.3,
    "hora_max_sin_tp": "15:20",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -8948,6 +9068,7 @@
    "historico": true,
    "max_sin_tp": 15.2,
    "hora_max_sin_tp": "10:10",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -9002,6 +9123,7 @@
    "historico": true,
    "max_sin_tp": 32.4,
    "hora_max_sin_tp": "09:30",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -9026,6 +9148,7 @@
    "historico": true,
    "max_sin_tp": 11.2,
    "hora_max_sin_tp": "10:20",
+   "min_aprox": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -9269,6 +9392,7 @@
    "historico": true,
    "max_sin_tp": 1.0,
    "hora_max_sin_tp": "15:20",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -9518,6 +9642,7 @@
    "historico": true,
    "max_sin_tp": 50.7,
    "hora_max_sin_tp": "15:50",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -9567,6 +9692,7 @@
    "historico": true,
    "max_sin_tp": 15.8,
    "hora_max_sin_tp": "14:20",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -9615,6 +9741,7 @@
    "historico": true,
    "max_sin_tp": 123.6,
    "hora_max_sin_tp": "14:45",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -9639,6 +9766,7 @@
    "historico": true,
    "max_sin_tp": 50.7,
    "hora_max_sin_tp": "15:50",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -9663,6 +9791,7 @@
    "historico": true,
    "max_sin_tp": 120.2,
    "hora_max_sin_tp": "11:20",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -9962,6 +10091,7 @@
    "historico": true,
    "max_sin_tp": 58.7,
    "hora_max_sin_tp": "10:20",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -9987,6 +10117,7 @@
    "historico": true,
    "max_sin_tp": 40.6,
    "hora_max_sin_tp": "13:10",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -10086,6 +10217,7 @@
    "historico": true,
    "max_sin_tp": 46.1,
    "hora_max_sin_tp": "13:00",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -10311,6 +10443,7 @@
    "historico": true,
    "max_sin_tp": 28.5,
    "hora_max_sin_tp": "13:30",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -10336,6 +10469,7 @@
    "historico": true,
    "max_sin_tp": 60.9,
    "hora_max_sin_tp": "10:45",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -10361,6 +10495,7 @@
    "historico": true,
    "max_sin_tp": 8.1,
    "hora_max_sin_tp": "12:40",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -10386,6 +10521,7 @@
    "historico": true,
    "max_sin_tp": 46.7,
    "hora_max_sin_tp": "15:10",
+   "min_aprox": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -10556,14 +10692,15 @@
    "maximo": 10.2,
    "unidad": "opción",
    "minimo": -42.4,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -12.7,
+   "minutos": 4,
    "entrada": 11.8,
    "strike": 7600,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 311.0,
    "hora_max_sin_tp": "12:45",
+   "al_minuto": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -10701,14 +10838,15 @@
    "maximo": 84.1,
    "unidad": "opción",
    "minimo": -13.6,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -13.6,
+   "minutos": 4,
    "entrada": 8.8,
    "strike": 7625,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 190.9,
    "hora_max_sin_tp": "12:50",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -10838,6 +10976,7 @@
    "historico": true,
    "max_sin_tp": 216.7,
    "hora_max_sin_tp": "10:50",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -11006,6 +11145,7 @@
    "historico": true,
    "max_sin_tp": 5.3,
    "hora_max_sin_tp": "13:30",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -11030,6 +11170,7 @@
    "historico": true,
    "max_sin_tp": 4.8,
    "hora_max_sin_tp": "15:40",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -11171,14 +11312,15 @@
    "maximo": 11.9,
    "unidad": "opción",
    "minimo": -15.0,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -0.3,
+   "minutos": 3,
    "entrada": 22.7,
    "strike": 7610,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 66.1,
    "hora_max_sin_tp": "11:45",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -11204,6 +11346,7 @@
    "historico": true,
    "max_sin_tp": 3.0,
    "hora_max_sin_tp": "14:10",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -11327,6 +11470,7 @@
    "historico": true,
    "max_sin_tp": 3.0,
    "hora_max_sin_tp": "14:10",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -11343,14 +11487,15 @@
    "maximo": 5.0,
    "unidad": "opción",
    "minimo": -19.5,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -3.2,
+   "minutos": 2,
    "entrada": 22.0,
    "strike": 7600,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 319.7,
    "hora_max_sin_tp": "15:25",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -11367,14 +11512,15 @@
    "maximo": 11.2,
    "unidad": "opción",
    "minimo": -2.4,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -0.8,
+   "minutos": 3,
    "entrada": 25.2,
    "strike": 7615,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 314.7,
    "hora_max_sin_tp": "15:25",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -11601,6 +11747,7 @@
    "historico": true,
    "max_sin_tp": 0.0,
    "hora_max_sin_tp": "09:30",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -11688,14 +11835,15 @@
    "maximo": 21.1,
    "unidad": "opción",
    "minimo": -65.2,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -1.7,
+   "minutos": 1,
    "entrada": 11.5,
    "strike": 7640,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 21.1,
    "hora_max_sin_tp": "09:40",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -11846,6 +11994,7 @@
    "historico": true,
    "max_sin_tp": 907.7,
    "hora_max_sin_tp": "15:35",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -11986,6 +12135,7 @@
    "historico": true,
    "max_sin_tp": 0.0,
    "hora_max_sin_tp": "09:40",
+   "min_aprox": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -12011,6 +12161,7 @@
    "historico": true,
    "max_sin_tp": 0.0,
    "hora_max_sin_tp": "09:40",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -12053,14 +12204,15 @@
    "maximo": 10.3,
    "unidad": "opción",
    "minimo": -46.0,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -2.3,
+   "minutos": 1,
    "entrada": 8.7,
    "strike": 7760,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 10.3,
    "hora_max_sin_tp": "11:40",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -12086,6 +12238,7 @@
    "historico": true,
    "max_sin_tp": 0.0,
    "hora_max_sin_tp": "09:40",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -12239,6 +12392,7 @@
    "historico": true,
    "max_sin_tp": 7.3,
    "hora_max_sin_tp": "09:50",
+   "al_minuto": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -12310,6 +12464,7 @@
    "historico": true,
    "max_sin_tp": 0.0,
    "hora_max_sin_tp": "11:00",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -12410,6 +12565,7 @@
    "historico": true,
    "max_sin_tp": 0.0,
    "hora_max_sin_tp": "11:00",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -12533,6 +12689,7 @@
    "historico": true,
    "max_sin_tp": 21.9,
    "hora_max_sin_tp": "11:10",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -12670,14 +12827,15 @@
    "maximo": 50.9,
    "unidad": "opción",
    "minimo": -20.9,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -8.2,
+   "minutos": 4,
    "entrada": 11.0,
    "strike": 7670,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 50.9,
    "hora_max_sin_tp": "11:10",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -12776,6 +12934,7 @@
    "historico": true,
    "max_sin_tp": 10.0,
    "hora_max_sin_tp": "15:00",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -13037,8 +13196,9 @@
    "fuente": "Schwab SPX + Tastytrade (opción SPX, 5 min); con estos días se eligió la regla (27/10)",
    "max_sin_tp": 215.3,
    "hora_max_sin_tp": "15:50",
-   "minutos": 0,
-   "contra": 0.0,
+   "minutos": 4,
+   "contra": -4.4,
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -13063,6 +13223,7 @@
    "historico": true,
    "max_sin_tp": 107.9,
    "hora_max_sin_tp": "12:10",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -13105,14 +13266,15 @@
    "maximo": 25.0,
    "unidad": "opción",
    "minimo": -55.5,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -6.0,
+   "minutos": 2,
    "entrada": 10.8,
    "strike": 7745,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 25.0,
    "hora_max_sin_tp": "12:10",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -13155,14 +13317,15 @@
    "maximo": 42.4,
    "unidad": "opción",
    "minimo": -81.4,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -4.2,
+   "minutos": 2,
    "entrada": 11.8,
    "strike": 7715,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 42.4,
    "hora_max_sin_tp": "11:50",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -13285,14 +13448,15 @@
    "maximo": 20.1,
    "unidad": "opción",
    "minimo": -81.1,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -11.7,
+   "minutos": 2,
    "entrada": 11.1,
    "strike": 7705,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 121.6,
    "hora_max_sin_tp": "12:25",
+   "al_minuto": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13360,14 +13524,15 @@
    "maximo": 16.1,
    "unidad": "opción",
    "minimo": -41.6,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -4.4,
+   "minutos": 1,
    "entrada": 13.7,
    "strike": 7705,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 197.4,
    "hora_max_sin_tp": "10:55",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -13434,14 +13599,15 @@
    "maximo": 16.1,
    "unidad": "opción",
    "minimo": -41.6,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -4.4,
+   "minutos": 1,
    "entrada": 13.7,
    "strike": 7705,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 197.4,
    "hora_max_sin_tp": "10:55",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -13466,6 +13632,7 @@
    "historico": true,
    "max_sin_tp": 122.1,
    "hora_max_sin_tp": "15:50",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -13711,6 +13878,7 @@
    "historico": true,
    "max_sin_tp": 2.9,
    "hora_max_sin_tp": "09:40",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -13810,6 +13978,7 @@
    "historico": true,
    "max_sin_tp": 234.8,
    "hora_max_sin_tp": "15:50",
+   "al_minuto": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13931,6 +14100,7 @@
    "historico": true,
    "max_sin_tp": 6.2,
    "hora_max_sin_tp": "13:50",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -13956,6 +14126,7 @@
    "historico": true,
    "max_sin_tp": 277.6,
    "hora_max_sin_tp": "15:50",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -13973,14 +14144,15 @@
    "maximo": 30.0,
    "unidad": "opción",
    "minimo": -59.0,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -14.0,
+   "minutos": 4,
    "entrada": 5.0,
    "strike": 7690,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 396.0,
    "hora_max_sin_tp": "15:50",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -14006,6 +14178,7 @@
    "historico": true,
    "max_sin_tp": 0.0,
    "hora_max_sin_tp": "14:00",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -14046,14 +14219,15 @@
    "maximo": 77.4,
    "unidad": "opción",
    "minimo": -20.8,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -6.6,
+   "minutos": 3,
    "entrada": 5.3,
    "strike": 7695,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 426.4,
    "hora_max_sin_tp": "15:50",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -14128,6 +14302,7 @@
    "historico": true,
    "max_sin_tp": 72.6,
    "hora_max_sin_tp": "15:50",
+   "al_minuto": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -14247,6 +14422,7 @@
    "historico": true,
    "max_sin_tp": 57.6,
    "hora_max_sin_tp": "15:50",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -14297,6 +14473,7 @@
    "historico": true,
    "max_sin_tp": 8.6,
    "hora_max_sin_tp": "14:10",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -14370,6 +14547,7 @@
    "historico": true,
    "max_sin_tp": 8.6,
    "hora_max_sin_tp": "14:10",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -14495,6 +14673,7 @@
    "historico": true,
    "max_sin_tp": 5.6,
    "hora_max_sin_tp": "12:10",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -14570,6 +14749,7 @@
    "historico": true,
    "max_sin_tp": 3.2,
    "hora_max_sin_tp": "13:30",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -14661,14 +14841,15 @@
    "maximo": 12.4,
    "unidad": "opción",
    "minimo": -43.8,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -4.5,
+   "minutos": 2,
    "entrada": 8.9,
    "strike": 7755,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 12.4,
    "hora_max_sin_tp": "11:20",
+   "al_minuto": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -14869,6 +15050,7 @@
    "historico": true,
    "max_sin_tp": 16.5,
    "hora_max_sin_tp": "10:30",
+   "al_minuto": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -15006,14 +15188,15 @@
    "maximo": 21.4,
    "unidad": "opción",
    "minimo": -58.3,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -5.0,
+   "minutos": 1,
    "entrada": 4.2,
    "strike": 7830,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 21.4,
    "hora_max_sin_tp": "14:10",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -15031,14 +15214,15 @@
    "maximo": 5.0,
    "unidad": "opción",
    "minimo": -61.4,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -3.0,
+   "minutos": 1,
    "entrada": 10.1,
    "strike": 7825,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 18.8,
    "hora_max_sin_tp": "13:20",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -15137,6 +15321,7 @@
    "historico": true,
    "max_sin_tp": 18.6,
    "hora_max_sin_tp": "15:05",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -15153,14 +15338,15 @@
    "maximo": 5.0,
    "unidad": "opción",
    "minimo": -61.4,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -3.0,
+   "minutos": 1,
    "entrada": 10.1,
    "strike": 7825,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 18.8,
    "hora_max_sin_tp": "13:20",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -15375,14 +15561,15 @@
    "maximo": 11.2,
    "unidad": "opción",
    "minimo": -46.6,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -4.3,
+   "minutos": 1,
    "entrada": 11.6,
    "strike": 7775,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 174.1,
    "hora_max_sin_tp": "15:00",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -15592,14 +15779,15 @@
    "maximo": 20.2,
    "unidad": "opción",
    "minimo": -76.4,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -10.1,
+   "minutos": 2,
    "entrada": 8.9,
    "strike": 7780,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 20.2,
    "hora_max_sin_tp": "12:30",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -15625,6 +15813,7 @@
    "historico": true,
    "max_sin_tp": 22.5,
    "hora_max_sin_tp": "15:25",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -15700,6 +15889,7 @@
    "historico": true,
    "max_sin_tp": 11.8,
    "hora_max_sin_tp": "15:20",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -15741,14 +15931,15 @@
    "maximo": 29.3,
    "unidad": "opción",
    "minimo": -65.2,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -4.3,
+   "minutos": 3,
    "entrada": 9.2,
    "strike": 7780,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 29.3,
    "hora_max_sin_tp": "12:20",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -15773,6 +15964,7 @@
    "historico": true,
    "max_sin_tp": 22.5,
    "hora_max_sin_tp": "15:25",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -15949,8 +16141,9 @@
    "fuente": "Schwab SPX + Tastytrade (opción SPX, 5 min); con estos días se eligió la regla (27/10)",
    "max_sin_tp": 304.6,
    "hora_max_sin_tp": "14:50",
-   "minutos": 0,
-   "contra": 0.0,
+   "minutos": 1,
+   "contra": -2.3,
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -16078,14 +16271,15 @@
    "maximo": 19.0,
    "unidad": "opción",
    "minimo": -66.5,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -9.1,
+   "minutos": 2,
    "entrada": 4.62,
    "strike": 7805,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 73.2,
    "hora_max_sin_tp": "14:50",
+   "al_minuto": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -16197,14 +16391,15 @@
    "maximo": 5.3,
    "unidad": "opción",
    "minimo": -54.7,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -21.1,
+   "minutos": 1,
    "entrada": 3.8,
    "strike": 7800,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 13.2,
    "hora_max_sin_tp": "14:50",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -16230,6 +16425,7 @@
    "historico": true,
    "max_sin_tp": 2.7,
    "hora_max_sin_tp": "09:40",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -16270,14 +16466,15 @@
    "maximo": 8.2,
    "unidad": "opción",
    "minimo": -36.5,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -16.5,
+   "minutos": 1,
    "entrada": 8.5,
    "strike": 7805,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 8.2,
    "hora_max_sin_tp": "10:10",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -16494,6 +16691,7 @@
    "historico": true,
    "max_sin_tp": 8.2,
    "hora_max_sin_tp": "09:40",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -16635,14 +16833,15 @@
    "maximo": 15.1,
    "unidad": "opción",
    "minimo": -55.7,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -19.6,
+   "minutos": 2,
    "entrada": 5.3,
    "strike": 7805,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 62.3,
    "hora_max_sin_tp": "15:30",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -16667,6 +16866,7 @@
    "historico": true,
    "max_sin_tp": 84.9,
    "hora_max_sin_tp": "11:35",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -16827,14 +17027,15 @@
    "maximo": 83.3,
    "unidad": "opción",
    "minimo": -54.6,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -16.9,
+   "minutos": 4,
    "entrada": 5.4,
    "strike": 7715,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 83.3,
    "hora_max_sin_tp": "15:30",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -16852,14 +17053,15 @@
    "maximo": 83.3,
    "unidad": "opción",
    "minimo": -54.6,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -16.9,
+   "minutos": 4,
    "entrada": 5.4,
    "strike": 7715,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 83.3,
    "hora_max_sin_tp": "15:30",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -17308,14 +17510,15 @@
    "maximo": 16.3,
    "unidad": "opción",
    "minimo": -40.4,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -4.8,
+   "minutos": 1,
    "entrada": 10.4,
    "strike": 7720,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 16.3,
    "hora_max_sin_tp": "12:30",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -17554,6 +17757,7 @@
    "historico": true,
    "max_sin_tp": 7.8,
    "hora_max_sin_tp": "10:50",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -17604,6 +17808,7 @@
    "historico": true,
    "max_sin_tp": 7.8,
    "hora_max_sin_tp": "10:50",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -17628,6 +17833,7 @@
    "historico": true,
    "max_sin_tp": 5.4,
    "hora_max_sin_tp": "13:50",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -17645,13 +17851,14 @@
    "unidad": "opción",
    "minimo": -51.6,
    "contra": 0.0,
-   "minutos": 0,
+   "minutos": 1,
    "entrada": 10.66,
    "strike": 7735,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 855.0,
    "hora_max_sin_tp": "15:05",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -17841,14 +18048,15 @@
    "maximo": 7.5,
    "unidad": "opción",
    "minimo": -55.6,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -21.6,
+   "minutos": 4,
    "entrada": 13.4,
    "strike": 7700,
    "fuente": "Schwab SPY + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 7.5,
    "hora_max_sin_tp": "10:40",
+   "al_minuto": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -17957,6 +18165,7 @@
    "historico": true,
    "max_sin_tp": 74.1,
    "hora_max_sin_tp": "11:35",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -17974,14 +18183,15 @@
    "maximo": 80.8,
    "unidad": "opción",
    "minimo": -78.5,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -40.4,
+   "minutos": 4,
    "entrada": 2.6,
    "strike": 7710,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 80.8,
    "hora_max_sin_tp": "15:20",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -17999,14 +18209,15 @@
    "maximo": 2.0,
    "unidad": "opción",
    "minimo": -59.4,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -13.9,
+   "minutos": 1,
    "entrada": 14.9,
    "strike": 7695,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 2.0,
    "hora_max_sin_tp": "10:10",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -18352,14 +18563,15 @@
    "maximo": 46.2,
    "unidad": "opción",
    "minimo": -41.3,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -8.2,
+   "minutos": 3,
    "entrada": 4.65,
    "strike": 7725,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 46.2,
    "hora_max_sin_tp": "13:50",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -18576,8 +18788,9 @@
    "fuente": "Schwab SPX + Tastytrade (opción SPX, 5 min); con estos días se eligió la regla (27/10)",
    "max_sin_tp": 290.3,
    "hora_max_sin_tp": "14:15",
-   "minutos": 0,
-   "contra": 0.0,
+   "minutos": 3,
+   "contra": -0.5,
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -18594,14 +18807,15 @@
    "maximo": 10.0,
    "unidad": "opción",
    "minimo": -59.3,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -14.0,
+   "minutos": 2,
    "entrada": 15.0,
    "strike": 7730,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 169.3,
    "hora_max_sin_tp": "14:15",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -18644,14 +18858,15 @@
    "maximo": 201.7,
    "unidad": "opción",
    "minimo": -79.7,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -3.6,
+   "minutos": 3,
    "entrada": 5.9,
    "strike": 7745,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 201.7,
    "hora_max_sin_tp": "15:00",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -18741,14 +18956,15 @@
    "maximo": 14.0,
    "unidad": "opción",
    "minimo": -50.0,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -8.5,
+   "minutos": 2,
    "entrada": 15.35,
    "strike": 7715,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 14.0,
    "hora_max_sin_tp": "10:10",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -18765,14 +18981,15 @@
    "maximo": 201.7,
    "unidad": "opción",
    "minimo": -79.7,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -3.6,
+   "minutos": 3,
    "entrada": 5.9,
    "strike": 7745,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 201.7,
    "hora_max_sin_tp": "15:00",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -18878,6 +19095,7 @@
    "historico": true,
    "max_sin_tp": 1.8,
    "hora_max_sin_tp": "10:20",
+   "al_minuto": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -18927,6 +19145,7 @@
    "historico": true,
    "max_sin_tp": 56.3,
    "hora_max_sin_tp": "15:00",
+   "min_aprox": true,
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -19021,6 +19240,7 @@
    "historico": true,
    "max_sin_tp": 26.7,
    "hora_max_sin_tp": "14:00",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -19094,6 +19314,7 @@
    "historico": true,
    "max_sin_tp": 26.7,
    "hora_max_sin_tp": "14:00",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -19443,14 +19664,15 @@
    "maximo": 9.7,
    "unidad": "opción",
    "minimo": -48.1,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -10.2,
+   "minutos": 2,
    "entrada": 21.6,
    "strike": 7630,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 60.7,
    "hora_max_sin_tp": "11:25",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -19618,6 +19840,7 @@
    "historico": true,
    "max_sin_tp": 2.1,
    "hora_max_sin_tp": "09:40",
+   "min_aprox": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -19943,14 +20166,15 @@
    "maximo": 36.4,
    "unidad": "opción",
    "minimo": -58.0,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -11.4,
+   "minutos": 1,
    "entrada": 4.4,
    "strike": 7685,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 36.4,
    "hora_max_sin_tp": "14:10",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -20040,14 +20264,15 @@
    "maximo": 22.9,
    "unidad": "opción",
    "minimo": -22.3,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -7.2,
+   "minutos": 2,
    "entrada": 8.3,
    "strike": 7680,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 96.4,
    "hora_max_sin_tp": "12:45",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -20073,6 +20298,7 @@
    "historico": true,
    "max_sin_tp": 22.4,
    "hora_max_sin_tp": "15:00",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -20098,6 +20324,7 @@
    "historico": true,
    "max_sin_tp": 4.7,
    "hora_max_sin_tp": "15:10",
+   "al_minuto": true,
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -20232,14 +20459,15 @@
    "maximo": 36.4,
    "unidad": "opción",
    "minimo": -58.0,
-   "contra": 0.0,
-   "minutos": 0,
+   "contra": -11.4,
+   "minutos": 1,
    "entrada": 4.4,
    "strike": 7685,
    "fuente": "Schwab SPX/QQQ + Tastytrade (opción SPX, 5 min)",
    "historico": true,
    "max_sin_tp": 36.4,
    "hora_max_sin_tp": "14:10",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -20357,6 +20585,7 @@
    "historico": true,
    "max_sin_tp": 22.4,
    "hora_max_sin_tp": "15:00",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -20381,6 +20610,7 @@
    "historico": true,
    "max_sin_tp": 4.7,
    "hora_max_sin_tp": "15:10",
+   "al_minuto": true,
    "activo": "SPX",
    "activos": [
     "SPX"
