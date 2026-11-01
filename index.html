@@ -10,7 +10,9 @@ header { display:flex; flex-wrap:wrap; gap:12px; align-items:baseline; padding:1
 h1 { font-size:18px; margin:0; } h2 { font-size:15px; margin:22px 16px 8px; color:var(--tenue); font-weight:600; }
 h2.con-switch { display:flex; align-items:center; gap:16px; flex-wrap:wrap; position:relative; }
 /* 01/11, pedido: "cuando seleccione Lunes arriba ponga en grande Los Lunes": centrado en la franja del titulo. */
-#dia_grande { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); font-size:30px; font-weight:800;
+/* 01/11: debajo de los botones de dias (~64% del ancho) y centrado en alto entre la raya del encabezado (22px arriba
+   del titulo) y las tarjetas (8px abajo): de ahi el -7px. */
+#dia_grande { position:absolute; left:64.5%; top:calc(50% - 7px); transform:translate(-50%,-50%); font-size:30px; font-weight:800; line-height:1;
   color:#E5E7EB; letter-spacing:.5px; white-space:nowrap; pointer-events:none; }
 #dia_grande:empty { display:none; }
 .switch { display:inline-flex; align-items:center; gap:8px; cursor:pointer; font-size:13px; font-weight:500; color:var(--texto);
