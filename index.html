@@ -168,7 +168,9 @@ table.diaxdia { font:13px -apple-system,system-ui,sans-serif; }
 #detalle_caja[hidden] { display:none; }
 /* 31/10, pedido: "cuando haya una ventana abierta delante, al hacer scroll que lo que hay detras no se mueva". */
 html:has(#detalle_caja:not([hidden])) { overflow:hidden; }
-#detalle_caja, #detalle_caja * { overscroll-behavior:contain; }
+/* 01/11, captura: con la ventana abierta la rueda no la movia (habia que usar la barra). El "contain" en TODOS los hijos
+   frenaba la rueda en la caja de la tabla (se desliza de costado) y no llegaba a la ventana: va solo en la ventana. */
+#detalle_caja, #detalle_caja .det { overscroll-behavior:contain; }
 .det { background:var(--panel); border:1px solid var(--borde); border-radius:12px; max-width:1000px; width:100%; max-height:80vh; overflow:auto; padding:12px 14px; }
 .det_cab { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; font-size:15px; }
 .det_cab button { background:none; border:1px solid var(--borde); color:var(--texto); border-radius:6px; padding:3px 10px; cursor:pointer; font-size:15px; }
