@@ -590,13 +590,13 @@ function mostrarLista(lista) {
       + `<td>${x.lado}</td>`     /* sin strike, entrada ni dolares (20/10, pedido con captura) */
       /* 25/10: el detalle de la señal al pasar el mouse por el resultado (por ejemplo, contra que precio se gano) */
       + `<td title="${(x.detalle || '').replace(/"/g, '&quot;')}">${x.resultado === 'G' ? '✅' : x.resultado === 'P' ? '❌' : x.no_cuenta ? '—' : '…'}</td>`
-      + (conVenta ? `<td><b class="hora">${x.entro || '—'}</b></td><td><b class="hora">${x.venta || '—'}</b></td>` : '')
+      + (conVenta ? `<td><b class="hora">${x.entro || '—'}</b></td><td title="${x.horas_calc ? (x.venta === 'no llegó' ? 'No tocó +10% en los 30 min de la medición' : String(x.venta || '').startsWith('~') ? 'Tocó +10% dentro de esa vela de 5 min (no hay velas de 1 min)' : 'Minuto en que tocó +10%') : ''}"><b class="hora">${x.venta === 'no llegó' ? '<span class="p">no llegó</span>' : x.venta || '—'}</b></td>` : '')
       + (conMax ? `<td>${pc(x.max_sin_tp)}${x.hora_max_sin_tp ? ' <span class="n">' + x.hora_max_sin_tp + '</span>' : ''}</td>` : '')
       + `<td>${x.tp_fijo && x.resultado === 'P' ? '<span class="p">no llegó</span>' : pc(x.maximo)}${x.unidad && x.unidad !== 'opción' && x.maximo !== null ? ' <span class="n">' + x.unidad + '</span>' : ''}</td>`   /* 31/10 */
       /* 01/11: "min_aprox" = historial de velas de 5 min sin velas de 1 min: llego dentro de la primera vela, no se sabe
          en que minuto ni si antes bajo (antes decia "00 min" y "0,0%", que parecian exactos) */
-      + `<td class="tardo">${x.min_aprox ? '<span title="Dentro de los primeros 5 minutos: para esta fecha u opción solo hay velas de 5 min">&lt; 5 min</span>' : x.minutos !== undefined && x.minutos !== null ? hms(x.minutos) : '—'}</td>`
-      + `<td>${x.min_aprox ? '<span class="n" title="No se sabe: pasó dentro de la primera vela de 5 min">—</span>' : pc(x.contra)}</td><td class="c-min">${pc(x.minimo)}</td>`
+      + `<td class="tardo">${x.min_aprox ? '<span title="Dentro de los primeros 5 minutos: para esta fecha u opción solo hay velas de 5 min">&lt; 5 min</span>' : x.maximo !== null && x.maximo !== undefined && x.maximo <= 0 && x.unidad === 'opción' ? '<span class="n" title="Nunca pasó del precio de compra: lo más alto fue al comprar">no subió</span>' : x.minutos !== undefined && x.minutos !== null ? hms(x.minutos) : '—'}</td>`
+      + `<td>${x.min_aprox ? '<span class="n" title="No se sabe: pasó dentro de la primera vela de 5 min">—</span>' : x.maximo !== null && x.maximo !== undefined && x.maximo <= 0 && x.unidad === 'opción' ? '<span class="n">—</span>' : pc(x.contra)}</td><td class="c-min">${pc(x.minimo)}</td>`
       + `<td style="text-align:left" class="tenue c-dat" title="${x.fuente || ''}">${fuenteCorta(x)}</td></tr>`).join('');
   columnasAjustables(document.getElementById('det_tabla'), 'lista');
 }
