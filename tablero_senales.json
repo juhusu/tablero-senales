@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-02 12:46",
+ "actualizado": "2026-11-02 12:57",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -28302,6 +28302,8 @@
    "usd_10": 590,
    "tp_fijo": 15,
    "contra": -12.5,
+   "max_sin_tp": 150.0,
+   "hora_max_sin_tp": "10:28",
    "minutos": 2,
    "en_curso": false,
    "fuente": "en vivo: el detector (tools/senal_stochrsi_ut.py) y la cadena del $SPX del motor (bid)",
@@ -28329,6 +28331,8 @@
    "usd_10": 690,
    "tp_fijo": 15,
    "contra": -26.2,
+   "max_sin_tp": 690.5,
+   "hora_max_sin_tp": "12:46",
    "minutos": 11,
    "en_curso": false,
    "fuente": "en vivo: el detector (tools/senal_stochrsi_ut.py) y la cadena del $SPX del motor (bid)",
@@ -28356,6 +28360,8 @@
    "minutos": 3,
    "en_curso": false,
    "contra": -2.3,
+   "max_sin_tp": 177.3,
+   "hora_max_sin_tp": "10:28",
    "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
    "activo": "SPX",
    "activos": [
