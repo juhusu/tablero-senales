@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-02 13:13",
+ "actualizado": "2026-11-02 13:19",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -28386,6 +28386,9 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:40",
    "horas_calc": true,
+   "venta": "09:41",
+   "max_sin_tp": 194.0,
+   "hora_max_sin_tp": "10:27",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -28410,6 +28413,7 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "11:00",
    "horas_calc": true,
+   "venta": "11:10",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -28435,6 +28439,7 @@
    "activo": "TSLA",
    "entro": "09:43",
    "horas_calc": true,
+   "venta": "09:48",
    "activos": [
     "TSLA"
    ],
@@ -28457,6 +28462,7 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "10:02",
    "horas_calc": true,
+   "venta": "10:03",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -28482,6 +28488,8 @@
    "entro": "10:30",
    "horas_calc": true,
    "venta": "no llegó",
+   "max_sin_tp": -3.6,
+   "hora_max_sin_tp": "10:30",
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -28506,6 +28514,7 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "11:00",
    "horas_calc": true,
+   "venta": "11:10",
    "activo": "QQQ",
    "activos": [
     "QQQ",
@@ -28530,6 +28539,7 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "11:10",
    "horas_calc": true,
+   "venta": "11:23",
    "activo": "SPX",
    "activos": [
     "SPX"
