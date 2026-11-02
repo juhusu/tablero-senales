@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-02 12:05",
+ "actualizado": "2026-11-02 12:46",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -28285,6 +28285,84 @@
    ],
    "semana": "2026-10-26",
    "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-02",
+   "senal": "BUY BUY & SELL SELL CALL",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "10:15 · SPX CALL 7670 a 4.00 · TP 4.60 · +15% a las 10:17 · +$590 con 10 contratos",
+   "maximo": 15.0,
+   "unidad": "opción",
+   "minimo": -12.5,
+   "strike": 7670.0,
+   "entrada": 4.0,
+   "entro": "10:15:27",
+   "venta": "10:17",
+   "usd_10": 590,
+   "tp_fijo": 15,
+   "contra": -12.5,
+   "minutos": 2,
+   "en_curso": false,
+   "fuente": "en vivo: el detector (tools/senal_stochrsi_ut.py) y la cadena del $SPX del motor (bid)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-02",
+   "senal": "BUY BUY & SELL SELL PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "10:40 · SPX PUT 7625 a 4.20 · TP 4.90 · +15% a las 10:51 · +$690 con 10 contratos",
+   "maximo": 15.0,
+   "unidad": "opción",
+   "minimo": -26.2,
+   "strike": 7625.0,
+   "entrada": 4.2,
+   "entro": "10:40:28",
+   "venta": "10:51",
+   "usd_10": 690,
+   "tp_fijo": 15,
+   "contra": -26.2,
+   "minutos": 11,
+   "en_curso": false,
+   "fuente": "en vivo: el detector (tools/senal_stochrsi_ut.py) y la cadena del $SPX del motor (bid)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-02",
+   "senal": "Bollinger SPX Charlatan",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "10:14 · SPXW CALL 7665 a 4.40 (10:14:27) · +35% a las 10:17 (provisorio, con la cadena del motor) · se mide de madrugada con Tastytrade · VWAP SPY a favor +0.17%",
+   "maximo": 35.0,
+   "unidad": "opción",
+   "minimo": -2.3,
+   "strike": 7665.0,
+   "entrada": 4.4,
+   "entro": "10:14:27",
+   "venta": "10:17",
+   "minutos": 3,
+   "en_curso": false,
+   "contra": -2.3,
+   "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 0
   },
   {
    "fecha": "2026-11-02",
