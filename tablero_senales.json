@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-02 10:45",
+ "actualizado": "2026-11-02 12:05",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -28312,6 +28312,30 @@
   },
   {
    "fecha": "2026-11-02",
+   "senal": "Heikin Ashi PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "11:00 · PUT 763 al ask 1.09",
+   "maximo": 41.3,
+   "unidad": "opción",
+   "minimo": -27.5,
+   "contra": -27.5,
+   "minutos": 24.3,
+   "strike": 763.0,
+   "entrada": 1.09,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "11:00",
+   "horas_calc": true,
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-02",
    "senal": "Opening Eyes (motor) TSLA",
    "lado": "PUT",
    "resultado": "G",
@@ -28335,21 +28359,95 @@
   },
   {
    "fecha": "2026-11-02",
+   "senal": "Toque Magnífico",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "10:01 · 5 grandes · CALL 762 al ask 1.83",
+   "maximo": 142.6,
+   "unidad": "opción",
+   "minimo": -7.1,
+   "contra": -7.1,
+   "minutos": 25.5,
+   "strike": 762.0,
+   "entrada": 1.83,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:02",
+   "horas_calc": true,
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-02",
    "senal": "UT Bot QQQ CALL",
    "lado": "CALL",
-   "resultado": null,
+   "resultado": "P",
    "detalle": "10:20 · vela 10:20-10:30 · CALL 766 al ask 1.12",
    "maximo": -3.6,
    "unidad": "opción",
-   "minimo": -36.6,
+   "minimo": -70.5,
    "contra": -4.5,
    "minutos": 0.5,
    "strike": 766.0,
    "entrada": 1.12,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:30",
+   "horas_calc": true,
+   "venta": "no llegó",
    "activo": "QQQ",
    "activos": [
     "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-02",
+   "senal": "UT Bot QQQ PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "10:50 · vela 10:50-11:00 · PUT 763 al ask 1.09",
+   "maximo": 41.3,
+   "unidad": "opción",
+   "minimo": -27.5,
+   "contra": -27.5,
+   "minutos": 24.3,
+   "strike": 763.0,
+   "entrada": 1.09,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "11:00",
+   "horas_calc": true,
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-02",
+   "senal": "UT Bot SPX PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "11:00 · vela 11:00-11:10 · PUT 763 al ask 1.25",
+   "maximo": 23.2,
+   "unidad": "opción",
+   "minimo": -17.6,
+   "contra": -17.6,
+   "minutos": 14.2,
+   "strike": 763.0,
+   "entrada": 1.25,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "11:10",
+   "horas_calc": true,
+   "activo": "SPX",
+   "activos": [
     "SPX"
    ],
    "semana": "2026-11-02",
@@ -28390,6 +28488,10 @@
    {
     "hora": "10:02",
     "texto": "Toque Magnífico CALL"
+   },
+   {
+    "hora": "11:00",
+    "texto": "Heikin Ashi PUT"
    }
   ],
   "rebote": null,
