@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-01 17:36",
+ "actualizado": "2026-11-02 04:00",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -28288,32 +28288,41 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-11-01",
-  "dia_semana": 6,
-  "eventos": [],
+  "fecha": "2026-11-02",
+  "dia_semana": 0,
+  "eventos": [
+   {
+    "hora": "10:00",
+    "texto": "ISM manufacturero"
+   }
+  ],
   "reportes": [],
-  "gap": null,
+  "gap": {
+   "cuando": "04:00",
+   "lado": 1,
+   "mes_pct": 0.3414538052399996,
+   "ayer_pct": -0.011871784724970524,
+   "ganador": false,
+   "enviado": false
+  },
   "avisos": [],
   "rebote": null,
-  "rebote_dia": null,
+  "rebote_dia": [
+   "de lunes para martes",
+   4,
+   9
+  ],
   "cobertura_hasta": "2026-12-09",
   "manana": {
-   "fecha": "2026-11-02",
-   "dia_semana": 0,
+   "fecha": "2026-11-03",
+   "dia_semana": 1,
    "eventos": [
     {
      "hora": "10:00",
-     "texto": "ISM manufacturero"
+     "texto": "JOLTS (ofertas de empleo) (septiembre)"
     }
    ],
-   "gap": {
-    "mes_pct": 0.0,
-    "hoy_pct": -0.0119,
-    "lado": 0,
-    "cuando": "01/11 09:02",
-    "continuacion": false,
-    "ganador": true
-   }
+   "gap": null
   }
  }
 }
