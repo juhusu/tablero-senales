@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-02 09:35",
+ "actualizado": "2026-11-02 09:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -28285,6 +28285,54 @@
    ],
    "semana": "2026-10-26",
    "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-02",
+   "senal": "Heikin Ashi CALL",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "9:40 · CALL 762 al ask 1.51",
+   "maximo": 19.2,
+   "unidad": "opción",
+   "minimo": -6.0,
+   "contra": -6.0,
+   "minutos": 1.5,
+   "strike": 762.0,
+   "entrada": 1.51,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:40",
+   "horas_calc": true,
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-02",
+   "senal": "Opening Eyes (motor) TSLA",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "09:43 · PUT 405 al ask 3.60",
+   "maximo": -5.6,
+   "unidad": "opción",
+   "minimo": -21.1,
+   "contra": 0.0,
+   "minutos": 0.2,
+   "strike": 405.0,
+   "entrada": 3.6,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "TSLA",
+   "entro": "09:43",
+   "horas_calc": true,
+   "venta": "no llegó",
+   "activos": [
+    "TSLA"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 0
   }
  ],
  "hoy": {
@@ -28305,7 +28353,12 @@
    "ganador": false,
    "enviado": false
   },
-  "avisos": [],
+  "avisos": [
+   {
+    "hora": "09:40",
+    "texto": "Heikin Ashi CALL"
+   }
+  ],
   "rebote": null,
   "rebote_dia": [
    "de lunes para martes",
