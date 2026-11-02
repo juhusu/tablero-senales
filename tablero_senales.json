@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-02 09:45",
+ "actualizado": "2026-11-02 10:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -28292,11 +28292,11 @@
    "lado": "CALL",
    "resultado": "G",
    "detalle": "9:40 · CALL 762 al ask 1.51",
-   "maximo": 19.2,
+   "maximo": 39.1,
    "unidad": "opción",
    "minimo": -6.0,
    "contra": -6.0,
-   "minutos": 1.5,
+   "minutos": 20.5,
    "strike": 762.0,
    "entrada": 1.51,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
@@ -28314,22 +28314,43 @@
    "fecha": "2026-11-02",
    "senal": "Opening Eyes (motor) TSLA",
    "lado": "PUT",
-   "resultado": "P",
+   "resultado": "G",
    "detalle": "09:43 · PUT 405 al ask 3.60",
-   "maximo": -5.6,
+   "maximo": 113.9,
    "unidad": "opción",
-   "minimo": -21.1,
-   "contra": 0.0,
-   "minutos": 0.2,
+   "minimo": -35.0,
+   "contra": -21.1,
+   "minutos": 9.2,
    "strike": 405.0,
    "entrada": 3.6,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "activo": "TSLA",
    "entro": "09:43",
    "horas_calc": true,
-   "venta": "no llegó",
    "activos": [
     "TSLA"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-02",
+   "senal": "UT Bot QQQ CALL",
+   "lado": "CALL",
+   "resultado": null,
+   "detalle": "10:20 · vela 10:20-10:30 · CALL 766 al ask 1.12",
+   "maximo": -3.6,
+   "unidad": "opción",
+   "minimo": -36.6,
+   "contra": -4.5,
+   "minutos": 0.5,
+   "strike": 766.0,
+   "entrada": 1.12,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
    ],
    "semana": "2026-11-02",
    "dia_semana": 0
@@ -28344,7 +28365,15 @@
     "texto": "ISM manufacturero"
    }
   ],
-  "reportes": [],
+  "reportes": [
+   {
+    "hora": "10:00",
+    "datos": "ISM manufacturero",
+    "mov": 0.0229,
+    "direccion": "neutro",
+    "cifras": {}
+   }
+  ],
   "gap": {
    "cuando": "9:28",
    "lado": 1.0,
@@ -28357,6 +28386,10 @@
    {
     "hora": "09:40",
     "texto": "Heikin Ashi CALL"
+   },
+   {
+    "hora": "10:02",
+    "texto": "Toque Magnífico CALL"
    }
   ],
   "rebote": null,
