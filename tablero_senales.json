@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-02 13:00",
+ "actualizado": "2026-11-02 13:13",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -28360,8 +28360,8 @@
    "minutos": 3,
    "en_curso": false,
    "contra": -2.3,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
+   "max_sin_tp": 177.3,
+   "hora_max_sin_tp": "10:28",
    "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
    "activo": "SPX",
    "activos": [
