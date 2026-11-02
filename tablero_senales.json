@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-02 13:19",
+ "actualizado": "2026-11-02 16:20",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -28331,8 +28331,8 @@
    "usd_10": 690,
    "tp_fijo": 15,
    "contra": -26.2,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
+   "max_sin_tp": 1359.5,
+   "hora_max_sin_tp": "14:46",
    "minutos": 11,
    "en_curso": false,
    "fuente": "en vivo: el detector (tools/senal_stochrsi_ut.py) y la cadena del $SPX del motor (bid)",
@@ -28414,6 +28414,8 @@
    "entro": "11:00",
    "horas_calc": true,
    "venta": "11:10",
+   "max_sin_tp": 651.4,
+   "hora_max_sin_tp": "15:51",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -28440,6 +28442,8 @@
    "entro": "09:43",
    "horas_calc": true,
    "venta": "09:48",
+   "max_sin_tp": 113.9,
+   "hora_max_sin_tp": "09:52",
    "activos": [
     "TSLA"
    ],
@@ -28463,6 +28467,8 @@
    "entro": "10:02",
    "horas_calc": true,
    "venta": "10:03",
+   "max_sin_tp": 142.6,
+   "hora_max_sin_tp": "10:27",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -28500,6 +28506,33 @@
   },
   {
    "fecha": "2026-11-02",
+   "senal": "UT Bot QQQ CALL",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "15:00 · vela 15:00-15:10 · CALL 758 al ask 0.63",
+   "maximo": -1.6,
+   "unidad": "opción",
+   "minimo": -95.2,
+   "contra": 0.0,
+   "minutos": 0.2,
+   "strike": 758.0,
+   "entrada": 0.63,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "15:10",
+   "horas_calc": true,
+   "venta": "no llegó",
+   "max_sin_tp": -1.6,
+   "hora_max_sin_tp": "15:10",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-02",
    "senal": "UT Bot QQQ PUT",
    "lado": "PUT",
    "resultado": "G",
@@ -28515,9 +28548,63 @@
    "entro": "11:00",
    "horas_calc": true,
    "venta": "11:10",
+   "max_sin_tp": 578.0,
+   "hora_max_sin_tp": "14:50",
    "activo": "QQQ",
    "activos": [
     "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-02",
+   "senal": "UT Bot SPX CALL",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "13:10 · vela 13:10-13:20 · CALL 761 al ask 1.14",
+   "maximo": -7.9,
+   "unidad": "opción",
+   "minimo": -66.7,
+   "contra": -8.8,
+   "minutos": 0.5,
+   "strike": 761.0,
+   "entrada": 1.14,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "13:20",
+   "horas_calc": true,
+   "venta": "no llegó",
+   "max_sin_tp": -7.9,
+   "hora_max_sin_tp": "13:20",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-02",
+   "senal": "UT Bot SPX CALL",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "15:00 · vela 15:00-15:10 · CALL 758 al ask 0.63",
+   "maximo": -1.6,
+   "unidad": "opción",
+   "minimo": -95.2,
+   "contra": 0.0,
+   "minutos": 0.2,
+   "strike": 758.0,
+   "entrada": 0.63,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "15:10",
+   "horas_calc": true,
+   "venta": "no llegó",
+   "max_sin_tp": -1.6,
+   "hora_max_sin_tp": "15:10",
+   "activo": "SPX",
+   "activos": [
     "SPX"
    ],
    "semana": "2026-11-02",
@@ -28540,6 +28627,34 @@
    "entro": "11:10",
    "horas_calc": true,
    "venta": "11:23",
+   "max_sin_tp": 198.4,
+   "hora_max_sin_tp": "12:46",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-02",
+   "senal": "UT Bot SPX PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "13:40 · vela 13:40-13:50 · PUT 760 al ask 0.94",
+   "maximo": 120.2,
+   "unidad": "opción",
+   "minimo": -3.2,
+   "contra": -3.2,
+   "minutos": 29.5,
+   "strike": 760.0,
+   "entrada": 0.94,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "13:50",
+   "horas_calc": true,
+   "venta": "13:51",
+   "max_sin_tp": 371.3,
+   "hora_max_sin_tp": "14:50",
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -28588,7 +28703,12 @@
     "texto": "Heikin Ashi PUT"
    }
   ],
-  "rebote": null,
+  "rebote": {
+   "senal": false,
+   "razon_vol": 1.83,
+   "pos_rango": 0.042,
+   "roja": true
+  },
   "rebote_dia": [
    "de lunes para martes",
    4,
@@ -28604,7 +28724,14 @@
      "texto": "JOLTS (ofertas de empleo) (septiembre)"
     }
    ],
-   "gap": null
+   "gap": {
+    "mes_pct": 0.1485,
+    "hoy_pct": -0.4987,
+    "lado": 1,
+    "cuando": "02/11 16:20",
+    "continuacion": false,
+    "ganador": true
+   }
   }
  }
 }
