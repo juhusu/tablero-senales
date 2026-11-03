@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-02 21:15",
+ "actualizado": "2026-11-02 21:30",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -7931,32 +7931,6 @@
   },
   {
    "fecha": "2026-10-01",
-   "senal": "Combo StochRSI (motor) SPX",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "09:42 · PUT 767 al ask 2.00",
-   "maximo": 130.0,
-   "unidad": "opción",
-   "minimo": -25.0,
-   "contra": -25.0,
-   "minutos": 21.0,
-   "strike": 767.0,
-   "entrada": 2.0,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "SPX",
-   "max_sin_tp": 160.5,
-   "hora_max_sin_tp": "11:10",
-   "entro": "09:42",
-   "horas_calc": true,
-   "venta": "~09:40",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-09-28",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-10-01",
    "senal": "Heikin Ashi CALL",
    "lado": "CALL",
    "resultado": "P",
@@ -8835,32 +8809,6 @@
    "historico": true,
    "armado": true,
    "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-05",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-10-07",
-   "senal": "Combo StochRSI (motor) SPX",
-   "lado": "PUT",
-   "resultado": "P",
-   "detalle": "11:01 · PUT 777 al ask 1.17",
-   "maximo": 6.8,
-   "unidad": "opción",
-   "minimo": -57.3,
-   "contra": 0.0,
-   "minutos": 0.5,
-   "strike": 777.0,
-   "entrada": 1.17,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "SPX",
-   "max_sin_tp": 6.8,
-   "hora_max_sin_tp": "",
-   "entro": "11:01",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activos": [
     "SPX"
    ],
@@ -10606,32 +10554,6 @@
   },
   {
    "fecha": "2026-10-16",
-   "senal": "Combo StochRSI (motor) SPX",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "09:48 · PUT 774 al ask 1.08",
-   "maximo": 50.0,
-   "unidad": "opción",
-   "minimo": -20.4,
-   "contra": -20.4,
-   "minutos": 22.5,
-   "strike": 774.0,
-   "entrada": 1.08,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "SPX",
-   "max_sin_tp": 849.1,
-   "hora_max_sin_tp": "14:55",
-   "entro": "09:48",
-   "horas_calc": true,
-   "venta": "~09:50",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-12",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-10-16",
    "senal": "GAP continuación GANADOR",
    "lado": "CALL",
    "resultado": "P",
@@ -11093,32 +11015,6 @@
    ],
    "semana": "2026-10-19",
    "dia_semana": 0
-  },
-  {
-   "fecha": "2026-10-20",
-   "senal": "Combo StochRSI (motor) SPX",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "12:06 · CALL 772 al ask 1.06",
-   "maximo": 12.3,
-   "unidad": "opción",
-   "minimo": -43.4,
-   "contra": 0.0,
-   "minutos": 0.8,
-   "strike": 772.0,
-   "entrada": 1.06,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "SPX",
-   "max_sin_tp": 12.3,
-   "hora_max_sin_tp": "",
-   "entro": "12:06",
-   "horas_calc": true,
-   "venta": "~12:05",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-19",
-   "dia_semana": 1
   },
   {
    "fecha": "2026-10-20",
@@ -12448,32 +12344,6 @@
   },
   {
    "fecha": "2026-10-26",
-   "senal": "Combo StochRSI (motor) SPX",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "10:09 · CALL 765 al ask 1.74",
-   "maximo": 105.7,
-   "unidad": "opción",
-   "minimo": -13.8,
-   "contra": -13.8,
-   "minutos": 11.2,
-   "strike": 765.0,
-   "entrada": 1.74,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "SPX",
-   "max_sin_tp": 202.9,
-   "hora_max_sin_tp": "11:00",
-   "entro": "10:09",
-   "horas_calc": true,
-   "venta": "~10:05",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-10-26",
    "senal": "GAP bajista (amigo)",
    "lado": "PUT",
    "resultado": "P",
@@ -12901,32 +12771,6 @@
    "entrada": 4.1,
    "fuente": "Tastytrade (velas de 1 min de la opción SPX)",
    "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-10-28",
-   "senal": "Combo StochRSI (motor) SPX",
-   "lado": "CALL",
-   "resultado": "P",
-   "detalle": "10:28 · CALL 773 al ask 2.08",
-   "maximo": 8.7,
-   "unidad": "opción",
-   "minimo": -18.3,
-   "contra": -0.5,
-   "minutos": 3.2,
-   "strike": 773.0,
-   "entrada": 2.08,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "SPX",
-   "max_sin_tp": 59.6,
-   "hora_max_sin_tp": "14:35",
-   "entro": "10:28",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activos": [
     "SPX"
    ],
@@ -13475,32 +13319,6 @@
   },
   {
    "fecha": "2026-10-30",
-   "senal": "Combo StochRSI (motor) SPX",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "12:00 · PUT 760 al ask 1.23",
-   "maximo": 46.3,
-   "unidad": "opción",
-   "minimo": -1.6,
-   "contra": 0.0,
-   "minutos": 11.8,
-   "strike": 760.0,
-   "entrada": 1.23,
-   "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "activo": "SPX",
-   "max_sin_tp": 481.3,
-   "hora_max_sin_tp": "14:50",
-   "entro": "12:00",
-   "horas_calc": true,
-   "venta": "~12:00",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-10-30",
    "senal": "GAP continuación",
    "lado": "PUT",
    "resultado": "P",
@@ -13943,10 +13761,10 @@
     }
    ],
    "gap": {
-    "mes_pct": 0.0594,
+    "mes_pct": 0.0264,
     "hoy_pct": -0.4987,
     "lado": 1,
-    "cuando": "02/11 21:15",
+    "cuando": "02/11 21:30",
     "continuacion": false,
     "ganador": true
    }
