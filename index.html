@@ -290,7 +290,7 @@ label { color:var(--tenue); font-size:13px; }
 <!-- LAS PESTAÑAS DEBAJO DE LOS CIRCULOS (20/10, pedido con captura: "pasa esas pestañas para el rectangulo verde"):
      los circulos quedan siempre a la vista; las pestañas cambian lo de abajo. -->
 <div class="cabeza">
-  <span class="pestanas"><button data-p="semanas" class="on">Por semana</button><button data-p="dias">Por día de la semana</button><button data-p="curva">Curva</button><button data-p="detalle">Día por día</button><button data-p="fuertes">💪 Lo más fuerte UT Bot y Heikin Ashi</button></span>
+  <span class="pestanas"><button data-p="semanas" class="on">Por semana</button><button data-p="dias">Por día de la semana</button><button data-p="curva">Curva</button><button data-p="detalle">Día por día</button><button data-p="fuertes">💪 Lo más fuerte Heikin Ashi</button></span>
   <span class="tenue" id="titulo_panel"></span>
 </div>
 <div id="p_semanas"><div class="wrap"><table id="semanas" class="grilla"></table></div></div>
@@ -304,7 +304,7 @@ label { color:var(--tenue); font-size:13px; }
 <div id="p_detalle" hidden><div class="wrap"><table id="detalle" class="diaxdia"></table></div></div>
 <!-- "Lo mas fuerte" es una pestaña mas del panel (22/10, pedido con captura: "estas dos tarjetas hazlas separadas pero
      dentro del mismo panel con pestañas, una para cada tarjeta"). -->
-<div id="p_fuertes" hidden><div class="fz-tarjeta"><div class="fz-titulo">💪 Lo más fuerte · UT Bot y Heikin Ashi (velas de 10 min)</div>
+<div id="p_fuertes" hidden><div class="fz-tarjeta"><div class="fz-titulo">💪 Lo más fuerte · Heikin Ashi (velas de 10 min)</div>
 <div class="fuertes" id="fuertes"></div></div></div>
 
 <p class="leyenda" style="margin-top:18px"><b>Se dio</b> = después de la señal, la opción llegó a ganar 10% o más. <b>Máx. típico</b> = cuánto llegó a ganar la opción en un día normal de esa señal. Ojo: no se compara con entrar en cualquier otro momento, y en TSLA las opciones del día suben 10% muy seguido igual. La página se actualiza sola de lunes a viernes.</p>
@@ -938,7 +938,7 @@ function pintar(D) {
 let panel = 'semanas';
 const TITULOS = { semanas: '', dias: '',
   curva: 'ganadas menos perdidas, acumulado día a día', detalle: 'cada señal, del día más nuevo al más viejo',
-  fuertes: 'UT Bot (SPX, QQQ) y Heikin Ashi (HA, del SPY) por media hora, del más fuerte al más flojo · clic en una fila para ver sus señales' };
+  fuertes: 'Heikin Ashi (HA, del SPY) por media hora, del más fuerte al más flojo · clic en una fila para ver sus señales' };
 document.querySelectorAll('.pestanas button').forEach(b => b.onclick = () => {
   panel = b.dataset.p;
   document.querySelectorAll('.pestanas button').forEach(x => x.classList.toggle('on', x === b));
