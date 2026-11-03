@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-03 12:05",
+ "actualizado": "2026-11-03 16:20",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13701,8 +13701,8 @@
    "usd_10": 790,
    "tp_fijo": 15,
    "contra": -6.4,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
+   "max_sin_tp": 59.6,
+   "hora_max_sin_tp": "11:35",
    "minutos": 2,
    "en_curso": false,
    "fuente": "en vivo: el detector (tools/senal_stochrsi_ut.py) y la cadena del $SPX del motor (bid)",
@@ -13731,6 +13731,8 @@
    "entro": "11:30",
    "horas_calc": true,
    "venta": "11:31",
+   "max_sin_tp": 47.6,
+   "hora_max_sin_tp": "14:58",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13757,6 +13759,8 @@
    "entro": "09:34",
    "horas_calc": true,
    "venta": "09:37",
+   "max_sin_tp": 80.7,
+   "hora_max_sin_tp": "13:35",
    "activos": [
     "SPX"
    ],
@@ -13781,6 +13785,8 @@
    "entro": "10:03",
    "horas_calc": true,
    "venta": "no llegó",
+   "max_sin_tp": -1.4,
+   "hora_max_sin_tp": "10:03",
    "activos": [
     "TSLA"
    ],
@@ -13842,7 +13848,12 @@
     "texto": "Heikin Ashi PUT"
    }
   ],
-  "rebote": null,
+  "rebote": {
+   "senal": false,
+   "razon_vol": 1.76,
+   "pos_rango": 0.429,
+   "roja": true
+  },
   "rebote_dia": [
    "de martes para miércoles",
    6,
@@ -13858,7 +13869,14 @@
      "texto": "ISM servicios"
     }
    ],
-   "gap": null
+   "gap": {
+    "mes_pct": 0.0922,
+    "hoy_pct": 0.3487,
+    "lado": 1,
+    "cuando": "03/11 16:20",
+    "continuacion": true,
+    "ganador": true
+   }
   }
  }
 }
