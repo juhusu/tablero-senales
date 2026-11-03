@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-03 10:45",
+ "actualizado": "2026-11-03 12:05",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13687,6 +13687,60 @@
   },
   {
    "fecha": "2026-11-03",
+   "senal": "BUY BUY & SELL SELL PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "11:20 · SPX PUT 7550 a 4.70 · TP 5.50 · +15% a las 11:22 · +$790 con 10 contratos",
+   "maximo": 15.0,
+   "unidad": "opción",
+   "minimo": -8.5,
+   "strike": 7550.0,
+   "entrada": 4.7,
+   "entro": "11:20:18",
+   "venta": "11:22",
+   "usd_10": 790,
+   "tp_fijo": 15,
+   "contra": -6.4,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": 2,
+   "en_curso": false,
+   "fuente": "en vivo: el detector (tools/senal_stochrsi_ut.py) y la cadena del $SPX del motor (bid)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-03",
+   "senal": "Heikin Ashi PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "11:30 · PUT 758 al ask 1.47",
+   "maximo": 34.7,
+   "unidad": "opción",
+   "minimo": -9.5,
+   "contra": 0.0,
+   "minutos": 5.0,
+   "strike": 758.0,
+   "entrada": 1.47,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "11:30",
+   "horas_calc": true,
+   "venta": "11:31",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-03",
    "senal": "Opening Eyes (motor) SPX",
    "lado": "CALL",
    "resultado": "G",
@@ -13737,13 +13791,17 @@
    "fecha": "2026-11-03",
    "senal": "Rebote EMA 9 (5 min)",
    "lado": "CALL",
-   "resultado": null,
-   "detalle": "10:40 · vela de 5 min que cerró 10:45 · SPX CALL 7575: sin precios de la cadena",
-   "maximo": null,
+   "resultado": "G",
+   "detalle": "10:40 · vela de 5 min que cerró 10:45 · SPX CALL 7575 al ask 15.00 (10:45:17) · +35% (bid 20.60) a las 10:59:32",
+   "maximo": 37.3,
    "unidad": "opción",
-   "minimo": null,
+   "minimo": -0.7,
    "strike": 7575,
-   "no_cuenta": true,
+   "entrada": 15.0,
+   "entro": "10:45:17",
+   "venta": "10:59:32",
+   "en_curso": false,
+   "fuente": "Schwab (cadena del SPX cada 15 s)",
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -13778,7 +13836,12 @@
    "ganador": true,
    "enviado": false
   },
-  "avisos": [],
+  "avisos": [
+   {
+    "hora": "11:30",
+    "texto": "Heikin Ashi PUT"
+   }
+  ],
   "rebote": null,
   "rebote_dia": [
    "de martes para miércoles",
