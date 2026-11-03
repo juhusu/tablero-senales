@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-02 21:30",
+ "actualizado": "2026-11-03 03:31",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13570,20 +13570,19 @@
    "senal": "Bollinger SPX Charlatan",
    "lado": "CALL",
    "resultado": "G",
-   "detalle": "10:14 · SPXW CALL 7665 a 4.40 (10:14:27) · +35% a las 10:17 (provisorio, con la cadena del motor) · se mide de madrugada con Tastytrade · VWAP SPY a favor +0.17%",
-   "maximo": 35.0,
+   "detalle": "10:00 · SPXW CALL 7660 a 4.20 (10:00, vela de 1 min) · vendió 10:14 a 5.70 = +35% sobre el promedio 4.20 · VWAP SPY a favor +0.09%",
+   "maximo": 35.7,
    "unidad": "opción",
-   "minimo": -2.3,
-   "strike": 7665.0,
-   "entrada": 4.4,
-   "entro": "10:14:27",
-   "venta": "10:17",
-   "minutos": 3,
-   "en_curso": false,
-   "contra": -2.3,
-   "max_sin_tp": 177.3,
+   "minimo": -23.8,
+   "contra": -23.8,
+   "minutos": 14.0,
+   "strike": 7660.0,
+   "venta": "10:14",
+   "entro": "10:00:15",
+   "max_sin_tp": 259.5,
    "hora_max_sin_tp": "10:28",
-   "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
+   "entrada": 4.2,
+   "fuente": "Tastytrade (velas de 1 min de la opción SPX)",
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -13607,9 +13606,6 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:40",
    "horas_calc": true,
-   "venta": "09:41",
-   "max_sin_tp": 194.0,
-   "hora_max_sin_tp": "10:27",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13634,9 +13630,6 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "11:00",
    "horas_calc": true,
-   "venta": "11:10",
-   "max_sin_tp": 651.4,
-   "hora_max_sin_tp": "15:51",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13662,9 +13655,6 @@
    "activo": "TSLA",
    "entro": "09:43",
    "horas_calc": true,
-   "venta": "09:48",
-   "max_sin_tp": 113.9,
-   "hora_max_sin_tp": "09:52",
    "activos": [
     "TSLA"
    ],
@@ -13687,9 +13677,6 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "10:02",
    "horas_calc": true,
-   "venta": "10:03",
-   "max_sin_tp": 142.6,
-   "hora_max_sin_tp": "10:27",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13700,74 +13687,41 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-11-02",
-  "dia_semana": 0,
+  "fecha": "2026-11-03",
+  "dia_semana": 1,
   "eventos": [
    {
     "hora": "10:00",
-    "texto": "ISM manufacturero"
+    "texto": "JOLTS (ofertas de empleo) (septiembre)"
    }
   ],
-  "reportes": [
-   {
-    "hora": "10:00",
-    "datos": "ISM manufacturero",
-    "mov": 0.0229,
-    "direccion": "neutro",
-    "cifras": {}
-   }
-  ],
+  "reportes": [],
   "gap": {
-   "cuando": "9:28",
-   "lado": 1.0,
-   "mes_pct": 0.4958,
-   "ayer_pct": -0.0119,
-   "ganador": false,
+   "cuando": "03:31",
+   "lado": -1,
+   "mes_pct": -0.19469376979937003,
+   "ayer_pct": -0.49867415997150166,
+   "ganador": true,
    "enviado": false
   },
-  "avisos": [
-   {
-    "hora": "09:40",
-    "texto": "Heikin Ashi CALL"
-   },
-   {
-    "hora": "10:02",
-    "texto": "Toque Magnífico CALL"
-   },
-   {
-    "hora": "11:00",
-    "texto": "Heikin Ashi PUT"
-   }
-  ],
-  "rebote": {
-   "senal": false,
-   "razon_vol": 1.83,
-   "pos_rango": 0.042,
-   "roja": true
-  },
+  "avisos": [],
+  "rebote": null,
   "rebote_dia": [
-   "de lunes para martes",
-   4,
+   "de martes para miércoles",
+   6,
    9
   ],
   "cobertura_hasta": "2026-12-09",
   "manana": {
-   "fecha": "2026-11-03",
-   "dia_semana": 1,
+   "fecha": "2026-11-04",
+   "dia_semana": 2,
    "eventos": [
     {
      "hora": "10:00",
-     "texto": "JOLTS (ofertas de empleo) (septiembre)"
+     "texto": "ISM servicios"
     }
    ],
-   "gap": {
-    "mes_pct": 0.0264,
-    "hoy_pct": -0.4987,
-    "lado": 1,
-    "cuando": "02/11 21:30",
-    "continuacion": false,
-    "ganador": true
-   }
+   "gap": null
   }
  }
 }
