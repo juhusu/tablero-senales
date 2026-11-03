@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-03 09:20",
+ "actualizado": "2026-11-03 09:35",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13684,6 +13684,30 @@
    ],
    "semana": "2026-11-02",
    "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-03",
+   "senal": "Opening Eyes (motor) SPX",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "09:34 · CALL 755 al ask 2.43",
+   "maximo": 5.8,
+   "unidad": "opción",
+   "minimo": 2.1,
+   "contra": 0.0,
+   "minutos": 0.5,
+   "strike": 755.0,
+   "entrada": 2.43,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "SPX",
+   "entro": "09:34",
+   "horas_calc": true,
+   "venta": "no llegó",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 1
   }
  ],
  "hoy": {
@@ -13697,10 +13721,10 @@
   ],
   "reportes": [],
   "gap": {
-   "cuando": "09:20",
-   "lado": 1,
-   "mes_pct": 0.06269799366420692,
-   "ayer_pct": -0.49867415997150166,
+   "cuando": "9:28",
+   "lado": 1.0,
+   "mes_pct": 0.0297,
+   "ayer_pct": -0.4987,
    "ganador": true,
    "enviado": false
   },
