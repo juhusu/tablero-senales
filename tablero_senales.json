@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-03 09:35",
+ "actualizado": "2026-11-03 10:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13689,20 +13689,62 @@
    "fecha": "2026-11-03",
    "senal": "Opening Eyes (motor) SPX",
    "lado": "CALL",
-   "resultado": "P",
+   "resultado": "G",
    "detalle": "09:34 · CALL 755 al ask 2.43",
-   "maximo": 5.8,
+   "maximo": 27.6,
    "unidad": "opción",
-   "minimo": 2.1,
-   "contra": 0.0,
-   "minutos": 0.5,
+   "minimo": -11.1,
+   "contra": -3.3,
+   "minutos": 11.0,
    "strike": 755.0,
    "entrada": 2.43,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "activo": "SPX",
    "entro": "09:34",
    "horas_calc": true,
+   "venta": "09:37",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-03",
+   "senal": "Opening Eyes (motor) TSLA",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "10:03 · CALL 402.5 al ask 6.90",
+   "maximo": -1.4,
+   "unidad": "opción",
+   "minimo": -21.7,
+   "contra": -2.2,
+   "minutos": 0.5,
+   "strike": 402.5,
+   "entrada": 6.9,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "activo": "TSLA",
+   "entro": "10:03",
+   "horas_calc": true,
    "venta": "no llegó",
+   "activos": [
+    "TSLA"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-03",
+   "senal": "Rebote EMA 9 (5 min)",
+   "lado": "CALL",
+   "resultado": null,
+   "detalle": "10:40 · vela de 5 min que cerró 10:45 · SPX CALL 7575: sin precios de la cadena",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": null,
+   "strike": 7575,
+   "no_cuenta": true,
+   "activo": "SPX",
    "activos": [
     "SPX"
    ],
@@ -13719,7 +13761,15 @@
     "texto": "JOLTS (ofertas de empleo) (septiembre)"
    }
   ],
-  "reportes": [],
+  "reportes": [
+   {
+    "hora": "10:00",
+    "datos": "JOLTS (empleos vacantes)",
+    "mov": -0.0593,
+    "direccion": "abajo",
+    "cifras": {}
+   }
+  ],
   "gap": {
    "cuando": "9:28",
    "lado": 1.0,
