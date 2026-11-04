@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-04 09:36",
+ "actualizado": "2026-11-04 09:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13450,13 +13450,37 @@
   },
   {
    "fecha": "2026-11-04",
+   "senal": "GAP continuación",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "9:30 · GAP +0.88% · ayer +0.36%",
+   "maximo": 48.1,
+   "unidad": "opción",
+   "minimo": -82.6,
+   "contra": -12.2,
+   "minutos": 15.0,
+   "strike": 764.0,
+   "entrada": 3.45,
+   "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
+   "entro": "09:30",
+   "horas_calc": true,
+   "venta": "no llegó",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-04",
    "senal": "Opening Eyes (motor) TSLA",
    "lado": "PUT",
    "resultado": "G",
    "detalle": "09:33 · PUT 380 al ask 5.05",
    "maximo": 19.8,
    "unidad": "opción",
-   "minimo": -2.0,
+   "minimo": -55.4,
    "contra": -2.0,
    "minutos": 1.8,
    "strike": 380.0,
