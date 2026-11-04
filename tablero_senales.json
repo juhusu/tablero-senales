@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-04 09:45",
+ "actualizado": "2026-11-04 10:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13450,6 +13450,35 @@
   },
   {
    "fecha": "2026-11-04",
+   "senal": "BUY BUY & SELL SELL PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "10:25 · SPX PUT 7630 a 4.40 · TP 5.10 · +15% a las 10:25 · +$690 con 10 contratos",
+   "maximo": 15.0,
+   "unidad": "opción",
+   "minimo": -34.1,
+   "strike": 7630.0,
+   "entrada": 4.4,
+   "entro": "10:25:23",
+   "venta": "10:25",
+   "usd_10": 690,
+   "tp_fijo": 15,
+   "contra": -2.3,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": 0,
+   "en_curso": false,
+   "fuente": "en vivo: el detector (tools/senal_stochrsi_ut.py) y la cadena del $SPX del motor (bid)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-04",
    "senal": "GAP continuación",
    "lado": "CALL",
    "resultado": "P",
@@ -13458,7 +13487,7 @@
    "unidad": "opción",
    "minimo": -82.6,
    "contra": -12.2,
-   "minutos": 15.0,
+   "minutos": 17.3,
    "strike": 764.0,
    "entrada": 3.45,
    "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
@@ -13474,13 +13503,60 @@
   },
   {
    "fecha": "2026-11-04",
+   "senal": "Heikin Ashi PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "10:30 · PUT 769 al ask 1.82",
+   "maximo": 17.6,
+   "unidad": "opción",
+   "minimo": -35.2,
+   "contra": 0.0,
+   "minutos": 2.0,
+   "strike": 769.0,
+   "entrada": 1.82,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:30:23",
+   "venta": "10:32",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-04",
+   "senal": "Opening Eyes (motor) SPX",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "10:22 · PUT 769 al ask 1.87",
+   "maximo": 23.0,
+   "unidad": "opción",
+   "minimo": -36.9,
+   "contra": -7.5,
+   "minutos": 3.5,
+   "strike": 769.0,
+   "entrada": 1.87,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:22:23",
+   "activo": "SPX",
+   "venta": "10:23",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-04",
    "senal": "Opening Eyes (motor) TSLA",
    "lado": "PUT",
    "resultado": "G",
    "detalle": "09:33 · PUT 380 al ask 5.05",
    "maximo": 19.8,
    "unidad": "opción",
-   "minimo": -55.4,
+   "minimo": -74.5,
    "contra": -2.0,
    "minutos": 1.8,
    "strike": 380.0,
@@ -13505,7 +13581,15 @@
     "texto": "ISM servicios"
    }
   ],
-  "reportes": [],
+  "reportes": [
+   {
+    "hora": "10:00",
+    "datos": "ISM servicios",
+    "mov": 0.123,
+    "direccion": "arriba",
+    "cifras": {}
+   }
+  ],
   "gap": {
    "cuando": "9:28",
    "lado": 1.0,
@@ -13518,6 +13602,10 @@
    {
     "hora": "09:30",
     "texto": "GAP continuación CALL"
+   },
+   {
+    "hora": "10:30",
+    "texto": "Heikin Ashi PUT"
    }
   ],
   "rebote": null,
