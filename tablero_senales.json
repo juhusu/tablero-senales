@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-03 17:30",
+ "actualizado": "2026-11-03 19:11",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -12896,12 +12896,12 @@
    "entrada": 18.8,
    "entro": "10:35:26",
    "venta": "12:55:01",
+   "minutos": 140,
+   "contra": -21.8,
    "en_curso": false,
    "fuente": "Schwab (cadena del SPX cada 15 s)",
    "max_sin_tp": 55.4,
    "hora_max_sin_tp": "14:35",
-   "minutos": 140,
-   "contra": -23.4,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -13806,6 +13806,8 @@
    "entrada": 15.0,
    "entro": "10:45:17",
    "venta": "10:59:32",
+   "minutos": 14,
+   "contra": -0.7,
    "en_curso": false,
    "fuente": "Schwab (cadena del SPX cada 15 s)",
    "activo": "SPX",
@@ -13870,10 +13872,10 @@
     }
    ],
    "gap": {
-    "mes_pct": 0.1678,
+    "mes_pct": 0.1152,
     "hoy_pct": 0.3487,
     "lado": 1,
-    "cuando": "03/11 16:59",
+    "cuando": "03/11 19:11",
     "continuacion": true,
     "ganador": true
    }
