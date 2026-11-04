@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-04 09:20",
+ "actualizado": "2026-11-04 09:36",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13447,6 +13447,29 @@
    ],
    "semana": "2026-11-02",
    "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-04",
+   "senal": "Opening Eyes (motor) TSLA",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "09:33 · PUT 380 al ask 5.05",
+   "maximo": 19.8,
+   "unidad": "opción",
+   "minimo": -2.0,
+   "contra": -2.0,
+   "minutos": 1.8,
+   "strike": 380.0,
+   "entrada": 5.05,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:33:21",
+   "activo": "TSLA",
+   "venta": "09:33",
+   "activos": [
+    "TSLA"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 2
   }
  ],
  "hoy": {
@@ -13460,14 +13483,19 @@
   ],
   "reportes": [],
   "gap": {
-   "cuando": "09:20",
-   "lado": 1,
-   "mes_pct": 1.2407437880533223,
-   "ayer_pct": 0.34869999867415125,
+   "cuando": "9:28",
+   "lado": 1.0,
+   "mes_pct": 1.1749,
+   "ayer_pct": 0.3487,
    "ganador": false,
    "enviado": false
   },
-  "avisos": [],
+  "avisos": [
+   {
+    "hora": "09:30",
+    "texto": "GAP continuación CALL"
+   }
+  ],
   "rebote": null,
   "rebote_dia": [
    "de miércoles para jueves",
