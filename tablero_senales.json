@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-04 12:06",
+ "actualizado": "2026-11-04 16:20",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13450,6 +13450,35 @@
   },
   {
    "fecha": "2026-11-04",
+   "senal": "BUY BUY & SELL SELL CALL",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "12:30 · SPX CALL 7725 a 4.70 · TP 5.50 · +15% a las 12:54 · +$790 con 10 contratos",
+   "maximo": 15.0,
+   "unidad": "opción",
+   "minimo": -25.5,
+   "strike": 7725.0,
+   "entrada": 4.7,
+   "entro": "12:30:26",
+   "venta": "12:54",
+   "usd_10": 790,
+   "tp_fijo": 15,
+   "contra": -25.5,
+   "max_sin_tp": 21.3,
+   "hora_max_sin_tp": "13:07",
+   "minutos": 24,
+   "en_curso": false,
+   "fuente": "en vivo: el detector (tools/senal_stochrsi_ut.py) y la cadena del $SPX del motor (bid)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-04",
    "senal": "BUY BUY & SELL SELL PUT",
    "lado": "PUT",
    "resultado": "G",
@@ -13464,8 +13493,8 @@
    "usd_10": 690,
    "tp_fijo": 15,
    "contra": -2.3,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
+   "max_sin_tp": 90.9,
+   "hora_max_sin_tp": "11:06",
    "minutos": 0,
    "en_curso": false,
    "fuente": "en vivo: el detector (tools/senal_stochrsi_ut.py) y la cadena del $SPX del motor (bid)",
@@ -13517,6 +13546,8 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "10:30:23",
    "venta": "10:32",
+   "max_sin_tp": 94.0,
+   "hora_max_sin_tp": "11:27",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13542,6 +13573,8 @@
    "entro": "10:22:23",
    "activo": "SPX",
    "venta": "10:23",
+   "max_sin_tp": 88.8,
+   "hora_max_sin_tp": "11:27",
    "activos": [
     "SPX"
    ],
@@ -13565,6 +13598,8 @@
    "entro": "09:33:21",
    "activo": "TSLA",
    "venta": "09:33",
+   "max_sin_tp": 19.8,
+   "hora_max_sin_tp": "09:35",
    "activos": [
     "TSLA"
    ],
@@ -13588,6 +13623,22 @@
    "contra": -31.8,
    "en_curso": false,
    "fuente": "Schwab (cadena del SPX cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-04",
+   "senal": "Rectángulo (amigo)",
+   "lado": "PUT",
+   "resultado": null,
+   "detalle": "16:00 · falta la apertura siguiente",
+   "maximo": null,
+   "unidad": "GAP",
+   "minimo": null,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -13682,7 +13733,12 @@
     "texto": "Heikin Ashi PUT"
    }
   ],
-  "rebote": null,
+  "rebote": {
+   "senal": false,
+   "razon_vol": 2.12,
+   "pos_rango": 0.315,
+   "roja": true
+  },
   "rebote_dia": [
    "de miércoles para jueves",
    13,
@@ -13693,7 +13749,14 @@
    "fecha": "2026-11-05",
    "dia_semana": 3,
    "eventos": [],
-   "gap": null
+   "gap": {
+    "mes_pct": 0.1328,
+    "hoy_pct": 1.5868,
+    "lado": 1,
+    "cuando": "04/11 16:20",
+    "continuacion": true,
+    "ganador": true
+   }
   }
  }
 }
