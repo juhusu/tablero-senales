@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-04 17:30",
+ "actualizado": "2026-11-04 18:56",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -12543,10 +12543,10 @@
    "venta": "12:55:01",
    "minutos": 140,
    "contra": -21.8,
+   "max_sin_tp": 51.6,
+   "hora_max_sin_tp": "14:37",
    "en_curso": false,
    "fuente": "Schwab (cadena del SPX cada 15 s)",
-   "max_sin_tp": 55.4,
-   "hora_max_sin_tp": "14:35",
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -13439,6 +13439,8 @@
    "venta": "10:59:32",
    "minutos": 14,
    "contra": -0.7,
+   "max_sin_tp": 47.3,
+   "hora_max_sin_tp": "11:00",
    "en_curso": false,
    "fuente": "Schwab (cadena del SPX cada 15 s)",
    "activo": "SPX",
@@ -13621,6 +13623,8 @@
    "venta": "11:24:09",
    "minutos": 4,
    "contra": -31.8,
+   "max_sin_tp": 117.5,
+   "hora_max_sin_tp": "13:07",
    "en_curso": false,
    "fuente": "Schwab (cadena del SPX cada 15 s)",
    "activo": "SPX",
@@ -13662,6 +13666,8 @@
    "usd_10": 2090,
    "tp_fijo": 15,
    "contra": -1.4,
+   "max_sin_tp": 82.1,
+   "hora_max_sin_tp": "11:56",
    "minutos": 1,
    "fuente": "Schwab cadena (bid)",
    "activo": "SPX",
@@ -13687,6 +13693,8 @@
    "usd_10": 690,
    "tp_fijo": 15,
    "contra": -2.2,
+   "max_sin_tp": 128.3,
+   "hora_max_sin_tp": "11:56",
    "minutos": 0,
    "fuente": "Schwab cadena (bid)",
    "activo": "SPX",
@@ -13750,10 +13758,10 @@
    "dia_semana": 3,
    "eventos": [],
    "gap": {
-    "mes_pct": 0.1716,
+    "mes_pct": 0.0583,
     "hoy_pct": 1.5868,
     "lado": 1,
-    "cuando": "04/11 16:59",
+    "cuando": "04/11 18:56",
     "continuacion": true,
     "ganador": true
    }
