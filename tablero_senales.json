@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-03 20:20",
+ "actualizado": "2026-11-04 03:32",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13450,66 +13450,36 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-11-03",
-  "dia_semana": 1,
+  "fecha": "2026-11-04",
+  "dia_semana": 2,
   "eventos": [
    {
     "hora": "10:00",
-    "texto": "JOLTS (ofertas de empleo) (septiembre)"
+    "texto": "ISM servicios"
    }
   ],
-  "reportes": [
-   {
-    "hora": "10:00",
-    "datos": "JOLTS (empleos vacantes)",
-    "mov": -0.0593,
-    "direccion": "abajo",
-    "cifras": {}
-   }
-  ],
+  "reportes": [],
   "gap": {
-   "cuando": "9:28",
-   "lado": 1.0,
-   "mes_pct": 0.0297,
-   "ayer_pct": -0.4987,
+   "cuando": "03:32",
+   "lado": 1,
+   "mes_pct": 0.12506170807964345,
+   "ayer_pct": 0.34869999867415125,
    "ganador": true,
    "enviado": false
   },
-  "avisos": [
-   {
-    "hora": "11:30",
-    "texto": "Heikin Ashi PUT"
-   }
-  ],
-  "rebote": {
-   "senal": false,
-   "razon_vol": 1.76,
-   "pos_rango": 0.429,
-   "roja": true
-  },
+  "avisos": [],
+  "rebote": null,
   "rebote_dia": [
-   "de martes para miércoles",
-   6,
-   9
+   "de miércoles para jueves",
+   13,
+   16
   ],
   "cobertura_hasta": "2026-12-09",
   "manana": {
-   "fecha": "2026-11-04",
-   "dia_semana": 2,
-   "eventos": [
-    {
-     "hora": "10:00",
-     "texto": "ISM servicios"
-    }
-   ],
-   "gap": {
-    "mes_pct": -0.7372,
-    "hoy_pct": 0.3487,
-    "lado": -1,
-    "cuando": "03/11 20:20",
-    "continuacion": false,
-    "ganador": false
-   }
+   "fecha": "2026-11-05",
+   "dia_semana": 3,
+   "eventos": [],
+   "gap": null
   }
  }
 }
