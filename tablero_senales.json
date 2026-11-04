@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-03 19:11",
+ "actualizado": "2026-11-03 19:21",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -2344,9 +2344,8 @@
    "strike": 340.0,
    "entrada": 2.55,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:45:06",
    "activo": "TSLA",
-   "entro": "09:44",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -2586,9 +2585,8 @@
    "strike": 337.5,
    "entrada": 2.11,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:48:18",
    "activo": "TSLA",
-   "entro": "09:48",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -2757,9 +2755,8 @@
    "strike": 345.0,
    "entrada": 4.8,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:35:20",
    "activo": "TSLA",
-   "entro": "09:35",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -2957,10 +2954,8 @@
    "strike": 347.5,
    "entrada": 2.68,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:33:20",
    "activo": "TSLA",
-   "entro": "09:33",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activos": [
     "TSLA"
    ],
@@ -3154,9 +3149,8 @@
    "strike": 355.0,
    "entrada": 1.78,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:11:15",
    "activo": "TSLA",
-   "entro": "10:11",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -3234,9 +3228,8 @@
    "strike": 352.5,
    "entrada": 4.05,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:41:17",
    "activo": "TSLA",
-   "entro": "09:41",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -3402,9 +3395,8 @@
    "strike": 347.5,
    "entrada": 2.54,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:41:15",
    "activo": "TSLA",
-   "entro": "09:41",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -3807,9 +3799,8 @@
    "strike": 355.0,
    "entrada": 2.33,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:46:24",
    "activo": "TSLA",
-   "entro": "09:46",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -4058,9 +4049,8 @@
    "strike": 357.5,
    "entrada": 4.7,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:50:15",
    "activo": "TSLA",
-   "entro": "09:50",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -4260,9 +4250,8 @@
    "strike": 355.0,
    "entrada": 2.42,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:32:28",
    "activo": "TSLA",
-   "entro": "09:32",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -4395,10 +4384,8 @@
    "strike": 370.0,
    "entrada": 5.75,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:00:26",
    "activo": "TSLA",
-   "entro": "10:00",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activos": [
     "TSLA"
    ],
@@ -4622,10 +4609,8 @@
    "strike": 360.0,
    "entrada": 2.67,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:58:25",
    "activo": "TSLA",
-   "entro": "09:58",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activos": [
     "TSLA"
    ],
@@ -4819,9 +4804,8 @@
    "strike": 357.5,
    "entrada": 4.05,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:44:28",
    "activo": "TSLA",
-   "entro": "09:44",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -5018,9 +5002,8 @@
    "strike": 372.5,
    "entrada": 3.3,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:59:24",
    "activo": "TSLA",
-   "entro": "09:59",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -5184,9 +5167,8 @@
    "strike": 362.5,
    "entrada": 4.35,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:36:18",
    "activo": "TSLA",
-   "entro": "09:36",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -5385,9 +5367,8 @@
    "strike": 365.0,
    "entrada": 3.4,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:33:21",
    "activo": "TSLA",
-   "entro": "09:33",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -5697,9 +5678,8 @@
    "strike": 360.0,
    "entrada": 2.25,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:46:19",
    "activo": "TSLA",
-   "entro": "09:46",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -5921,9 +5901,8 @@
    "strike": 357.5,
    "entrada": 4.15,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:31:16",
    "activo": "TSLA",
-   "entro": "09:31",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -6027,10 +6006,8 @@
    "strike": 357.5,
    "entrada": 4.05,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:31:28",
    "activo": "TSLA",
-   "entro": "09:31",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activos": [
     "TSLA"
    ],
@@ -6194,10 +6171,8 @@
    "strike": 362.5,
    "entrada": 4.1,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:39:26",
    "activo": "TSLA",
-   "entro": "09:39",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activos": [
     "TSLA"
    ],
@@ -6359,9 +6334,8 @@
    "strike": 367.5,
    "entrada": 3.1,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:35:24",
    "activo": "TSLA",
-   "entro": "09:35",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -6497,10 +6471,8 @@
    "strike": 375.0,
    "entrada": 2.22,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:08:27",
    "activo": "TSLA",
-   "entro": "10:08",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activos": [
     "TSLA"
    ],
@@ -6576,9 +6548,8 @@
    "strike": 375.0,
    "entrada": 4.3,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:31:26",
    "activo": "TSLA",
-   "entro": "09:31",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -6829,9 +6800,8 @@
    "strike": 382.5,
    "entrada": 2.23,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:09:21",
    "activo": "TSLA",
-   "entro": "10:09",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -6995,9 +6965,8 @@
    "strike": 377.5,
    "entrada": 4.45,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:31:16",
    "activo": "TSLA",
-   "entro": "09:31",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -7339,9 +7308,8 @@
    "strike": 380.0,
    "entrada": 3.9,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:32:23",
    "activo": "TSLA",
-   "entro": "09:32",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -7707,12 +7675,10 @@
    "strike": 768.0,
    "entrada": 1.33,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:43:16",
    "activo": "SPX",
    "max_sin_tp": 117.3,
    "hora_max_sin_tp": "12:45",
-   "entro": "09:43",
-   "horas_calc": true,
-   "venta": "~09:40",
    "activos": [
     "SPX"
    ],
@@ -7733,9 +7699,8 @@
    "strike": 352.5,
    "entrada": 4.2,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:05:16",
    "activo": "TSLA",
-   "entro": "10:05",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -7812,12 +7777,10 @@
    "strike": 771.0,
    "entrada": 1.36,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:28:29",
    "activo": "SPX",
    "max_sin_tp": 188.2,
    "hora_max_sin_tp": "15:50",
-   "entro": "10:28",
-   "horas_calc": true,
-   "venta": "~10:25",
    "activos": [
     "SPX"
    ],
@@ -7838,9 +7801,8 @@
    "strike": 347.5,
    "entrada": 2.03,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:03:28",
    "activo": "TSLA",
-   "entro": "10:03",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -8000,12 +7962,10 @@
    "strike": 768.0,
    "entrada": 1.64,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:38:15",
    "activo": "SPX",
    "max_sin_tp": 0.6,
    "hora_max_sin_tp": "",
-   "entro": "09:38",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activos": [
     "SPX"
    ],
@@ -8026,9 +7986,8 @@
    "strike": 357.5,
    "entrada": 4.7,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:32:15",
    "activo": "TSLA",
-   "entro": "09:32",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -8333,12 +8292,10 @@
    "strike": 774.0,
    "entrada": 0.97,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:03:29",
    "activo": "SPX",
    "max_sin_tp": 454.6,
    "hora_max_sin_tp": "15:15",
-   "entro": "10:03",
-   "horas_calc": true,
-   "venta": "~10:00",
    "activos": [
     "SPX"
    ],
@@ -8359,9 +8316,8 @@
    "strike": 370.0,
    "entrada": 2.91,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:38:28",
    "activo": "TSLA",
-   "entro": "09:38",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -8409,11 +8365,9 @@
    "strike": 774.0,
    "entrada": 1.07,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:38:28",
    "max_sin_tp": 402.8,
    "hora_max_sin_tp": "15:15",
-   "entro": "09:38",
-   "horas_calc": true,
-   "venta": "~09:35",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -8548,12 +8502,10 @@
    "strike": 782.0,
    "entrada": 0.89,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:21:28",
    "activo": "SPX",
    "max_sin_tp": 53.9,
    "hora_max_sin_tp": "10:30",
-   "entro": "10:21",
-   "horas_calc": true,
-   "venta": "~10:20",
    "activos": [
     "SPX"
    ],
@@ -8574,10 +8526,8 @@
    "strike": 382.5,
    "entrada": 4.75,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:35:27",
    "activo": "TSLA",
-   "entro": "09:35",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activos": [
     "TSLA"
    ],
@@ -8625,11 +8575,9 @@
    "strike": 782.0,
    "entrada": 1.21,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:24:29",
    "max_sin_tp": 114.9,
    "hora_max_sin_tp": "11:25",
-   "entro": "10:24",
-   "horas_calc": true,
-   "venta": "~10:20",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -8885,12 +8833,10 @@
    "strike": 778.0,
    "entrada": 0.95,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:20:29",
    "activo": "SPX",
    "max_sin_tp": 186.3,
    "hora_max_sin_tp": "15:00",
-   "entro": "10:20",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activos": [
     "SPX"
    ],
@@ -8911,9 +8857,8 @@
    "strike": 377.5,
    "entrada": 2.23,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:43:28",
    "activo": "TSLA",
-   "entro": "09:43",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -9015,12 +8960,10 @@
    "strike": 778.0,
    "entrada": 1.27,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:58:18",
    "activo": "SPX",
    "max_sin_tp": 74.8,
    "hora_max_sin_tp": "12:15",
-   "entro": "09:58",
-   "horas_calc": true,
-   "venta": "~10:05",
    "activos": [
     "SPX"
    ],
@@ -9041,9 +8984,8 @@
    "strike": 375.0,
    "entrada": 3.85,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:39:17",
    "activo": "TSLA",
-   "entro": "09:39",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -9064,11 +9006,9 @@
    "strike": 778.0,
    "entrada": 1.16,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:50:20",
    "max_sin_tp": 91.4,
    "hora_max_sin_tp": "12:15",
-   "entro": "10:50",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -9416,9 +9356,8 @@
    "strike": 385.0,
    "entrada": 2.2,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:00:19",
    "activo": "TSLA",
-   "entro": "10:00",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -9467,11 +9406,9 @@
    "strike": 779.0,
    "entrada": 1.3,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:53:19",
    "max_sin_tp": 16.2,
    "hora_max_sin_tp": "10:00",
-   "entro": "09:53",
-   "horas_calc": true,
-   "venta": "~09:50",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -9591,12 +9528,10 @@
    "strike": 781.0,
    "entrada": 0.72,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:48:25",
    "activo": "SPX",
    "max_sin_tp": 73.6,
    "hora_max_sin_tp": "14:50",
-   "entro": "09:48",
-   "horas_calc": true,
-   "venta": "~09:45",
    "activos": [
     "SPX"
    ],
@@ -9617,9 +9552,8 @@
    "strike": 382.5,
    "entrada": 1.63,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:48:25",
    "activo": "TSLA",
-   "entro": "09:48",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -9809,12 +9743,10 @@
    "strike": 781.0,
    "entrada": 0.98,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:38:27",
    "activo": "SPX",
    "max_sin_tp": 21.4,
    "hora_max_sin_tp": "09:40",
-   "entro": "09:38",
-   "horas_calc": true,
-   "venta": "~09:35",
    "activos": [
     "SPX"
    ],
@@ -9835,9 +9767,8 @@
    "strike": 372.5,
    "entrada": 4.4,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:39:27",
    "activo": "TSLA",
-   "entro": "09:39",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -9858,11 +9789,9 @@
    "strike": 781.0,
    "entrada": 0.88,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:51:27",
    "max_sin_tp": 8.0,
    "hora_max_sin_tp": "09:55",
-   "entro": "09:51",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -10086,9 +10015,8 @@
    "strike": 367.5,
    "entrada": 1.49,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:14:16",
    "activo": "TSLA",
-   "entro": "10:14",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -10109,11 +10037,9 @@
    "strike": 778.0,
    "entrada": 1.24,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "max_sin_tp": 41.1,
-   "hora_max_sin_tp": "09:45",
-   "entro": "09:45",
-   "horas_calc": true,
-   "venta": "~09:45",
+   "entro": "09:45:15",
+   "max_sin_tp": 38.7,
+   "hora_max_sin_tp": "",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -10377,12 +10303,10 @@
    "strike": 770.0,
    "entrada": 1.53,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:03:24",
    "activo": "SPX",
    "max_sin_tp": 251.6,
    "hora_max_sin_tp": "15:20",
-   "entro": "10:03",
-   "horas_calc": true,
-   "venta": "~10:05",
    "activos": [
     "SPX"
    ],
@@ -10403,9 +10327,8 @@
    "strike": 357.5,
    "entrada": 5.45,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:20:24",
    "activo": "TSLA",
-   "entro": "10:20",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -10426,11 +10349,9 @@
    "strike": 769.0,
    "entrada": 1.78,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:46:23",
    "max_sin_tp": 249.4,
    "hora_max_sin_tp": "15:15",
-   "entro": "09:46",
-   "horas_calc": true,
-   "venta": "~09:45",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -10648,12 +10569,10 @@
    "strike": 775.0,
    "entrada": 1.53,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:38:28",
    "activo": "SPX",
    "max_sin_tp": 639.2,
    "hora_max_sin_tp": "15:10",
-   "entro": "09:38",
-   "horas_calc": true,
-   "venta": "~09:35",
    "activos": [
     "SPX"
    ],
@@ -10674,9 +10593,8 @@
    "strike": 367.5,
    "entrada": 2.98,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:04:29",
    "activo": "TSLA",
-   "entro": "10:04",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -10828,11 +10746,9 @@
    "strike": 770.0,
    "entrada": 1.26,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "max_sin_tp": 11.1,
-   "hora_max_sin_tp": "10:40",
-   "entro": "10:40",
-   "horas_calc": true,
-   "venta": "no llegó",
+   "entro": "10:40:18",
+   "max_sin_tp": 9.5,
+   "hora_max_sin_tp": "",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -11046,11 +10962,9 @@
    "strike": 772.0,
    "entrada": 1.06,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "11:20:24",
    "max_sin_tp": 52.8,
    "hora_max_sin_tp": "11:30",
-   "entro": "11:20",
-   "horas_calc": true,
-   "venta": "~11:20",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -11101,12 +11015,10 @@
    "strike": 769.0,
    "entrada": 1.35,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:52:21",
    "activo": "SPX",
    "max_sin_tp": 347.4,
    "hora_max_sin_tp": "10:30",
-   "entro": "09:52",
-   "horas_calc": true,
-   "venta": "~09:50",
    "activos": [
     "SPX"
    ],
@@ -11127,9 +11039,8 @@
    "strike": 367.5,
    "entrada": 12.0,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:31:21",
    "activo": "TSLA",
-   "entro": "09:31",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -11150,11 +11061,9 @@
    "strike": 768.0,
    "entrada": 1.57,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:47:21",
    "max_sin_tp": 0.0,
    "hora_max_sin_tp": "",
-   "entro": "09:47",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -11290,11 +11199,9 @@
    "strike": 774.0,
    "entrada": 1.16,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:40:28",
    "max_sin_tp": 159.5,
    "hora_max_sin_tp": "14:15",
-   "entro": "09:40",
-   "horas_calc": true,
-   "venta": "~09:45",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -11345,12 +11252,10 @@
    "strike": 773.0,
    "entrada": 1.39,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:04:28",
    "activo": "SPX",
    "max_sin_tp": 87.1,
    "hora_max_sin_tp": "10:10",
-   "entro": "10:04",
-   "horas_calc": true,
-   "venta": "~10:00",
    "activos": [
     "SPX"
    ],
@@ -11371,10 +11276,8 @@
    "strike": 385.0,
    "entrada": 11.85,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:06:28",
    "activo": "TSLA",
-   "entro": "10:06",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activos": [
     "TSLA"
    ],
@@ -11540,11 +11443,9 @@
    "strike": 768.0,
    "entrada": 1.61,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "max_sin_tp": 4.3,
-   "hora_max_sin_tp": "10:20",
-   "entro": "10:20",
-   "horas_calc": true,
-   "venta": "no llegó",
+   "entro": "10:20:15",
+   "max_sin_tp": -1.2,
+   "hora_max_sin_tp": "",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -11596,11 +11497,9 @@
    "strike": 766.0,
    "entrada": 1.55,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "11:40:17",
    "max_sin_tp": 51.6,
    "hora_max_sin_tp": "15:00",
-   "entro": "11:40",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -11652,12 +11551,10 @@
    "strike": 770.0,
    "entrada": 1.51,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:02:29",
    "activo": "SPX",
    "max_sin_tp": 9.9,
    "hora_max_sin_tp": "",
-   "entro": "10:02",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activos": [
     "SPX"
    ],
@@ -11678,10 +11575,8 @@
    "strike": 385.0,
    "entrada": 5.35,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:22:15",
    "activo": "TSLA",
-   "entro": "10:22",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activos": [
     "TSLA"
    ],
@@ -11977,11 +11872,9 @@
    "strike": 765.0,
    "entrada": 1.34,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "11:50:15",
    "max_sin_tp": 119.4,
    "hora_max_sin_tp": "13:15",
-   "entro": "11:50",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -12032,12 +11925,10 @@
    "strike": 763.0,
    "entrada": 2.01,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:59:27",
    "activo": "SPX",
    "max_sin_tp": 72.1,
    "hora_max_sin_tp": "11:25",
-   "entro": "09:59",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activos": [
     "SPX"
    ],
@@ -12058,9 +11949,8 @@
    "strike": 372.5,
    "entrada": 3.45,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:41:26",
    "activo": "TSLA",
-   "entro": "09:41",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -12124,11 +12014,9 @@
    "strike": 763.0,
    "entrada": 1.97,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:48:26",
    "max_sin_tp": 75.6,
    "hora_max_sin_tp": "11:25",
-   "entro": "09:48",
-   "horas_calc": true,
-   "venta": "~09:45",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -12372,11 +12260,9 @@
    "strike": 770.0,
    "entrada": 1.13,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "11:40:22",
    "max_sin_tp": 193.8,
    "hora_max_sin_tp": "12:45",
-   "entro": "11:40",
-   "horas_calc": true,
-   "venta": "~11:40",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -12427,12 +12313,10 @@
    "strike": 765.0,
    "entrada": 1.31,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:08:19",
    "activo": "SPX",
    "max_sin_tp": 1.5,
    "hora_max_sin_tp": "",
-   "entro": "10:08",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activos": [
     "SPX"
    ],
@@ -12663,11 +12547,9 @@
    "strike": 769.0,
    "entrada": 1.22,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:00:24",
    "max_sin_tp": 278.7,
    "hora_max_sin_tp": "12:00",
-   "entro": "10:00",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -12690,12 +12572,10 @@
    "strike": 769.0,
    "entrada": 1.45,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:51:24",
    "activo": "SPX",
    "max_sin_tp": 37.9,
    "hora_max_sin_tp": "10:20",
-   "entro": "09:51",
-   "horas_calc": true,
-   "venta": "~09:50",
    "activos": [
     "SPX"
    ],
@@ -12716,10 +12596,8 @@
    "strike": 402.5,
    "entrada": 4.85,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:10:24",
    "activo": "TSLA",
-   "entro": "10:10",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activos": [
     "TSLA"
    ],
@@ -12817,11 +12695,9 @@
    "strike": 772.0,
    "entrada": 2.3,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:50:25",
    "max_sin_tp": 80.0,
    "hora_max_sin_tp": "14:35",
-   "entro": "09:50",
-   "horas_calc": true,
-   "venta": "~09:55",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -12844,11 +12720,9 @@
    "strike": 773.0,
    "entrada": 2.01,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:40:27",
    "max_sin_tp": 8.5,
    "hora_max_sin_tp": "10:55",
-   "entro": "10:40",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -12871,12 +12745,10 @@
    "strike": 773.0,
    "entrada": 1.96,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:44:25",
    "activo": "SPX",
    "max_sin_tp": 40.8,
    "hora_max_sin_tp": "09:45",
-   "entro": "09:44",
-   "horas_calc": true,
-   "venta": "~09:45",
    "activos": [
     "SPX"
    ],
@@ -12923,11 +12795,9 @@
    "strike": 773.0,
    "entrada": 2.07,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:57:25",
    "max_sin_tp": 5.3,
    "hora_max_sin_tp": "10:55",
-   "entro": "09:57",
-   "horas_calc": true,
-   "venta": "no llegó",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13040,11 +12910,9 @@
    "strike": 770.0,
    "entrada": 1.91,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:40:18",
    "max_sin_tp": 81.7,
    "hora_max_sin_tp": "11:30",
-   "entro": "09:40",
-   "horas_calc": true,
-   "venta": "~09:40",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13067,11 +12935,9 @@
    "strike": 770.0,
    "entrada": 1.15,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "max_sin_tp": 11.3,
-   "hora_max_sin_tp": "10:50",
-   "entro": "10:50",
-   "horas_calc": true,
-   "venta": "no llegó",
+   "entro": "10:50:20",
+   "max_sin_tp": 6.1,
+   "hora_max_sin_tp": "13:50",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13094,12 +12960,10 @@
    "strike": 772.0,
    "entrada": 1.36,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:01:18",
    "activo": "SPX",
    "max_sin_tp": 39.0,
    "hora_max_sin_tp": "11:30",
-   "entro": "10:01",
-   "horas_calc": true,
-   "venta": "~10:00",
    "activos": [
     "SPX"
    ],
@@ -13120,9 +12984,8 @@
    "strike": 405.0,
    "entrada": 5.1,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:33:17",
    "activo": "TSLA",
-   "entro": "09:33",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -13159,11 +13022,9 @@
    "strike": 770.0,
    "entrada": 1.52,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:37:17",
    "max_sin_tp": 12.5,
    "hora_max_sin_tp": "",
-   "entro": "09:37",
-   "horas_calc": true,
-   "venta": "~09:35",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13357,11 +13218,9 @@
    "strike": 763.0,
    "entrada": 1.71,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:50:27",
    "max_sin_tp": 26.9,
    "hora_max_sin_tp": "09:55",
-   "entro": "09:50",
-   "horas_calc": true,
-   "venta": "~09:55",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13384,11 +13243,9 @@
    "strike": 762.0,
    "entrada": 1.64,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "11:10:15",
    "max_sin_tp": 457.9,
    "hora_max_sin_tp": "14:50",
-   "entro": "11:10",
-   "horas_calc": true,
-   "venta": "~11:10",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13411,9 +13268,8 @@
    "strike": 392.5,
    "entrada": 3.2,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:46:27",
    "activo": "TSLA",
-   "entro": "09:46",
-   "horas_calc": true,
    "activos": [
     "TSLA"
    ],
@@ -13434,11 +13290,9 @@
    "strike": 763.0,
    "entrada": 2.01,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:33:27",
    "max_sin_tp": 422.4,
    "hora_max_sin_tp": "14:30",
-   "entro": "09:33",
-   "horas_calc": true,
-   "venta": "~09:30",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13604,8 +13458,10 @@
    "strike": 762.0,
    "entrada": 1.51,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "entro": "09:40",
-   "horas_calc": true,
+   "entro": "09:40:26",
+   "venta": "09:41",
+   "max_sin_tp": 194.0,
+   "hora_max_sin_tp": "10:27",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13628,8 +13484,10 @@
    "strike": 763.0,
    "entrada": 1.09,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "entro": "11:00",
-   "horas_calc": true,
+   "entro": "11:00:28",
+   "venta": "11:10",
+   "max_sin_tp": 651.4,
+   "hora_max_sin_tp": "15:51",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13652,9 +13510,11 @@
    "strike": 405.0,
    "entrada": 3.6,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:43:26",
    "activo": "TSLA",
-   "entro": "09:43",
-   "horas_calc": true,
+   "venta": "09:48",
+   "max_sin_tp": 113.9,
+   "hora_max_sin_tp": "09:52",
    "activos": [
     "TSLA"
    ],
@@ -13675,8 +13535,10 @@
    "strike": 762.0,
    "entrada": 1.83,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "entro": "10:02",
-   "horas_calc": true,
+   "entro": "10:02:27",
+   "venta": "10:03",
+   "max_sin_tp": 142.6,
+   "hora_max_sin_tp": "10:27",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13728,8 +13590,7 @@
    "strike": 758.0,
    "entrada": 1.47,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
-   "entro": "11:30",
-   "horas_calc": true,
+   "entro": "11:30:18",
    "venta": "11:31",
    "max_sin_tp": 47.6,
    "hora_max_sin_tp": "14:58",
@@ -13755,9 +13616,8 @@
    "strike": 755.0,
    "entrada": 2.43,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:34:29",
    "activo": "SPX",
-   "entro": "09:34",
-   "horas_calc": true,
    "venta": "09:37",
    "max_sin_tp": 80.7,
    "hora_max_sin_tp": "13:35",
@@ -13781,10 +13641,8 @@
    "strike": 402.5,
    "entrada": 6.9,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:03:15",
    "activo": "TSLA",
-   "entro": "10:03",
-   "horas_calc": true,
-   "venta": "no llegó",
    "max_sin_tp": -1.4,
    "hora_max_sin_tp": "10:03",
    "activos": [
@@ -13872,11 +13730,11 @@
     }
    ],
    "gap": {
-    "mes_pct": 0.1152,
+    "mes_pct": -0.158,
     "hoy_pct": 0.3487,
-    "lado": 1,
-    "cuando": "03/11 19:11",
-    "continuacion": true,
+    "lado": -1,
+    "cuando": "03/11 19:21",
+    "continuacion": false,
     "ganador": true
    }
   }
