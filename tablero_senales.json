@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-05 09:20",
+ "actualizado": "2026-11-05 09:36",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13711,14 +13711,19 @@
   "eventos": [],
   "reportes": [],
   "gap": {
-   "cuando": "09:20",
-   "lado": -1,
-   "mes_pct": -0.09713453132588201,
-   "ayer_pct": 1.5868192268054804,
+   "cuando": "9:28",
+   "lado": -1.0,
+   "mes_pct": -0.1489,
+   "ayer_pct": 1.5868,
    "ganador": true,
    "enviado": false
   },
-  "avisos": [],
+  "avisos": [
+   {
+    "hora": "09:33",
+    "texto": "Toque Magnífico PUT"
+   }
+  ],
   "rebote": null,
   "rebote_dia": [
    "de jueves para viernes",
