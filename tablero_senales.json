@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-05 09:45",
+ "actualizado": "2026-11-05 10:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13712,7 +13712,7 @@
    "detalle": "9:40 · CALL 762 al ask 2.48",
    "maximo": 0.0,
    "unidad": "opción",
-   "minimo": -40.3,
+   "minimo": -85.1,
    "contra": 0.0,
    "minutos": 0.2,
    "strike": 762.0,
