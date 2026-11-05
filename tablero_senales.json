@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-05 12:05",
+ "actualizado": "2026-11-05 16:20",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13638,9 +13638,9 @@
    "fecha": "2026-11-04",
    "senal": "Rectángulo (amigo)",
    "lado": "PUT",
-   "resultado": null,
-   "detalle": "16:00 · falta la apertura siguiente",
-   "maximo": null,
+   "resultado": "G",
+   "detalle": "16:00 · GAP siguiente -0.16%",
+   "maximo": 0.2,
    "unidad": "GAP",
    "minimo": null,
    "activo": "SPX",
@@ -13735,16 +13735,18 @@
    "lado": "PUT",
    "resultado": "G",
    "detalle": "11:50 · PUT 745 al ask 3.18",
-   "maximo": 31.1,
+   "maximo": 38.1,
    "unidad": "opción",
    "minimo": -15.1,
    "contra": -15.1,
-   "minutos": 14.8,
+   "minutos": 16.2,
    "strike": 745.0,
    "entrada": 3.18,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "11:50:18",
    "venta": "12:01",
+   "max_sin_tp": 186.8,
+   "hora_max_sin_tp": "15:31",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13769,9 +13771,38 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:33:28",
    "venta": "09:34",
+   "max_sin_tp": 673.6,
+   "hora_max_sin_tp": "10:15",
    "activo": "SPY",
    "activos": [
     "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-11-05",
+   "senal": "Tridente 15 (💵💵💵) PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "12:15 · vela 12:00 · SPX PUT 7440 a 27.60 · TP 31.80 · +15% a las 12:16 · +$4.190 con 10 contratos",
+   "maximo": 15.0,
+   "unidad": "opción",
+   "minimo": -5.1,
+   "strike": 7440.0,
+   "entrada": 27.6,
+   "entro": "12:15",
+   "venta": "12:16",
+   "usd_10": 4190,
+   "tp_fijo": 15,
+   "contra": -1.1,
+   "max_sin_tp": 153.3,
+   "hora_max_sin_tp": "13:21",
+   "minutos": 1,
+   "fuente": "Schwab cadena (bid)",
+   "activo": "SPX",
+   "activos": [
     "SPX"
    ],
    "semana": "2026-11-02",
@@ -13805,7 +13836,12 @@
     "texto": "Heikin Ashi PUT"
    }
   ],
-  "rebote": null,
+  "rebote": {
+   "senal": false,
+   "razon_vol": 1.59,
+   "pos_rango": 0.013,
+   "roja": true
+  },
   "rebote_dia": [
    "de jueves para viernes",
    14,
@@ -13825,7 +13861,14 @@
      "texto": "Sentimiento Univ. de Michigan (preliminar)"
     }
    ],
-   "gap": null
+   "gap": {
+    "mes_pct": -0.3216,
+    "hoy_pct": -4.318,
+    "lado": -1,
+    "cuando": "05/11 16:20",
+    "continuacion": true,
+    "ganador": true
+   }
   }
  }
 }
