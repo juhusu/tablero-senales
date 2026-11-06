@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-05 20:00",
+ "actualizado": "2026-11-06 03:31",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13810,65 +13810,40 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-11-05",
-  "dia_semana": 3,
-  "eventos": [],
+  "fecha": "2026-11-06",
+  "dia_semana": 4,
+  "eventos": [
+   {
+    "hora": "08:30",
+    "texto": "Informe de empleo (nóminas no agrícolas) (octubre)"
+   },
+   {
+    "hora": "10:00",
+    "texto": "Sentimiento Univ. de Michigan (preliminar)"
+   }
+  ],
   "reportes": [],
   "gap": {
-   "cuando": "9:28",
-   "lado": -1.0,
-   "mes_pct": -0.1489,
-   "ayer_pct": 1.5868,
+   "cuando": "03:31",
+   "lado": 1,
+   "mes_pct": 0.08461955050094172,
+   "ayer_pct": -4.318025153797134,
    "ganador": true,
    "enviado": false
   },
-  "avisos": [
-   {
-    "hora": "09:33",
-    "texto": "Toque Magnífico PUT"
-   },
-   {
-    "hora": "09:40",
-    "texto": "Heikin Ashi CALL"
-   },
-   {
-    "hora": "11:50",
-    "texto": "Heikin Ashi PUT"
-   }
-  ],
-  "rebote": {
-   "senal": false,
-   "razon_vol": 1.59,
-   "pos_rango": 0.013,
-   "roja": true
-  },
+  "avisos": [],
+  "rebote": null,
   "rebote_dia": [
-   "de jueves para viernes",
-   14,
-   15
+   "de viernes para lunes",
+   6,
+   7
   ],
   "cobertura_hasta": "2026-12-09",
   "manana": {
-   "fecha": "2026-11-06",
-   "dia_semana": 4,
-   "eventos": [
-    {
-     "hora": "08:30",
-     "texto": "Informe de empleo (nóminas no agrícolas) (octubre)"
-    },
-    {
-     "hora": "10:00",
-     "texto": "Sentimiento Univ. de Michigan (preliminar)"
-    }
-   ],
-   "gap": {
-    "mes_pct": 0.0609,
-    "hoy_pct": -4.318,
-    "lado": 1,
-    "cuando": "05/11 20:00",
-    "continuacion": false,
-    "ganador": true
-   }
+   "fecha": "2026-11-09",
+   "dia_semana": 0,
+   "eventos": [],
+   "gap": null
   }
  }
 }
