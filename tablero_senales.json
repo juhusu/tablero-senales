@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-06 10:45",
+ "actualizado": "2026-11-06 12:05",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13810,13 +13810,42 @@
   },
   {
    "fecha": "2026-11-06",
+   "senal": "BUY BUY & SELL SELL CALL",
+   "lado": "CALL",
+   "resultado": null,
+   "detalle": "10:50 · SPX CALL 7490 a 6.10 · TP 7.10 · pendiente",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": -4.9,
+   "strike": 7490.0,
+   "entrada": 6.1,
+   "entro": "10:50:23",
+   "venta": null,
+   "usd_10": null,
+   "tp_fijo": 15,
+   "contra": -60.7,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": null,
+   "en_curso": true,
+   "fuente": "en vivo: el detector (tools/senal_stochrsi_ut.py) y la cadena del $SPX del motor (bid)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-06",
    "senal": "Heikin Ashi PUT",
    "lado": "PUT",
    "resultado": "G",
    "detalle": "10:40 · PUT 741 al ask 2.98",
    "maximo": 10.4,
    "unidad": "opción",
-   "minimo": -11.4,
+   "minimo": -64.8,
    "contra": -6.0,
    "minutos": 1.2,
    "strike": 741.0,
@@ -13874,6 +13903,32 @@
    "venta": "09:40",
    "activos": [
     "TSLA"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-06",
+   "senal": "Rebote EMA 9 (5 min)",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "11:35 · vela de 5 min que cerró 11:40 · SPX CALL 7435 al ask 19.20 (11:40:24) · -35% a las 12:02:40 a 11.20",
+   "maximo": -8.3,
+   "unidad": "opción",
+   "minimo": -41.7,
+   "strike": 7435,
+   "entrada": 19.2,
+   "entro": "11:40:24",
+   "venta": "12:02:40",
+   "minutos": 22,
+   "contra": -34.9,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "en_curso": false,
+   "fuente": "Schwab (cadena del SPX cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
    ],
    "semana": "2026-11-02",
    "dia_semana": 4
