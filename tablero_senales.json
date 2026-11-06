@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-06 09:35",
+ "actualizado": "2026-11-06 10:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13810,19 +13810,94 @@
   },
   {
    "fecha": "2026-11-06",
+   "senal": "Heikin Ashi PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "10:40 · PUT 741 al ask 2.98",
+   "maximo": 10.4,
+   "unidad": "opción",
+   "minimo": -11.4,
+   "contra": -6.0,
+   "minutos": 1.2,
+   "strike": 741.0,
+   "entrada": 2.98,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:40:22",
+   "venta": "10:41",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-06",
    "senal": "Opening Eyes (motor) SPX",
    "lado": "CALL",
-   "resultado": "P",
+   "resultado": "G",
    "detalle": "09:34 · CALL 738 al ask 3.53",
-   "maximo": -5.7,
+   "maximo": 107.6,
    "unidad": "opción",
    "minimo": -15.6,
-   "contra": -7.6,
-   "minutos": 0.5,
+   "contra": -15.6,
+   "minutos": 19.8,
    "strike": 738.0,
    "entrada": 3.53,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:34:20",
+   "activo": "SPX",
+   "venta": "09:37",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-06",
+   "senal": "Opening Eyes (motor) TSLA",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "09:40 · CALL 350 al ask 5.00",
+   "maximo": 77.0,
+   "unidad": "opción",
+   "minimo": 9.0,
+   "contra": 0.0,
+   "minutos": 20.5,
+   "strike": 350.0,
+   "entrada": 5.0,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:40:20",
+   "activo": "TSLA",
+   "venta": "09:40",
+   "activos": [
+    "TSLA"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-06",
+   "senal": "Tridente 15 (💵💵💵) CALL",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "09:45 · vela 09:30 · SPX CALL 7415 a 32.80 · TP 37.80 · +15% a las 09:46 · +$4.990 con 10 contratos",
+   "maximo": 15.0,
+   "unidad": "opción",
+   "minimo": -16.2,
+   "strike": 7415.0,
+   "entrada": 32.8,
+   "entro": "09:45",
+   "venta": "09:46",
+   "usd_10": 4990,
+   "tp_fijo": 15,
+   "contra": -0.6,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": 2,
+   "fuente": "Schwab cadena (bid)",
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -13851,6 +13926,13 @@
     "mov": -0.1182,
     "direccion": "abajo",
     "cifras": {}
+   },
+   {
+    "hora": "10:00",
+    "datos": "Michigan preliminar",
+    "mov": 0.141,
+    "direccion": "arriba",
+    "cifras": {}
    }
   ],
   "gap": {
@@ -13861,7 +13943,12 @@
    "ganador": true,
    "enviado": false
   },
-  "avisos": [],
+  "avisos": [
+   {
+    "hora": "10:40",
+    "texto": "Heikin Ashi PUT"
+   }
+  ],
   "rebote": null,
   "rebote_dia": [
    "de viernes para lunes",
