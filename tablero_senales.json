@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-06 20:00",
+ "actualizado": "2026-11-07 03:31",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13232,9 +13232,8 @@
    "entrada": 1.51,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:40:26",
-   "venta": "09:41",
-   "max_sin_tp": 194.0,
-   "hora_max_sin_tp": "10:27",
+   "max_sin_tp": 199.3,
+   "hora_max_sin_tp": "10:25",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13258,9 +13257,8 @@
    "entrada": 1.09,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "11:00:28",
-   "venta": "11:10",
-   "max_sin_tp": 651.4,
-   "hora_max_sin_tp": "15:51",
+   "max_sin_tp": 624.8,
+   "hora_max_sin_tp": "15:35",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13285,9 +13283,6 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:43:26",
    "activo": "TSLA",
-   "venta": "09:48",
-   "max_sin_tp": 113.9,
-   "hora_max_sin_tp": "09:52",
    "activos": [
     "TSLA"
    ],
@@ -13309,9 +13304,8 @@
    "entrada": 1.83,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "10:02:27",
-   "venta": "10:03",
-   "max_sin_tp": 142.6,
-   "hora_max_sin_tp": "10:27",
+   "max_sin_tp": 147.0,
+   "hora_max_sin_tp": "10:25",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13364,9 +13358,8 @@
    "entrada": 1.47,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "11:30:18",
-   "venta": "11:31",
-   "max_sin_tp": 47.6,
-   "hora_max_sin_tp": "14:58",
+   "max_sin_tp": 51.0,
+   "hora_max_sin_tp": "14:55",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13391,8 +13384,7 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:34:29",
    "activo": "SPX",
-   "venta": "09:37",
-   "max_sin_tp": 80.7,
+   "max_sin_tp": 77.0,
    "hora_max_sin_tp": "13:35",
    "activos": [
     "SPX"
@@ -13416,8 +13408,6 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "10:03:15",
    "activo": "TSLA",
-   "max_sin_tp": -1.4,
-   "hora_max_sin_tp": "10:03",
    "activos": [
     "TSLA"
    ],
@@ -13522,6 +13512,8 @@
    "strike": 764.0,
    "entrada": 3.45,
    "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
+   "max_sin_tp": 112.8,
+   "hora_max_sin_tp": "12:50",
    "entro": "09:30",
    "horas_calc": true,
    "venta": "no llegó",
@@ -13547,9 +13539,8 @@
    "entrada": 1.82,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "10:30:23",
-   "venta": "10:32",
-   "max_sin_tp": 94.0,
-   "hora_max_sin_tp": "11:27",
+   "max_sin_tp": 100.5,
+   "hora_max_sin_tp": "11:25",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13574,9 +13565,8 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "10:22:23",
    "activo": "SPX",
-   "venta": "10:23",
-   "max_sin_tp": 88.8,
-   "hora_max_sin_tp": "11:27",
+   "max_sin_tp": 95.2,
+   "hora_max_sin_tp": "11:25",
    "activos": [
     "SPX"
    ],
@@ -13599,9 +13589,6 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:33:21",
    "activo": "TSLA",
-   "venta": "09:33",
-   "max_sin_tp": 19.8,
-   "hora_max_sin_tp": "09:35",
    "activos": [
     "TSLA"
    ],
@@ -13720,7 +13707,7 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:40:28",
    "max_sin_tp": 0.0,
-   "hora_max_sin_tp": "09:40",
+   "hora_max_sin_tp": "",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13744,9 +13731,6 @@
    "entrada": 3.18,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "11:50:18",
-   "venta": "12:01",
-   "max_sin_tp": 186.8,
-   "hora_max_sin_tp": "15:31",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13770,9 +13754,8 @@
    "entrada": 1.59,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:33:28",
-   "venta": "09:34",
-   "max_sin_tp": 673.6,
-   "hora_max_sin_tp": "10:15",
+   "max_sin_tp": 1620.8,
+   "hora_max_sin_tp": "15:45",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13868,9 +13851,8 @@
    "entrada": 2.98,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "10:40:22",
-   "venta": "10:41",
-   "max_sin_tp": 45.6,
-   "hora_max_sin_tp": "12:53",
+   "max_sin_tp": 50.3,
+   "hora_max_sin_tp": "12:50",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -13895,9 +13877,8 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:34:20",
    "activo": "SPX",
-   "venta": "09:37",
    "max_sin_tp": 107.6,
-   "hora_max_sin_tp": "09:54",
+   "hora_max_sin_tp": "",
    "activos": [
     "SPX"
    ],
@@ -13920,9 +13901,6 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:40:20",
    "activo": "TSLA",
-   "venta": "09:40",
-   "max_sin_tp": 170.0,
-   "hora_max_sin_tp": "15:10",
    "activos": [
     "TSLA"
    ],
@@ -14011,72 +13989,20 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-11-06",
-  "dia_semana": 4,
-  "eventos": [
-   {
-    "hora": "08:30",
-    "texto": "Informe de empleo (nóminas no agrícolas) (octubre)"
-   },
-   {
-    "hora": "10:00",
-    "texto": "Sentimiento Univ. de Michigan (preliminar)"
-   }
-  ],
-  "reportes": [
-   {
-    "hora": "08:30",
-    "datos": "Informe de empleo",
-    "mov": -0.1182,
-    "direccion": "abajo",
-    "cifras": {}
-   },
-   {
-    "hora": "10:00",
-    "datos": "Michigan preliminar",
-    "mov": 0.141,
-    "direccion": "arriba",
-    "cifras": {}
-   }
-  ],
-  "gap": {
-   "cuando": "9:28",
-   "lado": 1.0,
-   "mes_pct": 0.2065,
-   "ayer_pct": -4.318,
-   "ganador": true,
-   "enviado": false
-  },
-  "avisos": [
-   {
-    "hora": "10:40",
-    "texto": "Heikin Ashi PUT"
-   }
-  ],
-  "rebote": {
-   "senal": false,
-   "razon_vol": 1.78,
-   "pos_rango": 0.1,
-   "roja": true
-  },
-  "rebote_dia": [
-   "de viernes para lunes",
-   6,
-   7
-  ],
+  "fecha": "2026-11-07",
+  "dia_semana": 5,
+  "eventos": [],
+  "reportes": [],
+  "gap": null,
+  "avisos": [],
+  "rebote": null,
+  "rebote_dia": null,
   "cobertura_hasta": "2026-12-09",
   "manana": {
    "fecha": "2026-11-09",
    "dia_semana": 0,
    "eventos": [],
-   "gap": {
-    "mes_pct": 0.0541,
-    "hoy_pct": 0.2651,
-    "lado": 1,
-    "cuando": "06/11 16:59",
-    "continuacion": true,
-    "ganador": true
-   }
+   "gap": null
   }
  }
 }
