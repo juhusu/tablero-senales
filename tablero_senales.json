@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07 03:31",
+ "actualizado": "2026-11-09 04:00",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13989,19 +13989,35 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-11-07",
-  "dia_semana": 5,
+  "fecha": "2026-11-09",
+  "dia_semana": 0,
   "eventos": [],
   "reportes": [],
-  "gap": null,
+  "gap": {
+   "cuando": "04:00",
+   "lado": 1,
+   "mes_pct": 0.40540540540541237,
+   "ayer_pct": 0.26506449902810036,
+   "ganador": false,
+   "enviado": false
+  },
   "avisos": [],
   "rebote": null,
-  "rebote_dia": null,
+  "rebote_dia": [
+   "de lunes para martes",
+   4,
+   9
+  ],
   "cobertura_hasta": "2026-12-09",
   "manana": {
-   "fecha": "2026-11-09",
-   "dia_semana": 0,
-   "eventos": [],
+   "fecha": "2026-11-10",
+   "dia_semana": 1,
+   "eventos": [
+    {
+     "hora": "08:30",
+     "texto": "CPI octubre"
+    }
+   ],
    "gap": null
   }
  }
