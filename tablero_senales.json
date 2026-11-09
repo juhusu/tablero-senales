@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-09 10:45",
+ "actualizado": "2026-11-09 12:05",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13989,6 +13989,35 @@
   },
   {
    "fecha": "2026-11-09",
+   "senal": "BUY BUY & SELL SELL CALL",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "11:45 · SPX CALL 7545 a 4.40 · TP 5.10 · +15% a las 11:48 · +$690 con 10 contratos",
+   "maximo": 15.0,
+   "unidad": "opción",
+   "minimo": -2.3,
+   "strike": 7545.0,
+   "entrada": 4.4,
+   "entro": "11:45:16",
+   "venta": "11:48",
+   "usd_10": 690,
+   "tp_fijo": 15,
+   "contra": -2.3,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": 3,
+   "en_curso": false,
+   "fuente": "en vivo: el detector (tools/senal_stochrsi_ut.py) y la cadena del $SPX del motor (bid)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-09",
    "senal": "GAP continuación",
    "lado": "CALL",
    "resultado": "P",
@@ -14006,6 +14035,30 @@
    "venta": "no llegó",
    "activo": "SPX",
    "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-09",
+   "senal": "Heikin Ashi PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "11:20 · PUT 752 al ask 1.15",
+   "maximo": 31.3,
+   "unidad": "opción",
+   "minimo": -47.0,
+   "contra": -5.2,
+   "minutos": 16.5,
+   "strike": 752.0,
+   "entrada": 1.15,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "11:20:18",
+   "venta": "11:28",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
     "SPX"
    ],
    "semana": "2026-11-09",
@@ -14042,21 +14095,21 @@
    "fecha": "2026-11-09",
    "senal": "Tridente 15 CALL",
    "lado": "CALL",
-   "resultado": null,
-   "detalle": "09:45 · vela 09:30 · SPX CALL 7550 a 4.50 · TP 5.20 · pendiente",
-   "maximo": null,
+   "resultado": "G",
+   "detalle": "09:45 · vela 09:30 · SPX CALL 7550 a 4.50 · TP 5.20 · +15% a las 10:51 · +$690 con 10 contratos",
+   "maximo": 15.0,
    "unidad": "opción",
    "minimo": -28.9,
    "strike": 7550.0,
    "entrada": 4.5,
    "entro": "09:45",
-   "venta": null,
-   "usd_10": null,
+   "venta": "10:51",
+   "usd_10": 690,
    "tp_fijo": 15,
    "contra": -28.9,
    "max_sin_tp": null,
    "hora_max_sin_tp": "",
-   "minutos": null,
+   "minutos": 66,
    "fuente": "Schwab cadena (bid)",
    "activo": "SPX",
    "activos": [
@@ -14083,6 +14136,10 @@
    {
     "hora": "09:30",
     "texto": "GAP continuación CALL"
+   },
+   {
+    "hora": "11:20",
+    "texto": "Heikin Ashi PUT"
    }
   ],
   "rebote": null,
