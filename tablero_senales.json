@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-09 09:35",
+ "actualizado": "2026-11-09 09:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13986,6 +13986,30 @@
    ],
    "semana": "2026-11-02",
    "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-09",
+   "senal": "GAP continuación",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "9:30 · GAP +0.62% · ayer +0.31%",
+   "maximo": 44.5,
+   "unidad": "opción",
+   "minimo": -46.7,
+   "contra": -14.7,
+   "minutos": 14.7,
+   "strike": 742.0,
+   "entrada": 4.09,
+   "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
+   "entro": "09:30",
+   "horas_calc": true,
+   "venta": "no llegó",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 0
   }
  ],
  "hoy": {
