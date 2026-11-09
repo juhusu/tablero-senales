@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-09 09:45",
+ "actualizado": "2026-11-09 10:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13997,13 +13997,67 @@
    "unidad": "opción",
    "minimo": -46.7,
    "contra": -14.7,
-   "minutos": 14.7,
+   "minutos": 24.4,
    "strike": 742.0,
    "entrada": 4.09,
    "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
    "entro": "09:30",
    "horas_calc": true,
    "venta": "no llegó",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-09",
+   "senal": "Tridente 15 (💵💵💵) CALL",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "09:45 · vela 09:30 · SPX CALL 7490 a 23.40 · TP 27.00 · +15% a las 09:52 · +$3.590 con 10 contratos",
+   "maximo": 15.0,
+   "unidad": "opción",
+   "minimo": -19.7,
+   "strike": 7490.0,
+   "entrada": 23.4,
+   "entro": "09:45",
+   "venta": "09:52",
+   "usd_10": 3590,
+   "tp_fijo": 15,
+   "contra": -19.7,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": 7,
+   "fuente": "Schwab cadena (bid)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-09",
+   "senal": "Tridente 15 CALL",
+   "lado": "CALL",
+   "resultado": null,
+   "detalle": "09:45 · vela 09:30 · SPX CALL 7550 a 4.50 · TP 5.20 · pendiente",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": -28.9,
+   "strike": 7550.0,
+   "entrada": 4.5,
+   "entro": "09:45",
+   "venta": null,
+   "usd_10": null,
+   "tp_fijo": 15,
+   "contra": -28.9,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": null,
+   "fuente": "Schwab cadena (bid)",
    "activo": "SPX",
    "activos": [
     "SPX"
