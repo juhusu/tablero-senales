@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-09 12:05",
+ "actualizado": "2026-11-09 16:20",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13824,9 +13824,9 @@
    "fecha": "2026-11-06",
    "senal": "GAP bajista (amigo)",
    "lado": "PUT",
-   "resultado": null,
-   "detalle": "16:00 · falta la apertura siguiente",
-   "maximo": null,
+   "resultado": "P",
+   "detalle": "16:00 · GAP siguiente +0.90%",
+   "maximo": -0.9,
    "unidad": "GAP",
    "minimo": null,
    "activo": "SPX",
@@ -14003,8 +14003,8 @@
    "usd_10": 690,
    "tp_fijo": 15,
    "contra": -2.3,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
+   "max_sin_tp": 613.6,
+   "hora_max_sin_tp": "15:28",
    "minutos": 3,
    "en_curso": false,
    "fuente": "en vivo: el detector (tools/senal_stochrsi_ut.py) y la cadena del $SPX del motor (bid)",
@@ -14056,6 +14056,8 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "11:20:18",
    "venta": "11:28",
+   "max_sin_tp": 31.3,
+   "hora_max_sin_tp": "11:36",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -14080,8 +14082,8 @@
    "usd_10": 3590,
    "tp_fijo": 15,
    "contra": -19.7,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
+   "max_sin_tp": 167.1,
+   "hora_max_sin_tp": "14:03",
    "minutos": 7,
    "fuente": "Schwab cadena (bid)",
    "activo": "SPX",
@@ -14107,8 +14109,8 @@
    "usd_10": 690,
    "tp_fijo": 15,
    "contra": -28.9,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
+   "max_sin_tp": 491.1,
+   "hora_max_sin_tp": "15:15",
    "minutos": 66,
    "fuente": "Schwab cadena (bid)",
    "activo": "SPX",
@@ -14142,7 +14144,12 @@
     "texto": "Heikin Ashi PUT"
    }
   ],
-  "rebote": null,
+  "rebote": {
+   "senal": false,
+   "razon_vol": 2.47,
+   "pos_rango": 0.808,
+   "roja": true
+  },
   "rebote_dia": [
    "de lunes para martes",
    4,
@@ -14158,7 +14165,14 @@
      "texto": "CPI octubre"
     }
    ],
-   "gap": null
+   "gap": {
+    "mes_pct": 0.0198,
+    "hoy_pct": 2.3427,
+    "lado": 1,
+    "cuando": "09/11 16:20",
+    "continuacion": false,
+    "ganador": true
+   }
   }
  }
 }
