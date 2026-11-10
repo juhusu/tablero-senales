@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-10 08:00",
+ "actualizado": "2026-11-10 09:20",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14435,11 +14435,23 @@
     "texto": "CPI octubre"
    }
   ],
-  "reportes": [],
+  "reportes": [
+   {
+    "hora": "08:30",
+    "datos": "CPI",
+    "mov": -0.5212,
+    "direccion": "abajo",
+    "cifras": {
+     "IPC del mes": "+0.4%",
+     "IPC subyacente del mes": "+0.3%",
+     "IPC anual": "—"
+    }
+   }
+  ],
   "gap": {
-   "cuando": "08:00",
-   "lado": 1,
-   "mes_pct": 0.06602185323341114,
+   "cuando": "09:20",
+   "lado": -1,
+   "mes_pct": -0.5842934011157652,
    "ayer_pct": 2.3426696673083613,
    "ganador": true,
    "enviado": false
