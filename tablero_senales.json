@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-10 09:45",
+ "actualizado": "2026-11-10 10:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14427,6 +14427,53 @@
   },
   {
    "fecha": "2026-11-10",
+   "senal": "Heikin Ashi PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "10:30 · PUT 752 al ask 1.77",
+   "maximo": 52.5,
+   "unidad": "opción",
+   "minimo": -20.3,
+   "contra": -20.3,
+   "minutos": 14.3,
+   "strike": 752.0,
+   "entrada": 1.77,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:30:23",
+   "venta": "10:37",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-10",
+   "senal": "Opening Eyes (motor) SPX",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "09:58 · CALL 752 al ask 2.19",
+   "maximo": 53.0,
+   "unidad": "opción",
+   "minimo": -53.4,
+   "contra": -0.5,
+   "minutos": 3.8,
+   "strike": 752.0,
+   "entrada": 2.19,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:58:15",
+   "activo": "SPX",
+   "venta": "09:59",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-10",
    "senal": "Opening Eyes (motor) TSLA",
    "lado": "CALL",
    "resultado": "G",
@@ -14483,6 +14530,10 @@
    {
     "hora": "09:36",
     "texto": "Toque Magnífico CALL"
+   },
+   {
+    "hora": "10:30",
+    "texto": "Heikin Ashi PUT"
    }
   ],
   "rebote": null,
