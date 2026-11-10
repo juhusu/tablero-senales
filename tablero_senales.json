@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-10 09:20",
+ "actualizado": "2026-11-10 09:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14424,6 +14424,29 @@
    ],
    "semana": "2026-11-09",
    "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-10",
+   "senal": "Opening Eyes (motor) TSLA",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "09:31 · CALL 372.5 al ask 5.45",
+   "maximo": 48.6,
+   "unidad": "opción",
+   "minimo": -3.7,
+   "contra": -3.7,
+   "minutos": 4.7,
+   "strike": 372.5,
+   "entrada": 5.45,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:31:23",
+   "activo": "TSLA",
+   "venta": "09:34",
+   "activos": [
+    "TSLA"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 1
   }
  ],
  "hoy": {
@@ -14449,14 +14472,19 @@
    }
   ],
   "gap": {
-   "cuando": "09:20",
-   "lado": -1,
-   "mes_pct": -0.5842934011157652,
-   "ayer_pct": 2.3426696673083613,
+   "cuando": "9:28",
+   "lado": -1.0,
+   "mes_pct": -0.6041,
+   "ayer_pct": 2.3427,
    "ganador": true,
    "enviado": false
   },
-  "avisos": [],
+  "avisos": [
+   {
+    "hora": "09:36",
+    "texto": "Toque Magnífico CALL"
+   }
+  ],
   "rebote": null,
   "rebote_dia": [
    "de martes para miércoles",
