@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-09 20:00",
+ "actualizado": "2026-11-09 20:30",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14018,6 +14018,32 @@
   },
   {
    "fecha": "2026-11-09",
+   "senal": "Bollinger SPX Charlatan",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "09:32 · SPXW CALL 7505 a 5.50 (09:32:19) · +35% a las 09:33 (provisorio, con la cadena del motor) · se mide de madrugada con Tastytrade · VWAP SPY a favor +0.02%",
+   "maximo": 35.0,
+   "unidad": "opción",
+   "minimo": -1.8,
+   "strike": 7505.0,
+   "entrada": 5.5,
+   "entro": "09:32:19",
+   "venta": "09:33",
+   "minutos": 1,
+   "en_curso": false,
+   "contra": -1.8,
+   "max_sin_tp": 1032.7,
+   "hora_max_sin_tp": "14:43",
+   "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-09",
    "senal": "GAP continuación",
    "lado": "CALL",
    "resultado": "P",
@@ -14166,11 +14192,11 @@
     }
    ],
    "gap": {
-    "mes_pct": 0.0495,
+    "mes_pct": 0.0759,
     "hoy_pct": 2.3427,
     "lado": 1,
-    "cuando": "09/11 20:00",
-    "continuacion": false,
+    "cuando": "09/11 20:30",
+    "continuacion": true,
     "ganador": true
    }
   }
