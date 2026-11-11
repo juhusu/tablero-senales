@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-11 12:05",
+ "actualizado": "2026-11-11 16:20",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14651,9 +14651,25 @@
    "minutos": 3,
    "en_curso": false,
    "contra": -4.3,
-   "max_sin_tp": 569.6,
-   "hora_max_sin_tp": "12:04",
+   "max_sin_tp": 943.5,
+   "hora_max_sin_tp": "13:46",
    "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-11",
+   "senal": "GAP bajista (amigo)",
+   "lado": "PUT",
+   "resultado": null,
+   "detalle": "16:00 · falta la apertura siguiente",
+   "maximo": null,
+   "unidad": "GAP",
+   "minimo": null,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -14677,6 +14693,8 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:50:27",
    "venta": "09:50",
+   "max_sin_tp": 358.8,
+   "hora_max_sin_tp": "13:46",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -14702,6 +14720,8 @@
    "entro": "10:11:29",
    "activo": "SPX",
    "venta": "10:14",
+   "max_sin_tp": 14.8,
+   "hora_max_sin_tp": "10:14",
    "activos": [
     "SPX"
    ],
@@ -14725,6 +14745,8 @@
    "entro": "09:48:27",
    "activo": "TSLA",
    "venta": "09:48",
+   "max_sin_tp": 22.0,
+   "hora_max_sin_tp": "09:48",
    "activos": [
     "TSLA"
    ],
@@ -14746,10 +14768,26 @@
    "venta": "11:25:13",
    "minutos": 10,
    "contra": -11.7,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
+   "max_sin_tp": 394.8,
+   "hora_max_sin_tp": "13:46",
    "en_curso": false,
    "fuente": "Schwab (cadena del SPX cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-11",
+   "senal": "Rectángulo (amigo)",
+   "lado": "PUT",
+   "resultado": null,
+   "detalle": "16:00 · falta la apertura siguiente",
+   "maximo": null,
+   "unidad": "GAP",
+   "minimo": null,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -14777,7 +14815,12 @@
     "texto": "Heikin Ashi CALL"
    }
   ],
-  "rebote": null,
+  "rebote": {
+   "senal": false,
+   "razon_vol": 1.92,
+   "pos_rango": 0.643,
+   "roja": true
+  },
   "rebote_dia": [
    "de miércoles para jueves",
    13,
@@ -14788,7 +14831,14 @@
    "fecha": "2026-11-12",
    "dia_semana": 3,
    "eventos": [],
-   "gap": null
+   "gap": {
+    "mes_pct": 0.0523,
+    "hoy_pct": 1.2696,
+    "lado": 1,
+    "cuando": "11/11 16:20",
+    "continuacion": true,
+    "ganador": true
+   }
   }
  }
 }
