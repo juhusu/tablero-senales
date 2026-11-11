@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-10 20:00",
+ "actualizado": "2026-11-11 00:01",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14612,69 +14612,31 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-11-10",
-  "dia_semana": 1,
-  "eventos": [
-   {
-    "hora": "08:30",
-    "texto": "CPI octubre"
-   }
-  ],
-  "reportes": [
-   {
-    "hora": "08:30",
-    "datos": "CPI",
-    "mov": -0.5212,
-    "direccion": "abajo",
-    "cifras": {
-     "IPC del mes": "+0.4%",
-     "IPC subyacente del mes": "+0.3%",
-     "IPC anual": "—"
-    }
-   }
-  ],
+  "fecha": "2026-11-11",
+  "dia_semana": 2,
+  "eventos": [],
+  "reportes": [],
   "gap": {
-   "cuando": "9:28",
-   "lado": -1.0,
-   "mes_pct": -0.6041,
-   "ayer_pct": 2.3427,
-   "ganador": true,
+   "cuando": "00:01",
+   "lado": 1,
+   "mes_pct": 0.6064422057264096,
+   "ayer_pct": -0.35368923036163125,
+   "ganador": false,
    "enviado": false
   },
-  "avisos": [
-   {
-    "hora": "09:36",
-    "texto": "Toque Magnífico CALL"
-   },
-   {
-    "hora": "10:30",
-    "texto": "Heikin Ashi PUT"
-   }
-  ],
-  "rebote": {
-   "senal": false,
-   "razon_vol": 1.86,
-   "pos_rango": 0.701,
-   "roja": false
-  },
+  "avisos": [],
+  "rebote": null,
   "rebote_dia": [
-   "de martes para miércoles",
-   6,
-   9
+   "de miércoles para jueves",
+   13,
+   16
   ],
   "cobertura_hasta": "2026-12-09",
   "manana": {
-   "fecha": "2026-11-11",
-   "dia_semana": 2,
+   "fecha": "2026-11-12",
+   "dia_semana": 3,
    "eventos": [],
-   "gap": {
-    "mes_pct": 0.3778,
-    "hoy_pct": -0.3537,
-    "lado": 1,
-    "cuando": "10/11 20:00",
-    "continuacion": false,
-    "ganador": false
-   }
+   "gap": null
   }
  }
 }
