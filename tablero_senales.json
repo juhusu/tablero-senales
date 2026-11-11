@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-11 10:45",
+ "actualizado": "2026-11-11 12:05",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14651,8 +14651,8 @@
    "minutos": 3,
    "en_curso": false,
    "contra": -4.3,
-   "max_sin_tp": 110.9,
-   "hora_max_sin_tp": "10:43",
+   "max_sin_tp": 569.6,
+   "hora_max_sin_tp": "12:04",
    "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
    "activo": "SPX",
    "activos": [
@@ -14727,6 +14727,32 @@
    "venta": "09:48",
    "activos": [
     "TSLA"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-11",
+   "senal": "Rebote EMA 9 (5 min)",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "11:10 · vela de 5 min que cerró 11:15 · SPX CALL 7610 al ask 7.70 (11:15:23) · +35% (bid 10.60) a las 11:25:13",
+   "maximo": 37.7,
+   "unidad": "opción",
+   "minimo": -11.7,
+   "strike": 7610,
+   "entrada": 7.7,
+   "entro": "11:15:23",
+   "venta": "11:25:13",
+   "minutos": 10,
+   "contra": -11.7,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "en_curso": false,
+   "fuente": "Schwab (cadena del SPX cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
    ],
    "semana": "2026-11-09",
    "dia_semana": 2
