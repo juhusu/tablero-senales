@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-11 00:01",
+ "actualizado": "2026-11-11 03:32",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14456,6 +14456,31 @@
   },
   {
    "fecha": "2026-11-10",
+   "senal": "Bollinger SPX Charlatan",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "09:31 · SPXW PUT 7390 a 4.30 (09:31, vela de 1 min) · reforzó 09:37 a 2.50 · venció en cero · VWAP SPY a favor +0.03%",
+   "maximo": 9.3,
+   "unidad": "opción",
+   "minimo": -90.7,
+   "contra": -14.0,
+   "minutos": 1.0,
+   "strike": 7390.0,
+   "venta": "venció",
+   "entro": "09:31:15",
+   "max_sin_tp": 9.3,
+   "hora_max_sin_tp": "09:32",
+   "entrada": 4.3,
+   "fuente": "Tastytrade (velas de 1 min de la opción SPX)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-10",
    "senal": "Heikin Ashi PUT",
    "lado": "PUT",
    "resultado": "G",
@@ -14617,9 +14642,9 @@
   "eventos": [],
   "reportes": [],
   "gap": {
-   "cuando": "00:01",
+   "cuando": "03:32",
    "lado": 1,
-   "mes_pct": 0.6064422057264096,
+   "mes_pct": 0.7124867444326721,
    "ayer_pct": -0.35368923036163125,
    "ganador": false,
    "enviado": false
