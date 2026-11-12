@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-12 09:45",
+ "actualizado": "2026-11-12 10:45",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14768,6 +14768,78 @@
    ],
    "semana": "2026-11-09",
    "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-12",
+   "senal": "Bollinger SPX Charlatan",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "09:49 · SPXW PUT 7535 a 4.30 (09:49:26) · +35% a las 10:03 (provisorio, con la cadena del motor) · se mide de madrugada con Tastytrade · VWAP SPY en contra -0.20%",
+   "maximo": 35.0,
+   "unidad": "opción",
+   "minimo": -33.7,
+   "strike": 7535.0,
+   "entrada": 4.3,
+   "entro": "09:49:26",
+   "venta": "10:03",
+   "minutos": 14,
+   "en_curso": false,
+   "contra": -33.7,
+   "max_sin_tp": 46.5,
+   "hora_max_sin_tp": "10:06",
+   "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-11-12",
+   "senal": "Opening Eyes (motor) SPX",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "09:50 · CALL 760 al ask 1.84",
+   "maximo": 31.5,
+   "unidad": "opción",
+   "minimo": -42.9,
+   "contra": -5.4,
+   "minutos": 3.1,
+   "strike": 760.0,
+   "entrada": 1.84,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:50:26",
+   "activo": "SPX",
+   "venta": "09:51",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-11-12",
+   "senal": "Opening Eyes (motor) TSLA",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "10:01 · PUT 390 al ask 4.20",
+   "maximo": 13.1,
+   "unidad": "opción",
+   "minimo": -20.2,
+   "contra": -20.2,
+   "minutos": 26.6,
+   "strike": 390.0,
+   "entrada": 4.2,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:01:26",
+   "activo": "TSLA",
+   "venta": "10:10",
+   "activos": [
+    "TSLA"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 3
   }
  ],
  "hoy": {
