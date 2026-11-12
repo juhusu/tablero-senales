@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-12 12:05",
+ "actualizado": "2026-11-12 16:20",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14639,9 +14639,9 @@
    "fecha": "2026-11-11",
    "senal": "GAP bajista (amigo)",
    "lado": "PUT",
-   "resultado": null,
-   "detalle": "16:00 · falta la apertura siguiente",
-   "maximo": null,
+   "resultado": "G",
+   "detalle": "16:00 · GAP siguiente -0.76%",
+   "maximo": 0.8,
    "unidad": "GAP",
    "minimo": null,
    "activo": "SPX",
@@ -14757,9 +14757,9 @@
    "fecha": "2026-11-11",
    "senal": "Rectángulo (amigo)",
    "lado": "PUT",
-   "resultado": null,
-   "detalle": "16:00 · falta la apertura siguiente",
-   "maximo": null,
+   "resultado": "G",
+   "detalle": "16:00 · GAP siguiente -0.76%",
+   "maximo": 0.8,
    "unidad": "GAP",
    "minimo": null,
    "activo": "SPX",
@@ -14785,8 +14785,8 @@
    "usd_10": 690,
    "tp_fijo": 15,
    "contra": -19.6,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
+   "max_sin_tp": 187.0,
+   "hora_max_sin_tp": "15:50",
    "minutos": 6,
    "en_curso": false,
    "fuente": "en vivo: el detector (tools/senal_stochrsi_ut.py) y la cadena del $SPX del motor (bid)",
@@ -14826,6 +14826,22 @@
   },
   {
    "fecha": "2026-11-12",
+   "senal": "GAP bajista (amigo)",
+   "lado": "PUT",
+   "resultado": null,
+   "detalle": "16:00 · falta la apertura siguiente",
+   "maximo": null,
+   "unidad": "GAP",
+   "minimo": null,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-11-12",
    "senal": "Heikin Ashi PUT",
    "lado": "PUT",
    "resultado": "G",
@@ -14840,6 +14856,8 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "11:40:27",
    "venta": "11:41",
+   "max_sin_tp": 208.7,
+   "hora_max_sin_tp": "15:50",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -14865,6 +14883,8 @@
    "entro": "09:50:26",
    "activo": "SPX",
    "venta": "09:51",
+   "max_sin_tp": 189.7,
+   "hora_max_sin_tp": "11:23",
    "activos": [
     "SPX"
    ],
@@ -14888,6 +14908,8 @@
    "entro": "10:01:26",
    "activo": "TSLA",
    "venta": "10:10",
+   "max_sin_tp": 17.9,
+   "hora_max_sin_tp": "10:50",
    "activos": [
     "TSLA"
    ],
@@ -14898,20 +14920,20 @@
    "fecha": "2026-11-12",
    "senal": "Rebote EMA 9 (5 min)",
    "lado": "CALL",
-   "resultado": null,
-   "detalle": "11:55 · vela de 5 min que cerró 12:00 · SPX CALL 7635 al ask 12.00 (12:00:16) · en curso: gana con el bid a +35%, pierde con el punto medio a -35%, o 15:55",
+   "resultado": "P",
+   "detalle": "11:55 · vela de 5 min que cerró 12:00 · SPX CALL 7635 al ask 12.00 (12:00:16) · -35% a las 12:18:07 a 7.70",
    "maximo": 4.2,
    "unidad": "opción",
-   "minimo": -22.5,
+   "minimo": -35.8,
    "strike": 7635,
    "entrada": 12.0,
    "entro": "12:00:16",
-   "venta": "",
-   "minutos": 2,
-   "contra": -6.7,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
-   "en_curso": true,
+   "venta": "12:18:07",
+   "minutos": 18,
+   "contra": -35.0,
+   "max_sin_tp": 7.5,
+   "hora_max_sin_tp": "12:52",
+   "en_curso": false,
    "fuente": "Schwab (cadena del SPX cada 15 s)",
    "activo": "SPX",
    "activos": [
@@ -14924,21 +14946,21 @@
    "fecha": "2026-11-12",
    "senal": "Tridente 15 (💵💵💵) PUT",
    "lado": "PUT",
-   "resultado": null,
-   "detalle": "11:45 · vela 11:30 · SPX PUT 7620 a 11.90 · TP 13.70 · pendiente",
-   "maximo": null,
+   "resultado": "G",
+   "detalle": "11:45 · vela 11:30 · SPX PUT 7620 a 11.90 · TP 13.70 · +15% a las 13:50 · +$1.790 con 10 contratos",
+   "maximo": 15.0,
    "unidad": "opción",
-   "minimo": -51.3,
+   "minimo": -53.8,
    "strike": 7620.0,
    "entrada": 11.9,
    "entro": "11:45",
-   "venta": null,
-   "usd_10": null,
+   "venta": "13:50",
+   "usd_10": 1790,
    "tp_fijo": 15,
-   "contra": -51.3,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
-   "minutos": null,
+   "contra": -75.6,
+   "max_sin_tp": 178.2,
+   "hora_max_sin_tp": "15:50",
+   "minutos": 125,
    "fuente": "Schwab cadena (bid)",
    "activo": "SPX",
    "activos": [
@@ -14951,21 +14973,21 @@
    "fecha": "2026-11-12",
    "senal": "Tridente 15 PUT",
    "lado": "PUT",
-   "resultado": null,
-   "detalle": "11:45 · vela 11:30 · SPX PUT 7595 a 4.70 · TP 5.50 · pendiente",
-   "maximo": null,
+   "resultado": "G",
+   "detalle": "11:45 · vela 11:30 · SPX PUT 7595 a 4.70 · TP 5.50 · +15% a las 13:51 · +$790 con 10 contratos",
+   "maximo": 15.0,
    "unidad": "opción",
-   "minimo": -57.4,
+   "minimo": -62.8,
    "strike": 7595.0,
    "entrada": 4.7,
    "entro": "11:45",
-   "venta": null,
-   "usd_10": null,
+   "venta": "13:51",
+   "usd_10": 790,
    "tp_fijo": 15,
-   "contra": -57.4,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
-   "minutos": null,
+   "contra": -83.0,
+   "max_sin_tp": 87.2,
+   "hora_max_sin_tp": "15:50",
+   "minutos": 127,
    "fuente": "Schwab cadena (bid)",
    "activo": "SPX",
    "activos": [
@@ -14994,7 +15016,12 @@
     "texto": "Heikin Ashi PUT"
    }
   ],
-  "rebote": null,
+  "rebote": {
+   "senal": false,
+   "razon_vol": 1.39,
+   "pos_rango": 0.378,
+   "roja": true
+  },
   "rebote_dia": [
    "de jueves para viernes",
    14,
@@ -15010,7 +15037,14 @@
      "texto": "PPI octubre"
     }
    ],
-   "gap": null
+   "gap": {
+    "mes_pct": -0.0033,
+    "hoy_pct": -0.34,
+    "lado": -1,
+    "cuando": "12/11 16:20",
+    "continuacion": false,
+    "ganador": true
+   }
   }
  }
 }
