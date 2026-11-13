@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-12 20:00",
+ "actualizado": "2026-11-13 00:00",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14800,32 +14800,6 @@
   },
   {
    "fecha": "2026-11-12",
-   "senal": "Bollinger SPX Charlatan",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "09:49 · SPXW PUT 7535 a 4.30 (09:49:26) · +35% a las 10:03 (provisorio, con la cadena del motor) · se mide de madrugada con Tastytrade · VWAP SPY en contra -0.20%",
-   "maximo": 35.0,
-   "unidad": "opción",
-   "minimo": -33.7,
-   "strike": 7535.0,
-   "entrada": 4.3,
-   "entro": "09:49:26",
-   "venta": "10:03",
-   "minutos": 14,
-   "en_curso": false,
-   "contra": -33.7,
-   "max_sin_tp": 46.5,
-   "hora_max_sin_tp": "10:06",
-   "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-11-09",
-   "dia_semana": 3
-  },
-  {
-   "fecha": "2026-11-12",
    "senal": "GAP bajista (amigo)",
    "lado": "PUT",
    "resultado": null,
@@ -14998,53 +14972,36 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-11-12",
-  "dia_semana": 3,
-  "eventos": [],
+  "fecha": "2026-11-13",
+  "dia_semana": 4,
+  "eventos": [
+   {
+    "hora": "08:30",
+    "texto": "PPI octubre"
+   }
+  ],
   "reportes": [],
   "gap": {
-   "cuando": "9:28",
-   "lado": -1.0,
-   "mes_pct": -0.7917,
-   "ayer_pct": 1.2696,
+   "cuando": "00:00",
+   "lado": -1,
+   "mes_pct": -0.006564479600879025,
+   "ayer_pct": -0.33999317388221373,
    "ganador": true,
    "enviado": false
   },
-  "avisos": [
-   {
-    "hora": "11:40",
-    "texto": "Heikin Ashi PUT"
-   }
-  ],
-  "rebote": {
-   "senal": false,
-   "razon_vol": 1.39,
-   "pos_rango": 0.378,
-   "roja": true
-  },
+  "avisos": [],
+  "rebote": null,
   "rebote_dia": [
-   "de jueves para viernes",
-   14,
-   15
+   "de viernes para lunes",
+   6,
+   7
   ],
   "cobertura_hasta": "2026-12-09",
   "manana": {
-   "fecha": "2026-11-13",
-   "dia_semana": 4,
-   "eventos": [
-    {
-     "hora": "08:30",
-     "texto": "PPI octubre"
-    }
-   ],
-   "gap": {
-    "mes_pct": 0.2429,
-    "hoy_pct": -0.34,
-    "lado": 1,
-    "cuando": "12/11 20:00",
-    "continuacion": false,
-    "ganador": true
-   }
+   "fecha": "2026-11-16",
+   "dia_semana": 0,
+   "eventos": [],
+   "gap": null
   }
  }
 }
