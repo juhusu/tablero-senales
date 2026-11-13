@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13 12:06",
+ "actualizado": "2026-11-13 16:21",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14852,9 +14852,9 @@
    "fecha": "2026-11-12",
    "senal": "GAP bajista (amigo)",
    "lado": "PUT",
-   "resultado": null,
-   "detalle": "16:00 · falta la apertura siguiente",
-   "maximo": null,
+   "resultado": "P",
+   "detalle": "16:00 · GAP siguiente +0.38%",
+   "maximo": -0.4,
    "unidad": "GAP",
    "minimo": null,
    "activo": "SPX",
@@ -15050,21 +15050,21 @@
    "fecha": "2026-11-13",
    "senal": "GAP Ruptura",
    "lado": "CALL",
-   "resultado": null,
-   "detalle": "09:30 · XSP CALL 762 a 1.91 · pendiente · abrió 7616.85, línea 7615.08",
+   "resultado": "P",
+   "detalle": "09:30 · XSP CALL 762 a 1.91 · 15:55 · −$1.900 con 10 contratos · abrió 7616.85, línea 7615.08",
    "maximo": null,
    "unidad": "opción",
-   "minimo": -99.0,
+   "minimo": -99.5,
    "strike": 762.0,
    "entrada": 1.91,
    "entro": "09:30",
-   "venta": null,
-   "usd_10": null,
+   "venta": "15:55",
+   "usd_10": -1900,
    "tp_fijo": 15,
-   "contra": -99.0,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
-   "minutos": null,
+   "contra": -99.5,
+   "max_sin_tp": 0.0,
+   "hora_max_sin_tp": "09:32",
+   "minutos": 385,
    "fuente": "Schwab cadena XSP (bid)",
    "activo": "SPX",
    "activos": [
@@ -15114,6 +15114,8 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "11:10:24",
    "venta": "11:14",
+   "max_sin_tp": 46.7,
+   "hora_max_sin_tp": "11:22",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -15139,6 +15141,24 @@
    "entro": "09:38:22",
    "activo": "SPX",
    "venta": "09:50",
+   "max_sin_tp": 302.5,
+   "hora_max_sin_tp": "10:21",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-13",
+   "senal": "Rectángulo (amigo)",
+   "lado": "CALL",
+   "resultado": null,
+   "detalle": "16:00 · falta la apertura siguiente",
+   "maximo": null,
+   "unidad": "GAP",
+   "minimo": null,
+   "activo": "SPX",
    "activos": [
     "SPX"
    ],
@@ -15185,7 +15205,12 @@
     "texto": "Heikin Ashi PUT"
    }
   ],
-  "rebote": null,
+  "rebote": {
+   "senal": false,
+   "razon_vol": 1.87,
+   "pos_rango": 0.607,
+   "roja": false
+  },
   "rebote_dia": [
    "de viernes para lunes",
    6,
@@ -15196,7 +15221,14 @@
    "fecha": "2026-11-16",
    "dia_semana": 0,
    "eventos": [],
-   "gap": null
+   "gap": {
+    "mes_pct": -0.3856,
+    "hoy_pct": -0.4083,
+    "lado": -1,
+    "cuando": "13/11 16:20",
+    "continuacion": true,
+    "ganador": true
+   }
   }
  }
 }
