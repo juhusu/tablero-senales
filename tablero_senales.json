@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13 09:20",
+ "actualizado": "2026-11-13 09:36",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15019,6 +15019,33 @@
    ],
    "semana": "2026-11-09",
    "dia_semana": 3
+  },
+  {
+   "fecha": "2026-11-13",
+   "senal": "GAP Ruptura",
+   "lado": "CALL",
+   "resultado": null,
+   "detalle": "09:30 · XSP CALL 762 a 1.91 · pendiente · abrió 7616.85, línea 7615.08",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": -38.2,
+   "strike": 762.0,
+   "entrada": 1.91,
+   "entro": "09:30",
+   "venta": null,
+   "usd_10": null,
+   "tp_fijo": 15,
+   "contra": -38.2,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": null,
+   "fuente": "Schwab cadena XSP (bid)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 4
   }
  ],
  "hoy": {
@@ -15043,10 +15070,10 @@
    }
   ],
   "gap": {
-   "cuando": "09:20",
-   "lado": 1,
-   "mes_pct": 0.40043325565366494,
-   "ayer_pct": -0.33999317388221373,
+   "cuando": "9:28",
+   "lado": 1.0,
+   "mes_pct": 0.3972,
+   "ayer_pct": -0.34,
    "ganador": false,
    "enviado": false
   },
