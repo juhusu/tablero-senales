@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13 08:00",
+ "actualizado": "2026-11-13 09:20",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15030,13 +15030,24 @@
     "texto": "PPI octubre"
    }
   ],
-  "reportes": [],
+  "reportes": [
+   {
+    "hora": "08:30",
+    "datos": "PPI",
+    "mov": 0.1014,
+    "direccion": "arriba",
+    "cifras": {
+     "PPI del mes": "+0.3%",
+     "PPI sin alimentos ni energía": "+0.3%"
+    }
+   }
+  ],
   "gap": {
-   "cuando": "08:00",
+   "cuando": "09:20",
    "lado": 1,
-   "mes_pct": 0.22319230642990906,
+   "mes_pct": 0.40043325565366494,
    "ayer_pct": -0.33999317388221373,
-   "ganador": true,
+   "ganador": false,
    "enviado": false
   },
   "avisos": [],
