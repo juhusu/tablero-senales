@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13 20:03",
+ "actualizado": "2026-11-14 00:02",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14231,6 +14231,8 @@
    "strike": 742.0,
    "entrada": 4.09,
    "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
+   "max_sin_tp": 243.8,
+   "hora_max_sin_tp": "15:50",
    "entro": "09:30",
    "horas_calc": true,
    "venta": "no llegó",
@@ -14256,9 +14258,8 @@
    "entrada": 1.15,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "11:20:18",
-   "venta": "11:28",
-   "max_sin_tp": 31.3,
-   "hora_max_sin_tp": "11:36",
+   "max_sin_tp": 32.2,
+   "hora_max_sin_tp": "11:35",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -14390,9 +14391,8 @@
    "entrada": 1.77,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "10:30:23",
-   "venta": "10:37",
-   "max_sin_tp": 176.8,
-   "hora_max_sin_tp": "12:41",
+   "max_sin_tp": 182.5,
+   "hora_max_sin_tp": "12:40",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -14417,9 +14417,8 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:58:15",
    "activo": "SPX",
-   "venta": "09:59",
-   "max_sin_tp": 53.0,
-   "hora_max_sin_tp": "10:02",
+   "max_sin_tp": 58.0,
+   "hora_max_sin_tp": "10:00",
    "activos": [
     "SPX"
    ],
@@ -14442,9 +14441,6 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:31:23",
    "activo": "TSLA",
-   "venta": "09:34",
-   "max_sin_tp": 56.0,
-   "hora_max_sin_tp": "15:53",
    "activos": [
     "TSLA"
    ],
@@ -14466,9 +14462,8 @@
    "entrada": 2.59,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:36:18",
-   "venta": "09:59",
-   "max_sin_tp": 57.1,
-   "hora_max_sin_tp": "10:02",
+   "max_sin_tp": 60.6,
+   "hora_max_sin_tp": "10:05",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -14587,9 +14582,8 @@
    "entrada": 1.48,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:50:27",
-   "venta": "09:50",
-   "max_sin_tp": 358.8,
-   "hora_max_sin_tp": "13:46",
+   "max_sin_tp": 358.1,
+   "hora_max_sin_tp": "13:45",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -14614,9 +14608,8 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "10:11:29",
    "activo": "SPX",
-   "venta": "10:14",
    "max_sin_tp": 14.8,
-   "hora_max_sin_tp": "10:14",
+   "hora_max_sin_tp": "",
    "activos": [
     "SPX"
    ],
@@ -14639,9 +14632,6 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:48:27",
    "activo": "TSLA",
-   "venta": "09:48",
-   "max_sin_tp": 22.0,
-   "hora_max_sin_tp": "09:48",
    "activos": [
     "TSLA"
    ],
@@ -14749,9 +14739,8 @@
    "entrada": 1.38,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "11:40:27",
-   "venta": "11:41",
-   "max_sin_tp": 208.7,
-   "hora_max_sin_tp": "15:50",
+   "max_sin_tp": 200.7,
+   "hora_max_sin_tp": "15:30",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -14776,9 +14765,8 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:50:26",
    "activo": "SPX",
-   "venta": "09:51",
-   "max_sin_tp": 189.7,
-   "hora_max_sin_tp": "11:23",
+   "max_sin_tp": 200.5,
+   "hora_max_sin_tp": "11:15",
    "activos": [
     "SPX"
    ],
@@ -14801,9 +14789,6 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "10:01:26",
    "activo": "TSLA",
-   "venta": "10:10",
-   "max_sin_tp": 17.9,
-   "hora_max_sin_tp": "10:50",
    "activos": [
     "TSLA"
    ],
@@ -14866,32 +14851,6 @@
   },
   {
    "fecha": "2026-11-13",
-   "senal": "Bollinger SPX Charlatan",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "09:51 · SPXW PUT 7495 a 4.60 (09:51:16) · +35% a las 10:02 (provisorio, con la cadena del motor) · se mide de madrugada con Tastytrade · VWAP SPY a favor +0.38%",
-   "maximo": 35.0,
-   "unidad": "opción",
-   "minimo": -32.6,
-   "strike": 7495.0,
-   "entrada": 4.6,
-   "entro": "09:51:16",
-   "venta": "10:02",
-   "minutos": 11,
-   "en_curso": false,
-   "contra": -32.6,
-   "max_sin_tp": 421.7,
-   "hora_max_sin_tp": "10:21",
-   "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-11-09",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-11-13",
    "senal": "GAP Ruptura",
    "lado": "CALL",
    "resultado": "P",
@@ -14933,7 +14892,7 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:40:28",
    "max_sin_tp": -1.3,
-   "hora_max_sin_tp": "09:40",
+   "hora_max_sin_tp": "",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -14957,9 +14916,8 @@
    "entrada": 2.25,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "11:10:24",
-   "venta": "11:14",
-   "max_sin_tp": 46.7,
-   "hora_max_sin_tp": "11:22",
+   "max_sin_tp": 48.4,
+   "hora_max_sin_tp": "11:20",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -14984,9 +14942,8 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:38:22",
    "activo": "SPX",
-   "venta": "09:50",
-   "max_sin_tp": 302.5,
-   "hora_max_sin_tp": "10:21",
+   "max_sin_tp": 300.0,
+   "hora_max_sin_tp": "10:25",
    "activos": [
     "SPX"
    ],
@@ -15011,68 +14968,20 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-11-13",
-  "dia_semana": 4,
-  "eventos": [
-   {
-    "hora": "08:30",
-    "texto": "PPI octubre"
-   }
-  ],
-  "reportes": [
-   {
-    "hora": "08:30",
-    "datos": "PPI",
-    "mov": 0.1014,
-    "direccion": "arriba",
-    "cifras": {
-     "PPI del mes": "+0.3%",
-     "PPI sin alimentos ni energía": "+0.3%"
-    }
-   }
-  ],
-  "gap": {
-   "cuando": "9:28",
-   "lado": 1.0,
-   "mes_pct": 0.3972,
-   "ayer_pct": -0.34,
-   "ganador": false,
-   "enviado": false
-  },
-  "avisos": [
-   {
-    "hora": "09:40",
-    "texto": "Heikin Ashi CALL"
-   },
-   {
-    "hora": "11:10",
-    "texto": "Heikin Ashi PUT"
-   }
-  ],
-  "rebote": {
-   "senal": false,
-   "razon_vol": 1.87,
-   "pos_rango": 0.607,
-   "roja": false
-  },
-  "rebote_dia": [
-   "de viernes para lunes",
-   6,
-   7
-  ],
+  "fecha": "2026-11-14",
+  "dia_semana": 5,
+  "eventos": [],
+  "reportes": [],
+  "gap": null,
+  "avisos": [],
+  "rebote": null,
+  "rebote_dia": null,
   "cobertura_hasta": "2026-12-09",
   "manana": {
    "fecha": "2026-11-16",
    "dia_semana": 0,
    "eventos": [],
-   "gap": {
-    "mes_pct": -0.3164,
-    "hoy_pct": -0.4083,
-    "lado": -1,
-    "cuando": "13/11 16:59",
-    "continuacion": true,
-    "ganador": true
-   }
+   "gap": null
   }
  }
 }
