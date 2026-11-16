@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-16 09:20",
+ "actualizado": "2026-11-16 09:36",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15121,6 +15121,111 @@
    ],
    "semana": "2026-11-09",
    "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-16",
+   "senal": "BUY BUY & SELL SELL PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "9:35 · SPX PUT 7395 a 4.40 · TP 5.10 · +15% a las 09:35 · +$690 con 10 contratos",
+   "maximo": 15.0,
+   "unidad": "opción",
+   "minimo": -2.3,
+   "strike": 7395.0,
+   "entrada": 4.4,
+   "entro": "09:35:15",
+   "venta": "09:35",
+   "usd_10": 690,
+   "tp_fijo": 15,
+   "contra": -2.3,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": 0,
+   "en_curso": false,
+   "fuente": "en vivo: el detector (tools/senal_stochrsi_ut.py) y la cadena del $SPX del motor (bid)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-16",
+   "senal": "Bollinger SPX Charlatan",
+   "lado": "PUT",
+   "resultado": null,
+   "detalle": "09:33 · SPXW PUT 7395 a 4.60 (09:33:16) · pendiente: vende en +35% o a las 15:55 · se mide de madrugada con Tastytrade · VWAP SPY a favor +0.03%",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": -26.1,
+   "strike": 7395.0,
+   "entrada": 4.6,
+   "entro": "09:33:16",
+   "venta": "",
+   "minutos": null,
+   "en_curso": true,
+   "contra": -26.1,
+   "max_sin_tp": 15.2,
+   "hora_max_sin_tp": "09:35",
+   "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-16",
+   "senal": "GAP Ruptura",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "09:30 · XSP PUT 751 a 2.46 · +15% a las 09:30 · +$370 con 10 contratos · abrió 7513.98, línea 7531.54",
+   "maximo": 15.0,
+   "unidad": "opción",
+   "minimo": 0.0,
+   "strike": 751.0,
+   "entrada": 2.46,
+   "entro": "09:30",
+   "venta": "09:30",
+   "usd_10": 370,
+   "tp_fijo": 15,
+   "contra": 0.0,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": 0,
+   "fuente": "Schwab cadena XSP (bid)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-16",
+   "senal": "Opening Eyes (motor) TSLA",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "09:33 · PUT 385 al ask 4.10",
+   "maximo": 13.4,
+   "unidad": "opción",
+   "minimo": -18.3,
+   "contra": -18.3,
+   "minutos": 0.9,
+   "strike": 385.0,
+   "entrada": 4.1,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:33:18",
+   "activo": "TSLA",
+   "venta": "09:34",
+   "activos": [
+    "TSLA"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 0
   }
  ],
  "hoy": {
@@ -15129,14 +15234,23 @@
   "eventos": [],
   "reportes": [],
   "gap": {
-   "cuando": "09:20",
-   "lado": -1,
-   "mes_pct": -0.5899996703912502,
-   "ayer_pct": -0.4083299305839172,
+   "cuando": "9:28",
+   "lado": -1.0,
+   "mes_pct": -0.6427,
+   "ayer_pct": -0.4083,
    "ganador": false,
    "enviado": false
   },
-  "avisos": [],
+  "avisos": [
+   {
+    "hora": "09:30",
+    "texto": "GAP continuación PUT"
+   },
+   {
+    "hora": "09:32",
+    "texto": "Toque Magnífico PUT"
+   }
+  ],
   "rebote": null,
   "rebote_dia": [
    "de lunes para martes",
