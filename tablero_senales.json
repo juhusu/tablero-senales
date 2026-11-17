@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-16 20:01",
+ "actualizado": "2026-11-17 00:03",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15182,32 +15182,6 @@
   },
   {
    "fecha": "2026-11-16",
-   "senal": "Bollinger SPX Charlatan",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "09:33 · SPXW PUT 7395 a 4.60 (09:33:16) · +35% a las 13:31 (provisorio, con la cadena del motor) · se mide de madrugada con Tastytrade · VWAP SPY a favor +0.03%",
-   "maximo": 35.0,
-   "unidad": "opción",
-   "minimo": -46.7,
-   "strike": 7395.0,
-   "entrada": 4.6,
-   "entro": "09:33:16",
-   "venta": "13:31",
-   "minutos": 238,
-   "en_curso": false,
-   "contra": -85.9,
-   "max_sin_tp": 141.3,
-   "hora_max_sin_tp": "13:35",
-   "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-11-16",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-11-16",
    "senal": "GAP Ruptura",
    "lado": "PUT",
    "resultado": "G",
@@ -15468,65 +15442,36 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-11-16",
-  "dia_semana": 0,
-  "eventos": [],
-  "reportes": [],
-  "gap": {
-   "cuando": "9:28",
-   "lado": -1.0,
-   "mes_pct": -0.6427,
-   "ayer_pct": -0.4083,
-   "ganador": false,
-   "enviado": false
-  },
-  "avisos": [
+  "fecha": "2026-11-17",
+  "dia_semana": 1,
+  "eventos": [
    {
-    "hora": "09:30",
-    "texto": "GAP continuación PUT"
-   },
-   {
-    "hora": "09:32",
-    "texto": "Toque Magnífico PUT"
-   },
-   {
-    "hora": "10:10",
-    "texto": "Heikin Ashi CALL"
-   },
-   {
-    "hora": "11:20",
-    "texto": "Heikin Ashi PUT"
+    "hora": "08:30",
+    "texto": "Ventas minoristas (October 2026)"
    }
   ],
-  "rebote": {
-   "senal": false,
-   "razon_vol": 2.46,
-   "pos_rango": 0.168,
-   "roja": false
+  "reportes": [],
+  "gap": {
+   "cuando": "00:03",
+   "lado": -1,
+   "mes_pct": -0.1075052072834759,
+   "ayer_pct": -1.8608895766377032,
+   "ganador": true,
+   "enviado": false
   },
+  "avisos": [],
+  "rebote": null,
   "rebote_dia": [
-   "de lunes para martes",
-   4,
+   "de martes para miércoles",
+   6,
    9
   ],
   "cobertura_hasta": "2026-12-09",
   "manana": {
-   "fecha": "2026-11-17",
-   "dia_semana": 1,
-   "eventos": [
-    {
-     "hora": "08:30",
-     "texto": "Ventas minoristas (October 2026)"
-    }
-   ],
-   "gap": {
-    "mes_pct": -0.037,
-    "hoy_pct": -1.8609,
-    "lado": -1,
-    "cuando": "16/11 20:01",
-    "continuacion": false,
-    "ganador": true
-   }
+   "fecha": "2026-11-18",
+   "dia_semana": 2,
+   "eventos": [],
+   "gap": null
   }
  }
 }
