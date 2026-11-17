@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-17 10:47",
+ "actualizado": "2026-11-17 12:09",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15529,8 +15529,8 @@
    "minutos": 3,
    "en_curso": false,
    "contra": -20.5,
-   "max_sin_tp": 409.1,
-   "hora_max_sin_tp": "10:46",
+   "max_sin_tp": 663.6,
+   "hora_max_sin_tp": "10:54",
    "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
    "activo": "SPX",
    "activos": [
@@ -15578,6 +15578,32 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:40:27",
    "venta": "09:41",
+   "max_sin_tp": 32.5,
+   "hora_max_sin_tp": "09:42",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-17",
+   "senal": "Heikin Ashi PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "11:30 · PUT 733 al ask 2.07",
+   "maximo": 70.0,
+   "unidad": "opción",
+   "minimo": -4.3,
+   "contra": -4.3,
+   "minutos": 21.6,
+   "strike": 733.0,
+   "entrada": 2.07,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "11:30:24",
+   "venta": "11:31",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -15666,6 +15692,10 @@
    {
     "hora": "09:40",
     "texto": "Heikin Ashi CALL"
+   },
+   {
+    "hora": "11:30",
+    "texto": "Heikin Ashi PUT"
    }
   ],
   "rebote": null,
