@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-17 09:22",
+ "actualizado": "2026-11-17 09:49",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15489,6 +15489,98 @@
    ],
    "semana": "2026-11-16",
    "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-17",
+   "senal": "Aviso 9:28",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "9:28 · MES -0.17%",
+   "maximo": 10.1,
+   "unidad": "opción",
+   "minimo": -14.0,
+   "contra": -4.2,
+   "minutos": 0.3,
+   "strike": 741.0,
+   "entrada": 3.08,
+   "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
+   "entro": "09:30",
+   "horas_calc": true,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-17",
+   "senal": "GAP continuación GANADOR",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "9:30 · GAP -0.08% · ayer -1.92%",
+   "maximo": 10.1,
+   "unidad": "opción",
+   "minimo": -14.0,
+   "contra": -4.2,
+   "minutos": 0.3,
+   "strike": 741.0,
+   "entrada": 3.08,
+   "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
+   "entro": "09:30",
+   "horas_calc": true,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-17",
+   "senal": "Heikin Ashi CALL",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "9:40 · CALL 740 al ask 2.43",
+   "maximo": 32.5,
+   "unidad": "opción",
+   "minimo": -5.8,
+   "contra": 0.0,
+   "minutos": 2.0,
+   "strike": 740.0,
+   "entrada": 2.43,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:40:27",
+   "venta": "09:41",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-17",
+   "senal": "Opening Eyes (motor) TSLA",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "09:42 · CALL 382.5 al ask 5.75",
+   "maximo": -0.9,
+   "unidad": "opción",
+   "minimo": -15.7,
+   "contra": 0.0,
+   "minutos": 0.2,
+   "strike": 382.5,
+   "entrada": 5.75,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:42:27",
+   "activo": "TSLA",
+   "activos": [
+    "TSLA"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 1
   }
  ],
  "hoy": {
@@ -15510,14 +15602,23 @@
    }
   ],
   "gap": {
-   "cuando": "09:22",
-   "lado": -1,
-   "mes_pct": -0.17469596183564695,
-   "ayer_pct": -1.8608895766377032,
+   "cuando": "9:28",
+   "lado": -1.0,
+   "mes_pct": -0.1713,
+   "ayer_pct": -1.8609,
    "ganador": true,
-   "enviado": false
+   "enviado": true
   },
-  "avisos": [],
+  "avisos": [
+   {
+    "hora": "09:28",
+    "texto": "GAP GANADOR PUT"
+   },
+   {
+    "hora": "09:40",
+    "texto": "Heikin Ashi CALL"
+   }
+  ],
   "rebote": null,
   "rebote_dia": [
    "de martes para miércoles",
