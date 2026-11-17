@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-17 08:02",
+ "actualizado": "2026-11-17 09:22",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15500,11 +15500,19 @@
     "texto": "Ventas minoristas (October 2026)"
    }
   ],
-  "reportes": [],
+  "reportes": [
+   {
+    "hora": "08:30",
+    "datos": "Ventas minoristas",
+    "mov": -0.0639,
+    "direccion": "abajo",
+    "cifras": {}
+   }
+  ],
   "gap": {
-   "cuando": "08:02",
+   "cuando": "09:22",
    "lado": -1,
-   "mes_pct": -0.10078613182825658,
+   "mes_pct": -0.17469596183564695,
    "ayer_pct": -1.8608895766377032,
    "ganador": true,
    "enviado": false
