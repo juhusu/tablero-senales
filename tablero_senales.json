@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-17 00:03",
+ "actualizado": "2026-11-17 03:34",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15007,6 +15007,31 @@
   },
   {
    "fecha": "2026-11-13",
+   "senal": "Bollinger SPX Charlatan",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "09:45 · SPXW PUT 7510 a 4.50 (09:45, vela de 1 min) · vendió 09:50 a 6.10 = +35% sobre el promedio 4.50 · VWAP SPY a favor +0.28%",
+   "maximo": 35.6,
+   "unidad": "opción",
+   "minimo": -33.3,
+   "contra": -33.3,
+   "minutos": 5.0,
+   "strike": 7510.0,
+   "venta": "09:50",
+   "entro": "09:45:15",
+   "max_sin_tp": 595.6,
+   "hora_max_sin_tp": "10:21",
+   "entrada": 4.5,
+   "fuente": "Tastytrade (velas de 1 min de la opción SPX)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-13",
    "senal": "GAP Ruptura",
    "lado": "CALL",
    "resultado": "P",
@@ -15175,6 +15200,31 @@
    "activo": "QQQ",
    "activos": [
     "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-16",
+   "senal": "Bollinger SPX Charlatan",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "09:31 · SPXW PUT 7395 a 4.40 (09:31, vela de 1 min) · reforzó 09:39 a 2.45 · vendió 09:41 a 4.70 = +35% sobre el promedio 3.42 · VWAP SPY a favor +0.08%",
+   "maximo": 27.5,
+   "unidad": "opción",
+   "minimo": -50.0,
+   "contra": -18.2,
+   "minutos": 1.0,
+   "strike": 7395.0,
+   "venta": "09:41",
+   "entro": "09:31:15",
+   "max_sin_tp": 159.1,
+   "hora_max_sin_tp": "13:35",
+   "entrada": 4.4,
+   "fuente": "Tastytrade (velas de 1 min de la opción SPX)",
+   "activo": "SPX",
+   "activos": [
     "SPX"
    ],
    "semana": "2026-11-16",
@@ -15452,9 +15502,9 @@
   ],
   "reportes": [],
   "gap": {
-   "cuando": "00:03",
+   "cuando": "03:34",
    "lado": -1,
-   "mes_pct": -0.1075052072834759,
+   "mes_pct": -0.2418867163878291,
    "ayer_pct": -1.8608895766377032,
    "ganador": true,
    "enviado": false
