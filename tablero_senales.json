@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-17 12:09",
+ "actualizado": "2026-11-17 16:23",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15604,6 +15604,8 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "11:30:24",
    "venta": "11:31",
+   "max_sin_tp": 70.0,
+   "hora_max_sin_tp": "11:51",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -15629,6 +15631,8 @@
    "entro": "09:49:27",
    "activo": "SPX",
    "venta": "09:58",
+   "max_sin_tp": 11.3,
+   "hora_max_sin_tp": "09:58",
    "activos": [
     "SPX"
    ],
@@ -15651,8 +15655,64 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:42:27",
    "activo": "TSLA",
+   "max_sin_tp": -0.9,
+   "hora_max_sin_tp": "09:42",
    "activos": [
     "TSLA"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-17",
+   "senal": "Tridente 15 (💵💵💵) CALL",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "12:30 · vela 12:15 · SPX CALL 7350 a 20.10 · TP 23.20 · 15:55 · −$20.110 con 10 contratos",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": -60.2,
+   "strike": 7350.0,
+   "entrada": 20.1,
+   "entro": "12:30",
+   "venta": "15:55",
+   "usd_10": -20110,
+   "tp_fijo": 15,
+   "contra": -99.8,
+   "max_sin_tp": 2.5,
+   "hora_max_sin_tp": "12:32",
+   "minutos": 205,
+   "fuente": "Schwab cadena (bid)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-17",
+   "senal": "Tridente 15 CALL",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "12:30 · vela 12:15 · SPX CALL 7400 a 4.20 · TP 4.90 · 15:55",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": -63.1,
+   "strike": 7400.0,
+   "entrada": 4.2,
+   "entro": "12:30",
+   "venta": "15:55",
+   "usd_10": null,
+   "tp_fijo": 15,
+   "contra": -98.8,
+   "max_sin_tp": 0.0,
+   "hora_max_sin_tp": "12:32",
+   "minutos": 205,
+   "fuente": "Schwab cadena (bid)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
    ],
    "semana": "2026-11-16",
    "dia_semana": 1
@@ -15698,7 +15758,12 @@
     "texto": "Heikin Ashi PUT"
    }
   ],
-  "rebote": null,
+  "rebote": {
+   "senal": false,
+   "razon_vol": 1.45,
+   "pos_rango": 0.422,
+   "roja": false
+  },
   "rebote_dia": [
    "de martes para miércoles",
    6,
@@ -15709,7 +15774,14 @@
    "fecha": "2026-11-18",
    "dia_semana": 2,
    "eventos": [],
-   "gap": null
+   "gap": {
+    "mes_pct": 0.129,
+    "hoy_pct": -1.0727,
+    "lado": 1,
+    "cuando": "17/11 16:23",
+    "continuacion": false,
+    "ganador": true
+   }
   }
  }
 }
