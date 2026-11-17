@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-17 09:49",
+ "actualizado": "2026-11-17 10:47",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15515,6 +15515,32 @@
   },
   {
    "fecha": "2026-11-17",
+   "senal": "Bollinger SPX Charlatan",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "10:33 · SPXW PUT 7300 a 4.40 (10:33:29) · +35% a las 10:36 (provisorio, con la cadena del motor) · se mide de madrugada con Tastytrade · VWAP SPY a favor +0.34%",
+   "maximo": 35.0,
+   "unidad": "opción",
+   "minimo": -20.5,
+   "strike": 7300.0,
+   "entrada": 4.4,
+   "entro": "10:33:29",
+   "venta": "10:36",
+   "minutos": 3,
+   "en_curso": false,
+   "contra": -20.5,
+   "max_sin_tp": 409.1,
+   "hora_max_sin_tp": "10:46",
+   "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-17",
    "senal": "GAP continuación GANADOR",
    "lado": "PUT",
    "resultado": "G",
@@ -15544,7 +15570,7 @@
    "detalle": "9:40 · CALL 740 al ask 2.43",
    "maximo": 32.5,
    "unidad": "opción",
-   "minimo": -5.8,
+   "minimo": -34.6,
    "contra": 0.0,
    "minutos": 2.0,
    "strike": 740.0,
@@ -15562,13 +15588,36 @@
   },
   {
    "fecha": "2026-11-17",
+   "senal": "Opening Eyes (motor) SPX",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "09:49 · CALL 741 al ask 2.21",
+   "maximo": 11.3,
+   "unidad": "opción",
+   "minimo": -60.6,
+   "contra": -20.4,
+   "minutos": 9.0,
+   "strike": 741.0,
+   "entrada": 2.21,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:49:27",
+   "activo": "SPX",
+   "venta": "09:58",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-17",
    "senal": "Opening Eyes (motor) TSLA",
    "lado": "CALL",
    "resultado": "P",
    "detalle": "09:42 · CALL 382.5 al ask 5.75",
    "maximo": -0.9,
    "unidad": "opción",
-   "minimo": -15.7,
+   "minimo": -26.1,
    "contra": 0.0,
    "minutos": 0.2,
    "strike": 382.5,
