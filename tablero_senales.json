@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-18 09:42",
+ "actualizado": "2026-11-18 09:52",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15692,15 +15692,37 @@
   },
   {
    "fecha": "2026-11-18",
+   "senal": "Opening Eyes (motor) SPX",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "09:41 · PUT 732 al ask 3.32",
+   "maximo": -1.8,
+   "unidad": "opción",
+   "minimo": -26.5,
+   "contra": 0.0,
+   "minutos": 0.2,
+   "strike": 732.0,
+   "entrada": 3.32,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:41:23",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-18",
    "senal": "Opening Eyes (motor) TSLA",
    "lado": "PUT",
    "resultado": "G",
    "detalle": "09:34 · PUT 382.5 al ask 4.25",
-   "maximo": 18.8,
+   "maximo": 25.9,
    "unidad": "opción",
-   "minimo": 4.7,
+   "minimo": -10.6,
    "contra": 0.0,
-   "minutos": 1.0,
+   "minutos": 1.2,
    "strike": 382.5,
    "entrada": 4.25,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
@@ -15727,7 +15749,12 @@
    "ganador": true,
    "enviado": false
   },
-  "avisos": [],
+  "avisos": [
+   {
+    "hora": "09:50",
+    "texto": "Heikin Ashi CALL"
+   }
+  ],
   "rebote": null,
   "rebote_dia": [
    "de miércoles para jueves",
