@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-17 20:01",
+ "actualizado": "2026-11-18 00:01",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -12698,32 +12698,6 @@
   },
   {
    "fecha": "2026-10-28",
-   "senal": "Rebote EMA 9 (5 min)",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "10:30 · vela de 5 min que cerró 10:35 · SPX CALL 7735 al ask 18.80 (10:35:26) · +35% (bid 28.00) a las 12:55:01",
-   "maximo": 48.9,
-   "unidad": "opción",
-   "minimo": -21.8,
-   "strike": 7735,
-   "entrada": 18.8,
-   "entro": "10:35:26",
-   "venta": "12:55:01",
-   "minutos": 140,
-   "contra": -21.8,
-   "max_sin_tp": 51.6,
-   "hora_max_sin_tp": "14:37",
-   "en_curso": false,
-   "fuente": "Schwab (cadena del SPX cada 15 s)",
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-10-26",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-10-28",
    "senal": "Toque Magnífico",
    "lado": "PUT",
    "resultado": "P",
@@ -15515,32 +15489,6 @@
   },
   {
    "fecha": "2026-11-17",
-   "senal": "Bollinger SPX Charlatan",
-   "lado": "PUT",
-   "resultado": "G",
-   "detalle": "10:33 · SPXW PUT 7300 a 4.40 (10:33:29) · +35% a las 10:36 (provisorio, con la cadena del motor) · se mide de madrugada con Tastytrade · VWAP SPY a favor +0.34%",
-   "maximo": 35.0,
-   "unidad": "opción",
-   "minimo": -20.5,
-   "strike": 7300.0,
-   "entrada": 4.4,
-   "entro": "10:33:29",
-   "venta": "10:36",
-   "minutos": 3,
-   "en_curso": false,
-   "contra": -20.5,
-   "max_sin_tp": 663.6,
-   "hora_max_sin_tp": "10:54",
-   "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-11-16",
-   "dia_semana": 1
-  },
-  {
-   "fecha": "2026-11-17",
    "senal": "GAP continuación GANADOR",
    "lado": "PUT",
    "resultado": "G",
@@ -15719,69 +15667,31 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-11-17",
-  "dia_semana": 1,
-  "eventos": [
-   {
-    "hora": "08:30",
-    "texto": "Ventas minoristas (October 2026)"
-   }
-  ],
-  "reportes": [
-   {
-    "hora": "08:30",
-    "datos": "Ventas minoristas",
-    "mov": -0.0639,
-    "direccion": "abajo",
-    "cifras": {}
-   }
-  ],
+  "fecha": "2026-11-18",
+  "dia_semana": 2,
+  "eventos": [],
+  "reportes": [],
   "gap": {
-   "cuando": "9:28",
-   "lado": -1.0,
-   "mes_pct": -0.1713,
-   "ayer_pct": -1.8609,
+   "cuando": "00:01",
+   "lado": 1,
+   "mes_pct": 0.09168081494057567,
+   "ayer_pct": -1.0727473653001307,
    "ganador": true,
-   "enviado": true
+   "enviado": false
   },
-  "avisos": [
-   {
-    "hora": "09:28",
-    "texto": "GAP GANADOR PUT"
-   },
-   {
-    "hora": "09:40",
-    "texto": "Heikin Ashi CALL"
-   },
-   {
-    "hora": "11:30",
-    "texto": "Heikin Ashi PUT"
-   }
-  ],
-  "rebote": {
-   "senal": false,
-   "razon_vol": 1.45,
-   "pos_rango": 0.422,
-   "roja": false
-  },
+  "avisos": [],
+  "rebote": null,
   "rebote_dia": [
-   "de martes para miércoles",
-   6,
-   9
+   "de miércoles para jueves",
+   13,
+   16
   ],
   "cobertura_hasta": "2026-12-09",
   "manana": {
-   "fecha": "2026-11-18",
-   "dia_semana": 2,
+   "fecha": "2026-11-19",
+   "dia_semana": 3,
    "eventos": [],
-   "gap": {
-    "mes_pct": 0.5908,
-    "hoy_pct": -1.0727,
-    "lado": 1,
-    "cuando": "17/11 20:01",
-    "continuacion": false,
-    "ganador": true
-   }
+   "gap": null
   }
  }
 }
