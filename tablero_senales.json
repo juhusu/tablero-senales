@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-18 09:52",
+ "actualizado": "2026-11-18 10:51",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15692,20 +15692,45 @@
   },
   {
    "fecha": "2026-11-18",
+   "senal": "Heikin Ashi CALL",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "9:50 · CALL 731 al ask 3.22",
+   "maximo": 104.0,
+   "unidad": "opción",
+   "minimo": -8.1,
+   "contra": -8.1,
+   "minutos": 10.1,
+   "strike": 731.0,
+   "entrada": 3.22,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:50:20",
+   "venta": "09:52",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-18",
    "senal": "Opening Eyes (motor) SPX",
    "lado": "PUT",
-   "resultado": "P",
+   "resultado": "G",
    "detalle": "09:41 · PUT 732 al ask 3.32",
-   "maximo": -1.8,
+   "maximo": 16.9,
    "unidad": "opción",
-   "minimo": -26.5,
-   "contra": 0.0,
-   "minutos": 0.2,
+   "minimo": -64.8,
+   "contra": -26.5,
+   "minutos": 9.2,
    "strike": 732.0,
    "entrada": 3.32,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:41:23",
    "activo": "SPX",
+   "venta": "09:48",
    "activos": [
     "SPX"
    ],
@@ -15720,7 +15745,7 @@
    "detalle": "09:34 · PUT 382.5 al ask 4.25",
    "maximo": 25.9,
    "unidad": "opción",
-   "minimo": -10.6,
+   "minimo": -63.1,
    "contra": 0.0,
    "minutos": 1.2,
    "strike": 382.5,
@@ -15731,6 +15756,60 @@
    "venta": "09:34",
    "activos": [
     "TSLA"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-18",
+   "senal": "Tridente 15 (💵💵💵) PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "10:45 · vela 10:30 · SPX PUT 7310 a 24.90 · TP 28.70 · +15% a las 10:47 · +$3.790 con 10 contratos",
+   "maximo": 15.0,
+   "unidad": "opción",
+   "minimo": -2.0,
+   "strike": 7310.0,
+   "entrada": 24.9,
+   "entro": "10:45",
+   "venta": "10:47",
+   "usd_10": 3790,
+   "tp_fijo": 15,
+   "contra": -2.0,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": 2,
+   "fuente": "Schwab cadena (bid)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-18",
+   "senal": "Tridente 15 PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "10:45 · vela 10:30 · SPX PUT 7225 a 4.60 · TP 5.30 · +15% a las 10:45 · +$690 con 10 contratos",
+   "maximo": 15.0,
+   "unidad": "opción",
+   "minimo": -4.3,
+   "strike": 7225.0,
+   "entrada": 4.6,
+   "entro": "10:45",
+   "venta": "10:45",
+   "usd_10": 690,
+   "tp_fijo": 15,
+   "contra": -4.3,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": 1,
+   "fuente": "Schwab cadena (bid)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
    ],
    "semana": "2026-11-16",
    "dia_semana": 2
