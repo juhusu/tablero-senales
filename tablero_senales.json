@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-18 09:24",
+ "actualizado": "2026-11-18 09:42",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15689,6 +15689,29 @@
    ],
    "semana": "2026-11-16",
    "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-18",
+   "senal": "Opening Eyes (motor) TSLA",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "09:34 · PUT 382.5 al ask 4.25",
+   "maximo": 18.8,
+   "unidad": "opción",
+   "minimo": 4.7,
+   "contra": 0.0,
+   "minutos": 1.0,
+   "strike": 382.5,
+   "entrada": 4.25,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:34:17",
+   "activo": "TSLA",
+   "venta": "09:34",
+   "activos": [
+    "TSLA"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 2
   }
  ],
  "hoy": {
@@ -15697,10 +15720,10 @@
   "eventos": [],
   "reportes": [],
   "gap": {
-   "cuando": "09:24",
-   "lado": 1,
-   "mes_pct": 0.13921901528013425,
-   "ayer_pct": -1.0727473653001307,
+   "cuando": "9:28",
+   "lado": 1.0,
+   "mes_pct": 0.1698,
+   "ayer_pct": -1.0727,
    "ganador": true,
    "enviado": false
   },
