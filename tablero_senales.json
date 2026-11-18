@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-18 03:32",
+ "actualizado": "2026-11-18 04:01",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15697,9 +15697,9 @@
   "eventos": [],
   "reportes": [],
   "gap": {
-   "cuando": "03:32",
+   "cuando": "04:01",
    "lado": 1,
-   "mes_pct": 0.4719864176570443,
+   "mes_pct": 0.4685908319185028,
    "ayer_pct": -1.0727473653001307,
    "ganador": true,
    "enviado": false
