@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-19 12:09",
+ "actualizado": "2026-11-19 16:23",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15748,9 +15748,9 @@
    "fecha": "2026-11-18",
    "senal": "GAP bajista (amigo)",
    "lado": "PUT",
-   "resultado": null,
-   "detalle": "16:00 · falta la apertura siguiente",
-   "maximo": null,
+   "resultado": "P",
+   "detalle": "16:00 · GAP siguiente +0.98%",
+   "maximo": -1.0,
    "unidad": "GAP",
    "minimo": null,
    "activo": "SPX",
@@ -15932,8 +15932,8 @@
    "usd_10": 690,
    "tp_fijo": 15,
    "contra": -17.1,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
+   "max_sin_tp": 1731.7,
+   "hora_max_sin_tp": "12:07",
    "minutos": 2,
    "en_curso": false,
    "fuente": "en vivo: el detector (tools/senal_stochrsi_ut.py) y la cadena del $SPX del motor (bid)",
@@ -15987,8 +15987,8 @@
    "usd_10": 450,
    "tp_fijo": 15,
    "contra": -9.1,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
+   "max_sin_tp": 30.0,
+   "hora_max_sin_tp": "09:32",
    "minutos": 2,
    "fuente": "Schwab cadena XSP (bid)",
    "activo": "SPX",
@@ -16038,6 +16038,8 @@
    "entrada": 2.63,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "11:20:21",
+   "max_sin_tp": 356.3,
+   "hora_max_sin_tp": "15:06",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -16063,6 +16065,8 @@
    "entro": "09:57:17",
    "activo": "SPX",
    "venta": "10:15",
+   "max_sin_tp": 339.6,
+   "hora_max_sin_tp": "12:56",
    "activos": [
     "SPX"
    ],
@@ -16085,6 +16089,8 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:34:21",
    "activo": "TSLA",
+   "max_sin_tp": 9.6,
+   "hora_max_sin_tp": "09:35",
    "activos": [
     "TSLA"
    ],
@@ -16115,7 +16121,12 @@
     "texto": "Heikin Ashi PUT"
    }
   ],
-  "rebote": null,
+  "rebote": {
+   "senal": false,
+   "razon_vol": 1.47,
+   "pos_rango": 0.008,
+   "roja": true
+  },
   "rebote_dia": [
    "de jueves para viernes",
    14,
@@ -16131,7 +16142,14 @@
      "texto": "Sentimiento Univ. de Michigan (final)"
     }
    ],
-   "gap": null
+   "gap": {
+    "mes_pct": -0.1251,
+    "hoy_pct": -1.9788,
+    "lado": -1,
+    "cuando": "19/11 16:23",
+    "continuacion": true,
+    "ganador": true
+   }
   }
  }
 }
