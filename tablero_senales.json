@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-19 09:49",
+ "actualizado": "2026-11-19 10:48",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15918,6 +15918,35 @@
   },
   {
    "fecha": "2026-11-19",
+   "senal": "BUY BUY & SELL SELL PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "9:55 · SPX PUT 7270 a 4.10 · TP 4.80 · +15% a las 09:57 · +$690 con 10 contratos",
+   "maximo": 15.0,
+   "unidad": "opción",
+   "minimo": -39.0,
+   "strike": 7270.0,
+   "entrada": 4.1,
+   "entro": "09:55:16",
+   "venta": "09:57",
+   "usd_10": 690,
+   "tp_fijo": 15,
+   "contra": -17.1,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": 2,
+   "en_curso": false,
+   "fuente": "en vivo: el detector (tools/senal_stochrsi_ut.py) y la cadena del $SPX del motor (bid)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-11-19",
    "senal": "Bollinger SPX Charlatan",
    "lado": "CALL",
    "resultado": "G",
@@ -15971,13 +16000,59 @@
   },
   {
    "fecha": "2026-11-19",
+   "senal": "Heikin Ashi CALL",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "10:10 · CALL 738 al ask 2.75",
+   "maximo": 3.6,
+   "unidad": "opción",
+   "minimo": -83.3,
+   "contra": -12.4,
+   "minutos": 0.9,
+   "strike": 738.0,
+   "entrada": 2.75,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:10:23",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-11-19",
+   "senal": "Opening Eyes (motor) SPX",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "09:57 · PUT 737 al ask 2.85",
+   "maximo": 101.4,
+   "unidad": "opción",
+   "minimo": -33.0,
+   "contra": -33.0,
+   "minutos": 28.8,
+   "strike": 737.0,
+   "entrada": 2.85,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:57:17",
+   "activo": "SPX",
+   "venta": "10:15",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-11-19",
    "senal": "Opening Eyes (motor) TSLA",
    "lado": "CALL",
    "resultado": "P",
    "detalle": "09:34 · CALL 392.5 al ask 5.70",
    "maximo": 9.6,
    "unidad": "opción",
-   "minimo": -23.7,
+   "minimo": -56.1,
    "contra": 0.0,
    "minutos": 1.2,
    "strike": 392.5,
@@ -16005,7 +16080,12 @@
    "ganador": false,
    "enviado": false
   },
-  "avisos": [],
+  "avisos": [
+   {
+    "hora": "10:10",
+    "texto": "Heikin Ashi CALL"
+   }
+  ],
   "rebote": null,
   "rebote_dia": [
    "de jueves para viernes",
