@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-19 09:40",
+ "actualizado": "2026-11-19 09:49",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15924,7 +15924,7 @@
    "detalle": "09:31 · SPXW CALL 7485 a 4.60 (09:31:15) · +35% a las 09:32 (provisorio, con la cadena del motor) · se mide de madrugada con Tastytrade · VWAP SPY a favor +0.03%",
    "maximo": 35.0,
    "unidad": "opción",
-   "minimo": -28.3,
+   "minimo": -46.7,
    "strike": 7485.0,
    "entrada": 4.6,
    "entro": "09:31:15",
@@ -15975,11 +15975,11 @@
    "lado": "CALL",
    "resultado": "P",
    "detalle": "09:34 · CALL 392.5 al ask 5.70",
-   "maximo": 7.0,
+   "maximo": 9.6,
    "unidad": "opción",
-   "minimo": 2.6,
+   "minimo": -23.7,
    "contra": 0.0,
-   "minutos": 0.7,
+   "minutos": 1.2,
    "strike": 392.5,
    "entrada": 5.7,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
