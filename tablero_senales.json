@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-18 20:01",
+ "actualizado": "2026-11-19 00:01",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -15721,32 +15721,6 @@
   },
   {
    "fecha": "2026-11-18",
-   "senal": "Bollinger SPX Charlatan",
-   "lado": "PUT",
-   "resultado": null,
-   "detalle": "11:21 · SPXW PUT 7210 a 4.60 (11:21:16) · pendiente: vende en +35% o a las 15:55 · se mide de madrugada con Tastytrade · VWAP SPY a favor +0.58%",
-   "maximo": null,
-   "unidad": "opción",
-   "minimo": -46.7,
-   "strike": 7210.0,
-   "entrada": 4.6,
-   "entro": "11:21:16",
-   "venta": "",
-   "minutos": null,
-   "en_curso": true,
-   "contra": -46.7,
-   "max_sin_tp": 2.2,
-   "hora_max_sin_tp": "11:21",
-   "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-11-16",
-   "dia_semana": 2
-  },
-  {
-   "fecha": "2026-11-18",
    "senal": "GAP bajista (amigo)",
    "lado": "PUT",
    "resultado": null,
@@ -15919,52 +15893,36 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-11-18",
-  "dia_semana": 2,
+  "fecha": "2026-11-19",
+  "dia_semana": 3,
   "eventos": [],
   "reportes": [],
   "gap": {
-   "cuando": "9:28",
-   "lado": 1.0,
-   "mes_pct": 0.1698,
-   "ayer_pct": -1.0727,
-   "ganador": true,
+   "cuando": "00:01",
+   "lado": 1,
+   "mes_pct": 0.5926026837408838,
+   "ayer_pct": -0.24657384954908101,
+   "ganador": false,
    "enviado": false
   },
-  "avisos": [
-   {
-    "hora": "09:50",
-    "texto": "Heikin Ashi CALL"
-   },
-   {
-    "hora": "11:20",
-    "texto": "Heikin Ashi PUT"
-   }
-  ],
-  "rebote": {
-   "senal": false,
-   "razon_vol": 1.65,
-   "pos_rango": 0.422,
-   "roja": false
-  },
+  "avisos": [],
+  "rebote": null,
   "rebote_dia": [
-   "de miércoles para jueves",
-   13,
-   16
+   "de jueves para viernes",
+   14,
+   15
   ],
   "cobertura_hasta": "2026-12-09",
   "manana": {
-   "fecha": "2026-11-19",
-   "dia_semana": 3,
-   "eventos": [],
-   "gap": {
-    "mes_pct": 0.7016,
-    "hoy_pct": -0.2466,
-    "lado": 1,
-    "cuando": "18/11 20:01",
-    "continuacion": false,
-    "ganador": false
-   }
+   "fecha": "2026-11-20",
+   "dia_semana": 4,
+   "eventos": [
+    {
+     "hora": "10:00",
+     "texto": "Sentimiento Univ. de Michigan (final)"
+    }
+   ],
+   "gap": null
   }
  }
 }
