@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-20 09:49",
+ "actualizado": "2026-11-20 10:49",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -16121,6 +16121,32 @@
   },
   {
    "fecha": "2026-11-20",
+   "senal": "Bollinger SPX Charlatan",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "10:43 · SPXW PUT 6965 a 4.50 (10:43:15) · +35% a las 10:46 (provisorio, con la cadena del motor) · se mide de madrugada con Tastytrade · VWAP SPY a favor +0.62%",
+   "maximo": 35.0,
+   "unidad": "opción",
+   "minimo": -11.1,
+   "strike": 6965.0,
+   "entrada": 4.5,
+   "entro": "10:43:15",
+   "venta": "10:46",
+   "minutos": 3,
+   "en_curso": false,
+   "contra": -11.1,
+   "max_sin_tp": 55.6,
+   "hora_max_sin_tp": "10:47",
+   "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-20",
    "senal": "GAP continuación GANADOR",
    "lado": "PUT",
    "resultado": "G",
@@ -16141,6 +16167,129 @@
    ],
    "semana": "2026-11-16",
    "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-20",
+   "senal": "Heikin Ashi CALL",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "10:30 · CALL 711 al ask 3.89",
+   "maximo": 2.1,
+   "unidad": "opción",
+   "minimo": -31.9,
+   "contra": -17.2,
+   "minutos": 6.3,
+   "strike": 711.0,
+   "entrada": 3.89,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:30:21",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-20",
+   "senal": "Opening Eyes (motor) SPX",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "09:54 · CALL 717 al ask 3.63",
+   "maximo": 39.1,
+   "unidad": "opción",
+   "minimo": -55.9,
+   "contra": -4.1,
+   "minutos": 6.1,
+   "strike": 717.0,
+   "entrada": 3.63,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:54:24",
+   "activo": "SPX",
+   "venta": "09:56",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-20",
+   "senal": "Opening Eyes (motor) TSLA",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "10:11 · PUT 370 al ask 3.50",
+   "maximo": 178.6,
+   "unidad": "opción",
+   "minimo": -14.3,
+   "contra": -14.3,
+   "minutos": 15.3,
+   "strike": 370.0,
+   "entrada": 3.5,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:11:17",
+   "activo": "TSLA",
+   "venta": "10:14",
+   "activos": [
+    "TSLA"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-20",
+   "senal": "Tridente 15 (💵💵💵) PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "10:15 · vela 10:00 · SPX PUT 7155 a 35.20 · TP 40.50 · +15% a las 10:17 · +$5.290 con 10 contratos",
+   "maximo": 15.0,
+   "unidad": "opción",
+   "minimo": -6.0,
+   "strike": 7155.0,
+   "entrada": 35.2,
+   "entro": "10:15",
+   "venta": "10:17",
+   "usd_10": 5290,
+   "tp_fijo": 15,
+   "contra": -6.0,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": 2,
+   "fuente": "Schwab cadena (bid)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-20",
+   "senal": "Tridente 15 PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "10:15 · vela 10:00 · SPX PUT 7015 a 4.50 · TP 5.20 · +15% a las 10:16 · +$690 con 10 contratos",
+   "maximo": 15.0,
+   "unidad": "opción",
+   "minimo": -8.9,
+   "strike": 7015.0,
+   "entrada": 4.5,
+   "entro": "10:15",
+   "venta": "10:16",
+   "usd_10": 690,
+   "tp_fijo": 15,
+   "contra": -8.9,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": 2,
+   "fuente": "Schwab cadena (bid)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 4
   }
  ],
  "hoy": {
@@ -16152,7 +16301,15 @@
     "texto": "Sentimiento Univ. de Michigan (final)"
    }
   ],
-  "reportes": [],
+  "reportes": [
+   {
+    "hora": "10:00",
+    "datos": "Michigan final",
+    "mov": 0.1597,
+    "direccion": "arriba",
+    "cifras": {}
+   }
+  ],
   "gap": {
    "cuando": "9:28",
    "lado": -1.0,
@@ -16165,6 +16322,10 @@
    {
     "hora": "09:28",
     "texto": "GAP GANADOR PUT"
+   },
+   {
+    "hora": "10:30",
+    "texto": "Heikin Ashi CALL"
    }
   ],
   "rebote": null,
