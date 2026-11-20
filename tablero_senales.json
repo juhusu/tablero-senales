@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-20 09:40",
+ "actualizado": "2026-11-20 09:49",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -16100,11 +16100,41 @@
    "fecha": "2026-11-20",
    "senal": "Aviso 9:28",
    "lado": "PUT",
-   "resultado": null,
+   "resultado": "G",
    "detalle": "9:28 · MES -0.40%",
-   "maximo": null,
+   "maximo": 14.6,
    "unidad": "opción",
-   "minimo": null,
+   "minimo": -50.5,
+   "contra": 0.0,
+   "minutos": 0.8,
+   "strike": 715.0,
+   "entrada": 4.44,
+   "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
+   "entro": "09:30",
+   "horas_calc": true,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-20",
+   "senal": "GAP continuación GANADOR",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "9:30 · GAP -0.35% · ayer -2.02%",
+   "maximo": 14.6,
+   "unidad": "opción",
+   "minimo": -50.5,
+   "contra": 0.0,
+   "minutos": 0.8,
+   "strike": 715.0,
+   "entrada": 4.44,
+   "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
+   "entro": "09:30",
+   "horas_calc": true,
    "activo": "SPX",
    "activos": [
     "SPX"
