@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-20 10:49",
+ "actualizado": "2026-11-20 12:11",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -16127,7 +16127,7 @@
    "detalle": "10:43 · SPXW PUT 6965 a 4.50 (10:43:15) · +35% a las 10:46 (provisorio, con la cadena del motor) · se mide de madrugada con Tastytrade · VWAP SPY a favor +0.62%",
    "maximo": 35.0,
    "unidad": "opción",
-   "minimo": -11.1,
+   "minimo": -34.4,
    "strike": 6965.0,
    "entrada": 4.5,
    "entro": "10:43:15",
@@ -16135,8 +16135,8 @@
    "minutos": 3,
    "en_curso": false,
    "contra": -11.1,
-   "max_sin_tp": 55.6,
-   "hora_max_sin_tp": "10:47",
+   "max_sin_tp": 140.0,
+   "hora_max_sin_tp": "12:03",
    "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
    "activo": "SPX",
    "activos": [
@@ -16176,7 +16176,7 @@
    "detalle": "10:30 · CALL 711 al ask 3.89",
    "maximo": 2.1,
    "unidad": "opción",
-   "minimo": -31.9,
+   "minimo": -42.7,
    "contra": -17.2,
    "minutos": 6.3,
    "strike": 711.0,
