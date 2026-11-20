@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-20 12:11",
+ "actualizado": "2026-11-20 16:23",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -16135,8 +16135,8 @@
    "minutos": 3,
    "en_curso": false,
    "contra": -11.1,
-   "max_sin_tp": 140.0,
-   "hora_max_sin_tp": "12:03",
+   "max_sin_tp": 1120.0,
+   "hora_max_sin_tp": "15:35",
    "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
    "activo": "SPX",
    "activos": [
@@ -16183,6 +16183,8 @@
    "entrada": 3.89,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "10:30:21",
+   "max_sin_tp": 2.1,
+   "hora_max_sin_tp": "10:36",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -16208,6 +16210,8 @@
    "entro": "09:54:24",
    "activo": "SPX",
    "venta": "09:56",
+   "max_sin_tp": 39.1,
+   "hora_max_sin_tp": "10:00",
    "activos": [
     "SPX"
    ],
@@ -16231,8 +16235,27 @@
    "entro": "10:11:17",
    "activo": "TSLA",
    "venta": "10:14",
+   "max_sin_tp": 500.0,
+   "hora_max_sin_tp": "14:38",
    "activos": [
     "TSLA"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-20",
+   "senal": "Rebote al cierre",
+   "lado": "CALL",
+   "resultado": null,
+   "detalle": "16:00 · falta la apertura siguiente",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": null,
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
    ],
    "semana": "2026-11-16",
    "dia_semana": 4
@@ -16253,8 +16276,8 @@
    "usd_10": 5290,
    "tp_fijo": 15,
    "contra": -6.0,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
+   "max_sin_tp": 110.2,
+   "hora_max_sin_tp": "10:51",
    "minutos": 2,
    "fuente": "Schwab cadena (bid)",
    "activo": "SPX",
@@ -16280,8 +16303,8 @@
    "usd_10": 690,
    "tp_fijo": 15,
    "contra": -8.9,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
+   "max_sin_tp": 1386.7,
+   "hora_max_sin_tp": "14:31",
    "minutos": 2,
    "fuente": "Schwab cadena (bid)",
    "activo": "SPX",
@@ -16328,7 +16351,12 @@
     "texto": "Heikin Ashi CALL"
    }
   ],
-  "rebote": null,
+  "rebote": {
+   "senal": true,
+   "razon_vol": 2.4,
+   "pos_rango": 0.129,
+   "roja": true
+  },
   "rebote_dia": [
    "de viernes para lunes",
    6,
@@ -16339,7 +16367,14 @@
    "fecha": "2026-11-23",
    "dia_semana": 0,
    "eventos": [],
-   "gap": null
+   "gap": {
+    "mes_pct": 0.3132,
+    "hoy_pct": -3.6098,
+    "lado": 1,
+    "cuando": "20/11 16:23",
+    "continuacion": false,
+    "ganador": true
+   }
   }
  }
 }
