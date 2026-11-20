@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-20 09:24",
+ "actualizado": "2026-11-20 09:40",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -16095,6 +16095,22 @@
    ],
    "semana": "2026-11-16",
    "dia_semana": 3
+  },
+  {
+   "fecha": "2026-11-20",
+   "senal": "Aviso 9:28",
+   "lado": "PUT",
+   "resultado": null,
+   "detalle": "9:28 · MES -0.40%",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": null,
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-16",
+   "dia_semana": 4
   }
  ],
  "hoy": {
@@ -16108,14 +16124,19 @@
   ],
   "reportes": [],
   "gap": {
-   "cuando": "09:24",
-   "lado": -1,
-   "mes_pct": -0.5316561262075248,
-   "ayer_pct": -1.97883236599522,
+   "cuando": "9:28",
+   "lado": -1.0,
+   "mes_pct": -0.3996,
+   "ayer_pct": -1.9788,
    "ganador": true,
-   "enviado": false
+   "enviado": true
   },
-  "avisos": [],
+  "avisos": [
+   {
+    "hora": "09:28",
+    "texto": "GAP GANADOR PUT"
+   }
+  ],
   "rebote": null,
   "rebote_dia": [
    "de viernes para lunes",
