@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-23 09:21",
+ "actualizado": "2026-11-23 09:38",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -16083,10 +16083,10 @@
    "fecha": "2026-11-20",
    "senal": "Rebote al cierre",
    "lado": "CALL",
-   "resultado": null,
-   "detalle": "16:00 · falta la apertura siguiente",
-   "maximo": null,
-   "unidad": "opción",
+   "resultado": "G",
+   "detalle": "16:00 · GAP siguiente +4.46%",
+   "maximo": 4.5,
+   "unidad": "GAP",
    "minimo": null,
    "activo": "SPY",
    "activos": [
@@ -16149,6 +16149,33 @@
    ],
    "semana": "2026-11-16",
    "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-23",
+   "senal": "GAP Ruptura",
+   "lado": "CALL",
+   "resultado": null,
+   "detalle": "09:30 · XSP CALL 711 a 15.00 · pendiente · abrió 7227.41, línea 6968.43",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": -62.4,
+   "strike": 711.0,
+   "entrada": 15.0,
+   "entro": "09:30",
+   "venta": null,
+   "usd_10": null,
+   "tp_fijo": 15,
+   "contra": -62.4,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": null,
+   "fuente": "Schwab cadena XSP (bid)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 0
   }
  ],
  "hoy": {
@@ -16157,14 +16184,19 @@
   "eventos": [],
   "reportes": [],
   "gap": {
-   "cuando": "09:21",
-   "lado": 1,
-   "mes_pct": 4.130481590468671,
-   "ayer_pct": -0.11707740117078425,
+   "cuando": "9:28",
+   "lado": 1.0,
+   "mes_pct": 4.3889,
+   "ayer_pct": -0.1171,
    "ganador": false,
    "enviado": false
   },
-  "avisos": [],
+  "avisos": [
+   {
+    "hora": "09:32",
+    "texto": "Toque Magnífico PUT"
+   }
+  ],
   "rebote": null,
   "rebote_dia": [
    "de lunes para martes",
