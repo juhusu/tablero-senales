@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-23 09:38",
+ "actualizado": "2026-11-23 09:51",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13585,6 +13585,32 @@
    "dia_semana": 1
   },
   {
+   "fecha": "2026-11-03",
+   "senal": "Rebote EMA 9 (5 min)",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "10:40 · vela de 5 min que cerró 10:45 · SPX CALL 7575 al ask 15.00 (10:45:17) · +35% (bid 20.60) a las 10:59:32",
+   "maximo": 37.3,
+   "unidad": "opción",
+   "minimo": -0.7,
+   "strike": 7575,
+   "entrada": 15.0,
+   "entro": "10:45:17",
+   "venta": "10:59:32",
+   "minutos": 14,
+   "contra": -0.7,
+   "max_sin_tp": 47.3,
+   "hora_max_sin_tp": "11:00",
+   "en_curso": false,
+   "fuente": "Schwab (cadena del SPX cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 1
+  },
+  {
    "fecha": "2026-11-04",
    "senal": "BUY BUY & SELL SELL CALL",
    "lado": "CALL",
@@ -13763,6 +13789,32 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-04",
+   "senal": "Rebote EMA 9 (5 min)",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "11:15 · vela de 5 min que cerró 11:20 · SPX CALL 7685 al ask 15.40 (11:20:24) · -35% a las 11:24:09 a 9.60",
+   "maximo": -13.0,
+   "unidad": "opción",
+   "minimo": -37.7,
+   "strike": 7685,
+   "entrada": 15.4,
+   "entro": "11:20:24",
+   "venta": "11:24:09",
+   "minutos": 4,
+   "contra": -31.8,
+   "max_sin_tp": 117.5,
+   "hora_max_sin_tp": "13:07",
+   "en_curso": false,
+   "fuente": "Schwab (cadena del SPX cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
    ],
    "semana": "2026-11-02",
    "dia_semana": 2
@@ -14077,6 +14129,32 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
+   ],
+   "semana": "2026-11-02",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-06",
+   "senal": "Rebote EMA 9 (5 min)",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "11:35 · vela de 5 min que cerró 11:40 · SPX CALL 7435 al ask 19.20 (11:40:24) · -35% a las 12:02:40 a 11.20",
+   "maximo": -8.3,
+   "unidad": "opción",
+   "minimo": -41.7,
+   "strike": 7435,
+   "entrada": 19.2,
+   "entro": "11:40:24",
+   "venta": "12:02:40",
+   "minutos": 22,
+   "contra": -34.9,
+   "max_sin_tp": -8.3,
+   "hora_max_sin_tp": "11:40",
+   "en_curso": false,
+   "fuente": "Schwab (cadena del SPX cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
    ],
    "semana": "2026-11-02",
    "dia_semana": 4
@@ -14640,6 +14718,32 @@
   },
   {
    "fecha": "2026-11-11",
+   "senal": "Rebote EMA 9 (5 min)",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "11:10 · vela de 5 min que cerró 11:15 · SPX CALL 7610 al ask 7.70 (11:15:23) · +35% (bid 10.60) a las 11:25:13",
+   "maximo": 37.7,
+   "unidad": "opción",
+   "minimo": -11.7,
+   "strike": 7610,
+   "entrada": 7.7,
+   "entro": "11:15:23",
+   "venta": "11:25:13",
+   "minutos": 10,
+   "contra": -11.7,
+   "max_sin_tp": 394.8,
+   "hora_max_sin_tp": "13:46",
+   "en_curso": false,
+   "fuente": "Schwab (cadena del SPX cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-11",
    "senal": "Rectángulo (amigo)",
    "lado": "PUT",
    "resultado": "G",
@@ -14791,6 +14895,32 @@
    "activo": "TSLA",
    "activos": [
     "TSLA"
+   ],
+   "semana": "2026-11-09",
+   "dia_semana": 3
+  },
+  {
+   "fecha": "2026-11-12",
+   "senal": "Rebote EMA 9 (5 min)",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "11:55 · vela de 5 min que cerró 12:00 · SPX CALL 7635 al ask 12.00 (12:00:16) · -35% a las 12:18:07 a 7.70",
+   "maximo": 4.2,
+   "unidad": "opción",
+   "minimo": -35.8,
+   "strike": 7635,
+   "entrada": 12.0,
+   "entro": "12:00:16",
+   "venta": "12:18:07",
+   "minutos": 18,
+   "contra": -35.0,
+   "max_sin_tp": 7.5,
+   "hora_max_sin_tp": "12:52",
+   "en_curso": false,
+   "fuente": "Schwab (cadena del SPX cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
    ],
    "semana": "2026-11-09",
    "dia_semana": 3
@@ -16158,18 +16288,72 @@
    "detalle": "09:30 · XSP CALL 711 a 15.00 · pendiente · abrió 7227.41, línea 6968.43",
    "maximo": null,
    "unidad": "opción",
-   "minimo": -62.4,
+   "minimo": -66.7,
    "strike": 711.0,
    "entrada": 15.0,
    "entro": "09:30",
    "venta": null,
    "usd_10": null,
    "tp_fijo": 15,
-   "contra": -62.4,
+   "contra": -66.7,
    "max_sin_tp": null,
    "hora_max_sin_tp": "",
    "minutos": null,
    "fuente": "Schwab cadena XSP (bid)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-23",
+   "senal": "Tridente 15 (💵💵💵) CALL",
+   "lado": "CALL",
+   "resultado": null,
+   "detalle": "09:45 · vela 09:30 · SPX CALL 7200 a 47.60 · TP 54.80 · pendiente",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": -14.7,
+   "strike": 7200.0,
+   "entrada": 47.6,
+   "entro": "09:45",
+   "venta": null,
+   "usd_10": null,
+   "tp_fijo": 15,
+   "contra": -14.7,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": null,
+   "fuente": "Schwab cadena (bid)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-23",
+   "senal": "Tridente 15 CALL",
+   "lado": "CALL",
+   "resultado": null,
+   "detalle": "09:45 · vela 09:30 · SPX CALL 7365 a 4.40 · TP 5.10 · pendiente",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": -15.9,
+   "strike": 7365.0,
+   "entrada": 4.4,
+   "entro": "09:45",
+   "venta": null,
+   "usd_10": null,
+   "tp_fijo": 15,
+   "contra": -15.9,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": null,
+   "fuente": "Schwab cadena (bid)",
    "activo": "SPX",
    "activos": [
     "SPX"
