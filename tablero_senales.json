@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-24 00:04",
+ "actualizado": "2026-11-24 03:35",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -16314,6 +16314,31 @@
   },
   {
    "fecha": "2026-11-23",
+   "senal": "Bollinger SPX Charlatan",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "10:16 · SPXW CALL 7350 a 5.90 (10:16, vela de 1 min) · vendió 10:20 a 8.00 = +35% sobre el promedio 5.90 · VWAP SPY a favor +0.47%",
+   "maximo": 35.6,
+   "unidad": "opción",
+   "minimo": -6.8,
+   "contra": -6.8,
+   "minutos": 4.0,
+   "strike": 7350.0,
+   "venta": "10:20",
+   "entro": "10:16:15",
+   "max_sin_tp": 103.4,
+   "hora_max_sin_tp": "10:32",
+   "entrada": 5.9,
+   "fuente": "Tastytrade (velas de 1 min de la opción SPX)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-23",
    "senal": "GAP Ruptura",
    "lado": "CALL",
    "resultado": "P",
@@ -16483,9 +16508,9 @@
   ],
   "reportes": [],
   "gap": {
-   "cuando": "00:04",
-   "lado": 1,
-   "mes_pct": 0.22046159145712174,
+   "cuando": "03:35",
+   "lado": -1,
+   "mes_pct": -0.15845676885980486,
    "ayer_pct": 4.724762676545513,
    "ganador": true,
    "enviado": false
