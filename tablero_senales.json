@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-24 09:41",
+ "actualizado": "2026-11-24 09:53",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -16498,6 +16498,35 @@
   },
   {
    "fecha": "2026-11-24",
+   "senal": "BUY BUY & SELL SELL PUT",
+   "lado": "PUT",
+   "resultado": null,
+   "detalle": "9:40 · SPX PUT 7000 a 4.30 · TP 5.00 · pendiente",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": -41.9,
+   "strike": 7000.0,
+   "entrada": 4.3,
+   "entro": "09:40:24",
+   "venta": null,
+   "usd_10": null,
+   "tp_fijo": 15,
+   "contra": -41.9,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": null,
+   "en_curso": true,
+   "fuente": "en vivo: el detector (tools/senal_stochrsi_ut.py) y la cadena del $SPX del motor (bid)",
+   "activo": "QQQ",
+   "activos": [
+    "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-24",
    "senal": "GAP Ruptura",
    "lado": "PUT",
    "resultado": "G",
@@ -16516,6 +16545,60 @@
    "hora_max_sin_tp": "",
    "minutos": 2,
    "fuente": "Schwab cadena XSP (bid)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-24",
+   "senal": "Tridente 15 (💵💵💵) PUT",
+   "lado": "PUT",
+   "resultado": null,
+   "detalle": "09:45 · vela 09:30 · SPX PUT 7195 a 36.10 · TP 41.60 · pendiente",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": -19.7,
+   "strike": 7195.0,
+   "entrada": 36.1,
+   "entro": "09:45",
+   "venta": null,
+   "usd_10": null,
+   "tp_fijo": 15,
+   "contra": -16.1,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": null,
+   "fuente": "Schwab cadena (bid)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-24",
+   "senal": "Tridente 15 PUT",
+   "lado": "PUT",
+   "resultado": null,
+   "detalle": "09:45 · vela 09:30 · SPX PUT 7045 a 4.60 · TP 5.30 · pendiente",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": -23.9,
+   "strike": 7045.0,
+   "entrada": 4.6,
+   "entro": "09:45",
+   "venta": null,
+   "usd_10": null,
+   "tp_fijo": 15,
+   "contra": -21.7,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": null,
+   "fuente": "Schwab cadena (bid)",
    "activo": "SPX",
    "activos": [
     "SPX"
