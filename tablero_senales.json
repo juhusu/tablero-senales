@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-24 12:11",
+ "actualizado": "2026-11-24 16:23",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -16500,22 +16500,22 @@
    "fecha": "2026-11-24",
    "senal": "BUY BUY & SELL SELL PUT",
    "lado": "PUT",
-   "resultado": null,
-   "detalle": "9:40 · SPX PUT 7000 a 4.30 · TP 5.00 · pendiente",
+   "resultado": "P",
+   "detalle": "9:40 · SPX PUT 7000 a 4.30 · TP 5.00 · 15:55",
    "maximo": null,
    "unidad": "opción",
    "minimo": -41.9,
    "strike": 7000.0,
    "entrada": 4.3,
    "entro": "09:40:24",
-   "venta": null,
+   "venta": "15:55",
    "usd_10": null,
    "tp_fijo": 15,
    "contra": -43.0,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
-   "minutos": null,
-   "en_curso": true,
+   "max_sin_tp": -2.3,
+   "hora_max_sin_tp": "09:40",
+   "minutos": 375,
+   "en_curso": false,
    "fuente": "en vivo: el detector (tools/senal_stochrsi_ut.py) y la cadena del $SPX del motor (bid)",
    "activo": "QQQ",
    "activos": [
@@ -16567,10 +16567,26 @@
    "usd_10": 660,
    "tp_fijo": 15,
    "contra": -8.4,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
+   "max_sin_tp": 19.1,
+   "hora_max_sin_tp": "09:31",
    "minutos": 2,
    "fuente": "Schwab cadena XSP (bid)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-24",
+   "senal": "GAP bajista (amigo)",
+   "lado": "PUT",
+   "resultado": null,
+   "detalle": "16:00 · falta la apertura siguiente",
+   "maximo": null,
+   "unidad": "GAP",
+   "minimo": null,
    "activo": "SPX",
    "activos": [
     "SPX"
@@ -16612,7 +16628,7 @@
    "detalle": "11:40 · PUT 715 al ask 2.35",
    "maximo": 12.8,
    "unidad": "opción",
-   "minimo": -46.8,
+   "minimo": -68.9,
    "contra": 0.0,
    "minutos": 1.4,
    "strike": 715.0,
@@ -16620,6 +16636,8 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "11:40:21",
    "venta": "11:40",
+   "max_sin_tp": 12.8,
+   "hora_max_sin_tp": "11:41",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -16645,6 +16663,8 @@
    "entro": "09:48:24",
    "activo": "SPX",
    "venta": "09:51",
+   "max_sin_tp": 18.3,
+   "hora_max_sin_tp": "09:51",
    "activos": [
     "SPX"
    ],
@@ -16668,6 +16688,8 @@
    "entro": "10:05:22",
    "activo": "TSLA",
    "venta": "10:06",
+   "max_sin_tp": 112.0,
+   "hora_max_sin_tp": "11:40",
    "activos": [
     "TSLA"
    ],
@@ -16689,6 +16711,8 @@
    "entrada": 4.59,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:32:24",
+   "max_sin_tp": -1.3,
+   "hora_max_sin_tp": "09:32",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -16713,8 +16737,8 @@
    "usd_10": 5490,
    "tp_fijo": 15,
    "contra": -42.9,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
+   "max_sin_tp": 70.4,
+   "hora_max_sin_tp": "11:06",
    "minutos": 38,
    "fuente": "Schwab cadena (bid)",
    "activo": "SPX",
@@ -16740,8 +16764,8 @@
    "usd_10": 690,
    "tp_fijo": 15,
    "contra": -46.7,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
+   "max_sin_tp": 28.3,
+   "hora_max_sin_tp": "10:45",
    "minutos": 43,
    "fuente": "Schwab cadena (bid)",
    "activo": "SPX",
@@ -16792,7 +16816,12 @@
     "texto": "Heikin Ashi PUT"
    }
   ],
-  "rebote": null,
+  "rebote": {
+   "senal": false,
+   "razon_vol": 2.02,
+   "pos_rango": 0.757,
+   "roja": false
+  },
   "rebote_dia": [
    "de martes para miércoles",
    6,
@@ -16812,7 +16841,14 @@
      "texto": "PIB (GDP)"
     }
    ],
-   "gap": null
+   "gap": {
+    "mes_pct": -0.0693,
+    "hoy_pct": -0.4753,
+    "lado": -1,
+    "cuando": "24/11 16:23",
+    "continuacion": true,
+    "ganador": true
+   }
   }
  }
 }
