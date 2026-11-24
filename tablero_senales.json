@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-23 20:04",
+ "actualizado": "2026-11-24 00:04",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -13585,32 +13585,6 @@
    "dia_semana": 1
   },
   {
-   "fecha": "2026-11-03",
-   "senal": "Rebote EMA 9 (5 min)",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "10:40 · vela de 5 min que cerró 10:45 · SPX CALL 7575 al ask 15.00 (10:45:17) · +35% (bid 20.60) a las 10:59:32",
-   "maximo": 37.3,
-   "unidad": "opción",
-   "minimo": -0.7,
-   "strike": 7575,
-   "entrada": 15.0,
-   "entro": "10:45:17",
-   "venta": "10:59:32",
-   "minutos": 14,
-   "contra": -0.7,
-   "max_sin_tp": 47.3,
-   "hora_max_sin_tp": "11:00",
-   "en_curso": false,
-   "fuente": "Schwab (cadena del SPX cada 15 s)",
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-11-02",
-   "dia_semana": 1
-  },
-  {
    "fecha": "2026-11-04",
    "senal": "BUY BUY & SELL SELL CALL",
    "lado": "CALL",
@@ -16340,32 +16314,6 @@
   },
   {
    "fecha": "2026-11-23",
-   "senal": "Bollinger SPX Charlatan",
-   "lado": "CALL",
-   "resultado": "G",
-   "detalle": "10:16 · SPXW CALL 7365 a 4.50 (10:16:16) · +35% a las 10:20 (provisorio, con la cadena del motor) · se mide de madrugada con Tastytrade · VWAP SPY a favor +0.47%",
-   "maximo": 35.0,
-   "unidad": "opción",
-   "minimo": -33.3,
-   "strike": 7365.0,
-   "entrada": 4.5,
-   "entro": "10:16:16",
-   "venta": "10:20",
-   "minutos": 5,
-   "en_curso": false,
-   "contra": -11.1,
-   "max_sin_tp": 75.6,
-   "hora_max_sin_tp": "10:25",
-   "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-11-23",
-   "dia_semana": 0
-  },
-  {
-   "fecha": "2026-11-23",
    "senal": "GAP Ruptura",
    "lado": "CALL",
    "resultado": "P",
@@ -16525,57 +16473,45 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-11-23",
-  "dia_semana": 0,
-  "eventos": [],
-  "reportes": [],
-  "gap": {
-   "cuando": "9:28",
-   "lado": 1.0,
-   "mes_pct": 4.3889,
-   "ayer_pct": -0.1171,
-   "ganador": false,
-   "enviado": false
-  },
-  "avisos": [
+  "fecha": "2026-11-24",
+  "dia_semana": 1,
+  "eventos": [
    {
-    "hora": "09:32",
-    "texto": "Toque Magnífico PUT"
-   },
-   {
-    "hora": "11:00",
-    "texto": "Heikin Ashi PUT"
+    "hora": "10:00",
+    "texto": "Confianza del consumidor (Conference Board)"
    }
   ],
-  "rebote": {
-   "senal": false,
-   "razon_vol": 2.09,
-   "pos_rango": 0.615,
-   "roja": true
+  "reportes": [],
+  "gap": {
+   "cuando": "00:04",
+   "lado": 1,
+   "mes_pct": 0.22046159145712174,
+   "ayer_pct": 4.724762676545513,
+   "ganador": true,
+   "enviado": false
   },
+  "avisos": [],
+  "rebote": null,
   "rebote_dia": [
-   "de lunes para martes",
-   4,
+   "de martes para miércoles",
+   6,
    9
   ],
   "cobertura_hasta": "2026-12-09",
   "manana": {
-   "fecha": "2026-11-24",
-   "dia_semana": 1,
+   "fecha": "2026-11-25",
+   "dia_semana": 2,
    "eventos": [
     {
-     "hora": "10:00",
-     "texto": "Confianza del consumidor (Conference Board)"
+     "hora": "08:30",
+     "texto": "Ingreso y gasto personal (PCE)"
+    },
+    {
+     "hora": "08:30",
+     "texto": "PIB (GDP)"
     }
    ],
-   "gap": {
-    "mes_pct": 0.248,
-    "hoy_pct": 4.7248,
-    "lado": 1,
-    "cuando": "23/11 20:04",
-    "continuacion": true,
-    "ganador": true
-   }
+   "gap": null
   }
  }
 }
