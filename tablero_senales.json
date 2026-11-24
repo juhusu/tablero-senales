@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-24 09:24",
+ "actualizado": "2026-11-24 09:41",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -16495,6 +16495,33 @@
    ],
    "semana": "2026-11-23",
    "dia_semana": 0
+  },
+  {
+   "fecha": "2026-11-24",
+   "senal": "GAP Ruptura",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "09:30 · XSP PUT 716 a 4.40 · +15% a las 09:31 · +$660 con 10 contratos · abrió 7172.33, línea 7230.37",
+   "maximo": 15.0,
+   "unidad": "opción",
+   "minimo": -8.4,
+   "strike": 716.0,
+   "entrada": 4.4,
+   "entro": "09:30",
+   "venta": "09:31",
+   "usd_10": 660,
+   "tp_fijo": 15,
+   "contra": -8.4,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": 2,
+   "fuente": "Schwab cadena XSP (bid)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 1
   }
  ],
  "hoy": {
@@ -16508,14 +16535,19 @@
   ],
   "reportes": [],
   "gap": {
-   "cuando": "09:24",
-   "lado": -1,
-   "mes_pct": -1.1746469169824358,
-   "ayer_pct": 4.724762676545513,
+   "cuando": "9:28",
+   "lado": -1.0,
+   "mes_pct": -1.1195,
+   "ayer_pct": 4.7248,
    "ganador": true,
    "enviado": false
   },
-  "avisos": [],
+  "avisos": [
+   {
+    "hora": "09:32",
+    "texto": "Toque Magnífico PUT"
+   }
+  ],
   "rebote": null,
   "rebote_dia": [
    "de martes para miércoles",
