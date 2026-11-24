@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-24 09:53",
+ "actualizado": "2026-11-24 12:11",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -16511,7 +16511,7 @@
    "venta": null,
    "usd_10": null,
    "tp_fijo": 15,
-   "contra": -41.9,
+   "contra": -43.0,
    "max_sin_tp": null,
    "hora_max_sin_tp": "",
    "minutos": null,
@@ -16520,6 +16520,32 @@
    "activo": "QQQ",
    "activos": [
     "QQQ",
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-24",
+   "senal": "Bollinger SPX Charlatan",
+   "lado": "PUT",
+   "resultado": null,
+   "detalle": "10:29 · SPXW PUT 7040 a 4.50 (10:29:15) · pendiente: vende en +35% o a las 15:55 · se mide de madrugada con Tastytrade · VWAP SPY a favor +0.34%",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": -45.6,
+   "strike": 7040.0,
+   "entrada": 4.5,
+   "entro": "10:29:15",
+   "venta": "",
+   "minutos": null,
+   "en_curso": true,
+   "contra": -45.6,
+   "max_sin_tp": 22.2,
+   "hora_max_sin_tp": "10:45",
+   "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
+   "activo": "SPX",
+   "activos": [
     "SPX"
    ],
    "semana": "2026-11-23",
@@ -16554,23 +16580,142 @@
   },
   {
    "fecha": "2026-11-24",
+   "senal": "Heikin Ashi CALL",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "10:30 · CALL 716 al ask 3.26",
+   "maximo": 46.3,
+   "unidad": "opción",
+   "minimo": -29.1,
+   "contra": -8.0,
+   "minutos": 3.2,
+   "strike": 716.0,
+   "entrada": 3.26,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:30:17",
+   "venta": "10:31",
+   "max_sin_tp": 46.3,
+   "hora_max_sin_tp": "10:33",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-24",
+   "senal": "Heikin Ashi PUT",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "11:40 · PUT 715 al ask 2.35",
+   "maximo": 12.8,
+   "unidad": "opción",
+   "minimo": -46.8,
+   "contra": 0.0,
+   "minutos": 1.4,
+   "strike": 715.0,
+   "entrada": 2.35,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "11:40:21",
+   "venta": "11:40",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-24",
+   "senal": "Opening Eyes (motor) SPX",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "09:48 · CALL 720 al ask 3.83",
+   "maximo": 18.3,
+   "unidad": "opción",
+   "minimo": -54.8,
+   "contra": -19.8,
+   "minutos": 3.0,
+   "strike": 720.0,
+   "entrada": 3.83,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:48:24",
+   "activo": "SPX",
+   "venta": "09:51",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-24",
+   "senal": "Opening Eyes (motor) TSLA",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "10:05 · PUT 387.5 al ask 6.25",
+   "maximo": 98.4,
+   "unidad": "opción",
+   "minimo": 0.0,
+   "contra": 0.0,
+   "minutos": 23.9,
+   "strike": 387.5,
+   "entrada": 6.25,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "10:05:22",
+   "activo": "TSLA",
+   "venta": "10:06",
+   "activos": [
+    "TSLA"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-24",
+   "senal": "Toque Magnífico",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "09:31 · 5 grandes · PUT 715 al ask 4.59",
+   "maximo": -1.3,
+   "unidad": "opción",
+   "minimo": -77.8,
+   "contra": 0.0,
+   "minutos": 0.2,
+   "strike": 715.0,
+   "entrada": 4.59,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:32:24",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 1
+  },
+  {
+   "fecha": "2026-11-24",
    "senal": "Tridente 15 (💵💵💵) PUT",
    "lado": "PUT",
-   "resultado": null,
-   "detalle": "09:45 · vela 09:30 · SPX PUT 7195 a 36.10 · TP 41.60 · pendiente",
-   "maximo": null,
+   "resultado": "G",
+   "detalle": "09:45 · vela 09:30 · SPX PUT 7195 a 36.10 · TP 41.60 · +15% a las 10:23 · +$5.490 con 10 contratos",
+   "maximo": 15.0,
    "unidad": "opción",
-   "minimo": -19.7,
+   "minimo": -42.9,
    "strike": 7195.0,
    "entrada": 36.1,
    "entro": "09:45",
-   "venta": null,
-   "usd_10": null,
+   "venta": "10:23",
+   "usd_10": 5490,
    "tp_fijo": 15,
-   "contra": -16.1,
+   "contra": -42.9,
    "max_sin_tp": null,
    "hora_max_sin_tp": "",
-   "minutos": null,
+   "minutos": 38,
    "fuente": "Schwab cadena (bid)",
    "activo": "SPX",
    "activos": [
@@ -16583,21 +16728,21 @@
    "fecha": "2026-11-24",
    "senal": "Tridente 15 PUT",
    "lado": "PUT",
-   "resultado": null,
-   "detalle": "09:45 · vela 09:30 · SPX PUT 7045 a 4.60 · TP 5.30 · pendiente",
-   "maximo": null,
+   "resultado": "G",
+   "detalle": "09:45 · vela 09:30 · SPX PUT 7045 a 4.60 · TP 5.30 · +15% a las 10:28 · +$690 con 10 contratos",
+   "maximo": 15.0,
    "unidad": "opción",
-   "minimo": -23.9,
+   "minimo": -46.7,
    "strike": 7045.0,
    "entrada": 4.6,
    "entro": "09:45",
-   "venta": null,
-   "usd_10": null,
+   "venta": "10:28",
+   "usd_10": 690,
    "tp_fijo": 15,
-   "contra": -21.7,
+   "contra": -46.7,
    "max_sin_tp": null,
    "hora_max_sin_tp": "",
-   "minutos": null,
+   "minutos": 43,
    "fuente": "Schwab cadena (bid)",
    "activo": "SPX",
    "activos": [
@@ -16616,7 +16761,15 @@
     "texto": "Confianza del consumidor (Conference Board)"
    }
   ],
-  "reportes": [],
+  "reportes": [
+   {
+    "hora": "10:00",
+    "datos": "Confianza del consumidor (Conference Board)",
+    "mov": 0.0277,
+    "direccion": "neutro",
+    "cifras": {}
+   }
+  ],
   "gap": {
    "cuando": "9:28",
    "lado": -1.0,
@@ -16629,6 +16782,14 @@
    {
     "hora": "09:32",
     "texto": "Toque Magnífico PUT"
+   },
+   {
+    "hora": "10:30",
+    "texto": "Heikin Ashi CALL"
+   },
+   {
+    "hora": "11:40",
+    "texto": "Heikin Ashi PUT"
    }
   ],
   "rebote": null,
