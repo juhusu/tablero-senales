@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25 09:41",
+ "actualizado": "2026-11-25 09:49",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -16768,6 +16768,107 @@
    "hora_max_sin_tp": "",
    "minutos": 1,
    "fuente": "Schwab cadena XSP (bid)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-25",
+   "senal": "GAP continuación",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "9:30 · GAP -1.95% · ayer -0.50%",
+   "maximo": 55.7,
+   "unidad": "opción",
+   "minimo": -84.6,
+   "contra": -50.8,
+   "minutos": 14.1,
+   "strike": 706.0,
+   "entrada": 4.88,
+   "fuente": "Tastytrade en vivo (entrada) · Schwab (después)",
+   "entro": "09:30",
+   "horas_calc": true,
+   "venta": "no llegó",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-25",
+   "senal": "Heikin Ashi CALL",
+   "lado": "CALL",
+   "resultado": "P",
+   "detalle": "9:40 · CALL 700 al ask 4.70",
+   "maximo": -16.6,
+   "unidad": "opción",
+   "minimo": -36.2,
+   "contra": -18.9,
+   "minutos": 0.7,
+   "strike": 700.0,
+   "entrada": 4.7,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:40:25",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-25",
+   "senal": "Tridente 15 (💵💵💵) PUT",
+   "lado": "PUT",
+   "resultado": null,
+   "detalle": "09:45 · vela 09:30 · SPX PUT 6975 a 45.00 · TP 51.80 · pendiente",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": -29.6,
+   "strike": 6975.0,
+   "entrada": 45.0,
+   "entro": "09:45",
+   "venta": null,
+   "usd_10": null,
+   "tp_fijo": 15,
+   "contra": -29.6,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": null,
+   "fuente": "Schwab cadena (bid)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-25",
+   "senal": "Tridente 15 PUT",
+   "lado": "PUT",
+   "resultado": null,
+   "detalle": "09:45 · vela 09:30 · SPX PUT 6765 a 4.50 · TP 5.20 · pendiente",
+   "maximo": null,
+   "unidad": "opción",
+   "minimo": -41.1,
+   "strike": 6765.0,
+   "entrada": 4.5,
+   "entro": "09:45",
+   "venta": null,
+   "usd_10": null,
+   "tp_fijo": 15,
+   "contra": -40.0,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "minutos": null,
+   "fuente": "Schwab cadena (bid)",
    "activo": "SPX",
    "activos": [
     "SPX"
