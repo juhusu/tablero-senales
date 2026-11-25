@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25 08:00",
+ "actualizado": "2026-11-25 09:23",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -16762,11 +16762,19 @@
     "texto": "PIB (GDP)"
    }
   ],
-  "reportes": [],
+  "reportes": [
+   {
+    "hora": "08:30",
+    "datos": "PCE (inflacion e ingreso personal) + PIB",
+    "mov": -0.2258,
+    "direccion": "abajo",
+    "cifras": {}
+   }
+  ],
   "gap": {
-   "cuando": "08:00",
+   "cuando": "09:23",
    "lado": -1,
-   "mes_pct": -1.932333691172905,
+   "mes_pct": -2.1331855802195543,
    "ayer_pct": -0.4753416518122444,
    "ganador": false,
    "enviado": false
