@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25 10:49",
+ "actualizado": "2026-11-25 12:11",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -16815,6 +16815,31 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:40:25",
    "venta": "09:55",
+   "max_sin_tp": 62.6,
+   "hora_max_sin_tp": "10:06",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-25",
+   "senal": "Heikin Ashi PUT",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "11:50 · PUT 701 al ask 2.74",
+   "maximo": 4.7,
+   "unidad": "opción",
+   "minimo": -100.0,
+   "contra": -9.5,
+   "minutos": 3.5,
+   "strike": 701.0,
+   "entrada": 2.74,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "11:50:28",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -16871,6 +16896,30 @@
   },
   {
    "fecha": "2026-11-25",
+   "senal": "Toque Magnífico",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "09:31 · 6 grandes · PUT 703 al ask 4.09",
+   "maximo": 82.4,
+   "unidad": "opción",
+   "minimo": -51.1,
+   "contra": -12.0,
+   "minutos": 13.1,
+   "strike": 703.0,
+   "entrada": 4.09,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:32:16",
+   "venta": "09:34",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-25",
    "senal": "Tridente 15 (💵💵💵) PUT",
    "lado": "PUT",
    "resultado": null,
@@ -16884,7 +16933,7 @@
    "venta": null,
    "usd_10": null,
    "tp_fijo": 15,
-   "contra": -72.9,
+   "contra": -93.3,
    "max_sin_tp": null,
    "hora_max_sin_tp": "",
    "minutos": null,
@@ -16911,7 +16960,7 @@
    "venta": null,
    "usd_10": null,
    "tp_fijo": 15,
-   "contra": -45.3,
+   "contra": -80.9,
    "max_sin_tp": null,
    "hora_max_sin_tp": "",
    "minutos": null,
@@ -17020,6 +17069,10 @@
    {
     "hora": "09:40",
     "texto": "Heikin Ashi CALL"
+   },
+   {
+    "hora": "11:50",
+    "texto": "Heikin Ashi PUT"
    }
   ],
   "rebote": null,
