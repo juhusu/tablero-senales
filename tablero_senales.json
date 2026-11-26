@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-26 12:10",
+ "actualizado": "2026-11-26 16:24",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -17103,7 +17103,12 @@
    "enviado": false
   },
   "avisos": [],
-  "rebote": null,
+  "rebote": {
+   "senal": false,
+   "razon_vol": null,
+   "pos_rango": null,
+   "roja": false
+  },
   "rebote_dia": [
    "de jueves para viernes",
    14,
@@ -17114,7 +17119,14 @@
    "fecha": "2026-11-27",
    "dia_semana": 4,
    "eventos": [],
-   "gap": null
+   "gap": {
+    "mes_pct": 0.5176,
+    "hoy_pct": -0.2749,
+    "lado": 1,
+    "cuando": "26/11 13:00",
+    "continuacion": false,
+    "ganador": false
+   }
   }
  }
 }
