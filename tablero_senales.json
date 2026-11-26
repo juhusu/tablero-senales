@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25 20:01",
+ "actualizado": "2026-11-26 00:01",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -17090,77 +17090,31 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-11-25",
-  "dia_semana": 2,
-  "eventos": [
-   {
-    "hora": "08:30",
-    "texto": "Ingreso y gasto personal (PCE)"
-   },
-   {
-    "hora": "08:30",
-    "texto": "PIB (GDP)"
-   }
-  ],
-  "reportes": [
-   {
-    "hora": "08:30",
-    "datos": "PCE (inflacion e ingreso personal) + PIB",
-    "mov": -0.2258,
-    "direccion": "abajo",
-    "cifras": {}
-   }
-  ],
+  "fecha": "2026-11-26",
+  "dia_semana": 3,
+  "eventos": [],
+  "reportes": [],
   "gap": {
-   "cuando": "9:28",
-   "lado": -1.0,
-   "mes_pct": -2.1574,
-   "ayer_pct": -0.4753,
+   "cuando": "00:01",
+   "lado": 1,
+   "mes_pct": 0.7641807634860553,
+   "ayer_pct": -0.2749045470322842,
    "ganador": false,
    "enviado": false
   },
-  "avisos": [
-   {
-    "hora": "09:30",
-    "texto": "GAP continuación PUT"
-   },
-   {
-    "hora": "09:32",
-    "texto": "Toque Magnífico PUT"
-   },
-   {
-    "hora": "09:40",
-    "texto": "Heikin Ashi CALL"
-   },
-   {
-    "hora": "11:50",
-    "texto": "Heikin Ashi PUT"
-   }
-  ],
-  "rebote": {
-   "senal": false,
-   "razon_vol": 1.27,
-   "pos_rango": 0.927,
-   "roja": false
-  },
+  "avisos": [],
+  "rebote": null,
   "rebote_dia": [
-   "de miércoles para jueves",
-   13,
-   16
+   "de jueves para viernes",
+   14,
+   15
   ],
   "cobertura_hasta": "2026-12-09",
   "manana": {
    "fecha": "2026-11-27",
    "dia_semana": 4,
    "eventos": [],
-   "gap": {
-    "mes_pct": 0.4759,
-    "hoy_pct": -0.2749,
-    "lado": 1,
-    "cuando": "25/11 20:00",
-    "continuacion": false,
-    "ganador": false
-   }
+   "gap": null
   }
  }
 }
