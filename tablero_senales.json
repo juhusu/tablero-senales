@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-26 20:06",
+ "actualizado": "2026-11-27 00:03",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -14083,32 +14083,6 @@
   },
   {
    "fecha": "2026-11-06",
-   "senal": "Rebote EMA 9 (5 min)",
-   "lado": "CALL",
-   "resultado": "P",
-   "detalle": "11:35 · vela de 5 min que cerró 11:40 · SPX CALL 7435 al ask 19.20 (11:40:24) · -35% a las 12:02:40 a 11.20",
-   "maximo": -8.3,
-   "unidad": "opción",
-   "minimo": -41.7,
-   "strike": 7435,
-   "entrada": 19.2,
-   "entro": "11:40:24",
-   "venta": "12:02:40",
-   "minutos": 22,
-   "contra": -34.9,
-   "max_sin_tp": -8.3,
-   "hora_max_sin_tp": "11:40",
-   "en_curso": false,
-   "fuente": "Schwab (cadena del SPX cada 15 s)",
-   "activo": "SPX",
-   "activos": [
-    "SPX"
-   ],
-   "semana": "2026-11-02",
-   "dia_semana": 4
-  },
-  {
-   "fecha": "2026-11-06",
    "senal": "Tridente 15 (💵💵💵) CALL",
    "lado": "CALL",
    "resultado": "G",
@@ -17090,43 +17064,36 @@
   }
  ],
  "hoy": {
-  "fecha": "2026-11-26",
-  "dia_semana": 3,
+  "fecha": "2026-11-27",
+  "dia_semana": 4,
   "eventos": [],
   "reportes": [],
   "gap": {
-   "cuando": "9:28",
-   "lado": 1.0,
-   "mes_pct": 0.5592,
-   "ayer_pct": -0.2749,
+   "cuando": "00:03",
+   "lado": 1,
+   "mes_pct": 1.7333009135433564,
+   "ayer_pct": -0.2749045470322842,
    "ganador": false,
    "enviado": false
   },
   "avisos": [],
-  "rebote": {
-   "senal": false,
-   "razon_vol": null,
-   "pos_rango": null,
-   "roja": false
-  },
+  "rebote": null,
   "rebote_dia": [
-   "de jueves para viernes",
-   14,
-   15
+   "de viernes para lunes",
+   6,
+   7
   ],
   "cobertura_hasta": "2026-12-09",
   "manana": {
-   "fecha": "2026-11-27",
-   "dia_semana": 4,
-   "eventos": [],
-   "gap": {
-    "mes_pct": 0.719,
-    "hoy_pct": -0.2749,
-    "lado": 1,
-    "cuando": "26/11 20:06",
-    "continuacion": false,
-    "ganador": false
-   }
+   "fecha": "2026-11-30",
+   "dia_semana": 0,
+   "eventos": [
+    {
+     "hora": "09:45",
+     "texto": "PMI de Chicago (MNI)"
+    }
+   ],
+   "gap": null
   }
  }
 }
