@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-27 09:22",
+ "actualizado": "2026-11-27 09:41",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -17061,6 +17061,28 @@
    ],
    "semana": "2026-11-23",
    "dia_semana": 2
+  },
+  {
+   "fecha": "2026-11-27",
+   "senal": "Opening Eyes (motor) TSLA",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "09:34 · PUT 387.5 al ask 3.90",
+   "maximo": 5.1,
+   "unidad": "opción",
+   "minimo": -5.1,
+   "contra": -5.1,
+   "minutos": 0.7,
+   "strike": 387.5,
+   "entrada": 3.9,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:34:27",
+   "activo": "TSLA",
+   "activos": [
+    "TSLA"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 4
   }
  ],
  "hoy": {
@@ -17069,14 +17091,23 @@
   "eventos": [],
   "reportes": [],
   "gap": {
-   "cuando": "09:22",
-   "lado": 1,
-   "mes_pct": 1.3164750425509686,
-   "ayer_pct": -0.2749045470322842,
+   "cuando": "9:28",
+   "lado": 1.0,
+   "mes_pct": 1.2609,
+   "ayer_pct": -0.2749,
    "ganador": false,
    "enviado": false
   },
-  "avisos": [],
+  "avisos": [
+   {
+    "hora": "09:32",
+    "texto": "Toque Magnífico PUT"
+   },
+   {
+    "hora": "09:40",
+    "texto": "Heikin Ashi CALL"
+   }
+  ],
   "rebote": null,
   "rebote_dia": [
    "de viernes para lunes",
