@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-27 12:07",
+ "actualizado": "2026-11-27 16:21",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -17077,7 +17077,7 @@
    "venta": "",
    "minutos": null,
    "en_curso": true,
-   "contra": -78.3,
+   "contra": -98.9,
    "max_sin_tp": 34.8,
    "hora_max_sin_tp": "10:46",
    "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
@@ -17129,6 +17129,8 @@
    "entrada": 0.97,
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "11:20:20",
+   "max_sin_tp": -1.0,
+   "hora_max_sin_tp": "11:21",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -17154,6 +17156,8 @@
    "entro": "09:58:26",
    "activo": "SPX",
    "venta": "09:59",
+   "max_sin_tp": 30.1,
+   "hora_max_sin_tp": "10:00",
    "activos": [
     "SPX"
    ],
@@ -17177,6 +17181,8 @@
    "entro": "09:34:27",
    "activo": "TSLA",
    "venta": "09:35",
+   "max_sin_tp": 24.4,
+   "hora_max_sin_tp": "09:35",
    "activos": [
     "TSLA"
    ],
@@ -17198,8 +17204,8 @@
    "venta": "11:31:20",
    "minutos": 6,
    "contra": -18.9,
-   "max_sin_tp": null,
-   "hora_max_sin_tp": "",
+   "max_sin_tp": 210.0,
+   "hora_max_sin_tp": "11:53",
    "en_curso": false,
    "fuente": "Schwab (cadena del SPX cada 15 s)",
    "activo": "SPX",
@@ -17225,6 +17231,8 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:32:21",
    "venta": "09:33",
+   "max_sin_tp": 100.8,
+   "hora_max_sin_tp": "10:05",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -17261,7 +17269,12 @@
     "texto": "Heikin Ashi PUT"
    }
   ],
-  "rebote": null,
+  "rebote": {
+   "senal": false,
+   "razon_vol": 0.07,
+   "pos_rango": 0.999,
+   "roja": false
+  },
   "rebote_dia": [
    "de viernes para lunes",
    6,
@@ -17277,7 +17290,14 @@
      "texto": "PMI de Chicago (MNI)"
     }
    ],
-   "gap": null
+   "gap": {
+    "mes_pct": 0.0479,
+    "hoy_pct": 1.5983,
+    "lado": 1,
+    "cuando": "27/11 13:15",
+    "continuacion": false,
+    "ganador": true
+   }
   }
  }
 }
