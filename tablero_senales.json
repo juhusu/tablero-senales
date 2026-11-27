@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-27 10:46",
+ "actualizado": "2026-11-27 12:07",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -17070,15 +17070,15 @@
    "detalle": "10:41 · SPXW CALL 7305 a 4.60 (10:41:21) · pendiente: vende en +35% o a las 15:55 · se mide de madrugada con Tastytrade · VWAP SPY a favor +0.44%",
    "maximo": null,
    "unidad": "opción",
-   "minimo": -34.8,
+   "minimo": -66.3,
    "strike": 7305.0,
    "entrada": 4.6,
    "entro": "10:41:21",
    "venta": "",
    "minutos": null,
    "en_curso": true,
-   "contra": -34.8,
-   "max_sin_tp": 19.6,
+   "contra": -78.3,
+   "max_sin_tp": 34.8,
    "hora_max_sin_tp": "10:46",
    "fuente": "en vivo: la señal del detector (tools/senal_bollinger_spx.py) y la cadena del $SPX del motor (bid); provisorio",
    "activo": "SPX",
@@ -17104,6 +17104,31 @@
    "fuente": "Schwab (fotos de la cadena cada 15 s)",
    "entro": "09:40:18",
    "venta": "09:45",
+   "max_sin_tp": 80.1,
+   "hora_max_sin_tp": "10:47",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-27",
+   "senal": "Heikin Ashi PUT",
+   "lado": "PUT",
+   "resultado": "P",
+   "detalle": "11:20 · PUT 726 al ask 0.97",
+   "maximo": -1.0,
+   "unidad": "opción",
+   "minimo": -83.5,
+   "contra": -16.5,
+   "minutos": 1.2,
+   "strike": 726.0,
+   "entrada": 0.97,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "11:20:20",
    "activo": "SPY",
    "activos": [
     "SPY",
@@ -17157,6 +17182,56 @@
    ],
    "semana": "2026-11-23",
    "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-27",
+   "senal": "Rebote EMA 9 (5 min)",
+   "lado": "CALL",
+   "resultado": "G",
+   "detalle": "11:20 · vela de 5 min que cerró 11:25 · SPX CALL 7270 al ask 9.00 (11:25:15) · +35% (bid 12.70) a las 11:31:20",
+   "maximo": 41.1,
+   "unidad": "opción",
+   "minimo": -18.9,
+   "strike": 7270,
+   "entrada": 9.0,
+   "entro": "11:25:15",
+   "venta": "11:31:20",
+   "minutos": 6,
+   "contra": -18.9,
+   "max_sin_tp": null,
+   "hora_max_sin_tp": "",
+   "en_curso": false,
+   "fuente": "Schwab (cadena del SPX cada 15 s)",
+   "activo": "SPX",
+   "activos": [
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 4
+  },
+  {
+   "fecha": "2026-11-27",
+   "senal": "Toque Magnífico",
+   "lado": "PUT",
+   "resultado": "G",
+   "detalle": "09:31 · 5 grandes · PUT 726 al ask 2.57",
+   "maximo": 100.4,
+   "unidad": "opción",
+   "minimo": -61.1,
+   "contra": -61.1,
+   "minutos": 28.2,
+   "strike": 726.0,
+   "entrada": 2.57,
+   "fuente": "Schwab (fotos de la cadena cada 15 s)",
+   "entro": "09:32:21",
+   "venta": "09:33",
+   "activo": "SPY",
+   "activos": [
+    "SPY",
+    "SPX"
+   ],
+   "semana": "2026-11-23",
+   "dia_semana": 4
   }
  ],
  "hoy": {
@@ -17180,6 +17255,10 @@
    {
     "hora": "09:40",
     "texto": "Heikin Ashi CALL"
+   },
+   {
+    "hora": "11:20",
+    "texto": "Heikin Ashi PUT"
    }
   ],
   "rebote": null,
