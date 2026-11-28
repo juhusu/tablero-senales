@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-27 17:31",
+ "actualizado": "2026-11-27 20:01",
  "senales": [
   {
    "fecha": "2026-07-06",
@@ -17290,14 +17290,7 @@
      "texto": "PMI de Chicago (MNI)"
     }
    ],
-   "gap": {
-    "mes_pct": 0.0479,
-    "hoy_pct": 1.5983,
-    "lado": 1,
-    "cuando": "27/11 13:15",
-    "continuacion": false,
-    "ganador": true
-   }
+   "gap": null
   }
  }
 }
